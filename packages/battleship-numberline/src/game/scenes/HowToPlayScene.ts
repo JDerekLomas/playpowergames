@@ -336,6 +336,7 @@ export class HowToPlayScene extends BaseScene {
             this.scene.start('GameScreen', {
                 useQuestionBank: this.useQuestionBank,
                 topic: this.topic,
+                parentScene: this.parentScene,
                 ...(this.useQuestionBank ? { mapLevel: this.mapLevel } : { level: this.level }),
             });
         }

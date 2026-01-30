@@ -47,6 +47,8 @@ export class GameplayManager {
     public closenessAccuracy: number = 0;
     public isGameComplete: boolean = false;
     private mapLevel: number = 0;
+    private consecutiveCorrect: number = 0;
+    private scaffoldingStage: number = 1;
     public analyticsHelper: AnalyticsHelper | null = null;
     private hitThresholdOverride?: number;
     private nearMissThresholdOverride?: number;
@@ -218,16 +220,19 @@ export class GameplayManager {
             this.handleTrialResult(true, clickedNumber.toString());
             this.questionSelector?.answerCorrectly();
             this.scoreHelper.answerCorrectly();
+            this.updateScaffolding(true);
             return 'hit';
         } else if (scaledDifference <= nearMissThreshold) {
             this.handleTrialResult(false, clickedNumber.toString());
             this.scoreHelper.answerIncorrectly();
             this.questionSelector?.answerIncorrectly(this.currentQuestion!);
+            this.updateScaffolding(false);
             return 'nearMiss';
         } else {
             this.handleTrialResult(false, clickedNumber.toString());
             this.scoreHelper.answerIncorrectly();
             this.questionSelector?.answerIncorrectly(this.currentQuestion!);
+            this.updateScaffolding(false);
             return 'miss';
         }
     }
@@ -450,6 +455,33 @@ export class GameplayManager {
             return (questionBankTopics.find((t) => t.name === this.topicName)?.showIntermediateNumbers as boolean) ?? true;
         }
         return true;
+    }
+
+    /** Whether scaffolding is active (campaign levels 0 and 1 only) */
+    public isScaffoldingActive(): boolean {
+        return this.topicName === 'campaign' && !this.useQuestionBank && (this.currentLevelIdx === 0 || this.currentLevelIdx === 1);
+    }
+
+    public getScaffoldingStage(): number {
+        return this.scaffoldingStage;
+    }
+
+    private updateScaffolding(correct: boolean): void {
+        if (!this.isScaffoldingActive()) return;
+
+        if (correct) {
+            this.consecutiveCorrect++;
+            if (this.consecutiveCorrect >= 2 && this.scaffoldingStage < 3) {
+                this.scaffoldingStage++;
+                this.consecutiveCorrect = 0;
+            }
+        } else {
+            this.consecutiveCorrect = 0;
+            // Drop from stage 3 to 2 on miss, but never below 2
+            if (this.scaffoldingStage === 3) {
+                this.scaffoldingStage = 2;
+            }
+        }
     }
 
     public pauseGame(): void {

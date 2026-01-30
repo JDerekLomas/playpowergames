@@ -282,6 +282,7 @@ export class UIUtils {
             endPoint: number | string;
             numberLinePadding?: number;
             showIntermediateNumbers?: boolean;
+            hideIntermediateTicks?: boolean;
             yOffset?: number;
             animate?: boolean;
             suffix?: string;
@@ -392,32 +393,41 @@ export class UIUtils {
                         markers.push(answerMarker);
                         answerInserted = true;
                     }
-                    let showNumber = config.showIntermediateNumbers ?? true;
-                    let label = value;
-                    if (config.visibleMarkers && config.visibleMarkers.length > 0) {
-                        showNumber = config.visibleMarkers.some(marker => {
-                            const parsedLabel = parseFractionString(marker);
-                            const parsedValue = parseFractionString(value);
-                            const doesMatch = parsedLabel === parsedValue;
-                            if (doesMatch) label = marker;
-                            return doesMatch;
+                    // When hideIntermediateTicks is true, skip creating tick marks and labels entirely
+                    if (config.hideIntermediateTicks) {
+                        // Still need invisible marker for a11y/click detection if enabled
+                        if (config.a11y?.enabled) {
+                            const answerMarker = this.createInvisibleAnswerOverlay(scene, markerX, centerY, config.lineHeight, config.a11y, value.toString(), markersList, config.parentContainer);
+                            markers.push(answerMarker);
+                        }
+                    } else {
+                        let showNumber = config.showIntermediateNumbers ?? true;
+                        let label = value;
+                        if (config.visibleMarkers && config.visibleMarkers.length > 0) {
+                            showNumber = config.visibleMarkers.some(marker => {
+                                const parsedLabel = parseFractionString(marker);
+                                const parsedValue = parseFractionString(value);
+                                const doesMatch = parsedLabel === parsedValue;
+                                if (doesMatch) label = marker;
+                                return doesMatch;
+                            });
+                        }
+                        const marker = this.createVerticalLineWithNumber(scene, markerX, {
+                            lineHeight: config.lineHeight,
+                            lineColor: config.color,
+                            number: label,
+                            fontSize: config.fontSize,
+                            fontColor: config.fontColor,
+                            fontFamily: config.fontFamily,
+                            showNumber,
+                            yOffset: yOffset,
+                            animate: animate,
+                            suffix: config.suffix,
+                            parentContainer: config.parentContainer,
+                            a11y: config.a11y,
                         });
+                        markers.push({ line: marker.line, text: marker.text });
                     }
-                    const marker = this.createVerticalLineWithNumber(scene, markerX, {
-                        lineHeight: config.lineHeight,
-                        lineColor: config.color,
-                        number: label,
-                        fontSize: config.fontSize,
-                        fontColor: config.fontColor,
-                        fontFamily: config.fontFamily,
-                        showNumber,
-                        yOffset: yOffset,
-                        animate: animate,
-                        suffix: config.suffix,
-                        parentContainer: config.parentContainer,
-                        a11y: config.a11y,
-                    });
-                    markers.push({ line: marker.line, text: marker.text });
                 }
             });
             // If answer lies after all interior markers but before right marker, insert now

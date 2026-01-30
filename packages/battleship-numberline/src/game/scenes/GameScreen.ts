@@ -537,6 +537,19 @@ export class GameScreen extends BaseScene {
             this.numberLineContainer.innerHTML = '';
         }
 
+        // Determine scaffolding overrides for campaign levels 1 & 2
+        let showIntermediateNumbers = this.gameplayManager.getShowIntermediateNumbers();
+        let hideIntermediateTicks = false;
+        if (this.gameplayManager.isScaffoldingActive()) {
+            const stage = this.gameplayManager.getScaffoldingStage();
+            if (stage >= 2) {
+                showIntermediateNumbers = false; // hide labels (keep endpoints)
+            }
+            if (stage >= 3) {
+                hideIntermediateTicks = true; // hide tick marks too
+            }
+        }
+
         // Create new markers
         const { markers, leftMarker, rightMarker } = UIUtils.createVerticalLinesWithNumbers(this, {
             ...GameConfig.MARKER_LINES,
@@ -546,7 +559,8 @@ export class GameScreen extends BaseScene {
             startPoint: finalStartPoint,
             endPoint: finalEndPoint,
             answer: this.gameplayManager.getTargetNumber?.() ?? undefined,
-            showIntermediateNumbers: this.gameplayManager.getShowIntermediateNumbers(),
+            showIntermediateNumbers,
+            hideIntermediateTicks,
             suffix: this.topic === 'percents' && this.mapLevel === 1 ? '%' : undefined,
             a11y: {
                 enabled: !this.isTypingMode,

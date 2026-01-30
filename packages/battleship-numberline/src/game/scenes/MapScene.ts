@@ -318,16 +318,20 @@ export class MapScene extends BaseScene {
             // Check if this level is completed
             const isCompleted = this.completedLevels.has(i + 1);
 
+            // For campaign mode, lock islands sequentially (island N requires island N-1 completed)
+            const isCampaign = this.topic === 'campaign';
+            const isLocked = isCampaign && i > 0 && !this.completedLevels.has(i);
+
             // create island button with appropriate state
             this.createIslandButton(island.X, island.Y, {
                 default: isCompleted ? `${island.NAME}_default` : `${island.NAME}_destroyed_default`,
                 hover: isCompleted ? `${island.NAME}_hover` : `${island.NAME}_destroyed_hover`,
                 pressed: isCompleted ? `${island.NAME}_default` : `${island.NAME}_destroyed_default`,
-            }, i);
+            }, i, isLocked);
 
-            const popup = this.createPopup(i, isCompleted);
+            const popup = this.createPopup(i, isCompleted, isLocked);
             this.popups.push(popup);
-            this.createAudioButtonOverlay(i);
+            if (!isLocked) this.createAudioButtonOverlay(i);
 
             const startButton = this.createStartButton(popup, i);
             startButton.setVisible(false);
@@ -428,7 +432,7 @@ export class MapScene extends BaseScene {
         default: string;
         hover: string;
         pressed: string;
-    }, islandIndex: number): Phaser.GameObjects.Container {
+    }, islandIndex: number, isLocked: boolean = false): Phaser.GameObjects.Container {
         if (!this.islandLayer) return this.add.container(0, 0);
 
         const button = this.add.container(this.getScaledValue(x), this.getScaledValue(y));
@@ -481,6 +485,14 @@ export class MapScene extends BaseScene {
         button.add(buttonBg);
 
         button.setSize(buttonBg.width * buttonBg.scaleX, buttonBg.height * buttonBg.scaleY);
+
+        if (isLocked) {
+            button.setAlpha(0.45);
+            // Add button to island layer but skip interactivity
+            this.islandLayer.add(button);
+            this.islands.push(button);
+            return button;
+        }
 
         button.setInteractive({ useHandCursor: true });
 
@@ -638,6 +650,10 @@ export class MapScene extends BaseScene {
             onClick: () => {
                 if (this.isAnimationRunning) return;
 
+                // Defense in depth: don't launch locked islands
+                const isCampaign = this.topic === 'campaign';
+                if (isCampaign && islandIndex > 0 && !this.completedLevels.has(islandIndex)) return;
+
                 // destroy popups
                 for (const popup of this.popups) {
                     popup.destroy();
@@ -727,7 +743,7 @@ export class MapScene extends BaseScene {
         }
     }
 
-    private createPopup(islandIndex: number, isCompleted: boolean = false): Phaser.GameObjects.Container {
+    private createPopup(islandIndex: number, isCompleted: boolean = false, isLocked: boolean = false): Phaser.GameObjects.Container {
         if (!this.scrollContainer) return this.add.container(0, 0);
 
         const topicsWithAudioButton = ['add_and_subtract_within_100', 'explore_numbers_to_1000', 'subtract_within_1000'];
@@ -787,6 +803,11 @@ export class MapScene extends BaseScene {
 
         // Add popup to popup layer
         this.popupLayer?.add(popup);
+
+        if (isLocked) {
+            popup.setAlpha(0.45);
+            return popup;
+        }
 
         // Add hover functionality to the popup background
         popupBg.setInteractive({ useHandCursor: true });

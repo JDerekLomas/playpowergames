@@ -87,7 +87,7 @@ export class ScoreBoardScene extends BaseScene {
         }
 
         // Track completed level if atleast 70% of questions were answered correctly
-        if ((this.scoreData.rounds >= 0.7 * this.scoreData.totalRounds) && this.scoreData.level) {
+        if ((this.scoreData.rounds >= 0.7 * this.scoreData.totalRounds) && this.scoreData.level !== undefined) {
             islandState.addCompletedLevel(this.scoreData.topic, this.scoreData.level);
         }
 

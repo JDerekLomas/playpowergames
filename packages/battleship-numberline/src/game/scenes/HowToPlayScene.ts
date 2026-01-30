@@ -67,7 +67,9 @@ export class HowToPlayScene extends BaseScene {
         } else {
             this.question = getTopicQuestion(this.topic, fallbackQuestion);
         }
-        this.updateQuestionPrompt(this.question.csvQuestion!);
+        if (this.question.csvQuestion) {
+            this.updateQuestionPrompt(this.question.csvQuestion);
+        }
 
         this.audioManager.initialize(this);
         if (this.parentScene === "MapScene") {
@@ -113,7 +115,12 @@ export class HowToPlayScene extends BaseScene {
             createSkipButton: () => this.createSkipButton()
         };
 
-        if (this.topic === 'fractions_as_numbers' && this.mapLevel === 1) {
+        if (this.topic === 'campaign') {
+            // Campaign: show skip button immediately, no animated tutorial
+            this.createSkipButton();
+            this.createPlayButton();
+            return;
+        } else if (this.topic === 'fractions_as_numbers' && this.mapLevel === 1) {
             this.howToPlayModule = new FractionsHowToPlay(moduleData as FractionsHowToPlayData);
         } else if (this.topic === 'add_and_subtract_within_100') {
             this.howToPlayModule = new AdditionInfo(moduleData as AdditionInfoData);

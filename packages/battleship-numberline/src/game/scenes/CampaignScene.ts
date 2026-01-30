@@ -157,7 +157,7 @@ export class CampaignScene extends BaseScene {
     }
 
     private startLevel(level: number): void {
-        this.scene.start('GameScreen', {
+        this.scene.start('HowToPlayScene', {
             useQuestionBank: false,
             level,
             topic: 'campaign',

@@ -1,0 +1,118 @@
+{
+    "levels": [
+        {
+            "level": 0,
+            "mode": "clicking",
+            "label": "Whole Numbers 0-10",
+            "hitThreshold": 0.08,
+            "nearMissThreshold": 0.15,
+            "questions": [
+                { "startPoint": 0, "endPoint": 10, "questionPrompt": "3", "shipLocation": 3, "markersList": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 10, "questionPrompt": "7", "shipLocation": 7, "markersList": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 10, "questionPrompt": "1", "shipLocation": 1, "markersList": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 10, "questionPrompt": "5", "shipLocation": 5, "markersList": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 10, "questionPrompt": "9", "shipLocation": 9, "markersList": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "showFeedback": true },
+                { "startPoint": 0, "endPoint": 10, "questionPrompt": "2", "shipLocation": 2, "markersList": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 10, "questionPrompt": "6", "shipLocation": 6, "markersList": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 10, "questionPrompt": "4", "shipLocation": 4, "markersList": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 10, "questionPrompt": "8", "shipLocation": 8, "markersList": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 10, "questionPrompt": "10", "shipLocation": 10, "markersList": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "showFeedback": false }
+            ]
+        },
+        {
+            "level": 1,
+            "mode": "clicking",
+            "label": "Whole Numbers 0-100",
+            "hitThreshold": 0.05,
+            "nearMissThreshold": 0.1,
+            "questions": [
+                { "startPoint": 0, "endPoint": 100, "questionPrompt": "25", "shipLocation": 25, "markersList": [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 100, "questionPrompt": "73", "shipLocation": 73, "markersList": [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 100, "questionPrompt": "50", "shipLocation": 50, "markersList": [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 100, "questionPrompt": "12", "shipLocation": 12, "markersList": [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 100, "questionPrompt": "88", "shipLocation": 88, "markersList": [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100], "showFeedback": true },
+                { "startPoint": 0, "endPoint": 100, "questionPrompt": "37", "shipLocation": 37, "markersList": [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 100, "questionPrompt": "64", "shipLocation": 64, "markersList": [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 100, "questionPrompt": "91", "shipLocation": 91, "markersList": [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 100, "questionPrompt": "45", "shipLocation": 45, "markersList": [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 100, "questionPrompt": "8", "shipLocation": 8, "markersList": [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100], "showFeedback": false }
+            ]
+        },
+        {
+            "level": 2,
+            "mode": "clicking",
+            "label": "Decimals 0-1",
+            "hitThreshold": 0.08,
+            "nearMissThreshold": 0.15,
+            "questions": [
+                { "startPoint": 0, "endPoint": 1, "questionPrompt": "0.5", "shipLocation": 0.5, "markersList": [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 1, "questionPrompt": "0.25", "shipLocation": 0.25, "markersList": [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 1, "questionPrompt": "0.75", "shipLocation": 0.75, "markersList": [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 1, "questionPrompt": "0.1", "shipLocation": 0.1, "markersList": [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 1, "questionPrompt": "0.9", "shipLocation": 0.9, "markersList": [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1], "showFeedback": true },
+                { "startPoint": 0, "endPoint": 1, "questionPrompt": "0.33", "shipLocation": 0.33, "markersList": [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 1, "questionPrompt": "0.67", "shipLocation": 0.67, "markersList": [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 1, "questionPrompt": "0.4", "shipLocation": 0.4, "markersList": [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 1, "questionPrompt": "0.15", "shipLocation": 0.15, "markersList": [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 1, "questionPrompt": "0.8", "shipLocation": 0.8, "markersList": [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1], "showFeedback": false }
+            ]
+        },
+        {
+            "level": 3,
+            "mode": "clicking",
+            "label": "Fractions 0-1",
+            "hitThreshold": 0.08,
+            "nearMissThreshold": 0.15,
+            "questions": [
+                { "startPoint": 0, "endPoint": 1, "questionPrompt": "1/2", "shipLocation": 0.5, "markersList": [], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 1, "questionPrompt": "1/4", "shipLocation": 0.25, "markersList": [], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 1, "questionPrompt": "3/4", "shipLocation": 0.75, "markersList": [], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 1, "questionPrompt": "1/3", "shipLocation": 0.33, "markersList": [], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 1, "questionPrompt": "2/3", "shipLocation": 0.67, "markersList": [], "showFeedback": true },
+                { "startPoint": 0, "endPoint": 1, "questionPrompt": "1/5", "shipLocation": 0.2, "markersList": [], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 1, "questionPrompt": "3/5", "shipLocation": 0.6, "markersList": [], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 1, "questionPrompt": "1/8", "shipLocation": 0.125, "markersList": [], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 1, "questionPrompt": "5/8", "shipLocation": 0.625, "markersList": [], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 1, "questionPrompt": "7/10", "shipLocation": 0.7, "markersList": [], "showFeedback": false }
+            ]
+        },
+        {
+            "level": 4,
+            "mode": "typing",
+            "label": "Type Numbers 0-10",
+            "hitThreshold": 0.05,
+            "nearMissThreshold": 0.1,
+            "questions": [
+                { "startPoint": 0, "endPoint": 10, "questionPrompt": "3", "shipLocation": 3, "markersList": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 10, "questionPrompt": "7", "shipLocation": 7, "markersList": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 10, "questionPrompt": "2", "shipLocation": 2, "markersList": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 10, "questionPrompt": "9", "shipLocation": 9, "markersList": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 10, "questionPrompt": "5", "shipLocation": 5, "markersList": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "showFeedback": true },
+                { "startPoint": 0, "endPoint": 10, "questionPrompt": "1", "shipLocation": 1, "markersList": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 10, "questionPrompt": "8", "shipLocation": 8, "markersList": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 10, "questionPrompt": "4", "shipLocation": 4, "markersList": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 10, "questionPrompt": "6", "shipLocation": 6, "markersList": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 10, "questionPrompt": "10", "shipLocation": 10, "markersList": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "showFeedback": false }
+            ]
+        },
+        {
+            "level": 5,
+            "mode": "typing",
+            "label": "Type Fractions 0-1",
+            "hitThreshold": 0.08,
+            "nearMissThreshold": 0.15,
+            "questions": [
+                { "startPoint": 0, "endPoint": 1, "questionPrompt": "1/2", "shipLocation": 0.5, "markersList": [], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 1, "questionPrompt": "1/4", "shipLocation": 0.25, "markersList": [], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 1, "questionPrompt": "3/4", "shipLocation": 0.75, "markersList": [], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 1, "questionPrompt": "1/3", "shipLocation": 0.33, "markersList": [], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 1, "questionPrompt": "2/3", "shipLocation": 0.67, "markersList": [], "showFeedback": true },
+                { "startPoint": 0, "endPoint": 1, "questionPrompt": "1/5", "shipLocation": 0.2, "markersList": [], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 1, "questionPrompt": "4/5", "shipLocation": 0.8, "markersList": [], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 1, "questionPrompt": "3/8", "shipLocation": 0.375, "markersList": [], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 1, "questionPrompt": "7/8", "shipLocation": 0.875, "markersList": [], "showFeedback": false },
+                { "startPoint": 0, "endPoint": 1, "questionPrompt": "1/10", "shipLocation": 0.1, "markersList": [], "showFeedback": false }
+            ]
+        }
+    ]
+}

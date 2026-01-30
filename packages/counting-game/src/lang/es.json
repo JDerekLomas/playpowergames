@@ -1,0 +1,61 @@
+{
+    "common": {
+        "play": "Jugar",
+        "back": "Atrás",
+        "playAgain": "Jugar de nuevo",
+        "beam": "Disparar",
+        "wellDone": "¡Bien Hecho!",
+        "awesomeWork": "¡Trabajo Increíble!",
+        "youreAmazing": "¡Eres Increíble!",
+        "keepItUp": "¡Sigue Así!",
+        "fantasticEffort": "¡Esfuerzo Fantástico!",
+        "greatJob": "¡Gran Trabajo!",
+        "volume": "Volumen",
+        "perfectScore": "¡Puntuación Perfecta!",
+        "title": "Cuente la tripulación",
+        "titleLabel": "Juego de Cuenta la Tripulación",
+        "mute": "Silenciar",
+        "unmute": "Activar sonido",
+        "pause": "Pausa",
+        "help": "Ayuda",
+        "resume": "Reanudar",
+        "icon": "Icono",
+        "correct": "Correcto",
+        "incorrect": "Incorrecto",
+        "skip": "Omitir",
+        "correctFeedback": "¡Correcto! El número es {{ value }}",
+        "incorrectFeedback": "¡Incorrecto! El número debería ser {{ value }}",
+        "playQuestionAudio": "Reproducir Audio de Pregunta",
+        "scoreboardNegativeFeedback": "¡Inténtalo otra vez!"
+    },
+    "accessibility": {
+        "dropZoneSeat": "Zona de colocación para asiento {{seatNumber}}. Presiona Enter para soltar el personaje seleccionado aquí.",
+        "draggableBear": "Oso número {{number}} arrastrable. Presiona Enter para seleccionar para soltar con teclado.",
+        "selectedBear": "Oso número {{number}} seleccionado. Navega a la zona de colocación y presiona Enter para soltar."
+    },
+    "info": {
+        "helpPage": "Página de ayuda abierta",
+        "howToPlay": "Cómo Jugar"         
+    },
+    "game": {
+        "score": "Puntuación",
+        "scoreValue": "Puntuación: {{value}}",
+        "inARow": "{{count}} en una fila",
+        "whichNumberComesAfter": "¿Qué número viene después del"
+    },
+    "scoreboard": {
+        "finalScore": "Puntuación Final",
+        "greatJob": "¡Gran Trabajo!",
+        "accuracy": "Precisión",
+        "time": "Tiempo",
+        "score": "Puntuación",
+        "cup": "Taza",
+        "points": "Puntos",
+        "noOfCorrect": "Número correcto",
+        "beatYourScore": "¡Mejora tu Puntuación!",
+        "playAgain": "Jugar de nuevo",
+        "correctOutOf": "{{correct}} de {{total}}",
+        "correctOutOfAnnounce": "¡{{correct}} de {{total}} correcto!",
+        "progress": "Progreso: {{correct}} de {{total}} respuestas correctas"
+    }
+}

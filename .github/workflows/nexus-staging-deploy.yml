@@ -1,0 +1,81 @@
+name: Deploy to Nexus Staging
+
+on:
+  push:
+    branches:
+      - stage-nexus-dashboard
+    paths:
+      - "packages/nexus-dashboard/**"
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    env:
+      AWS_REGION: us-east-1
+      S3_BUCKET: project-nexus-games-staging
+      CLOUDFRONT_DISTRIBUTION_ID: E1RVARQDDGAEOW
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.18.3"
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 10.8.1
+          run_install: false
+
+      - name: Get pnpm store directory
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+      - name: Setup pnpm cache
+        uses: actions/cache@v3
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build SDK
+        run: pnpm --filter "@k8-games/sdk" build
+
+      - name: Build nexus-dashboard
+        env:
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
+          VITE_CONTENTFUL_SPACE_ID: ${{ secrets.VITE_CONTENTFUL_SPACE_ID }}
+          VITE_CONTENTFUL_DELIVERY_TOKEN: ${{ secrets.VITE_CONTENTFUL_DELIVERY_TOKEN }}
+        run: pnpm build nexus-dashboard
+
+      - name: Deploy to S3 staging
+        run: |
+          echo "Deploying nexus-dashboard to staging..."
+          aws s3 sync "packages/nexus-dashboard/dist" "s3://${{ env.S3_BUCKET }}/" --delete
+      - name: Invalidate CloudFront
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id ${{ env.CLOUDFRONT_DISTRIBUTION_ID }} \
+            --paths "/*"
+      - name: Deployment complete
+        run: |
+          echo "=========================================="
+          echo "Staging deployment complete!"
+          echo "View at your CloudFront domain (e.g., https://d3vfhm2po5zjw9.cloudfront.net)"
+          echo "=========================================="

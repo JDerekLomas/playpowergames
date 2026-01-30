@@ -1,0 +1,237 @@
+name: Deploy to Nexus
+
+on:
+  # Manual trigger only
+  workflow_dispatch:
+    inputs:
+      package_name:
+        description: 'Package to deploy (single package name or comma-separated list: akira-racing,alien-shooter). Leave empty to deploy all packages.'
+        required: false
+        type: string
+      deploy_all:
+        description: 'Deploy all packages (ignores package_name if set)'
+        required: false
+        type: boolean
+        default: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    env:
+      AWS_REGION: us-east-1 # Change this to your AWS region
+      S3_BUCKET: k8-games  # Change this to your S3 bucket name
+      CLOUDFRONT_DISTRIBUTION_ID: EXML2KPPY3VXZ
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Get packages to deploy
+        id: changed-packages
+        run: |
+          if [ "${{ github.event.inputs.deploy_all }}" == "true" ]; then
+            # Deploy all packages
+            echo "Deploying all packages..."
+            PACKAGES=$(find packages -maxdepth 1 -type d -not -name packages -not -name sdk -not -name game-template -not -name analytics-infra | xargs -n1 basename | sort)
+            
+            if [ -z "$PACKAGES" ]; then
+              echo "No packages found to deploy"
+              exit 1
+            fi
+            
+            JSON_ARRAY=$(echo "$PACKAGES" | jq -R . | jq -c -s .)
+            echo "changed_packages<<EOF" >> $GITHUB_OUTPUT
+            echo "$JSON_ARRAY" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
+          elif [ ! -z "${{ github.event.inputs.package_name }}" ]; then
+            # If manually triggered with package name(s), parse them
+            INPUT_PACKAGES="${{ github.event.inputs.package_name }}"
+            
+            # Split by comma and trim whitespace
+            PACKAGES=$(echo "$INPUT_PACKAGES" | tr ',' '\n' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | grep .)
+            
+            # Filter out invalid packages (sdk and game-template are not allowed)
+            FILTERED_PACKAGES=$(echo "$PACKAGES" | grep -v -E "^(sdk|game-template|analytics-infra)$" || true)
+            
+            # Check if any valid packages remain after filtering
+            if [ -z "$FILTERED_PACKAGES" ]; then
+              echo "No valid packages to deploy after filtering out sdk and game-template"
+              exit 1
+            fi
+            
+            # Use filtered packages
+            PACKAGES="$FILTERED_PACKAGES"
+            
+            # Convert to JSON array format
+            JSON_ARRAY=$(echo "$PACKAGES" | jq -R . | jq -c -s .)
+            echo "changed_packages<<EOF" >> $GITHUB_OUTPUT
+            echo "$JSON_ARRAY" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
+          else
+            # Default: deploy all packages if no input provided
+            echo "No specific packages specified - deploying all packages..."
+            PACKAGES=$(find packages -maxdepth 1 -type d -not -name packages -not -name sdk -not -name game-template -not -name analytics-infra | xargs -n1 basename | sort)
+            
+            if [ -z "$PACKAGES" ]; then
+              echo "No packages found to deploy"
+              exit 1
+            fi
+            
+            JSON_ARRAY=$(echo "$PACKAGES" | jq -R . | jq -c -s .)
+            echo "changed_packages<<EOF" >> $GITHUB_OUTPUT
+            echo "$JSON_ARRAY" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Get timestamp
+        if: steps.changed-packages.outputs.changed_packages != ''
+        id: timestamp
+        run: echo "timestamp=$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_OUTPUT
+
+      - name: Setup Node.js
+        if: steps.changed-packages.outputs.changed_packages != ''
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.18.3'
+
+      - name: Setup pnpm
+        if: steps.changed-packages.outputs.changed_packages != ''
+        uses: pnpm/action-setup@v2
+        with:
+          version: 10.8.1
+          run_install: false
+      
+      - name: Get pnpm store directory
+        if: steps.changed-packages.outputs.changed_packages != ''
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+      - name: Setup pnpm cache
+        if: steps.changed-packages.outputs.changed_packages != ''
+        uses: actions/cache@v3
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Configure AWS credentials
+        if: steps.changed-packages.outputs.changed_packages != ''
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Install dependencies
+        if: steps.changed-packages.outputs.changed_packages != ''
+        run: |
+          echo "Installing dependencies..."
+          pnpm install
+          echo "Disk space after install:"
+          df -h . | tail -1
+
+      - name: Build SDK first
+        if: steps.changed-packages.outputs.changed_packages != ''
+        run: |
+          echo "Building SDK package first..."
+          pnpm --filter "@k8-games/sdk" build
+          echo "Disk space after SDK build:"
+          df -h . | tail -1
+
+      - name: Check disk space before build
+        if: steps.changed-packages.outputs.changed_packages != ''
+        run: |
+          echo "=== Disk Space Check ==="
+          df -h
+          AVAILABLE=$(df -h . | tail -1 | awk '{print $4}')
+          echo "Available disk space: $AVAILABLE"
+          echo "========================"
+
+      - name: Build and deploy changed packages
+        if: steps.changed-packages.outputs.changed_packages != ''
+        run: |
+          PACKAGE_COUNT=$(echo '${{ steps.changed-packages.outputs.changed_packages }}' | jq '. | length')
+          echo "Total packages to process: $PACKAGE_COUNT"
+          echo ""
+          
+          echo '${{ steps.changed-packages.outputs.changed_packages }}' | jq -r '.[]' | while read package; do
+            echo "=========================================="
+            echo "Processing $package..."
+            
+            package_name=$(basename "$package")
+            
+            # Check disk space before each build
+            echo "Disk space before build:"
+            df -h . | tail -1
+            
+            echo "Building $package_name..."
+            pnpm build "$package_name"
+            
+            # Check if build was successful
+            if [ ! -d "packages/$package/dist" ]; then
+              echo "ERROR: Build failed - dist directory not found for $package_name"
+              continue
+            fi
+            
+            # Get build size
+            BUILD_SIZE=$(du -sh "packages/$package/dist" | cut -f1)
+            echo "Build size: $BUILD_SIZE"
+
+            echo "Uploading $package_name to artifacts..."
+            aws s3 sync "packages/$package/dist" "s3://${{ env.S3_BUCKET }}/nexus/artifacts/${package_name}/${{ steps.timestamp.outputs.timestamp }}/" --delete
+            
+            echo "Uploading $package_name to S3..."
+            aws s3 sync "packages/$package/dist" "s3://${{ env.S3_BUCKET }}/nexus/${package_name}" --delete
+            
+            # Clean up dist folder after successful upload to free disk space
+            echo "Cleaning up dist folder for $package_name to free disk space..."
+            rm -rf "packages/$package/dist"
+            
+            # Check disk space after cleanup
+            echo "Disk space after cleanup:"
+            df -h . | tail -1
+            echo "=========================================="
+            echo ""
+          done
+
+      - name: Invalidate CloudFront
+        if: steps.changed-packages.outputs.changed_packages != ''
+        run: |
+          PATHS=$(echo '${{ steps.changed-packages.outputs.changed_packages }}' | jq -r '.[]' | while read package; do
+            package_name=$(basename "$package")
+            echo "/${package_name}/*"
+          done | jq -R . | jq -s .)
+          
+          aws cloudfront create-invalidation \
+            --distribution-id ${{ env.CLOUDFRONT_DISTRIBUTION_ID }} \
+            --paths $(echo $PATHS | jq -r 'join(" ")')
+      
+      - name: Clean up old package versions
+        if: steps.changed-packages.outputs.changed_packages != ''
+        run: |
+          echo '${{ steps.changed-packages.outputs.changed_packages }}' | jq -r '.[]' | while read package; do
+            package_name=$(basename "$package")
+            echo "Cleaning up old versions for $package_name..."
+            
+            # List all versions for this package, sort by date (newest first)
+            VERSIONS_TO_DELETE=$(aws s3 ls "s3://${{ env.S3_BUCKET }}/nexus/artifacts/${package_name}/" \
+              | sort -r \
+              | tail -n +6 \
+              | awk '{print $2}')
+            
+            # Delete old versions if they exist
+            if [ ! -z "$VERSIONS_TO_DELETE" ]; then
+              for version in $VERSIONS_TO_DELETE; do
+                echo "Deleting old version: ${version}"
+                aws s3 rm "s3://${{ env.S3_BUCKET }}/nexus/artifacts/${package_name}/${version}" --recursive
+              done
+            else
+              echo "No old versions to clean up for $package_name"
+            fi
+          done
+

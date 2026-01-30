@@ -1,0 +1,177 @@
+{
+    "dashboardTitle": "K-8 Games",
+    "dashboardDescription": "Explore a world of exciting math games designed for kids from kindergarten to grade 8. Sharpen your skills, solve puzzles, and make learning math fun and engaging!",
+    "grade": "Grade",
+    "gradeK": "Grade K",
+    "existingGames": "Existing Games",
+    "playNow": "PLAY NOW",
+    "comingSoon": "COMING SOON",
+    "gameMechanics": "Game Mechanics",
+    "allGames": "All Games",
+    "existingGamesData": {
+        "battleship-numberline": {
+            "title": "Battleship Numberline",
+            "description": "Master various math concepts using an interactive numberline in this engaging Battleship game.",
+            "mechanics": {
+                "addition": {
+                    "title": "Addition",
+                    "description": "Practice adding numbers on a numberline"
+                },
+                "subtraction": {
+                    "title": "Subtraction",
+                    "description": "Improve your subtraction skills"
+                },
+                "equation": {
+                    "title": "Equation",
+                    "description": "Solve equations and plot the answers on a numberline"
+                },
+                "fraction": {
+                    "title": "Fraction",
+                    "description": "Learn to work with fractions on a numberline"
+                },
+                "decimal": {
+                    "title": "Decimal",
+                    "description": "Perfect your decimal placement skills on a numberline"
+                },
+                "percentage": {
+                    "title": "Percentage",
+                    "description": "Boost your understanding of percentages on a numberline"
+                }
+            }
+        },
+        "think-bigger": {
+            "title": "Think Bigger",
+            "description": "Enhance your understanding of numbers through interactive challenges.",
+            "mechanics": {
+                "place-value": {
+                    "title": "Place Value",
+                    "description": "Enhance your understanding of place value"
+                },
+                "magnitude-comparison": {
+                    "title": "Magnitude Comparison",
+                    "description": "Compare numbers based on their magnitude"
+                }
+            }
+        },
+        "bubble-pop": {
+            "title": "Bubble Pop",
+            "description": "Solve various math challenges while popping number bubbles.",
+            "mechanics": {
+                "mcq": {
+                    "title": "MCQ",
+                    "description": "Solve multiple-choice questions by popping number bubbles"
+                },
+                "in-order": {
+                    "title": "In-order",
+                    "description": "Arrange numbers in the correct order by popping the number bubbles"
+                },
+                "skip-n": {
+                    "title": "Skip N",
+                    "description": "Skip every Nth number and pop the correct bubbles"
+                },
+                "drag": {
+                    "title": "Drag",
+                    "description": "Drag and drop numbers to the correct locations while popping the bubbles"
+                },
+                "fill-in-the-blank": {
+                    "title": "Fill in the Blank",
+                    "description": "Fill in the missing numbers by popping the correct number bubbles"
+                }
+            }
+        },
+        "clock-game": {
+            "title": "Clock Game",
+            "description": "Practice reading and setting clocks through various challenges.",
+            "mechanics": {
+                "analog": {
+                    "title": "Analog",
+                    "description": "Practice reading and setting analog clocks"
+                },
+                "stop-the-clock": {
+                    "title": "Stop the Clock",
+                    "description": "Test your skills by stopping the clock"
+                },
+                "analog-to-digital": {
+                    "title": "Analog To Digital",
+                    "description": "Convert analog times to digital"
+                },
+                "digital-to-analog": {
+                    "title": "Digital To Analog",
+                    "description": "Convert digital times to analog"
+                }
+            }
+        },
+        "place-value": {
+            "title": "Place Value",
+            "description": "Master place value concepts through interactive challenges.",
+            "mechanics": {
+                "click": {
+                    "title": "Click",
+                    "description": "Click on the correct value to match the place value"
+                },
+                "drag": {
+                    "title": "Drag",
+                    "description": "Drag and drop numbers to their correct places"
+                },
+                "drag-to-make": {
+                    "title": "Drag To Make",
+                    "description": "Drag numbers to form correct values"
+                },
+                "highest": {
+                    "title": "Highest",
+                    "description": "Identify the highest value based on place value"
+                },
+                "make": {
+                    "title": "Make",
+                    "description": "Create numbers by placing digits in their correct place values"
+                },
+                "match": {
+                    "title": "Match",
+                    "description": "Match numbers to their correct place values"
+                },
+                "mcq": {
+                    "title": "MCQ",
+                    "description": "Test your knowledge of place value concepts through multiple-choice questions"
+                },
+                "change": {
+                    "title": "Change",
+                    "description": "Change place values to form new numbers"
+                }
+            }
+        },
+        "math-fact": {
+            "title": "Math Fact",
+            "description": "Practice your math facts and enhance your fluency in basic arithmetic operations."
+        },
+        "train-game": {
+            "title": "Train Game",
+            "description": "Help the train move by solving counting challenges."
+        },
+        "jelly-bean": {
+            "title": "Jelly Bean",
+            "description": "Engage with interactive challenges to understand numbers better.",
+            "mechanics": {
+                "comparison": {
+                    "title": "Comparison",
+                    "description": "Compare different numbers of jelly beans"
+                },
+                "odd-or-even": {
+                    "title": "Odd or Even",
+                    "description": "Sort jelly beans into odd and even categories"
+                },
+                "drag-and-drop": {
+                    "title": "Drag and Drop",
+                    "description": "Drag and drop jelly beans to the correct place"
+                },
+                "counting": {
+                    "title": "Counting",
+                    "description": "Count jelly beans to enhance your basic number skills"
+                },
+                "equation": {
+                    "title": "Equation",
+                    "description": "Solve equations using jelly beans"
+                }
+            }
+        }
+    }
+}

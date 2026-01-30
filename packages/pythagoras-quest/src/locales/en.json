@@ -1,0 +1,819 @@
+{
+    "common": {
+        "closeAria": "Close",
+        "closeInfoPopoverAria": "Close info popover",
+        "enterYourAnswer": "Enter your answer",
+        "correctAlt": "Correct",
+        "myiaAlt": "Myia",
+        "checkmarkAlt": "Checkmark",
+        "completed": "completed",
+        "locked": "locked",
+        "correct": "Correct",
+        "incorrect": "Incorrect",
+        "pending": "Pending",
+        "question": "Question",
+        "step": "Step",
+        "progressIndicator": "Progress Indicator",
+        "dialogueNavAria": "Dialogue Controls"
+    },
+    "sceneNames": {
+        "title": "Title Screen",
+        "loading": "Loading Screen",
+        "intro": "Introduction Scene",
+        "narrator": "Narrator Scene",
+        "mainCharacter": "Main Character Dialogue",
+        "library": "Library Scene",
+        "map": "Map Scene",
+        "interactive": "Interactive Scene",
+        "celebration": "Celebration Scene",
+        "ending": "Ending Scene",
+        "monochord1": "The Virtual Monochord",
+        "monochord2": "Even, Odd, and Figurate Numbers",
+        "pebbleProof": "Pebble Proof",
+        "waterProof": "Water Pouring Proof",
+        "dissectionProof": "Dissection Proof",
+        "ladderProblem": "The Ladder Challenge",
+        "finalChallenge": "The Pyramid Challenge"
+    },
+    "loadingScreen": {
+        "loading": "Loading...",
+        "backgroundAlt": "Loading background",
+        "logoAlt": "PlayPower Labs"
+    },
+    "pythagoreanTheorem": {
+        "pebbleProof": {
+            "title": "Pebble Proof",
+            "description": "Count pebbles forming squares on each side.",
+            "myia": {
+                "name": "Myia",
+                "dialogues": [
+                    "My father loves triangles. He found that rectangles can be described as the combination of two triangles. These are special triangles, because they have an angle of 90 degrees. We call them right triangles.",
+                    "When we make squares from the sides of a right triangle, the pebbles in the smaller squares add up perfectly to form the square of the longest side—the hypotenuse—so we write it as a² + b² = c². Click 'Animate Proof' to see them move!",
+                    "Do you see? The pebbles in the two smaller squares perfectly equal the number of pebbles in the largest! Try this with another triangle."
+                ],
+                "events": {
+                    "1": "click_animate_button",
+                    "2": "change_triplet"
+                }
+            },
+            "selectPerfectTriple": "Select a perfect triple:",
+            "tripleThreeFourFive": "3-4-5 Triangle",
+            "tripleThreeFourFiveAriaLabel": "Select 3-4-5 triangle",
+            "tripleSixEightTen": "6-8-10 Triangle",
+            "tripleSixEightTenAriaLabel": "Select 6-8-10 triangle",
+            "tripleFiveTwelveThirteen": "5-12-13 Triangle",
+            "tripleFiveTwelveThirteenAriaLabel": "Select 5-12-13 triangle",
+            "selected": "selected",
+            "animateProof": "Animate Proof",
+            "reset": "Reset",
+            "screenReaderValues": "Current values: a equals {a}, b equals {b}, c equals {c}, a squared equals {aSquared}, b squared equals {bSquared}, c squared equals {cSquared}",
+            "screenReaderSquaredValues": "Areas: a squared equals {aSquared}, b squared equals {bSquared}, c squared equals {cSquared}",
+            "proof1CanvasInitialAriaLabel": "Canvas showing a squared equals {aSquared} pebbles and b squared equals {bSquared} pebbles, ready for animation",
+            "proof1CanvasAnimatingAriaLabel": "Canvas animating pebbles from a squared and b squared into c squared position",
+            "proof1InfoHeading": "Pebble Proof",
+            "proof1InfoBody": "This proof demonstrates the Pythagorean Theorem by showing that the pebbles from the two smaller squares can be rearranged to fill the larger square exactly."
+        },
+        "pyramidFinal": {
+            "unit": {
+                "cubits": "cubits"
+            },
+            "labels": {
+                "unknownB": "b = ?",
+                "a": "a",
+                "aEquals": "a = {value}",
+                "bEquals": "b = {value}",
+                "cEquals": "c = {value}"
+            },
+            "ui": {
+                "legend": "Legend",
+                "hiddenTriangle": "Hidden Triangle",
+                "explore": "Explore the pyramid",
+                "rotateZoom": "Drag to rotate and scroll to zoom.",
+                "baseMsg":"The base is 411 cubits.",
+                "clickMeasure": "When ready, click Measure to find side b.",
+                "measure": "Measure",
+                "freeView": "Free View",
+                "sideView": "Side View",
+                "topView": "Top View",
+                "frontView": "Front View",
+                "showMeasurements": "Show Measurements",
+                "keyboardInstructions": "3D pyramid view. Use arrow keys to rotate, plus/minus to zoom, R to reset view."
+            },
+            "steps": {
+                "1": {
+                    "title": "Step 1: The Known Dimension",
+                    "narrative": "First, measure what is plain to see: the length of one of the pyramid's base edges."
+                },
+                "2": {
+                    "title": "Step 2: Finding the Center",
+                    "narrative": "To find the height, we need a right triangle with two known sides. The hidden triangle begins at the midpoint of a base edge.",
+                    "question": "What is the length from a corner to the midpoint — i.e., half the base? (A cubit is an ancient unit of measurement roughly equal to the length of a forearm.)",
+                    "options": {
+                        "option1": "205.5 cubits",
+                        "option2": "411 cubits",
+                        "option3": "274 cubits"
+                    },
+                    "feedback": "Correct. This is the first length of our hidden triangle: 205.5 cubits."
+                },
+                "3": {
+                    "title": "Step 3: The Inner Dimension",
+                    "narrative": "Because the base is a square, that half-base equals the distance from the center to the midpoint. This is a leg of the triangle.",
+                    "question": "This internal line forms which part of the hidden right triangle?",
+                    "options": {
+                        "option1": "A Leg (a)",
+                        "option2": "The Hypotenuse (c)",
+                        "option3": "Height of the Pyramid (b)"
+                    },
+                    "feedback": "Yes, we have found leg 'a'."
+                },
+                "4": {
+                    "title": "Step 4: The Slant Height",
+                    "narrative": "Now measure the slant height from the midpoint on the face to the apex.",
+                    "question": "This measurable slant height represents which part of the hidden triangle?(An apex is the highest point or vertex of a pyramid.)",
+                    "options": {
+                        "option1": "The diagonal",
+                        "option2": "The Hypotenuse (c)",
+                        "option3": "¼ of the perimeter"
+                    },
+                    "feedback": "Indeed. It is the hypotenuse, the longest side."
+                },
+                "5": {
+                    "title": "Step 5: The Unseen Height",
+                    "narrative": "The triangle is now revealed. You have leg 'a' (205.5) and hypotenuse 'c' (342.5). The final, unmeasurable side is the one we seek: the true vertical height, leg 'b'.",
+                    "question": "To solve for this unknown height (leg 'b'), how must we rearrange the theorem a² + b² = c²?",
+                    "options": {
+                        "option1": "b = c - a",
+                        "option2": "b² = a² + c²",
+                        "option3": "b² = c² - a²"
+                    },
+                    "feedback": "The path is clear. Now, you must perform the calculation."
+                },
+                "6": {
+                    "title": "Step 6: The Method",
+                    "narrative": "You now have the formula: b² = c² - a². To find the height 'b' itself, what must you do next?",
+                    "question": "How do you solve for b?",
+                    "options": {
+                        "option1": "b = c² - a²",
+                        "option2": "b = √(c² - a²)",
+                        "option3": "b = (c - a)²"
+                    },
+                    "feedback": "Yes! You must take the square root of both sides to reveal the true height."
+                },
+                "7": {
+                    "title": "Step 7: Squaring the Triangle",
+                    "narrative": "Your formula is b² = c² - a². You know the slant 'c' is 342.5 and the half-base 'a' is 205.5. 342.5² - 205.5² is equal to 75,076.",
+                    "question": "What does 75,076 represent?",
+                    "options": {
+                        "option1": "The square of the height",
+                        "option2": "The height of the triangle",
+                        "option3": "The square root of the height"
+                    },
+                    "feedback": "Yes, this is the square of the unknown height of the triangle."
+                },
+                "8": {
+                    "title": "Step 8: The Final Dimension",
+                    "narrative": "You have found b² = 75,076. Now, release the true height from its squared form.",
+                    "question": "What is the square root of 75,076?",
+                    "options": {
+                        "option1": "274 cubits",
+                        "option2": "25.55 cubits",
+                        "option3": "345.21 cubits"
+                    },
+                    "feedback": "The pyramid reveals its hidden dimension. The true height is precisely 274 cubits."
+                },
+                "9": {
+                    "title": "Step 9: The Secret Ratio",
+                    "narrative": "Behold the dimensions: Half-base 205.5, Height 274, Slant 342.5. Divide all by 68.5 and see the harmony.",
+                    "question": "These three lengths form a near-perfect whole number ratio. What is that sacred ratio (Half-base : Height : Slant)?",
+                    "options": {
+                        "option1": "3 : 4 : 5",
+                        "option2": "2 : 3 : 4",
+                        "option3": "5 : 6 : 7"
+                    },
+                    "feedback": "Yes! The 3-4-5 triangle. You see now? The pyramid is not just stone, but a monument to universal mathematical harmony."
+                }
+            }
+        },
+        "waterProof": {
+            "title": "Pouring Proof",
+            "description": "Pour water from squares to show equal areas.",
+            "myia": {
+                "name": "Myia",
+                "dialogues": [
+                    "My father wanted to prove his theorem works for all right triangles, not just those with whole numbers. Watch how water reveals this universal truth.",
+                    "Each square’s area equals the square of its side length. The water’s volume perfectly represents that area—it can fill any shape, unlike pebbles that only work with whole numbers.",
+                    "Now pour the water from both smaller squares into the largest one. Watch carefully as the areas combine and fill it exactly!",
+                    "This proves the theorem’s true power—it works for every right triangle, no matter what numbers you choose."
+                ],
+                "events": {
+                    "2": "water_proof_pour_both_squares"
+                }
+            },
+            "pourA": "Pour A",
+            "pourB": "Pour B",
+            "proof2CanvasInitialAriaLabel": "Canvas showing empty c square and filled a and b squares with areas a squared equals {aSquared} and b squared equals {bSquared}",
+            "proof2CanvasPouringAAriaLabel": "Pouring water from a square with area {aSquared} into c square",
+            "proof2CanvasPouringBAriaLabel": "Pouring water from b square with area {bSquared} into c square",
+            "proof2CanvasCompletedAriaLabel": "C square filled with water showing area c squared equals {cSquared}",
+            "proof2InfoHeading": "Water Proof",
+            "proof2InfoBody": "This proof uses the concept of equal areas. When water from squares A and B is poured into square C, the water level shows that c² = a² + b²."
+        },
+        "dissectionProof": {
+            "title": "Dissection Proof",
+            "description": "Rearrange triangle pieces to show equal areas.",
+            "myia": {
+                "name": "Myia",
+                "dialogues": [
+                    "Here is the most elegant proof of all—it uses no numbers, no counting, just pure geometric reasoning that convinced even the greatest scholars.",
+                    "Look at these four identical right triangles arranged around the tilted green square. This green area represents c², the square of the hypotenuse.",
+                    "Now rearrange the same four triangles to the corners. They surround two separate squares—one blue square for a² and one orange square for b².",
+                    "The magic is that we used exactly the same pieces in both arrangements! Since the triangles occupy the same space, the remaining areas must be equal. You’ve just proven a²+b²=c² using pure logic and shapes."
+                ],
+                "events": {
+                    "2": "dissection_proof_rearrange"
+                }
+            },
+            "rearrange": "Rearrange",
+            "firstPosition": "Triangles arranged in diamond pattern",
+            "secondPosition": "Triangles rearranged into squares",
+            "area": "Area",
+            "proof3InfoHeading": "Dissection Proof",
+            "proof3InfoBody": "This proof dissects the right triangle and rearranges the pieces to form two smaller squares that combine to equal the area of the larger square."
+        }
+    },
+    "ladderProblem": {
+        "title": "Ladder Problem",
+        "description": "Calculate the distance a ladder reaches up a wall.",
+        "exploreTitle": "Explore the Pythagorean Theorem (h² + d² = l²)",
+        "ladderLength": "Ladder Length (c) = ",
+        "distanceFromWall": "Moat Width (b) = ",
+        "distanceFromWallAxis": "Distance from Wall (feet)",
+        "heightOnWallAxis": "Height on Wall (feet)",
+        "result": "Result:",
+        "heightOnWall": "Wall Height (a) = ",
+        "feet": "ft",
+        "ladderLengthAria": "Ladder length",
+        "distanceFromWallAria": "Distance from wall",
+        "ladderFeedback": "The ladder reaches {height} feet up the wall.",
+        "distanceFeedback": "The base is {distance} feet from the wall.",
+        "harbor": "Harbor",
+        "market": "Market",
+        "deltaXCorrect": "Correct! Δx = {value}",
+        "deltaXIncorrect": "Try again. Δx should be the difference in x-coordinates.",
+        "deltaYCorrect": "Correct! Δy = {value}",
+        "deltaYIncorrect": "Try again. Δy should be the difference in y-coordinates.",
+        "hypotenuseCorrect": "Correct! The distance is {value}",
+        "hypotenuseIncorrect": "Try again. Use the Pythagorean Theorem: c = √(a² + b²)",
+        "calculateDistance": "Calculate Distance",
+        "showAnswer": "Show Answer",
+        "nextStep": "Next Step",
+        "finalChallenge": "Final Challenge",
+        "finalChallengeDescription": "Use the Pythagorean Theorem to find the distance between two points on the coordinate plane.",
+        "finalChallengeTitle": "Find the straight-line distance between the Harbor and Market using coordinates.",
+        "coordinateGrid": "Coordinate Grid:",
+        "step1": "Step 1: Find the horizontal distance",
+        "step1Question": "What is the difference in x-coordinates between Market and Harbor?",
+        "step2": "Step 2: Find the vertical distance",
+        "step2Question": "What is the difference in y-coordinates between Market and Harbor?",
+        "step3": "Step 3: Find the Distance",
+        "step3Question": "Use the Pythagorean Theorem: distance = √(horizontal² + vertical²)",
+        "check": "Check",
+        "enterValue": "Enter value",
+        "congratulations": "Congratulations!",
+        "successMessage": "You successfully calculated the distance using the Pythagorean Theorem!",
+        "successDetails": "Distance = √({horizontal}² + {vertical}²) = √({horizontalSquared} + {verticalSquared}) = √{sum} = {distance}",
+        "horizontalCorrectFeedback": "Correct! Horizontal distance = {value}",
+        "horizontalHint": "Try again. Hint: Count the squares horizontally.",
+        "verticalCorrectFeedback": "Correct! Vertical distance = {value}",
+        "verticalHint": "Try again. Hint: Count the squares vertically.",
+        "hypotenuseCorrectFeedback": "Correct! Distance = √({horizontal}² + {vertical}²) = {distance}",
+        "hypotenuseHint": "Try again. Use the Pythagorean Theorem: c = √(a² + b²)",
+        "setup": "Setup",
+        "calculate": "Calculate",
+        "stepSetup": "Step 1: Set Up Your Ladder",
+        "stepCalculate": "Step 2: Calculate Height",
+        "setupInstructions": "A ladder needs to reach a window {height} feet high. The moat width is {distance} feet from the wall. How long should the ladder be?",
+        "whatIsHeight": "What is the height (b)?",
+        "correct": "Correct!",
+        "tryAgain": "Try again!",
+        "newChallenge": "🎯 New Challenge",
+        "proceedToCalculate": "Proceed to Calculate",
+        "questions": {
+            "question1": "Which side is the hypotenuse?",
+            "question2": "Which equation correctly represents the problem?",
+            "question3": "First, what is the square of the wall height?",
+            "question4": "Next, what is the square of the moat width?",
+            "question5": "Now, add those two results together. What is {heightSquared} + {distanceSquared}?",
+            "question6": "What number, when multiplied by itself, equals {sum}?"
+        },
+        "options": {
+            "theLadder": "The ladder",
+            "theHeight": "The height ({height} ft)",
+            "theGroundDistance": "The ground distance ({distance} ft)",
+            "allSidesEqual": "All sides are equal",
+            "pythagoreanEquation": "a² + b² = c²",
+            "additionEquation": "a + b = c",
+            "wrongEquation1": "a² + c² = b²",
+            "wrongEquation2": "b² + c² = a²"
+        },
+        "ladderVisualisationAria": "Diagram showing a wall and a moat forming a right triangle with a slanted ladder.",
+        "horizontalDistance": "Horizontal",
+        "verticalDistance": "Vertical",
+        "distance": "Distance",
+        "horizontalDistanceLabel": "Horizontal distance =",
+        "verticalDistanceLabel": "Vertical distance =",
+        "distanceLabel": "Distance ="
+    },
+    "monochord": {
+        "fundamentalStringAria": "Fundamental String",
+        "fundamentalToneString": "Fundamental Tone String",
+        "dividedStringAria": "Divided Frequency String - Click to play sound",
+        "dividedStringTitle": "Divided Frequency String - Click to play",
+        "bridgePosition": "Bridge position",
+        "dividedFrequency": "Divided Frequency",
+        "playAria": "Play frequencies",
+        "pauseAria": "Pause frequencies",
+        "base": "Base",
+        "proportions": "Proportions",
+        "proportion": "Proportion",
+        "selected": "selected",
+        "helpHandLeft": "Help hand pointing to left string",
+        "helpHandRight": "Help hand pointing to right string",
+        "playMysteryHarmonyAgain": "Play mystery harmony again",
+        "incorrectFeedback": "Listen again... pay attention to how consonant it sounds.",
+        "baseFrequency": "Base Frequency",
+        "adjustableFrequency": "Adjustable Frequency",
+        "adjustableFrequencySlider": "Adjustable Frequency Slider",
+        "baseFrequencyRange": "Base frequency range from 20 Hz to 1100 Hz",
+        "adjustableFrequencyRange": "Adjustable frequency range from 20 Hz to 1100 Hz",
+        "chooseAProportion": "Choose a Proportion",
+        "proportionSelectionAria": "Proportion selection",
+        "playBoth": "Play Both",
+        "playBothAria": "Play both frequencies together",
+        "pause": "Pause",
+        "mysteryHarmony": "Mystery Harmony",
+        "listenAgain": "Listen Again",
+        "listenAgainAria": "Listen to the mystery harmony again",
+        "increaseFrequency": "Increase frequency",
+        "decreaseFrequency": "Decrease frequency",
+        "baseFrequencySpinbutton": "Base frequency in hertz. Use arrow keys to adjust, Page Up/Down for larger steps, Home for minimum, End for maximum"
+    },
+    "figurate": {
+        "pebblesLabel": "Pebbles :",
+        "selectPebbles": "Select number of pebbles: {count}",
+        "even": "Even",
+        "odd": "Odd",
+        "perfectSquare": "Perfect square (side {side})",
+        "notPerfectSquare": "Not a perfect square",
+        "perfectTriangular": "Perfect triangular number",
+        "notTriangular": "Not triangular",
+        "triangle": "Triangle",
+        "square": "Square",
+        "controlsHeading": "Controls",
+        "evenOddVisualization": "Even/Odd visualization",
+        "shapeVisualization": "Figurate shapes visualization",
+        "pebbleGridAria": "Pebble grid of {count}",
+        "squareGridAria": "Square grid of side {side}",
+        "triangleSection": "Triangle section",
+        "squareSection": "Square section",
+        "highlightedPebble": "Highlighted pebble",
+        "pebble": "Pebble",
+        "placePebblesFirst": "Place some pebbles first",
+        "checkButton": "Check",
+        "resetButton": "Reset",
+        "correctEven": "✓ Correct! {total} is EVEN - both rows have {count} pebbles",
+        "correctOdd": "✓ Correct! {total} is ODD - one row has one extra pebble",
+        "evenOddHint": "For even numbers, both rows should be equal. For odd, they should differ by 1.",
+        "perfectSquareFound": "✓ Correct! {height} × {width} = {total} - Perfect square!",
+        "fillSquareCompletely": "Fill all circles in the square completely",
+        "squareNeedsEqualSides": "A perfect square needs equal rows and columns",
+        "perfectTetractys": "✓ Perfect Tetractys with 7 rows (1+2+3+4+5+6+7 = 28)!",
+        "tetractysProgress": "Good start! You have {validRows} correct rows. Keep building!",
+        "tetractysHint": "Each row should have: row 1 = 1 pebble, row 2 = 2 pebbles, etc.",
+        "trianglePatternCorrect": "✓ Perfect triangle pattern with {total} pebbles!",
+        "evenOddTitle": "Even and Odd Numbers",
+        "evenOddSubtitle": "Observe how even and odd numbers line up in two rows",
+        "generateNewNumbers": "Generate New Numbers",
+        "generateNewNumbersAnnouncement": "New numbers generated. Even numbers: {evenCount} pebbles. Odd numbers: {oddCount} pebbles.",
+        "evenNumbers": "Even Numbers",
+        "oddNumbers": "Odd Numbers",
+        "evenDescription": "Can be split into two equal rows",
+        "oddDescription": "Always have one pebble left over",
+        "pebbles": "Pebbles",
+        "triangularTitle": "Triangular Numbers",
+        "triangularSubtitle": "Create triangular numbers by adding consecutive pebble rows.",
+        "addRow": "Add Row",
+        "addRowToTriangularTool": "Add row to triangular tool",
+        "addRowToSquareTool": "Add row to square tool",
+        "reset": "Reset",
+        "resetTriangularTool": "Reset triangular tool",
+        "resetSquareTool": "Reset square tool",
+        "squareTitle": "Square Numbers",
+        "squareSubtitle": "Create square numbers by adding pebble rows around the core.",
+        "addLayer": "Add Layer",
+        "buildAndGuessTitle": "Build and Guess",
+        "buildAndGuessInstructions": "Complete the quiz by answering five questions",
+        "buildAndGuessQuestion": "Can you figure out the shape of the number?",
+        "answerTriangular": "Triangular",
+        "answerSquare": "Square",
+        "answerBoth": "Both",
+        "answerNeither": "Neither",
+        "triangularTool": "Triangular Tool",
+        "squareTool": "Square Tool",
+        "correctAnswerIs": "Correct answer is",
+        "progressIndicator": "Progress indicator",
+        "pending": "pending",
+        "question": "Question"
+    },
+    "pebbleProof": {
+        "selectTriple": "Select a Perfect Triple",
+        "animateProof": "Animate Proof",
+        "reset": "Reset",
+        "selected": "selected",
+        "currentValues": "Current values: a = {a}, b = {b}, c = {c}, a² = {aSquared}, b² = {bSquared}, c² = {cSquared}",
+        "canvasAriaStatic": "Interactive canvas showing squares: a² = {aSquared}, b² = {bSquared}",
+        "canvasAriaAnimating": "Animation in progress showing pebble rearrangement: a² = {aSquared}, b² = {bSquared}, c² = {cSquared}",
+        "triple345Label": "3-4-5 Triple",
+        "triple345Aria": "Select 3-4-5 triple",
+        "triple6810Label": "6-8-10 Triple",
+        "triple6810Aria": "Select 6-8-10 triple",
+        "triple51213Label": "5-12-13 Triple",
+        "triple51213Aria": "Select 5-12-13 triple",
+        "animateAnnouncement": "Starting pebble animation. Pebbles are rearranging from squares a square and b square into square c square.",
+        "resetAnnouncement": "Pebble proof reset. Pebbles returned to their original positions in squares a square and b square."
+    },
+    "waterProof": {
+        "pourA": "Pour A",
+        "pourB": "Pour B",
+        "reset": "Reset",
+        "aSliderLabel": "Slider for side a",
+        "bSliderLabel": "Slider for side b",
+        "visualizationInitial": "Interactive water pouring visualization: a² = {aSquared}, b² = {bSquared}, c² = {cSquared}",
+        "visualizationPouringB": "Pouring water from square B (b square = {bSquared}) into square C",
+        "visualizationPouringA": "Pouring water from square A (a square = {aSquared}) into square C",
+        "visualizationCompleted": "Water pouring completed: c square = {cSquared}",
+        "pourAAnnouncement": "Pouring water from square A into square C. a square = {aSquared}",
+        "pourBAnnouncement": "Pouring water from square B into square C. b square = {bSquared}",
+        "resetAnnouncement": "Water proof reset. All squares returned to initial state."
+    },
+    "dissectionProof": {
+        "rearrange": "Rearrange",
+        "aSliderLabel": "Slider for side a",
+        "bSliderLabel": "Slider for side b",
+        "firstPositionAria": "First position: Geometric dissection showing four identical right triangles arranged around a central tilted square representing c squared, all within a larger square with sides a and b, illustrating the Pythagorean theorem.",
+        "secondPositionAria": "Second position: Geometric dissection in a square with two pairs of right triangles placed in opposite corners, leaving a red square labeled a squared and a blue square labeled b squared, illustrating that a squared + b squared = c squared.",
+        "separatedPositionAria": "Separated position: Diagram illustrating the Pythagorean theorem: a red square labeled 'Area = a squared' plus a blue square labeled 'Area = b squared' equals a green square labeled 'Area = c squared'.",
+        "areaCSquared": "Area = c²",
+        "areaASquared": "Area = a²",
+        "areaBSquared": "Area = b²",
+        "rearrangeAnnouncement": "Rearranging pieces. The four triangles are now forming two separate squares: a square and b square."
+    },
+    "titleScreen": {
+        "playButton": "Play",
+        "enterSchool": "Enter the School",
+        "title": "Pythagoras Quest: The Apprentice of Croton",
+        "subtitle": "As a new apprentice, you'll discover the mathematical secrets that revolutionized our understanding of numbers, music, and geometry. Master the famous Pythagorean Theorem through hands-on experiments and become one of the Mathematikoi—the keepers of mathematical wisdom.",
+        "scrollAnimationAlt": "scroll animation"
+    },
+    "narratorScene": {
+        "dialogues": [
+            "The year is 520 BCE. In the bustling Greek colony of Croton, Italy, a school unlike any other has taken root, founded by the legendary thinker and lover of wisdom, Pythagoras. You are a new apprentice seeking knowledge, and to join the inner circle of Mathematikoi, you must first pass the initiations—your guide is waiting."
+        ]
+    },
+    "mainCharacterDialogue": {
+        "intro": {
+            "myia": {
+                "name": "Myia",
+                "dialogues": [
+                    "Welcome, Apprentice. I’m Myia, daughter of Pythagoras. My father taught that numbers are the hidden language of the world—everything from the seasons to the stars follows patterns that numbers reveal. By understanding these patterns, we understand the universe itself.",
+                    "Before us stands the Wisdom Hub. It opens only when you decide which knowledge to seek first. Will you unlock the door with the harmony of music or with the hidden patterns of numbers?"
+                ]
+            }
+        }
+    },
+    "interactiveScene": {
+        "ladderProblem": {
+            "title": "Ladder Challenge",
+            "myia": {
+                "name": "Myia",
+                "dialogues": [
+                    "Welcome, apprentice! To find the perfect ladder length, we must first understand the shape we're dealing with. The wall, the ground, and the ladder form a right-angled triangle!",
+                    "Excellent. Now that we know the hypotenuse (which we call 'c'), we can use the Pythagorean Theorem. Which of these is the correct formula?",
+                    "Let's put the formula to work. We'll start with side 'a', the height of the wall. What is its value squared?",
+                    "Good. Now for side 'b', the width of the moat. Let's find its square.",
+                    "We have a² and b². Now, we must add them together to find the value of c².",
+                    "One final step! We know c², but we need 'c'—the actual ladder length. Find the square root.",
+                    "Brilliant! You've mastered the theorem. By breaking down the problem, you have solved the challenge. Well done!"
+                ]
+            }
+        },
+            "finalChallenge": {
+            "title": "Pyramid Challenge",
+            "myia": {
+                "name": "Myia",
+                "dialogues": [
+                    "How can you use the Pythagorean Theorem to find the height of this Great Pyramid? Using only a measurement rope and your reason, you can uncover this hidden truth...First, we should measure what is plain to see: The length of one of the pyramid's base edges.",
+                    "To find the height, we need to find a right triangle with two known sides. The base of the pyramid is not the base of the triangle— Yet, the hidden triangle we seek starts from the midpoint of this edge.",
+                    "Now, see the first secret. Because the base of a pyramid is a square, half of the base is equal to the distance from the pyramid's true center to the midpoint of the base. This line will be the base of our hidden triangle!",
+                    "Return to the midpoint on the face. Now measure the second line that is knowable: the distance from the midpoint of the base up to the apex.",
+                    "The triangle is now revealed. You have leg 'a' (205.5) and hypotenuse 'c' (342.5). The final, unmeasurable side is the one we seek: the true vertical height, leg 'b'.",
+                    "You now have the formula: b² = c² - a². To find the height 'b' itself, what must you do next?",
+                    "Your formula is b² = c² - a². You know the slant 'c' is 342.5 and the half-base 'a' is 205.5. 342.5² - 205.5² is equal to 75,076.",
+                    "You have found b² = 75,076. Now, release the true height from its squared form.",
+                    "Behold the dimensions: Half-base 205.5, Height 274, Slant 342.5. Divide all by 68.5 and see the harmony.",
+                    "You have used measurement, rationality and the Pythagorean Theorem to discover the hidden ratio of the Great Pyramid of Khafre, built 2000 years before our time! Congratulations, you are now a Pythagorean!"
+                ],
+                "events": {
+                    "0": "final_challenge_started",
+                    "1": "final_challenge_step_1_completed",
+                    "2": "final_challenge_step_2_completed",
+                    "3": "final_challenge_step_3_completed",
+                    "4": "final_challenge_step_4_completed",
+                    "5": "final_challenge_step_5_completed",
+                    "6": "final_challenge_step_6_completed",
+                    "7": "final_challenge_step_7_completed",
+                    "8": "final_challenge_step_8_completed"
+                }
+            }
+        },
+        "monochord1": {
+            "title": "Virtual Monochord",
+            "myia": {
+                "name": "Myia",
+                "dialogues": [
+                    "This is a monochord. See these two strings? Click the blue string on the left to hear its tone.",
+                    "Now click the yellow string on the right. It is exactly half the length—a ratio of 1:2.",
+                    "This ratio is called an octave. The same note, but higher. Press play to hear both the notes at the same time.",
+                    "Interesting, that the ratio of the two strings changes the feeling of the sound. Not all of the sounds are so nice, are they? Try the ratio of 2:3. That’s another nice combination.",
+                    "You've learned well, Apprentice! Now for your final test: I will play a mystery harmony. Listen carefully, then select which ratio creates this sound.",
+                    "Excellent ear! You've proven you understand the mathematics of harmony!"
+                ],
+                "events": {
+                    "0": "monochord1_fundamental_pluck",
+                    "1": "monochord1_divided_pluck",
+                    "2": "monochord1_play_together",
+                    "3": "monochord1_try_3to2_ratio",
+                    "4": "monochord1_challenge_completed",
+                    "5": "monochord1_challenge_completed"
+                }
+            }
+        },
+        "monochord2": {
+            "title": "Even and Odd & Figurate Numbers",
+            "myia": {
+                "name": "Myia",
+                "dialogues": [
+                    "Let’s start with even and odd numbers. All even numbers can form a perfect rectangle in two rows. Odd numbers always have one left over.",
+                    "But, some numbers are special—they can form perfect squares. Nine, for example, makes a square with 3 pebbles on each side. But 10 can’t. Try it yourself! You can add the rows to make the square.",
+                    "Great! That's why three times three is called \"three squared.\"",
+                    "Now I will teach you the most sacred shape of my father. What is 1+2+3+4?",
+                    "Correct! Now we can place ten pebbles to build the shape of the Tetractys. Start with one pebble at the top, then two below it, three next, and four on the next row. You can add the rows to make the triangle.",
+                    "The rows—one, two, three, four—add up to ten. It represents the building blocks of our universe: the point, the line, the plane, and the solid. ",
+                    "This shows that math itself is harmonious—and that the universe is built from numbers. Now let’s put what we have learnt into action. Take the quiz to move forward."
+                ],
+                "events": {
+                    "1":"monochord2_nine_square_completed",
+                    "4":"monochord2_triangle_pattern_completed",
+                    "6":"monochord2_challenge_completed"
+                },
+                "questions": {
+                    "3": {
+                        "type": "numeric",
+                        "correctAnswer": 10,
+                        "placeholder": "Enter the sum"
+                    }
+                }
+            }
+        },
+        "helpAria": "Help",
+        "infoAria": "Info"
+    },
+    "endingScene": {
+        "dialogues": [
+            "Congratulations, Apprentice! You have successfully completed your initiation into the Pythagorean mysteries. Through the music of ratios and the geometry of shapes, you have begun to understand how numbers govern the universe. Remember: 'All is number' - Pythagoras"
+        ],
+        "title": "Congratulations!",
+        "subtitle": "You have mastered the secrets of Pythagoras!",
+        "achievements": [
+            "You successfully completed the Pythagoras Quest: The Apprentice of Croton Quest.",
+            "You discovered the harmony in musical ratios",
+            "You explored number shapes with ancient pebbles",
+            "You proved the Pythagorean Theorem",
+            "You solved real-world problems using mathematics",
+            "You joined the ranks of the Mathematikoi"
+        ],
+        "footer": "You now carry forward the ancient wisdom that mathematics is the hidden language of the universe.",
+        "playAgain": "Play Again"
+    },
+    "navigation": {
+        "back": "Back",
+        "next": "Next",
+        "submit": "Submit",
+        "endQuest": "End Quest"
+    },
+    "mapScene": {
+        "labels": {
+            "ladderChallenge": "Ladder Challenge",
+            "finalChallenge": "Pyramid Challenge",
+            "navigation": "Map navigation",
+            "challenges": "Challenges",
+            "proofs": "Proofs"
+        },
+        "doorAlt": "Door"
+    },
+    "map": {
+        "dialogue": {
+            "initial": {
+                "message1": "Now, let's see the secret my father discovered—how triangles, like the 3‑4‑5 one used by Croton's builders, always form perfect right angles because of a universal law hidden in the squares of their sides.",
+                "message2": "To move forward, you must first complete a proof. My father showed that truth can be reached in many ways—choose the path of proof you wish to follow."
+            },
+            "proofCompleted": "Well done, Apprentice. You've completed a proof. Now test your understanding—choose a challenge to solve."
+        }
+    },
+    "interactiveCelebration": {
+        "title": "Interactive Celebration Screen",
+        "badgeAchievement": "Badge Achievement for",
+        "badgeEarned": "Badge earned",
+        "proof": "",
+        "challenge": "challenge",
+        "interactive": "interactive",
+        "monochord1": {
+            "title": "What You Learned - The Harmony Master",
+            "name": "Virtual Monochord",
+            "points": [
+                "You discovered how simple ratios create beautiful musical intervals",
+                "You experienced the octave (2:1), perfect fifth (3:2), and perfect fourth (4:3)",
+                "You learned that mathematics shapes the music we hear",
+                "You proved Pythagoras's insight: numbers reveal universal harmony"
+            ]
+        },
+        "monochord2": {
+            "title": "What You Learned - The Shapes of Numbers",
+            "name": "Even/Odd Figurate Numbers",
+            "points": [
+                "You discovered how even numbers form perfect rectangles",
+                "You found that odd numbers always leave one pebble remaining",
+                "You explored triangular numbers like the sacred Tetractys (1+2+3+4=10)",
+                "You learned how square numbers create perfect geometric shapes"
+            ]
+        },
+        "pebble": {
+            "title": "What You Learned - The Pebble Master",
+            "name": "Pebble Proof",
+            "points": [
+                "You visualized how a² + b² = c² using actual pebbles",
+                "You saw the 3-4-5 triangle's perfect mathematical harmony",
+                "You discovered why Pythagorean triples work so beautifully",
+                "You mastered the visual proof that convinced ancient scholars"
+            ]
+        },
+        "pouring": {
+            "title": "What You Learned - The Water Sage",
+            "name": "Pouring Proof",
+            "points": [
+                "You proved the theorem works for ALL numbers, not just whole ones",
+                "You used water to demonstrate perfect area relationships",
+                "You saw how a² + b² = c² applies to any right triangle",
+                "You bridged ancient concrete proofs with modern abstract thinking"
+            ]
+        },
+        "dissection": {
+            "title": "What You Learned - The Geometric Genius",
+            "name": "Dissection Proof",
+            "points": [
+                "You proved a² + b² = c² using pure geometric reasoning",
+                "You rearranged identical triangles to reveal mathematical truth",
+                "You used no numbers or calculations—only visual logic",
+                "You mastered the proof that convinced ancient Greek scholars"
+            ]
+        },
+        "ladder": {
+            "title": "What You Learned - The Problem Solver",
+            "name": "Ladder Challenge",
+            "points": [
+                "You applied the Pythagorean Theorem to solve practical problems",
+                "You found the missing side of the triangle",
+                "You discovered different Pythagorean triplets",
+                "You learned how firefighters and builders use this same math"
+            ]
+        },
+        "final": {
+            "title": "What You Learned - The Pyramid Scholar",
+            "name": "Pyramid Challenge",
+            "points": [
+            "You found the true, hidden height of the Great Pyramid.",
+            "You calculated the height (b) is 274 cubits, using the slant (c = 342.5) and half-base (a = 205.5).",
+            "You applied the Pythagorean theorem: a² + b² = c²",
+            "You mastered solving for an unknown leg of a right triangle."
+            ]
+        },
+        "badgeAlt": "Achievement Badge"
+    },
+    "libraryScene": {
+        "monochord1Complete": "Now that you have explored the Virtual Monochord, new doors have opened to deepen your understanding of mathematical harmony!",
+        "monochord2Complete": "Now that you have explored the Figurate Numbers, new paths have opened to reveal the geometric beauty of mathematics!",
+        "libraryAlt": "Library",
+        "monochordAlt": "Monochord",
+        "figurateNumbersAlt": "Figurate Numbers",
+        "libraryDoorAlt": "Library Door",
+        "lockAlt": "Lock"
+    },
+    "library": {
+        "dialogue": {
+            "welcome": "Welcome to the Library of Wisdom! Choose your path to explore the mysteries of mathematics.",
+            "monochord1Completed": "Wonderful! Now that you have explored the Virtual Monochord, the doors to deeper mathematical understanding are open to you!",
+            "monochord2Completed": "Excellent! Now that you have discovered the beauty of Figurate Numbers, new paths of mathematical exploration await!",
+            "bothCompleted": "Magnificent! Having explored both the harmonic and geometric realms, you are ready for the greater challenges that lie ahead!"
+        }
+    },
+    "interactive": {
+        "help": "Help",
+        "monochord1": {
+            "help": {
+                "title": "How to use this tool?",
+                "content": "<ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Click any proportion button to hear that musical interval</li><li>Click play/pause to continuously play both tones together</li><li>Click the left string to hear the base frequency alone</li><li>Drag the golden triangle to manually adjust string length</li><li>Change base frequency in the number input field</li></ul><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Tips:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li><span style=\"font-family:'Besley', serif; font-weight:bold;\">2:1</span> for octave, <span style=\"font-family:'Besley', serif; font-weight:bold;\">3:2</span> for fifth, <span style=\"font-family:'Besley', serif; font-weight:bold;\">4:3</span> for fourth</li><li>Simple ratios sound more harmonious than complex ones</li><li>Watch how frequency values update as you adjust settings</li></ul>"
+            },
+            "info": {
+                "title": "About the Monochord",
+                "content": "<p>Pythagoras used this simple instrument to discover that music follows mathematical laws.</p><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">How it works:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>One string stretched over a resonating box</li><li>Moving the bridge divides the string into different lengths</li><li>Shorter lengths = higher pitches</li><li>The ratio determines the musical interval</li></ul><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Key discoveries:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li><span style=\"font-family:'Besley', serif; font-weight:bold;\">2:1</span> ratio = octave (same note, higher)</li><li><span style=\"font-family:'Besley', serif; font-weight:bold;\">3:2</span> ratio = perfect fifth (very harmonious)</li><li><span style=\"font-family:'Besley', serif; font-weight:bold;\">4:3</span> ratio = perfect fourth (also harmonious)</li><li>Simple ratios with small numbers sound better</li></ul><p style=\"margin-top:7px;\">This became the foundation of music theory and showed that mathematics creates beauty.</p>"
+            }
+        },
+        "monochord2": {
+            "help": {
+                "title": "How to use this tool?",
+                "content": "<ul style=\"list-style-type: disc; margin-left: 20px;\"><li>Watch how the pebbles arrange into patterns.</li><li>In the first mode, pebbles line up in two rows.<ul style=\"list-style-type: circle; margin-left: 20px;\"><li>Even numbers make perfect rectangles with no gaps.</li><li>Odd numbers always leave one pebble unpaired.</li></ul></li><li>In the next modes, try building different shapes:<ul style=\"list-style-type: circle; margin-left: 20px;\"><li>Squares and Triangles: Click on the button \"Add row\" to add a new row.</li></ul></li></ul><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Tips:</h3><ul style=\"list-style-type: disc; margin-left: 20px;\"><li>Try numbers like 9, 16, 25 to see perfect squares</li><li>Try numbers like 3, 6, 10, 15 to see perfect triangles</li><li>Notice how some numbers work for both shapes</li></ul>"
+            },
+            "info": {
+                "title": "About pebble mathematics",
+                "content": "<p style=\"margin-top:5px;\">Ancient Greeks used pebbles to understand number patterns before written mathematics existed.</p><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Even and odd numbers:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Even numbers split into two equal groups</li><li>Odd numbers always have one left over</li><li>This creates symmetric vs asymmetric arrangements</li></ul><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Figurate numbers:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Triangular numbers: <span style=\"font-family:'Besley', serif; font-weight:bold;\">1</span>, <span style=\"font-family:'Besley', serif; font-weight:bold;\">3</span>, <span style=\"font-family:'Besley', serif; font-weight:bold;\">6</span>, <span style=\"font-family:'Besley', serif; font-weight:bold;\">10</span>, <span style=\"font-family:'Besley', serif; font-weight:bold;\">15</span>, <span style=\"font-family:'Besley', serif; font-weight:bold;\">21</span>...</li><li>Square numbers: <span style=\"font-family:'Besley', serif; font-weight:bold;\">1</span>, <span style=\"font-family:'Besley', serif; font-weight:bold;\">4</span>, <span style=\"font-family:'Besley', serif; font-weight:bold;\">9</span>, <span style=\"font-family:'Besley', serif; font-weight:bold;\">16</span>, <span style=\"font-family:'Besley', serif; font-weight:bold;\">25</span>, <span style=\"font-family:'Besley', serif; font-weight:bold;\">36</span>...</li><li>These numbers form perfect geometric shapes with pebbles</li></ul><p style=\"margin-top:5px;\">This hands-on method helped ancient mathematicians understand number properties we still use today.</p>"
+            }
+        },
+        "pebble": {
+            "help": {
+                "title": "How to use this tool?",
+                "content": "<ul style=\"list-style-type: disc; margin-left: 20px;\"><li>Select a Pythagorean triple (<span style=\"font-family:'Besley', serif; font-weight:bold;\">3-4-5</span>, <span style=\"font-family:'Besley', serif; font-weight:bold;\">6-8-10</span>, or <span style=\"font-family:'Besley', serif; font-weight:bold;\">5-12-13</span>) from the buttons</li><li>Click \"Calculate & Animate\" to see the pebbles move into position</li><li>Watch as pebbles from the two smaller squares rearrange into the largest square</li><li>Try different triples to see the theorem work with various numbers</li></ul><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">What you're seeing:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Red square shows <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#E0002B;\">a</i><sup>2</sup></span> pebbles</li><li>Blue square shows <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#0061FC;\">b</i><sup>2</sup></span> pebbles</li><li>Green square shows <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#008217;\">c</i><sup>2</sup></span> pebbles</li><li>Animation proves that <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#E0002B;\">a</i><sup>2</sup></span> <span style=\"color:black;\">+</span> <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#0061FC;\">b</i><sup>2</sup></span> <span style=\"color:black;\">=</span> <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#008217;\">c</i><sup>2</sup></span></li></ul>"
+            },
+            "info": {
+                "title": "About the pebble proof",
+                "content": "<p style=\"margin-top:5px;\">Ancient Greeks used pebbles to understand math before modern algebra existed.</p><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">The Pythagorean Theorem:</h3><ul style=\"list-style-type: disc; margin-left: 20px;\"><li>In any right triangle: <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#E0002B;\">a</i><sup>2</sup></span> <span style=\"color:black;\">+</span> <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#0061FC;\">b</i><sup>2</sup></span> <span style=\"color:black;\">=</span> <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#008217;\">c</i><sup>2</sup></span></li><li><span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#E0002B;\">a</i></span> and <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#0061FC;\">b</i></span> are the legs, <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#008217;\">c</i></span> is the hypotenuse</li></ul><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Why it works:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Each pebble represents one unit</li><li>Squares show squared numbers visually</li><li>Moving pebbles proves the two smaller squares equal the largest</li><li>Works for any Pythagorean triple like <span style=\"font-family:'Besley', serif; font-weight:bold;\">3-4-5</span> or <span style=\"font-family:'Besley', serif; font-weight:bold;\">6-8-10</span></li></ul>"
+            }
+        },
+        "pouring": {
+            "help": {
+                "title": "How to use this tool?",
+                "content": "<ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Use sliders to adjust values of <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#E0002B;\">a</i></span> and <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#0061FC;\">b</i></span></li><li>Click \"Pour A\" to empty blue square into gray square</li><li>Click \"Pour B\" to empty red square into gray square</li><li>Mouse wheel to zoom, click and drag to pan</li><li>\"Reset\" to try again with different values</li></ul><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Tips:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Try different values to see the theorem always works</li><li>Notice the equation updates automatically</li><li>Water shows that <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#E0002B;\">a</i><sup>2</sup></span> <span style=\"color:black;\">+</span> <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#0061FC;\">b</i><sup>2</sup></span> <span style=\"color:black;\">=</span> <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#008217;\">c</i><sup>2</sup></span></li></ul>"
+            },
+            "info": {
+                "title": "About the pouring proof",
+                "content": "<p style=\"margin-top:5px;\">This visual proof uses water to show the Pythagorean Theorem through area.</p><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">How it works:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Each square's area equals the square of its side length</li><li>Water volume represents the numerical area</li><li>The two smaller squares' water perfectly fills the largest square</li><li>This proves <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#E0002B;\">a</i><sup>2</sup></span> <span style=\"color:black;\">+</span> <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#0061FC;\">b</i><sup>2</sup></span> <span style=\"color:black;\">=</span> <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#008217;\">c</i><sup>2</sup></span> for any right triangle</li></ul><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Why water works:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Unlike pebbles, water fills any shape and works for all numbers, not just whole numbers. This bridges concrete proofs with abstract math</li></ul>"
+            }
+        },
+        "dissection": {
+            "help": {
+                "title": "How to use this tool?",
+                "content": "<ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Use sliders to adjust the legs <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#E0002B;\">a</i></span> and <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#0061FC;\">b</i></span> of the right triangle</li><li>Click \"Rearrange\" to move the four triangles between positions</li><li>Watch how the same four triangles fit around different squares</li><li>The first arrangement shows <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#008217;\">c</i><sup>2</sup></span> (tilted green square)</li><li>The second arrangement shows <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#E0002B;\">a</i><sup>2</sup></span> <span style=\"color:black;\">+</span> <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#0061FC;\">b</i><sup>2</sup></span> (blue and orange squares)</li></ul><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Tips:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Try different values to see this works for any right triangle</li><li>Notice the four triangles are identical in both arrangements</li><li>The total area stays the same only the shape changes</li></ul>"
+            },
+            "info": {
+                "title": "About the dissection proof",
+                "content": "<p style=\"margin-top:5px;\">This elegant proof shows the Pythagorean Theorem by rearranging identical pieces.</p><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">How it works:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Four identical right triangles are arranged around a square</li><li>In the first position, they surround the <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#008217;\">c</i><sup>2</sup></span> square (hypotenuse)</li><li>In the second position, they surround the <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#E0002B;\">a</i><sup>2</sup></span> and <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#0061FC;\">b</i><sup>2</sup></span> squares (legs)</li><li>The total area stays the same, proving <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#E0002B;\">a</i><sup>2</sup></span> <span style=\"color:black;\">+</span> <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#0061FC;\">b</i><sup>2</sup></span> <span style=\"color:black;\">=</span> <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#008217;\">c</i><sup>2</sup></span></li></ul><p style=\"margin-top:5px;\">This visual proof requires no numbers or calculations just pure geometric reasoning that convinced ancient mathematicians.</p>"
+            }
+        },
+        "ladder": {
+            "help": {
+                "title": "How to use this tool?",
+                "content": "<ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Answer each question by clicking one of the answer buttons</li><li>If you get an answer wrong, you can try again</li><li>Once you answer correctly, you'll automatically move to the next question</li><li>Complete all 6 questions to finish the quest</li></ul><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Tips:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Pay attention to the diagram showing the wall, moat, and ladder</li><li>Remember: squaring a number means multiplying it by itself</li></ul>"
+            },
+            "info": {
+                "title": "About the City Wall problem",
+                "content": "<p style=\"margin-top:5px;\">This medieval-themed quest teaches the Pythagorean theorem through a practical scenario: finding the ladder length needed to scale a castle wall across a moat.</p><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">The math:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Wall height = one leg (<span style='font-family:Besley, serif; font-weight:bold;'><i style='color:#FF5900;'>a</i></span>)</li><li>Moat width = other leg (<span style='font-family:Besley, serif; font-weight:bold;'><i style='color:#2eacff;'>b</i></span>)</li><li>Ladder length = hypotenuse (<span style='font-family:Besley, serif; font-weight:bold;'><i style='color:#8A7900;'>c</i></span>)</li><li>Apply the Pythagorean theorem to solve the problem</li><li>The interactive walks you through each step: squaring the sides, adding them, and finding the square root</li></ul><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Real-world use:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Firefighters use this to position ladders safely</li><li>Construction workers apply it for scaffolding setup</li><li>Rescue teams rely on it for access planning</li><li>Anytime you need to reach a height while keeping a safe base distance, the Pythagorean theorem provides the answer</li></ul>"
+            }
+        },
+        "final": {
+            "help": {
+                "title": "How to use this tool?",
+                "content": "<ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Answer each question by clicking one of the buttons.</li><li>If you get an answer wrong, you can try again.</li><li>Once correct, you'll automatically move to the next step.</li><li>Complete all steps to finish the initiation.</li></ul><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Tips:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Pay close attention to the 3D pyramid model.</li><li>Remember: squaring a number means multiplying it by itself.</li></ul><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Definitions to know:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>A <strong>cubit</strong> is an ancient unit of measurement roughly equal to the length of a forearm.</li><li>An <strong>apex</strong> is the highest point or vertex of a pyramid.</li></ul>"
+            },
+            "info": {
+                "title": "About the Pyramid Problem",
+                "content": "<p style=\"margin-top:5px;\">This ancient-themed quest teaches the Pythagorean theorem through a practical scenario: finding the hidden, true height of the Great Pyramid using only measurements taken from the outside.</p><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">The Math:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Half the base width = one leg (<span style='font-family:Besley, serif; font-weight:bold;'><i style='color:#FF50DF;'>a</i></span>)</li><li>The true vertical height = other leg (<span style='font-family:Besley, serif; font-weight:bold;'><i style='color:#8A7900;'>b</i></span>)</li><li>The measurable slant height = hypotenuse (<span style='font-family:Besley, serif; font-weight:bold;'><i style='color:#229799;'>c</i></span>)</li><li>Using the theorem: <span style='font-family:Besley, serif; font-weight:bold;'><i style='color:#FF50DF;'>a</i><sup>2</sup></span> <span style='color:black;'>+</span> <span style='font-family:Besley, serif; font-weight:bold;'><i style='color:#8A7900;'>b</i><sup>2</sup></span> <span style='color:black;'>=</span> <span style='font-family:Besley, serif; font-weight:bold;'><i style='color:#229799;'>c</i><sup>2</sup></span></li><li>This interactive walks you through each step: isolating the hidden triangle, rearranging the formula, squaring the sides, and finding the final square root to reveal the height.</li></ul><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Real-world Use:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>This principle is used by surveyors, architects, and astronomers to measure everything from mountains to the cosmos.</li></ul>"
+            }
+        }
+
+    },
+    "audio": {
+        "controls": {
+            "settings": "Audio Settings",
+            "close": "Close settings",
+            "mute": "Mute",
+            "unmute": "Unmute",
+            "bgmLabel": "Background Music:",
+            "bgmAria": "Background music volume",
+            "dialogLabel": "Character Voice:",
+            "dialogAria": "Character voice volume"
+        }
+    },
+    "progressBar": {
+        "label": "Quest Progress",
+        "noQuestsCompleted": "No quests completed yet."
+    }
+}

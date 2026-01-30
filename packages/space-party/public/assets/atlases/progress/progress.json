@@ -1,0 +1,163 @@
+﻿{"frames": {
+
+"Progress instance 10000":
+{
+	"frame": {"x":0,"y":0,"w":28,"h":28},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":19,"w":247,"h":67},
+	"sourceSize": {"w":247,"h":67}
+},
+"Progress instance 10001":
+{
+	"frame": {"x":28,"y":0,"w":27,"h":27},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":21,"y":19,"w":247,"h":67},
+	"sourceSize": {"w":247,"h":67}
+},
+"Progress instance 10002":
+{
+	"frame": {"x":55,"y":0,"w":66,"h":28},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":19,"w":247,"h":67},
+	"sourceSize": {"w":247,"h":67}
+},
+"Progress instance 10003":
+{
+	"frame": {"x":121,"y":0,"w":78,"h":34},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":30,"y":15,"w":247,"h":67},
+	"sourceSize": {"w":247,"h":67}
+},
+"Progress instance 10004":
+{
+	"frame": {"x":199,"y":0,"w":63,"h":34},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":60,"y":15,"w":247,"h":67},
+	"sourceSize": {"w":247,"h":67}
+},
+"Progress instance 10005":
+{
+	"frame": {"x":262,"y":0,"w":138,"h":34},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":15,"w":247,"h":67},
+	"sourceSize": {"w":247,"h":67}
+},
+"Progress instance 10006":
+{
+	"frame": {"x":400,"y":0,"w":80,"h":34},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":72,"y":15,"w":247,"h":67},
+	"sourceSize": {"w":247,"h":67}
+},
+"Progress instance 10007":
+{
+	"frame": {"x":0,"y":34,"w":87,"h":34},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":80,"y":15,"w":247,"h":67},
+	"sourceSize": {"w":247,"h":67}
+},
+"Progress instance 10008":
+{
+	"frame": {"x":87,"y":34,"w":86,"h":34},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":97,"y":15,"w":247,"h":67},
+	"sourceSize": {"w":247,"h":67}
+},
+"Progress instance 10009":
+{
+	"frame": {"x":173,"y":34,"w":88,"h":35},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":115,"y":15,"w":247,"h":67},
+	"sourceSize": {"w":247,"h":67}
+},
+"Progress instance 10010":
+{
+	"frame": {"x":261,"y":34,"w":92,"h":52},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":132,"y":7,"w":247,"h":67},
+	"sourceSize": {"w":247,"h":67}
+},
+"Progress instance 10011":
+{
+	"frame": {"x":0,"y":86,"w":163,"h":67},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":80,"y":0,"w":247,"h":67},
+	"sourceSize": {"w":247,"h":67}
+},
+"Progress instance 10012":
+{
+	"frame": {"x":163,"y":86,"w":166,"h":42},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":80,"y":12,"w":247,"h":67},
+	"sourceSize": {"w":247,"h":67}
+},
+"Progress instance 10013":
+{
+	"frame": {"x":329,"y":86,"w":61,"h":34},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":102,"y":15,"w":247,"h":67},
+	"sourceSize": {"w":247,"h":67}
+},
+"Progress instance 10014":
+{
+	"frame": {"x":390,"y":86,"w":66,"h":34},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":125,"y":15,"w":247,"h":67},
+	"sourceSize": {"w":247,"h":67}
+},
+"Progress instance 10015":
+{
+	"frame": {"x":0,"y":153,"w":72,"h":34},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":147,"y":15,"w":247,"h":67},
+	"sourceSize": {"w":247,"h":67}
+},
+"Progress instance 10016":
+{
+	"frame": {"x":72,"y":153,"w":78,"h":34},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":169,"y":15,"w":247,"h":67},
+	"sourceSize": {"w":247,"h":67}
+},
+"Progress instance 10017":
+{
+	"frame": {"x":150,"y":153,"w":55,"h":34},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":192,"y":15,"w":247,"h":67},
+	"sourceSize": {"w":247,"h":67}
+},
+"Progress instance 10018":
+{
+	"frame": {"x":205,"y":153,"w":0,"h":0},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":-36,"y":-579,"w":247,"h":67},
+	"sourceSize": {"w":247,"h":67}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "24.0.9.73",
+	"image": "UI_AnimationProgress.png",
+	"format": "RGBA8888",
+	"size": {"w":512,"h":256},
+	"scale": "1"
+}
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="preload" href="/assets/fonts/exo.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="/assets/fonts/exo-italic.ttf" as="font" type="font/ttf" crossorigin>
+    <title>Array Architects</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;   /* fallback */
+            min-height: 100dvh;  /* modern browsers override */
+            position: relative;
+            background-color: #000;
+        }
+
+        @font-face {
+            font-family: 'Exo';
+            src: url('/assets/fonts/exo.ttf') format('truetype-variations');
+            font-weight: 100 900;
+        }
+
+       @font-face {
+            font-family: 'Exo';
+            src: url('/assets/fonts/exo-italic.ttf') format('truetype');
+            font-weight: 700;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="game-container"></div>
+    <div id="aria-announcer" aria-live="assertive"
+        style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden;">
+    </div>
+    <script type="module" src="./main.ts"></script>
+</body>
+
+</html>

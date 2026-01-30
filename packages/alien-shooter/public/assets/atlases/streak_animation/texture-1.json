@@ -1,0 +1,159 @@
+{
+  "frames": {
+    "Star07.png": {
+      "frame": {
+        "x": 2,
+        "y": 2,
+        "w": 1030,
+        "h": 653
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 112,
+        "w": 1030,
+        "h": 653
+      },
+      "sourceSize": {
+        "w": 1276,
+        "h": 765
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Star12.png": {
+      "frame": {
+        "x": 1036,
+        "y": 2,
+        "w": 947,
+        "h": 649
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 174,
+        "y": 92,
+        "w": 947,
+        "h": 649
+      },
+      "sourceSize": {
+        "w": 1276,
+        "h": 765
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Star11.png": {
+      "frame": {
+        "x": 1036,
+        "y": 655,
+        "w": 872,
+        "h": 613
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 201,
+        "y": 128,
+        "w": 872,
+        "h": 613
+      },
+      "sourceSize": {
+        "w": 1276,
+        "h": 765
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Star06.png": {
+      "frame": {
+        "x": 2,
+        "y": 659,
+        "w": 1023,
+        "h": 639
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 120,
+        "w": 1023,
+        "h": 639
+      },
+      "sourceSize": {
+        "w": 1276,
+        "h": 765
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Star13.png": {
+      "frame": {
+        "x": 1029,
+        "y": 1272,
+        "w": 1015,
+        "h": 667
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 142,
+        "y": 65,
+        "w": 1015,
+        "h": 667
+      },
+      "sourceSize": {
+        "w": 1276,
+        "h": 765
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Star08.png": {
+      "frame": {
+        "x": 2,
+        "y": 1302,
+        "w": 783,
+        "h": 630
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 240,
+        "y": 126,
+        "w": 783,
+        "h": 630
+      },
+      "sourceSize": {
+        "w": 1276,
+        "h": 765
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "texture-1.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 2046,
+      "h": 1941
+    },
+    "scale": 1
+  }
+}

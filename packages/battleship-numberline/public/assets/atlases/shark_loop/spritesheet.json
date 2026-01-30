@@ -1,0 +1,715 @@
+{
+    "frames": {
+        "Shark new_00050.png": {
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 120,
+                "h": 96
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 96
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00051.png": {
+            "frame": {
+                "x": 120,
+                "y": 0,
+                "w": 120,
+                "h": 96
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 96
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00072.png": {
+            "frame": {
+                "x": 240,
+                "y": 0,
+                "w": 120,
+                "h": 96
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 96
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00073.png": {
+            "frame": {
+                "x": 360,
+                "y": 0,
+                "w": 120,
+                "h": 96
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 96
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00074.png": {
+            "frame": {
+                "x": 480,
+                "y": 0,
+                "w": 120,
+                "h": 96
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 96
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00075.png": {
+            "frame": {
+                "x": 600,
+                "y": 0,
+                "w": 120,
+                "h": 96
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 96
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00076.png": {
+            "frame": {
+                "x": 720,
+                "y": 0,
+                "w": 120,
+                "h": 96
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 96
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00077.png": {
+            "frame": {
+                "x": 840,
+                "y": 0,
+                "w": 120,
+                "h": 96
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 96
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00078.png": {
+            "frame": {
+                "x": 960,
+                "y": 0,
+                "w": 120,
+                "h": 96
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 96
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00079.png": {
+            "frame": {
+                "x": 1080,
+                "y": 0,
+                "w": 120,
+                "h": 96
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 96
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00080.png": {
+            "frame": {
+                "x": 1200,
+                "y": 0,
+                "w": 120,
+                "h": 96
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 96
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00081.png": {
+            "frame": {
+                "x": 1320,
+                "y": 0,
+                "w": 120,
+                "h": 96
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 96
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00082.png": {
+            "frame": {
+                "x": 1440,
+                "y": 0,
+                "w": 120,
+                "h": 96
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 96
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00083.png": {
+            "frame": {
+                "x": 1560,
+                "y": 0,
+                "w": 120,
+                "h": 96
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 96
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00084.png": {
+            "frame": {
+                "x": 1680,
+                "y": 0,
+                "w": 120,
+                "h": 96
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 96
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00052.png": {
+            "frame": {
+                "x": 1800,
+                "y": 0,
+                "w": 120,
+                "h": 95
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 95
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00053.png": {
+            "frame": {
+                "x": 1920,
+                "y": 0,
+                "w": 120,
+                "h": 95
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 95
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00054.png": {
+            "frame": {
+                "x": 1800,
+                "y": 95,
+                "w": 120,
+                "h": 95
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 95
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00055.png": {
+            "frame": {
+                "x": 1920,
+                "y": 95,
+                "w": 120,
+                "h": 95
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 95
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00067.png": {
+            "frame": {
+                "x": 0,
+                "y": 96,
+                "w": 120,
+                "h": 95
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 95
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00068.png": {
+            "frame": {
+                "x": 120,
+                "y": 96,
+                "w": 120,
+                "h": 95
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 95
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00069.png": {
+            "frame": {
+                "x": 240,
+                "y": 96,
+                "w": 120,
+                "h": 95
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 95
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00070.png": {
+            "frame": {
+                "x": 360,
+                "y": 96,
+                "w": 120,
+                "h": 95
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 95
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00071.png": {
+            "frame": {
+                "x": 480,
+                "y": 96,
+                "w": 120,
+                "h": 95
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 95
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00056.png": {
+            "frame": {
+                "x": 600,
+                "y": 96,
+                "w": 120,
+                "h": 94
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 94
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00057.png": {
+            "frame": {
+                "x": 720,
+                "y": 96,
+                "w": 120,
+                "h": 94
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 94
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00058.png": {
+            "frame": {
+                "x": 840,
+                "y": 96,
+                "w": 120,
+                "h": 94
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 94
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00059.png": {
+            "frame": {
+                "x": 960,
+                "y": 96,
+                "w": 120,
+                "h": 94
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 94
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00060.png": {
+            "frame": {
+                "x": 1080,
+                "y": 96,
+                "w": 120,
+                "h": 94
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 94
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00061.png": {
+            "frame": {
+                "x": 1200,
+                "y": 96,
+                "w": 120,
+                "h": 94
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 94
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00062.png": {
+            "frame": {
+                "x": 1320,
+                "y": 96,
+                "w": 120,
+                "h": 94
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 94
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00063.png": {
+            "frame": {
+                "x": 1440,
+                "y": 96,
+                "w": 120,
+                "h": 94
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 94
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00064.png": {
+            "frame": {
+                "x": 1560,
+                "y": 96,
+                "w": 120,
+                "h": 94
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 94
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00065.png": {
+            "frame": {
+                "x": 1680,
+                "y": 96,
+                "w": 120,
+                "h": 94
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 94
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00066.png": {
+            "frame": {
+                "x": 600,
+                "y": 190,
+                "w": 120,
+                "h": 94
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 94
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        }
+    },
+    "meta": {
+        "app": "http://free-tex-packer.com",
+        "version": "0.6.7",
+        "image": "spritesheet.png",
+        "format": "RGBA8888",
+        "size": {
+            "w": 2040,
+            "h": 284
+        },
+        "scale": 1
+    }
+}

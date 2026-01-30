@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="/assets/fonts/exo.ttf" as="font" type="font/ttf" crossorigin>
+    <title>K8 Games Template</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #000;
+        }
+
+        @font-face {
+            font-family: 'Exo';
+            src: url('/assets/fonts/exo.ttf') format('truetype-variations');
+            font-weight: 100 900;
+        }
+
+        canvas {
+            max-width: 100%;
+            max-height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="game-container"></div>
+    <script type="module" src="./main.ts"></script>
+</body>
+
+</html>

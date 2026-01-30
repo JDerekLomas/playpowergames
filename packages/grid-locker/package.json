@@ -1,0 +1,24 @@
+{
+    "name": "@k8-games/grid-locker",
+    "private": true,
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "lint": "eslint src --ext .ts",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@k8-games/sdk": "workspace:*",
+        "phaser": "^3.70.0"
+    },
+    "devDependencies": {
+        "typescript": "^5.3.3",
+        "vite": "^6.4.1",
+        "@types/node": "^20.11.19",
+        "eslint": "^9.35.0",
+        "@typescript-eslint/eslint-plugin": "^8.43.0",
+        "@typescript-eslint/parser": "^8.43.0"
+    }
+}

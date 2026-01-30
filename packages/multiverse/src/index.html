@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="preload" href="/assets/fonts/exo.ttf" as="font" type="font/ttf" crossorigin>
+    <title>Multiverse</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;   /* fallback */
+            min-height: 100dvh;  /* modern browsers override */
+            position: relative;
+            background-color: #000;
+        }
+
+        @font-face {
+            font-family: 'Exo';
+            src: url('/assets/fonts/exo.ttf') format('truetype-variations');
+            font-weight: 100 900;
+        }
+
+        /* body::before {
+            content: '';
+            position: fixed;
+            top: -32px;
+            left: -32px;
+            width: calc(100% + 64px);
+            height: calc(100% + 64px);
+            background-image: var(--scene-bg-1, url('assets/images/splash_screen/splashscreen_bg.png'));
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: blur(8px);
+            z-index: -1;
+            opacity: var(--scene-bg-1-opacity, 1);
+        }
+
+        body::after {
+            content: '';
+            position: fixed;
+            top: -32px;
+            left: -32px;
+            width: calc(100% + 64px);
+            height: calc(100% + 64px);
+            background-image: var(--scene-bg-2, url('assets/images/splash_screen/splashscreen_bg.png'));
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: blur(8px);
+            z-index: -1;
+            opacity: var(--scene-bg-2-opacity, 0);
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="multiverse-container"></div>
+    <div id="aria-announcer" aria-live="assertive"
+        style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden;">
+    </div>
+    <script type="module" src="./main.ts"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+Operand 1,Operand 2,Discount,Answer,Item
+27,30,10% OFF,=,Headphones
+60,90,50% OFF,>,Quadcopter Drone
+40,50,10% OFF,<,Skateboard
+15,30,50% OFF,=,Comic Books
+25,30,20% OFF,>,Headphones
+32,28,50% UP,<,Skateboard
+30,22,50% UP,<,Hoodie
+25,12,100% UP,>,Headphones
+50,25,100% UP,=,Quadcopter Drone
+100,150,200% UP,<,Sneakers
+45,60,25% OFF,=,Strawberry Smoothie
+23,20,10% UP,>,Quadcopter Drone
+50,10,400% UP,=,Headphones
+29,60,50% OFF,<,Sneakers
+35,10,240% UP,>,Quadcopter Drone
+14,30,50% OFF,<,Strawberry Smoothie
+16,10,60% UP,=,Hoodie
+27,40,30% OFF,<,Headphones
+32,40,20% OFF,=,Archer Fox Figurine
+49,60,20% OFF,>,Comic Books
+35,60,40% OFF,<,Sneakers
+19,10,90% UP,=,Skateboard
+16,30,50% OFF,>,Game Controller
+22,20,15% UP,<,Hoodie
+200,50,200% UP,>,Rubik’s Cube
+36,40,10% OFF,=,Comic Books
+200,100,200% UP,<,Archer Fox Figurine
+18,10,100% UP,<,Game Controller
+32,60,50% OFF,>,Headphones
+15,20,10% UP,<,Hoodie

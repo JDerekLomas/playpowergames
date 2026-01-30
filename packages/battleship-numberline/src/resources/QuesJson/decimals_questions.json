@@ -1,0 +1,304 @@
+{
+    "levels": [
+        {
+            "level": 0,
+            "questions": [
+                {
+                    "startPoint": 0,
+                    "endPoint": 1,
+                    "questionPrompt": "0.1",
+                    "shipLocation": 0.1,
+                    "markersList": ["0.1", "0.2", "0.3", "0.4", "0.5", "0.6", "0.7", "0.8", "0.9"]
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 1,
+                    "questionPrompt": "0.3",
+                    "shipLocation": 0.3,
+                    "markersList": ["0.1", "0.2", "0.3", "0.4", "0.5", "0.6", "0.7", "0.8", "0.9"]
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 1,
+                    "questionPrompt": "0.6",
+                    "shipLocation": 0.6,
+                    "markersList": []
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 1,
+                    "questionPrompt": "0.9",
+                    "shipLocation": 0.9,
+                    "markersList": ["0.1", "0.2", "0.3", "0.4", "0.5", "0.6", "0.7", "0.8", "0.9"]
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 1,
+                    "questionPrompt": "0.35",
+                    "shipLocation": 0.35,
+                    "markersList": []
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 1,
+                    "questionPrompt": "0.75",
+                    "shipLocation": 0.75,
+                    "markersList": []
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 1,
+                    "questionPrompt": "0.55",
+                    "shipLocation": 0.55,
+                    "markersList": []
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 1,
+                    "questionPrompt": "0.45",
+                    "shipLocation": 0.45,
+                    "markersList": []
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 1,
+                    "questionPrompt": "0.2",
+                    "shipLocation": 0.2,
+                    "markersList": []
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 1,
+                    "questionPrompt": "0.65",
+                    "shipLocation": 0.65,
+                    "markersList": []
+                }
+            ]
+        },
+        {
+            "level": 1,
+            "questions": [
+                {
+                    "startPoint": 0,
+                    "endPoint": 2,
+                    "questionPrompt": "1.95",
+                    "shipLocation": 1.95,
+                    "markersList": ["0.2", "0.4", "0.6", "0.8", "1", "1.2", "1.4", "1.6", "1.8"]
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 2,
+                    "questionPrompt": "1",
+                    "shipLocation": 1,
+                    "markersList": ["0.2", "0.4", "0.6", "0.8", "1", "1.2", "1.4", "1.6", "1.8"]
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 2,
+                    "questionPrompt": "1.67",
+                    "shipLocation": 1.67,
+                    "markersList": ["0.2", "0.4", "0.6", "0.8", "1", "1.2", "1.4", "1.6", "1.8"]
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 2,
+                    "questionPrompt": "0.28",
+                    "shipLocation": 0.28,
+                    "markersList": ["0.2", "0.4", "0.6", "0.8", "1", "1.2", "1.4", "1.6", "1.8"]
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 2,
+                    "questionPrompt": "0.55",
+                    "shipLocation": 0.55,
+                    "markersList": ["0.2", "0.4", "0.6", "0.8", "1", "1.2", "1.4", "1.6", "1.8"]
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 2,
+                    "questionPrompt": "0.25",
+                    "shipLocation": 0.25,
+                    "markersList": ["0.2", "0.4", "0.6", "0.8", "1", "1.2", "1.4", "1.6", "1.8"]
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 2,
+                    "questionPrompt": "1.75",
+                    "shipLocation": 1.75,
+                    "markersList": ["0.2", "0.4", "0.6", "0.8", "1", "1.2", "1.4", "1.6", "1.8"]
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 2,
+                    "questionPrompt": "1.19",
+                    "shipLocation": 1.19,
+                    "markersList": ["0.2", "0.4", "0.6", "0.8", "1", "1.2", "1.4", "1.6", "1.8"]
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 2,
+                    "questionPrompt": "1.02",
+                    "shipLocation": 1.02,
+                    "markersList": ["0.2", "0.4", "0.6", "0.8", "1", "1.2", "1.4", "1.6", "1.8"]
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 2,
+                    "questionPrompt": "0.9",
+                    "shipLocation": 0.9,
+                    "markersList": ["0.2", "0.4", "0.6", "0.8", "1", "1.2", "1.4", "1.6", "1.8"]
+                }
+            ]
+        },
+        {
+            "level": 3,
+            "questions": [
+                {
+                    "startPoint": 0,
+                    "endPoint": 10,
+                    "questionPrompt": "1.5",
+                    "shipLocation": 1.5,
+                    "markersList": ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 10,
+                    "questionPrompt": "9.5",
+                    "shipLocation": 9.5,
+                    "markersList": ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 10,
+                    "questionPrompt": "4.5",
+                    "shipLocation": 4.5,
+                    "markersList": ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 10,
+                    "questionPrompt": "5.5",
+                    "shipLocation": 5.5,
+                    "markersList": ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 10,
+                    "questionPrompt": "9.95",
+                    "shipLocation": 9.95,
+                    "markersList": ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 10,
+                    "questionPrompt": "0.05",
+                    "shipLocation": 0.05,
+                    "markersList": ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 10,
+                    "questionPrompt": "4.05",
+                    "shipLocation": 4.05,
+                    "markersList": ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 10,
+                    "questionPrompt": "3.95",
+                    "shipLocation": 3.95,
+                    "markersList": ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 10,
+                    "questionPrompt": "1.99",
+                    "shipLocation": 1.99,
+                    "markersList": ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 10,
+                    "questionPrompt": "6.01",
+                    "shipLocation": 6.01,
+                    "markersList": ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+                }
+            ]
+        },
+        {
+            "level": 4,
+            "questions": [
+                {
+                    "startPoint": 0,
+                    "endPoint": 10,
+                    "questionPrompt": "5.01",
+                    "shipLocation": 5.01,
+                    "markersList": ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 10,
+                    "questionPrompt": "4.09",
+                    "shipLocation": 4.09,
+                    "markersList": ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 10,
+                    "questionPrompt": "9.95",
+                    "shipLocation": 9.95,
+                    "markersList": ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 10,
+                    "questionPrompt": "0.05",
+                    "shipLocation": 0.05,
+                    "markersList": ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 10,
+                    "questionPrompt": "1.25",
+                    "shipLocation": 1.25,
+                    "markersList": ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 10,
+                    "questionPrompt": "6.75",
+                    "shipLocation": 6.75,
+                    "markersList": ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 10,
+                    "questionPrompt": "8.25",
+                    "shipLocation": 8.25,
+                    "markersList": ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 10,
+                    "questionPrompt": "3.75",
+                    "shipLocation": 3.75,
+                    "markersList": ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 10,
+                    "questionPrompt": "4.25",
+                    "shipLocation": 4.25,
+                    "markersList": ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+                },
+                {
+                    "startPoint": 0,
+                    "endPoint": 10,
+                    "questionPrompt": "2.25",
+                    "shipLocation": 2.25,
+                    "markersList": ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+                }
+            ]
+        }
+    ]
+}

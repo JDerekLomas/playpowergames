@@ -1,0 +1,111 @@
+{
+    "frames": {
+        "Screen_00263.png": {
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 664,
+                "h": 85
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 307,
+                "y": 622,
+                "w": 664,
+                "h": 85
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            },
+            "pivot": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        "Screen_00262.png": {
+            "frame": {
+                "x": 664,
+                "y": 0,
+                "w": 664,
+                "h": 51
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 307,
+                "y": 660,
+                "w": 664,
+                "h": 51
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            },
+            "pivot": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        "Screen_00264.png": {
+            "frame": {
+                "x": 1328,
+                "y": 0,
+                "w": 656,
+                "h": 70
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 311,
+                "y": 584,
+                "w": 656,
+                "h": 70
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            },
+            "pivot": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        "Screen_00265.png": {
+            "frame": {
+                "x": 664,
+                "y": 51,
+                "w": 649,
+                "h": 36
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 315,
+                "y": 564,
+                "w": 649,
+                "h": 36
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            },
+            "pivot": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        }
+    },
+    "meta": {
+        "app": "http://free-tex-packer.com",
+        "version": "0.6.7",
+        "image": "spritesheet.png",
+        "format": "RGBA8888",
+        "size": {
+            "w": 2048,
+            "h": 128
+        },
+        "scale": 1
+    }
+}

@@ -1,0 +1,3905 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: 'avenir-next';
+  font-weight: 500;
+  src: url('./assets/fonts/AvenirNext-Medium.ttf');
+}
+
+/* Fallback Safari-only block: some Safari builds may not match the more
+   complex @supports above. This simpler check uses -webkit-backdrop-filter
+   which is supported in Safari and ensures our button/speaker overrides
+   are applied there. */
+@supports (-webkit-backdrop-filter: blur(1px)) {
+  .dialogue-nav-btn, .dialogue-nav-btn.back, .dialogue-nav-btn.next,
+  .dialogue-nav-buttons button, .dialogue-nav-buttons .dialogue-nav-btn,
+  button.dialogue-nav-btn, button.dialogue-nav-btn.back, button.dialogue-nav-btn.next {
+    font-weight: 520 !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    -webkit-text-stroke: 0.01px transparent !important;
+    text-shadow: 0 0 0 rgba(0,0,0,0) !important;
+  }
+
+  .dialogue-speaker {
+   /* Keep numeric weight at 500 but use subpixel smoothing and a tiny
+     unobtrusive stroke/shadow to bring Safari's rendering in line with
+     Chrome's visual weight without affecting nav buttons. */
+   font-weight: 520 !important;
+   -webkit-font-smoothing: subpixel-antialiased !important;
+   -moz-osx-font-smoothing: grayscale !important;
+   text-rendering: optimizeLegibility !important;
+   -webkit-text-stroke: 0.02px rgba(0,0,0,0.02) !important;
+   text-shadow: 0.15px 0 0 rgba(0,0,0,0.02) !important;
+  }
+}
+
+@font-face {
+  font-family: 'avenir-next';
+  font-weight: 700;
+  src: url('./assets/fonts/AvenirNext-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'besley';
+  font-weight: 500;
+  src: url('./assets/fonts/Besley-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'besley';
+  font-weight: 500;
+  font-style: italic;
+  src: url('./assets/fonts/Besley-MediumItalic.ttf');
+}
+
+@font-face {
+  font-family: 'besley';
+  font-weight: 600;
+  src: url('./assets/fonts/Besley-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'besley';
+  font-weight: 600;
+  font-style: italic;
+  src: url('./assets/fonts/Besley-SemiBoldItalic.ttf');
+}
+
+@font-face {
+  font-family: 'besley';
+  font-weight: 700;
+  src: url('./assets/fonts/Besley-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'besley';
+  font-weight: 700;
+  font-style: italic;
+  src: url('./assets/fonts/Besley-BoldItalic.ttf');
+}
+
+:root {
+  font-family: 'Avenir',system-ui, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 18px;
+
+}
+
+/* Safari-specific font weight adjustments - alternative detection method */
+@supports (-webkit-backdrop-filter: blur(1px)) and (not (font-variation-settings: normal)) {
+  /* This targets Safari more reliably */
+  * {
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+  }
+  
+  /* Force lighter font weights globally in Safari */
+  body, p, span, div, h1, h2, h3, h4, h5, h6, 
+  .dialogue-text, .dialogue-speaker, .btn-label,
+  .bottom-dialogue-text, .radio-text, .question-input,
+  .modal-title, .interactive-character-name,
+  button, input, textarea, select {
+    font-weight: 100 !important;
+  }
+  
+  /* Button labels extra light */
+  .btn-label, button {
+  /* Use light rendering but avoid excessively bold strokes on Safari */
+  font-weight: 100 !important;
+  -webkit-text-stroke: 0.1px transparent;
+  }
+  
+  /* Specifically target navigation buttons and speaker name to match Chrome's
+     regular weight. Safari tends to render some fonts bolder; force a sane
+     weight and smoothing only for these UI elements. */
+  .dialogue-nav-btn, .dialogue-nav-btn.back, .dialogue-nav-btn.next,
+  .dialogue-nav-buttons button, .dialogue-nav-buttons .dialogue-nav-btn {
+    /* Use a slightly lighter weight on Safari where fonts tend to render
+       heavier than Chrome. Use button-prefixed selector and !important to
+       ensure this overrides later rules. */
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    text-rendering: optimizeLegibility !important;
+    font-synthesis: none !important;
+    -webkit-text-stroke: 0.01px transparent !important; /* micro stroke to reduce bold edge */
+    text-shadow: 0 0 0 rgba(0,0,0,0) !important; /* neutralize any default shadows */
+  }
+
+  /* Speaker names in dialogue should also use regular weight on Safari */
+  .dialogue-speaker {
+  font-weight: 600 !important;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  text-rendering: optimizeLegibility !important;
+  -webkit-text-stroke: 0.02px rgba(0,0,0,0.02) !important;
+  text-shadow: 0.12px 0 0 rgba(0,0,0,0.02) !important;
+  }
+
+  /* Increase specificity for button elements using these classes */
+  button.dialogue-nav-btn, button.dialogue-nav-btn.back, button.dialogue-nav-btn.next {
+    font-weight: 400 !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    -webkit-text-stroke: 0.01px transparent !important;
+    text-shadow: 0 0 0 rgba(0,0,0,0) !important;
+  }
+  
+  /* Bold elements should be normal weight in Safari */
+  strong, b, .dialogue-box .dialogue-content strong {
+    font-weight: 400 !important;
+  }
+}
+
+/* Emphasized dialogue text */
+.dialogue-box .dialogue-content strong {
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+/* Letterbox canvas-style viewport */
+html, body, #root {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: #000; /* black bars */
+}
+.letterbox-viewport {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  display: block;
+  background: #000; /* ensure bars stay black */
+}
+
+/* Everything inside the stage should size relative to the stage, not the viewport */
+.letterbox-stage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.letterbox-stage .title-screen-wrapper,
+.letterbox-stage .choice-map-wrapper,
+.letterbox-stage .narrator-scene,
+.letterbox-stage .main-character-scene,
+.letterbox-stage .interactive-scene,
+.letterbox-stage .ending-scene {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  padding-bottom: 25px; /* Reserve space for progress bar */
+  box-sizing: border-box;
+}
+/* Title screen */
+.title-screen-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 32px;
+}
+
+.title-center {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-scroll-layer {
+  position: absolute;
+  left: 50%;
+  bottom: -5%;
+  transform: translateX(-50%);
+  width: 102%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.title-scroll {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 6px 16px rgba(0,0,0,0.25));
+}
+
+.scroll-content {
+  position: absolute;
+  left: 50%;
+  bottom: 22%;
+  transform: translateX(-50%);
+  width: min(88%, 1300px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  pointer-events: auto; /* enable button */
+}
+
+.title-bottom {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  width: min(80%, 1100px);
+  text-align: center;
+}
+
+.title-subtitle-text {
+  font-size: 28px;
+  line-height: 1.45;
+  color: #221b12;
+  margin: 0 0 16px 0;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.4);
+}
+
+/* Ensure title subtitle in scroll is centered and larger */
+.scroll-content .title-subtitle-text {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+/* Image-based button (wider variant) */
+.btn-wider {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 360px; /* size to taste; text is centered inside */
+  height: 64px;
+  background: url('/assets/buttons/wider_default.png') center/contain no-repeat;
+  border: none;
+  cursor: pointer;
+  margin-top: 24px;
+  transition: transform 0.15s ease;
+}
+.btn-wider:hover { background-image: url('/assets/buttons/wider_hover.png'); transform: translateY(-1px); }
+.btn-wider:active { background-image: url('/assets/buttons/wider_pressed.png'); transform: translateY(0); }
+.btn-wider:disabled { background-image: url('/assets/buttons/wider_disabled.png'); cursor: not-allowed; opacity: 0.85; }
+
+.btn-label {
+  font-family: 'Avenir';
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 0 2px 0 rgba(0,0,0,0.4);
+  pointer-events: none; /* allow the button to capture events */
+  user-select: none;
+}
+
+/* Prevent viewport-based max constraints inside stage */
+.letterbox-stage .ending-dialogue-container-bg,
+.letterbox-stage .ending-dialogue-container,
+.letterbox-stage .narrator-dialogue-container,
+.letterbox-stage .main-character-dialogue-container {
+  max-width: none;
+}
+
+.bottom-dialogue-text {
+  font-size: 32px;
+  font-weight: 600;
+  color: #222;
+  text-align: center;
+  margin: 14px;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+/* Stacked Dialogue Containers */
+.dialogue-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: 600px;
+  overflow-y: auto;
+  padding: 16px;
+}
+
+/* When used in split views we want newest dialogues to stack on top */
+/* split-dialogue box uses normal stacking like main character scene */
+
+.dialogue-container-item {
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid #c9b07d;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+/* Increase dialogue height and font for split dialog use */
+.split-dialogue-box .dialogue-container-item {
+  padding: 20px 18px;
+}
+.split-dialogue-box .dialogue-text p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+/* Ensure Myia sits behind the dialogue container in interactive split */
+.interactive-myia {
+  z-index: 1; /* behind */
+}
+.interactive-right .dialogue-stack {
+  z-index: 2; /* above Myia */
+  background: transparent;
+}
+
+.dialogue-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.avatar-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f0f0f0;
+  border: 2px solid #c9b07d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.avatar-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-placeholder {
+  font-weight: 700;
+  color: #666;
+  font-size: 18px;
+}
+
+.dialogue-speaker {
+  font-weight: 700;
+  font-size: 18px;
+  color: #2b1408;
+  margin: 0;
+}
+
+.dialogue-text p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #222;
+  line-height: 1.5;
+  margin: 0 0 12px 0;
+  cursor: pointer;
+}
+
+.typing-indicator {
+  animation: blink 1s infinite;
+  color: #222;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.dialogue-next-btn, .dialogue-done-btn {
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dialogue-next-btn:hover, .dialogue-done-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dialogue-done-btn {
+  background: linear-gradient(135deg, #2196F3, #1976D2);
+}
+
+/* Arrow Navigation */
+.arrow-navigation {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.arrow-navigation .arrow-image {
+  width: 60px;
+  height: 60px;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+  transition: all 0.3s ease;
+}
+
+.arrow-navigation:hover .arrow-image {
+  transform: scale(1.1);
+  filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4));
+}
+
+.arrow-navigation:active .arrow-image {
+  transform: scale(0.95);
+}
+
+/* Animation for last dialogue (ready to advance) */
+.arrow-navigation.ready-to-advance .arrow-image {
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3)) hue-rotate(120deg) saturate(1.5);
+  animation: arrowPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes arrowPulse {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(8px);
+  }
+  75% {
+    transform: translateX(-8px);
+  }
+}
+
+.arrow-navigation.ready-to-advance:hover .arrow-image {
+  animation: none;
+  transform: scale(1.15) translateX(0);
+}
+
+/* Dialogue Control Area */
+.dialogue-control-area {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Back and Next Navigation Buttons */
+.dialogue-nav-buttons {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  display: flex;
+  z-index: 10;
+}
+
+/* Navigation Button Styles - Using Asset Images */
+.dialogue-nav-btn {
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 120px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialogue-nav-btn.next {
+  background-image: url('/assets/buttons/default.png');
+}
+
+.dialogue-nav-btn.next:hover:not(:disabled) {
+  background-image: url('/assets/buttons/hover.png');
+}
+
+.dialogue-nav-btn.next:active:not(:disabled) {
+  background-image: url('/assets/buttons/pressed.png');
+}
+
+.dialogue-nav-btn.next:disabled {
+  background-image: url('/assets/buttons/disabled.png');
+  cursor: not-allowed;
+  color: #fff;
+}
+
+.dialogue-nav-btn.back {
+  background-image: url('/assets/buttons/secondary_default.png');
+  color: black;
+}
+
+.dialogue-nav-btn.back:hover:not(:disabled) {
+  background-image: url('/assets/buttons/secondary_hover.png');
+  color: black;
+}
+
+.dialogue-nav-btn.back:active:not(:disabled) {
+  background-image: url('/assets/buttons/secondary_pressed.png');
+  color: black;
+}
+
+.dialogue-nav-btn.back:disabled {
+  background-image: url('/assets/buttons/secondary_disabled.png');
+  cursor: not-allowed;
+  color: #fff;
+}
+
+/* Focus styles for dialogue navigation buttons */
+.dialogue-nav-btn:focus {
+  outline: none;
+}
+
+.dialogue-nav-btn:focus-visible {
+  outline: 3px solid #FFC517;
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+/* Wider Button Styles */
+.dialogue-nav-btn.wider-button {
+  background-image: url('/assets/buttons/wider_default.png');
+  width: 220px; /* Wider than standard buttons */
+  height: 50px; /* Same height as other buttons for alignment */
+}
+
+.dialogue-nav-btn.wider-button:hover:not(:disabled) {
+  background-image: url('/assets/buttons/wider_hover.png');
+}
+
+.dialogue-nav-btn.wider-button:active:not(:disabled) {
+  background-image: url('/assets/buttons/wider_pressed.png');
+}
+
+.dialogue-nav-btn.wider-button:disabled {
+  background-image: url('/assets/buttons/wider_disabled.png');
+  cursor: not-allowed;
+  color: #fff;
+}
+
+/* Map Scene Navigation Buttons */
+.map-nav-buttons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.map-back-btn {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  pointer-events: auto;
+}
+
+.map-next-btn {
+  position: absolute;
+  bottom: 60px;
+  right: 60px;
+  pointer-events: auto;
+}
+
+.dialogue-main-control-btn {
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-width: 100px;
+}
+
+.dialogue-main-control-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dialogue-main-control-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Next Button */
+.dialogue-next-btn {
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-width: 100px;
+}
+
+/* Main Character Scene - freer layout and larger typography */
+.main-character-scene.free-layout {
+  display: block;
+  padding: 48px 24px;
+  position: relative;
+}
+
+.main-character-dialogue-container.narrow {
+  margin: 0 auto;
+  width: 720px; /* narrower than default */
+  max-width: 85vw;
+}
+
+/* DialogueBox variant for main scene: remove avatar, enlarge text and speaker */
+.main-dialogue-box--large .avatar-circle {
+  display: none;
+}
+
+.main-dialogue-box--large .dialogue-header {
+  margin-bottom: 8px;
+}
+
+.main-dialogue-box--large .dialogue-speaker {
+  font-size: 22px;
+  color: #111;
+}
+
+.main-dialogue-box--large .dialogue-text p {
+  font-size: 22px;
+  color: #111;
+  line-height: 1.4;
+}
+
+/* If avatar image exists elsewhere, make sure ring isn't shown */
+.main-dialogue-box--large .avatar-circle {
+  border: none;
+  background: transparent;
+}
+
+/* Main character left-right layout */
+.main-character-scene.free-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.main-character-left {
+  flex: 0 0 360px; /* slightly wider column to allow horizontal offset */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.main-character-myia {
+  width: 350px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 10px 30px rgba(0,0,0,0.35));
+  position: relative;
+  right: -160px; /* move slightly to the right */
+  top: 180px; /* move a bit up */
+}
+
+.main-character-right {
+  flex: 1 1 720px;
+  position: relative; /* so arrow absolute positions inside this column */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* keep dialogue and arrow on the right */
+  justify-content: center;
+  gap: 16px;
+}
+
+/* Ensure arrow is positioned inside the right column and centered vertically */
+.main-character-right .arrow-navigation {
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
+.dialogue-next-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #1976D2, #1565C0);
+}
+
+.dialogue-next-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Finish Button (Green) */
+.dialogue-finish-btn {
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-width: 100px;
+}
+
+.dialogue-finish-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #45a049, #388E3C);
+}
+
+.dialogue-finish-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Intro and Outro Scene Styling */
+.intro-scene, .outro-scene {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #f9f4e4, #f1e6c8);
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.intro-scene .dialogue-stack, .outro-scene .dialogue-stack {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 80px; /* Make room for control button */
+}
+
+.intro-scene .dialogue-control-area, .outro-scene .dialogue-control-area {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.narrator-scene .dialogue-control-area {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #000000;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  color: white;
+  cursor: pointer;
+  transition: border-color 0.25s, background-color 0.25s;
+}
+
+button:focus,
+button:focus-visible {
+  outline: none;
+}
+
+/* Add keyboard focus indicator for buttons when using Tab key */
+button:focus-visible {
+  outline: 3px solid #FFC517;
+  outline-offset: 3px;
+}
+
+/* Custom button class for better styling */
+.btn {
+  color: white;
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+.btn:hover {
+  background-color: #535bf2;
+  border-color: #535bf2;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(100, 108, 255, 0.3);
+}
+.btn:focus,
+.btn:focus-visible {
+  outline: none;
+}
+.btn:focus-visible {
+  outline: 3px solid #FFC517;
+  outline-offset: 3px;
+}
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(100, 108, 255, 0.3);
+}
+
+/* Choice Map Styles */
+body, #root, .app-root {
+  width: 100%;
+  height: 100%;
+}
+
+.choice-map-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  max-width: min(100vw, calc(100vh * (1200 / 700)));
+  max-height: min(100vh, calc(100vw / (1200 / 700)));
+  margin: 0 auto;
+  overflow: hidden;
+  /* Preserve background image aspect ratio and keep full image visible */
+  background-image: url('/assets/choice_bg.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice-layout-inner {
+  position: relative;
+  width: 1200px;
+  height: 700px;
+}
+
+/* Title Screen Styles */
+.title-screen-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  max-width: min(100vw, calc(100vh * (1200 / 700)));
+  max-height: min(100vh, calc(100vw / (1200 / 700)));
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-screen-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/title_bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+/* Title screen layout: independent controls */
+.title-screen-content {
+  position: relative; /* establishes positioning context for children */
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding: 0; /* avoid shifting positioned children */
+  box-sizing: border-box;
+}
+
+/* Subtitle block positioned near bottom-left; tweak these values freely */
+.title-description {
+  position: absolute;
+  left: 54%;             /* center horizontally */
+  transform: translateX(-50%);
+  bottom: 2.5rem;          /* vertical position from bottom (adjust freely) */
+  max-width: 800px;
+  width: calc(100% - 4rem); /* keep side padding when centered */
+  text-align: center;
+}
+
+.title-subtitle-text {
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  font-weight: 600;
+  color: #2b1408;
+  margin: 0;
+  line-height: 1.3;
+  text-align: left;
+  z-index: 5;             /* ensure above content */
+  pointer-events: auto;   /* ensure clickable */
+}
+
+.title-play-button {
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(76, 175, 80, 0.3);
+  letter-spacing: 1px;
+  position: absolute;     /* independent from subtitle */
+  left: 50%;              /* center horizontally */
+  transform: translate(-50%, 0); /* keep X centered */
+  bottom: 13rem;           /* vertical position from bottom (adjust freely) */
+  z-index: 10;            /* above content */
+  pointer-events: auto;   /* ensure clickable */
+  border: 4px solid #2e7d32;
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.title-play-button::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  background: linear-gradient(135deg, #66BB6A, #43A047);
+  border-radius: 16px;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.title-play-button:hover {
+  background: linear-gradient(135deg, #45a049, #388E3C);
+  transform: translate(-50%, -3px); /* keep centered on hover */
+  box-shadow:
+    0 8px 25px rgba(76, 175, 80, 0.5),
+    inset 0 2px 0 rgba(255, 255, 255, 0.3),
+    inset 0 -2px 0 rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(76, 175, 80, 0.6);
+  outline: none;
+}
+
+.title-play-button:hover::before {
+  opacity: 0.5;
+}
+
+.title-play-button:active {
+  transform: translate(-50%, -1px); /* keep centered on active */
+  box-shadow:
+    0 4px 12px rgba(76, 175, 80, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Narrator minimal dialogue: no white card, no avatar/ring */
+.narrator-minimal .dialogue-container-item {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+.narrator-minimal .avatar-circle { display: none !important; }
+/* Structural layout for narrator-minimal is applied ONLY inside
+   main-character and narrator dialogue containers to avoid
+   affecting interactive scenes that also use narrator-minimal. */
+.main-character-dialogue-container .narrator-minimal .dialogue-container-item,
+.narrator-dialogue-container .narrator-minimal .dialogue-container-item {
+  /* Independent header + body areas */
+  position: relative;
+  min-height: 56px; /* ensure enough space for header */
+}
+
+.main-character-dialogue-container .narrator-minimal .dialogue-header,
+.narrator-dialogue-container .narrator-minimal .dialogue-header {
+  justify-content: flex-start; /* left align */
+  margin-bottom: 0;
+  height: 44px; /* fixed header height */
+  align-items: flex-end;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.main-character-dialogue-container .narrator-minimal .dialogue-speaker,
+.narrator-dialogue-container .narrator-minimal .dialogue-speaker {
+  font-weight: 800;
+  font-size: 38px; /* per request */
+  color: #2b1408;
+  line-height: 1; /* avoid vertical drift from font metrics */
+}
+
+.main-character-dialogue-container .narrator-minimal .dialogue-text p,
+.narrator-dialogue-container .narrator-minimal .dialogue-text p {
+  font-size: 20px; /* per request */
+  color: #222;
+  line-height: 1.5;
+  text-align: left; /* left align */
+  margin: 0; /* spacing controlled via padding below header */
+}
+
+/* Body text container sits below fixed header */
+.main-character-dialogue-container .narrator-minimal .dialogue-text,
+.narrator-dialogue-container .narrator-minimal .dialogue-text {
+  padding-top: 52px; /* header(44px) + 8px gap */
+}
+
+/* Scene Backgrounds with Blurred choice_bg */
+.narrator-scene,
+.main-character-scene,
+.interactive-scene,
+.ending-scene {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  max-width: min(100vw, calc(100vh * (1200 / 700)));
+  max-height: min(100vh, calc(100vw / (1200 / 700)));
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.narrator-scene::before,
+.main-character-scene::before,
+.interactive-scene::before,
+.ending-scene::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/choice_bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+/* (Removed old centered narrator container to avoid conflicts) */
+
+/* Main Character Scene */
+.main-character-scene {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.character-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.character-image {
+  max-width: 400px;
+  max-height: 60vh;
+  width: auto;
+  height: auto;
+  transform: scaleX(-1); /* Flip horizontally */
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+/* Interactive Scene */
+.interactive-scene {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.interactive-right {
+  width: 400px;
+  background: rgba(255, 255, 255, 0.95);
+  display: flex;
+  flex-direction: column;
+}
+
+.interactive-dialogue-stack {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Ending Scene */
+.ending-scene {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  max-width: min(100vw, calc(100vh * (1200 / 700)));
+  max-height: min(100vh, calc(100vw / (1200 / 700)));
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* New dialogue container for ending scene using dialogue_container.png */
+.ending-dialogue-container-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1200px;
+  height: 220px;
+  max-width: 90vw;
+  background: url('/assets/dialogue_container.png') center/contain no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 64px;
+  box-sizing: border-box;
+}
+
+.ending-dialogue-text {
+  color: #222;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.5;
+  width: 100%;
+}
+
+/* Removed floating animation */
+
+/* Restart button for ending scene */
+.ending-restart-btn {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #2196F3, #1976D2);
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4);
+  min-width: 140px;
+}
+
+.ending-restart-btn:hover {
+  transform: translateX(-50%) translateY(-3px);
+  box-shadow: 0 8px 25px rgba(33, 150, 243, 0.6);
+  background: linear-gradient(135deg, #1976D2, #1565C0);
+}
+
+.ending-restart-btn:active {
+  transform: translateX(-50%) translateY(0);
+  box-shadow: 0 4px 15px rgba(33, 150, 243, 0.4);
+}
+
+/* Narrator Scene Styles */
+.narrator-scene {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Narrator background uses narrator_bg.png */
+.narrator-scene::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/narrator_bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+/* Narrator bottom dialogue container using dialogue_container_2.png */
+.narrator-dialogue-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1.5rem;                 /* increased to avoid progress bar overlap */
+  width: 1400px;                 /* match main-character width */
+  max-width: 100vw;               /* match main-character max width */
+  height: 300px;                 /* align height with main-character */
+  background: url('/assets/dialogue_container_2.png') center/contain no-repeat;
+  display: flex;
+  /* Anchor content to top to keep heading position constant */
+  align-items: flex-start;
+  justify-content: flex-start;    /* left align content inside */
+  padding: 40px 72px 56px 72px;   /* align top/bottom padding with main-character */
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+/* Navigation buttons for narrator dialogue container */
+.narrator-dialogue-container .dialogue-nav-buttons {
+  bottom: 40px;
+  right: 55px;
+}
+
+/* Add space for navigation buttons in narrator dialogue */
+.narrator-dialogue-container .dialogue-stack {
+  margin-bottom: 60px; /* align with main-character for nav buttons */
+}
+
+/* Main Character: use same bottom container art and overlay headshot */
+.main-character-dialogue-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 3rem;
+  width: 1400px;
+  max-width: 90vw;
+  height: 300px;
+  background: url('/assets/dialogue_container_2.png') center/contain no-repeat;
+  display: flex;
+  /* Anchor content to the top so heading remains at a constant position */
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 40px 72px 56px 260px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+/* Navigation buttons for main character dialogue container */
+.main-character-dialogue-container .dialogue-nav-buttons {
+  bottom: 40px;
+  right: 30px;
+}
+
+/* Add space for navigation buttons in main character dialogue */
+.main-character-dialogue-container .dialogue-stack {
+  position: relative;
+  z-index: 2; /* above headshot */
+  width: 100%;
+  max-width: 1200px;        /* slightly narrower text area */
+  margin-bottom: 60px; /* Space for Back/Next buttons */
+  /* Ensure stack starts from top inside the container */
+  margin-top: 0;
+}
+
+.main-character-dialogue-container::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: -30px;
+  width: 300px;
+  height: 300px;
+  background: url('/assets/myia_headshot.png') center/contain no-repeat;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Main Character Dialogue Scene Styles */
+.main-character-scene {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-character-scene::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/mainCharacter_bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.character-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.character-image {
+  max-width: 500px;
+  max-height: 600px;
+  width: auto;
+  height: auto;
+  transform: scaleX(-1); /* Flip horizontally */
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+/* remove old white card styles: now using bottom container art */
+
+/* Interactive Scene Styles */
+.interactive-scene {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  max-width: min(100vw, calc(100vh * (1200 / 700)));
+  max-height: min(100vh, calc(100vw / (1200 / 700)));
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.interactive-scene::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/choice_bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+/* Background variants for interactive scenes */
+.interactive-scene.proofs-bg::before {
+  background-image: url('/assets/allProofs_bg.png');
+}
+.interactive-scene.monochord-bg::before {
+  background-image: url('/assets/monochord_bg.png');
+}
+.interactive-scene.figurate-bg::before {
+  background-image: url('/assets/figurate_bg.png');
+}
+.interactive-scene.ladder-bg::before {
+  background-image: url('/assets/ladder_bg.png');
+}
+.interactive-scene.final-bg::before {
+  background-image: url('/assets/finalChallenge_bg.png');
+}
+
+.interactive-split-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.interactive-left {
+  flex: 1.3;
+  display: flex;
+  width: 10%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Title styling for interactive left panel - header bar with help/info */
+.interactive-left-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: #312624;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.interactive-left-body {
+  position: absolute;
+  top: 80px;
+  height: calc(100% - 80px);
+  width: 100%;
+  padding: 2rem;
+  background-image: url('/assets/interactive_bg.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.title-section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start; /* Left align the title */
+}
+
+.interactive-left-title h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #FFC517;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  white-space: nowrap;
+}
+
+.help-info-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.help-btn,
+.info-btn {
+  width: 48px;
+  height: 48px;
+  border: none;
+  cursor: pointer;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.2s ease;
+}
+
+.help-btn {
+  background-image: url('/assets/buttons/help_default.png');
+}
+
+.help-btn:hover {
+  background-image: url('/assets/buttons/help_hover.png');
+}
+
+.help-btn:active {
+  background-image: url('/assets/buttons/help_pressed.png');
+}
+
+.help-btn:disabled {
+  background-image: url('/assets/buttons/help_disabled.png');
+  cursor: not-allowed;
+}
+
+.help-btn:focus,
+.info-btn:focus {
+  outline: none;
+}
+
+.help-btn:focus-visible,
+.info-btn:focus-visible {
+  outline: 3px solid #FFC517;
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+.info-btn {
+  background-image: url('/assets/buttons/info_default.png');
+}
+
+.info-btn:hover {
+  background-image: url('/assets/buttons/info_hover.png');
+}
+
+.info-btn:active {
+  background-image: url('/assets/buttons/info_pressed.png');
+}
+
+.info-btn:disabled {
+  background-image: url('/assets/buttons/info_disabled.png');
+  cursor: not-allowed;
+}
+
+.btn-interactive {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url('/assets/buttons/default.png');
+}
+.btn-interactive:hover {
+  background-image: url('/assets/buttons/hover.png');
+}
+.btn-interactive:active {
+  background-image: url('/assets/buttons/pressed.png');
+}
+.btn-interactive:disabled {
+  background-image: url('/assets/buttons/disabled.png');
+  cursor: not-allowed;
+}
+.btn-interactive:focus {
+  outline: none;
+}
+.btn-interactive:focus-visible {
+  outline: 3px solid #FFC517;
+  outline-offset: 3px;
+}
+
+/* Generic Icon Button */
+.icon-btn {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: url('/assets/buttons/icon_default.png') center/contain no-repeat;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.icon-btn:hover:not(:disabled) {
+  background-image: url('/assets/buttons/icon_hover.png');
+}
+.icon-btn:active:not(:disabled) {
+  background-image: url('/assets/buttons/icon_pressed.png');
+}
+.icon-btn:disabled {
+  background-image: url('/assets/buttons/icon_disabled.png');
+  cursor: not-allowed;
+  opacity: 0.95;
+}
+.icon-btn:focus {
+  outline: none;
+}
+.icon-btn:focus-visible {
+  outline: 3px solid #FFC517;
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+.icon-btn .icon-image {
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
+
+/* Custom Audio Slider Styles */
+.audio-slider {
+  width: 100%;
+  height: 10px;
+  background: #666666;
+  border-radius: 4px;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+/* WebKit browsers (Chrome, Safari, Edge) */
+.audio-slider::-webkit-slider-track {
+  width: 100%;
+  height: 10px;
+  background: #666666;
+  border-radius: 4px;
+  border: none;
+}
+
+.audio-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 23px;
+  height: 23px;
+  background: black;
+  border: 2px solid #FFB700;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Firefox */
+.audio-slider::-moz-range-track {
+  width: 100%;
+  height: 10px;
+  background: #666666;
+  border-radius: 4px;
+  border: none;
+}
+
+.audio-slider::-moz-range-progress {
+  height: 10px;
+  background: #FFB700;
+  border-radius: 4px;
+  border: none;
+}
+
+.audio-slider::-moz-range-thumb {
+  width: 23px;
+  height: 23px;
+  background: black;
+  border: 2px solid #FFB700;
+  border-radius: 50%;
+  cursor: pointer;
+  appearance: none;
+  box-sizing: border-box;
+}
+
+/* Progress fill effect using a pseudo-element */
+.audio-slider {
+  background: linear-gradient(to right, #FFB700 0%, #FFB700 var(--progress, 0%), #666666 var(--progress, 0%), #666666 100%);
+}
+
+.interactive-right {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0;
+  max-width: 760px; /* fits 720px container comfortably */
+}
+
+/* Bottom container like narrator but for interactive scenes */
+.interactive-bottom-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+  width: 600px; /* decreased from 720px */
+  /* max-width: 92vw; */
+  min-height: 140px; /* auto grows with text */
+  /* Brown border background underneath everything */
+  background-color: #8B4513;
+  /* Cream center area */
+  background-image: linear-gradient(#FFEDCD, #FFEDCD);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: calc(100% - 52px) calc(100% - 52px); /* cream area with 26px border on all sides */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 18px 28px 10px 28px;
+  box-sizing: border-box;
+}
+
+/* Dynamic Border System */
+/* Top border */
+.interactive-bottom-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 26px;
+  right: 26px;
+  height: 26px;
+  background-image: url('/assets/border/border_top.png');
+  background-repeat: repeat-x;
+  background-size: auto 26px;
+  z-index: 1;
+}
+
+/* Bottom border (rotate top border 180 degrees) */
+.interactive-bottom-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 26px;
+  right: 26px;
+  height: 26px;
+  background-image: url('/assets/border/border_top.png');
+  background-repeat: repeat-x;
+  background-size: auto 26px;
+  transform: rotate(180deg);
+  z-index: 1;
+}
+
+/* Left border */
+.border-left {
+  position: absolute;
+  left: 0;
+  top: 26px;
+  bottom: 26px;
+  width: 26px;
+  background-image: url('/assets/border/border_left.png');
+  background-repeat: repeat-y;
+  background-size: 26px auto;
+  z-index: 1;
+}
+
+/* Right border */
+.border-right {
+  position: absolute;
+  right: 0;
+  top: 26px;
+  bottom: 26px;
+  width: 26px;
+  background-image: url('/assets/border/border_right.png');
+  background-repeat: repeat-y;
+  background-size: 26px auto;
+  z-index: 1;
+}
+
+/* Corners */
+/* Top-left corner */
+.border-corner-tl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  background-image: url('/assets/border/border_top_left.png');
+  background-size: 26px 26px;
+  z-index: 2;
+}
+
+/* Top-right corner (rotate top-left 90 degrees) */
+.border-corner-tr {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 26px;
+  height: 26px;
+  background-image: url('/assets/border/border_top_left.png');
+  background-size: 26px 26px;
+  transform: rotate(90deg);
+  z-index: 2;
+}
+
+/* Bottom-left corner (rotate top-left 270 degrees) */
+.border-corner-bl {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  background-image: url('/assets/border/border_top_left.png');
+  background-size: 26px 26px;
+  transform: rotate(270deg);
+  z-index: 2;
+}
+
+/* Bottom-right corner (rotate top-left corner 180 degrees) */
+.border-corner-br {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 26px;
+  height: 26px;
+  background-image: url('/assets/border/border_top_left.png');
+  background-size: 26px 26px;
+  transform: rotate(180deg);
+  z-index: 2;
+}
+
+
+.interactive-bottom-container .dialogue-stack {
+  width: 100%;
+  max-width: 520px; /* keep readable width; grows vertically */
+  /* No additional background needed since container already has cream area */
+  margin-bottom: 0; /* remove extra bottom spacing in interactive */
+}
+/* Reserve space for nav buttons only on the current (newest) container */
+.interactive-bottom-container:not(.non-current) .dialogue-stack {
+  margin-bottom: 75px;
+}
+
+/* When the container is not the current one, reduce bottom space reserved for nav buttons */
+.interactive-bottom-container.non-current .dialogue-stack {
+  margin-bottom: 30px;
+}
+
+/* Navigation buttons for interactive bottom container */
+.interactive-bottom-container .dialogue-nav-buttons {
+  bottom: 40px;
+  right: 35px;
+}
+
+
+
+.interactive-bottom-content {
+  width: 100%;
+}
+
+/* Header with avatar and name side by side */
+.interactive-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: 10px;
+  margin-top: 20px; /* nudge header (avatar + name) slightly down */
+}
+
+.interactive-character-name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c1810;
+  margin: 0;
+}
+
+/* Hide the DialogueBox header when used in interactive scenes since we show our own */
+.dialogue-stack.interactive-dialogue-only .dialogue-header {
+  display: none !important;
+}
+
+.dialogue-stack.interactive-dialogue-only .dialogue-text {
+  margin-top: 0;
+}
+/* Remove default paragraph bottom margin inside interactive dialogue */
+.dialogue-stack.interactive-dialogue-only .dialogue-text p {
+  margin-bottom: 0;
+}
+
+.interactive-avatar {
+  /* Ensure the avatar participates in the flex row with the name */
+  border-radius: 50%;
+  object-fit: cover;
+  position: static;
+  left: auto;
+  top: auto;
+  transform: none;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  pointer-events: auto;
+  border-radius: 50%;
+  border: 3px solid #c9b07d; /* subtle decorative ring */
+  background: #fff; /* keep circular avatar crisp on cream bg */
+  flex-shrink: 0; /* prevent shrinking which may cause overlap */
+}
+
+.interactive-right {
+  background: transparent; /* show game area, no white box */
+}
+
+/* Remove old split-dialogue card visuals */
+.split-dialogue-box .dialogue-container-item { background: transparent; border: none; box-shadow: none; padding: 0; }
+.split-dialogue-box .dialogue-stack { overflow: visible; }
+
+/* Make Myia larger, flipped horizontally, and behind the dialogue */
+/* Remove the large Myia sprite in interactive scenes */
+.interactive-myia { display: none !important; }
+
+/* Ending Scene Styles */
+.ending-scene {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  max-width: min(100vw, calc(100vh * (1200 / 700)));
+  max-height: min(100vh, calc(100vw / (1200 / 700)));
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ending-scene::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/choice_bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #0d0d0d;
+  z-index: -1;
+}
+
+.ending-dialogue-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1200px;
+  max-width: 90vw;
+  padding: 2rem;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+.dialogue-container-bg {
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1200px;
+  height: 220px;
+  background: url('/assets/dialogue_container.png') center/contain no-repeat;
+  display: flex;
+  padding: 32px 64px;
+  box-sizing: border-box;
+  color: #222;
+  font-size: 18px;
+}
+
+.dialogue-box { /* existing component reuse */
+  background: transparent;
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  color: #222;
+}
+.dialogue-box .dialogue-content { 
+  flex: 1; 
+  color: #222;
+}
+.dialogue-box .dialogue-content p {
+  color: #222;
+  margin: 8px 0;
+}
+.dialogue-box .dialogue-content strong {
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+.bottom-dialogue-text {
+  font-size: 32px;
+  font-weight: 600;
+  color: #222;
+  text-align: center;
+  margin: 30px;
+  line-height: 1.4;
+  cursor: pointer;
+}
+.dialogue-box button { margin-top: 12px; }
+
+/* Label Container with Book */
+.label-container {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 420px;
+  height: 500px;
+  background: url('/assets/label_container.png') center/contain no-repeat;
+  padding-top: 140px; /* space for book */
+  box-sizing: border-box;
+}
+/* Myia Animations */
+@keyframes myia-breathing {
+  0%, 100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.02);
+  }
+}
+
+/* Interactive Question Styles */
+.interactive-question {
+  margin-top: 16px;
+  border-radius: 8px;
+}
+
+.question-numeric {
+  margin-bottom: 12px;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.question-input {
+  padding: 12px 16px;
+  font-size: 18px;
+  border: 2px solid #c9b07d;
+  border-radius: 6px;
+  background: white;
+  color: #2c1810;
+  outline: none;
+  width: 100%;
+}
+
+.question-input:focus {
+  border-color: #8b7355;
+  box-shadow: none;
+}
+
+.question-input:disabled {
+  background: #f5f5f5;
+  color: #666;
+}
+
+/* New styling for input with icon inside */
+.input-container-with-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.question-input-with-icon {
+  padding: 12px 50px 12px 16px; /* Extra right padding for icon */
+  font-size: 18px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: white;
+  color: #2c1810;
+  outline: none;
+  width: 100%;
+}
+
+.question-input-with-icon::placeholder {
+  color: #2c1810;
+  opacity: 0.7;
+}
+
+.question-input-with-icon:focus {
+  border-color: #8b7355;
+  box-shadow: none;
+}
+
+.question-input-with-icon:disabled {
+  background: #f5f5f5;
+  color: #666;
+}
+
+.validation-icon-inside {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.validation-icon-inside.correct .check-icon-inside {
+  width: 24px;
+  height: 24px;
+}
+
+.validation-icon-inside.incorrect .x-icon-inside {
+  color: #e74c3c;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.question-radio {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.radio-option {
+  position: relative;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  border-color: rgba(201, 176, 125, 0.73);
+}
+
+.radio-label:hover {
+  background: rgba(255, 255, 255, 0.215);
+}
+
+.radio-input {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.radio-input:disabled {
+  cursor: not-allowed;
+}
+
+.radio-text {
+  font-size: 18px;
+  color: #2c1810;
+  flex: 1;
+}
+
+.validation-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.validation-icon.correct .check-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.validation-icon.incorrect .x-icon {
+  color: #e74c3c;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Flipped breathing animation */
+@keyframes myia-breathing-flipped {
+  0%, 100% {
+    transform: scaleX(-1) scaleY(1);
+  }
+  50% {
+    transform: scaleX(-1) scaleY(1.02);
+  }
+}
+
+@keyframes myia-walking {
+  0%, 100% {
+    transform: translateX(0px) scaleX(1) rotate(0deg);
+  }
+  12.5% {
+    transform: translateX(-1px) scaleX(0.99) rotate(-0.5deg);
+  }
+  25% {
+    transform: translateX(-2px) scaleX(0.98) rotate(-1deg);
+  }
+  37.5% {
+    transform: translateX(-1px) scaleX(0.99) rotate(-0.5deg);
+  }
+  50% {
+    transform: translateX(0px) scaleX(1) rotate(0deg);
+  }
+  62.5% {
+    transform: translateX(1px) scaleX(0.99) rotate(0.5deg);
+  }
+  75% {
+    transform: translateX(2px) scaleX(0.98) rotate(1deg);
+  }
+  87.5% {
+    transform: translateX(1px) scaleX(0.99) rotate(0.5deg);
+  }
+}
+
+/* Flipped walking animation */
+@keyframes myia-walking-flipped {
+  0%, 100% {
+    transform: translateX(0px) scaleX(-1) rotate(0deg);
+  }
+  12.5% {
+    transform: translateX(1px) scaleX(-0.99) rotate(0.5deg);
+  }
+  25% {
+    transform: translateX(2px) scaleX(-0.98) rotate(1deg);
+  }
+  37.5% {
+    transform: translateX(1px) scaleX(-0.99) rotate(0.5deg);
+  }
+  50% {
+    transform: translateX(0px) scaleX(-1) rotate(0deg);
+  }
+  62.5% {
+    transform: translateX(-1px) scaleX(-0.99) rotate(-0.5deg);
+  }
+  75% {
+    transform: translateX(-2px) scaleX(-0.98) rotate(-1deg);
+  }
+  87.5% {
+    transform: translateX(-1px) scaleX(-0.99) rotate(-0.5deg);
+  }
+}
+
+.proof-books-row {
+  position: absolute;
+  top: 485px; /* below doors for 1500x900 layout (scaled from 520@900 -> 520 * 1500/1600 = 487.5 ~= 485) */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 50px;
+  z-index: 20;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.myia-container {
+  position: absolute;
+  top: 345px; /* aligned with book row baseline for 1500x900 (scaled from 360@900 -> 360 * 1500/1600 = 337.5 ~= 345) */
+  left: 240px; /* positioned left of the leftmost book */
+  z-index: 25;
+  transition: none; /* Remove automatic transitions, we'll handle them manually */
+}
+
+.myia-sprite {
+  width: 240px;
+  height: 240px;
+  object-fit: contain;
+  transform-origin: center bottom; /* Anchor animations to the bottom center */
+  transition: transform 0.3s ease-in-out; /* Smooth flipping transition */
+}
+
+/* Myia Animation States */
+.myia-sprite.idle {
+  animation: myia-breathing 4s ease-in-out infinite;
+}
+
+.myia-sprite.walking {
+  animation: myia-walking 1.2s ease-in-out infinite;
+}
+
+/* Flipped animation states */
+.myia-sprite.flipped.idle {
+  animation: myia-breathing-flipped 4s ease-in-out infinite;
+}
+
+.myia-sprite.flipped.walking {
+  animation: myia-walking-flipped 1.2s ease-in-out infinite;
+}
+
+/* Movement transition classes */
+.myia-container.moving-down {
+  transition: top 3s ease-in-out;
+}
+
+.myia-container.moving-horizontal {
+  transition: left 4s ease-in-out;
+}
+
+.myia-container.moving-up {
+  transition: top 3s ease-in-out;
+}
+.book-stand { 
+  position: relative; 
+  width: 320px; 
+  text-align:center; 
+  list-style: none;
+}
+.book-art {
+  width: 320px;
+  height: 220px;
+  background: url('/assets/book.png') center/contain no-repeat;
+  cursor: pointer;
+  transition: transform .25s;
+}
+/* Removed hover scale effect */
+.book-art:active { 
+  background-image: url('/assets/book_clicked.png'); 
+}
+/* When book is hovered, also show label hover state */
+.book-stand:hover .label-wider {
+  background-image: url('/assets/buttons/wider_hover.png');
+}
+.book-label { margin-top: 6px; display:flex; flex-direction:column; gap:4px; align-items:center; }
+.book-label span { font-weight:600; text-shadow:0 1px 2px #000; }
+
+.challenge-doors {
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: auto;
+}
+.challenge { width: 380px; display:flex; flex-direction:column; align-items:center; cursor:pointer; position: relative; }
+.door-large { width: 450px; height: 450px; background: url('/assets/door.png') center/contain no-repeat; position:relative; }
+.door-large.unlocked { background-image: url('/assets/door_opened.png'); }
+.door-large.locked { background-image: url('/assets/door.png'); }
+.door-lock { position:absolute; top: 50%; left: 50%; width: 50px; height: 50px; transform: translate(-50%,-50%); background: url('/assets/lock.png') center/contain no-repeat; pointer-events: none; z-index: 15; }
+.challenge-label { margin-top:4px; font-weight:700; background:rgba(0,0,0,0.5); padding:4px 10px; border-radius:4px; }
+
+.choice-door {
+  top: 8px;
+  width: 190px;
+  height: 360px;
+  cursor: pointer;
+  position: relative;
+}
+
+.ladder-door {
+  left: 2px;
+}
+
+.final-door {
+  left: -2px;
+}
+
+/* Use label_container.png under labels */
+.label-under { display:none; }
+.label-text { font-weight:700; color:#2b1408; }
+
+/* Wrapper that places the Start button below the book art (separate from label container) */
+.book-start-wrapper {
+  position: relative;
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Green start button style matching reference image */
+.book-start {
+  background: linear-gradient(#3ca839,#19872b);
+  color: #fff;
+  border-radius: 12px;
+  padding: 10px 26px;
+  font-weight: 700;
+  font-size: 20px;
+  border: 2px solid rgba(0,0,0,0.25);
+  box-shadow: 0 6px 0 rgba(0,0,0,0.25), inset 0 2px 0 rgba(255,255,255,0.12);
+  cursor: pointer;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.book-start:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 0 rgba(0,0,0,0.28), inset 0 2px 0 rgba(255,255,255,0.12), 0 0 15px rgba(57, 255, 20, 0.6), 0 0 30px rgba(57, 255, 20, 0.4);
+  border: 2px solid rgba(57, 255, 20, 0.8);
+}
+.book-start:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 0 rgba(0,0,0,0.22);
+}
+
+
+.gate-label { display: none; }
+
+.gate-label-left {
+  left: 16.5%;
+}
+
+.gate-label-right {
+  right: 15%;
+}
+.gate-left { left: 8%; }
+.gate-right { right: 8%; }
+.gate-inner-single { width: 260px; display:flex; flex-direction:column; align-items:center; padding-bottom: 42px; pointer-events: auto; z-index: 10; }
+.challenge-door { display:flex; flex-direction:column; align-items:center; gap:8px; }
+.door-large { width: 385px; height: 385px; background-size: contain; background-repeat: no-repeat; background-image: url('/assets/door.png'); z-index: 10; }
+/* When unlocked, show opened door image */
+.door-large.unlocked { background-image: url('/assets/door_opened.png'); }
+/* Locked doors show a small lock icon overlay */
+.book-image {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;
+  height: 160px;
+  background: url('/assets/book.png') center/contain no-repeat;
+}
+.proof-list { list-style: none; margin: 0; padding: 0 40px; display: flex; flex-direction: column; gap: 20px; }
+.proof-item { display: flex; justify-content: space-between; align-items: center; }
+.proof-item button { background:#3b2e1d; color:#fff; }
+
+/* Gate with Doors */
+.gate-container {
+  position: absolute;
+  right: 60px;
+  top: 120px;
+  width: 560px;
+  height: 520px;
+  background: url('/assets/gate.png') center/contain no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+}
+.doors {
+  display: flex;
+  gap: 40px;
+}
+.door {
+  width: 120px;
+  height: 220px;
+  position: relative;
+  background: url('/assets/door.png') center/contain no-repeat;
+}
+.door.unlocked { filter: none; background-image: url('/assets/door_opened.png'); }
+.door.locked:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 48px;
+  height: 48px;
+  transform: translate(-50%, -50%);
+  background: url('/assets/lock.png') center/contain no-repeat;
+}
+
+/* Overlay Split View */
+.proof-overlay {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at 30% 30%, rgba(0,0,0,0.75), rgba(0,0,0,0.85));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(2px) saturate(0.6);
+}
+
+/* Image-based label buttons for doors (large_*) */
+.label-large {
+  position: absolute;
+  top: -25px; /* positioned above door */
+  transform: translateX(-50%);
+  width: 245px;
+  height: 60px;
+  background: url('/assets/buttons/wider_disabled.png');
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; /* label itself not interactive; parent handles click */
+  z-index: 20;
+}
+.ladder-label { left: 50% ; }
+.final-label { left: 50% ; }
+.label-large.enabled { background-image: url('/assets/buttons/large_default.png'); }
+.challenge:hover .label-large.enabled { background-image: url('/assets/buttons/large_hover.png'); }
+.challenge:active .label-large.enabled { background-image: url('/assets/buttons/large_pressed.png'); }
+.label-large.disabled { 
+  background-image: url('/assets/buttons/large_disabled.png'); 
+}
+/* Disable hover effects when disabled */
+.challenge:hover .label-large.disabled { 
+  background-image: url('/assets/buttons/large_disabled.png'); 
+}
+
+/* Status dot for completed challenges */
+.label-large::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  width: 24px;
+  height: 24px;
+  background: #4ade80;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  display: none;
+  z-index: 1;
+}
+.label-large.completed::after {
+  display: block;
+}
+.label-caption {
+  font-weight: 500;
+  font-size: 24px;
+  color: #fff;
+  text-shadow: 0 2px 0 rgba(0,0,0,0.4);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.label-large .checkmark {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  height: 24px;
+  width: 24px;
+}
+
+/* Image-based label buttons for books (wider_*) */
+.label-wider {
+  position: absolute;
+  top: 110px; /* positioned above book */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 360px;
+  height: 64px;
+  background: url('/assets/buttons/wider_default.png') center/contain no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.label-wider:hover { background-image: url('/assets/buttons/wider_hover.png'); }
+.label-wider:active { background-image: url('/assets/buttons/wider_pressed.png'); }
+.label-wider.disabled { 
+  background-image: url('/assets/buttons/wider_disabled.png'); 
+  cursor: default;
+}
+/* Disable hover effects when disabled */
+.label-wider.disabled:hover { 
+  background-image: url('/assets/buttons/wider_disabled.png'); 
+}
+.book-stand:hover .label-wider.disabled {
+  background-image: url('/assets/buttons/wider_disabled.png');
+}
+
+.label-wider .checkmark {
+  position: absolute;
+  top: -6px;
+  right: 40px;
+  height: 24px;
+  width: 24px;
+}
+
+/* Interactive scene custom backgrounds */
+.interactive-scene.monochord-bg::before {
+  background-image: url('/assets/monochord_bg.png');
+  background-size: cover;
+  filter: none;
+}
+.interactive-scene.figurate-bg::before {
+  background-image: url('/assets/figurate_bg.png');
+  background-size: cover;
+  filter: none;
+}
+.proof-panel {
+  width: 1250px;
+  height: 720px;
+  background: linear-gradient(135deg,#f9f4e4,#f1e6c8 55%,#e7d7b3);
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  box-shadow: 0 12px 60px rgba(0,0,0,0.45), inset 0 0 40px rgba(120,85,20,0.25);
+  position: relative;
+  border-radius: 6px;
+  border: 4px solid #c9b07d;
+}
+.proof-panel:after {
+  background: repeating-linear-gradient(45deg, rgba(150,110,40,0.12) 0 6px, transparent 6px 14px),
+              radial-gradient(circle at 20% 90%, rgba(0,0,0,0.18), transparent 70%),
+              radial-gradient(circle at 85% 15%, rgba(0,0,0,0.2), transparent 65%);
+  opacity: .55;
+}
+.proof-left h2 { margin-top:0; font-size: 2.2rem; color:#403524; letter-spacing:.5px; }
+.proof-left p { line-height:1.5; color:#3f3828; }
+
+/* Right dialogue scroll panel */
+.proof-right {
+  background: linear-gradient(#ffffff,#f6f1e6);
+  border-left: 3px solid #ceb789;
+  display:flex;
+  flex-direction:column;
+  padding: 32px 28px;
+  position: relative;
+  padding-bottom: 80px; /* Make room for control button */
+}
+.proof-right:before {
+  content:'';
+  position:absolute; inset:0;
+  background: radial-gradient(circle at 10% 15%, rgba(0,0,0,0.1), transparent 40%),
+              radial-gradient(circle at 80% 80%, rgba(0,0,0,0.08), transparent 55%);
+  mix-blend-mode: multiply; pointer-events:none; opacity:.75;
+}
+.proof-right .dialogue-box { flex:1; flex-direction:column; }
+.proof-right .dialogue-box button { align-self:flex-end; }
+.close-overlay {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #222;
+  color: #fff;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 10;
+  transition: background-color 0.2s ease;
+}
+
+.close-overlay:hover {
+  background: #444;
+}
+
+/* Fancy close button style */
+.close-overlay {
+  border: none;
+  padding: 6px 14px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor:pointer;
+  background: linear-gradient(#4d3b26,#2b2116);
+  color: white;
+  font-weight: 600;
+}
+.close-overlay:hover { background: linear-gradient(#705431,#3a2d1e); }
+
+
+
+/* Virtual Monochord Styles */
+.vertical-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 320px; /* This becomes the height of the slider */
+  height: 12px; /* This becomes the width of the slider */
+  transform: rotate(-90deg);
+  background: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 160px;
+  left: -154px;
+}
+
+.vertical-slider::-webkit-slider-runnable-track {
+  background: transparent;
+}
+
+.vertical-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 24px;
+  width: 24px;
+  background: #e1c16e;
+  border: none;
+  clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+  transform: rotate(90deg) translateX(-12px);
+  margin-top: -6px;
+}
+
+.vertical-slider::-moz-range-thumb {
+  height: 24px;
+  width: 24px;
+  background: #e1c16e;
+  border: none;
+  clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+}
+
+.global-slider {
+  appearance: none;
+  height: 8px;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  background: linear-gradient(to right, #007bff 0%, #949494 0%);
+}
+
+.global-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.global-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* A Slider Styles */
+.a-slider {
+  appearance: none;
+  height: 8px;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+.a-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #901110;
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.a-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #901110;
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* B Slider Styles */
+.b-slider {
+  appearance: none;
+  height: 8px;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+.b-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #0534B2;
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.b-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #0534B2;
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.slider-first {
+  margin-top: 8px;
+}
+
+/* Pebble Proof Radio Button Styles */
+.pebble-radio-group {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.pebble-radio-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.pebble-radio-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.pebble-radio-input:focus {
+  outline: none;
+}
+
+.pebble-radio-input:focus-visible + .pebble-radio-label {
+  outline: 3px solid #FFC517;
+  outline-offset: 3px;
+}
+
+.pebble-radio-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background-color: #3B2C20;
+  color: white;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid #AC6226;
+}
+
+.pebble-radio-input:checked + .pebble-radio-label {
+  color: #FFC517;
+  border-color: #FFC517;
+  border-width: 3px;
+}
+
+.pebble-radio-circle {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 2px solid #AC6226;
+  background-color: transparent;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.pebble-radio-input:checked + .pebble-radio-label .pebble-radio-circle {
+  border-color: #FFC517;
+  border-width: 3px;
+  background-color: #FFC517;
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 #f1f5f9;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.vibrating {
+  animation: vibrate 0.1s linear infinite;
+}
+
+@keyframes vibrate {
+  0% { transform: translateX(0px); }
+  25% { transform: translateX(-1px); }
+  50% { transform: translateX(0px); }
+  75% { transform: translateX(1px); }
+  100% { transform: translateX(0px); }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    /* Keep global background color managed by scenes; avoid forcing white */
+    /* background-color: #ffffff; */
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    /* Transparent default avoids rounded white patches behind image-based buttons */
+    background-color: transparent;
+  }
+}
+
+/* Progress Bar Styles */
+.progress-bar-container {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  height: 25px; /* Fixed height to reserve space */
+}
+
+.progress-inner {
+  position: relative;
+  width: 99.5%;
+  max-width: 1500px; /* cap to base game width to avoid extreme scaling */
+}
+
+.progress-empty-img {
+  display: block;
+  width: 100%; /* stretch to full available width */
+  height: auto;
+  position: relative;
+  z-index: 1; /* Behind the filled bars */
+}
+
+.progress-filled-bars-wrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2; /* Ensure it's above the empty bars */
+}
+
+.progress-filled-img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  user-select: none;
+  -webkit-user-drag: none;
+  height: 100%; /* Fill full height of container */
+  object-fit: contain; /* Changed from cover to contain for better fit */
+  z-index: 2;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.progress-badge {
+  position: absolute;
+  top: -32px; /* Adjusted to align better with progress bar */
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  z-index: 3; /* Above filled bars */
+}
+
+.progress-badge-animate {
+  animation: badgeAnimation 1.8s ease-out;
+}
+
+@keyframes badgeAnimation {
+  from {
+    left: 43.7%;
+    transform: translateY(-706px);
+    width: 200px;
+    height: 200px;
+  }
+  to {
+    transform: translateY(0);
+    height: 80px;
+  }
+}
+
+.progress-tooltip-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  bottom: 53px;
+  padding: 12px;
+  width: 220px;
+  min-height: 50px;
+  text-wrap: wrap;
+  z-index: 4;
+  background-image: url('/assets/progress_bar/tooltip_bg.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.tooltip-text {
+  font-weight: 600;
+  padding-bottom: 16px;
+  padding-top: 4px;
+  text-align: center;
+  line-height: 24px;
+}
+
+/* Progress bar fill animation */
+.progress-bar-animate {
+  animation: progressFillAnimation 0.8s ease-out forwards;
+}
+
+@keyframes progressFillAnimation {
+  0% {
+    clip-path: inset(0 100% 0 0);
+    opacity: 0.7;
+    filter: brightness(1.2) drop-shadow(0 0 8px rgba(76, 175, 80, 0.6));
+  }
+  50% {
+    opacity: 1;
+    clip-path: inset(0 50% 0 0);
+    filter: brightness(1.4) drop-shadow(0 0 12px rgba(76, 175, 80, 0.8));
+  }
+  100% {
+    clip-path: inset(0 0% 0 0);
+    opacity: 1;
+    filter: brightness(1) drop-shadow(0 0 4px rgba(76, 175, 80, 0.4));
+  }
+}
+
+/* Progress badge fade-out animation */
+.progress-badge-fade-out {
+  animation: badgeFadeOut 1s ease-out forwards;
+}
+
+@keyframes badgeFadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Ending Scene Styles */
+.ending-scene {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.ending-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/ending_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Dark overlay on ending background */
+.ending-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.ending-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  max-width: 2000px;
+  height: auto;
+  background-image: url('/assets/ending_overlay.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+  padding: 50px 70px;
+  z-index: 2; /* above the overlay */
+}
+
+.ending-overlay.fade-in {
+  opacity: 1;
+}
+
+.ending-content {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.ending-header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.ending-header h1 {
+  font-size: 32px;
+  font-weight: 800;
+  color: white;
+  margin: 0 0 16px 0;
+  line-height: 1.1;
+}
+
+.ending-header h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Badges row below h1+h2 */
+.ending-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0px;
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+.ending-badge-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 180px;
+}
+
+.ending-badge-item img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  filter: none;
+}
+
+.ending-badge-text {
+  position: absolute;
+  top: 75px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  font-weight: bold;
+  color: #2c1810;
+  text-shadow: none;
+  width: 125px;
+  height: 50px;
+  display: flex;
+  align-items: center;   /* vertical centering */
+  justify-content: center; /* horizontal centering */
+  text-align: center;
+  text-align: center;
+  word-wrap: break-word;
+  line-height: 1;
+  z-index: 2;
+}
+
+.ending-achievements {
+  text-align: left;
+  margin: 20px 0; /* moved down, positioned above button */
+}
+
+.ending-achievements ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin: 0 0 8px 0;
+}
+
+.ending-achievements li {
+  font-size: 1.25rem;
+  color: black;
+  margin: 6px 0;
+  line-height: 1.25;
+}
+
+.ending-play-again-btn {
+  background-image: url('/assets/buttons/wider_default.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 240px;
+  height: 60px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 12px 0;
+  transition: all 0.2s ease;
+}
+
+.ending-play-again-btn:hover {
+  background-image: url('/assets/buttons/wider_hover.png');
+  transform: translateY(-2px);
+}
+
+.ending-play-again-btn:active {
+  background-image: url('/assets/buttons/wider_pressed.png');
+  transform: translateY(0);
+}
+
+/* Remove ending footer styles - footer text removed */
+
+/* Interactive Celebration Styles */
+.interactive-celebration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Dark overlay on background */
+.celebration-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  /* z-index: 1; */
+}
+
+.celebration-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1400px; /* much larger than interactive dialogue container */
+  /* max-width: 95vw; */
+  min-height: 350px; /* taller container */
+  /* Brown border background underneath everything - same as interactive */
+  background-color: #8B4513;
+  /* Cream center area - same as interactive */
+  background-image: linear-gradient(#FFEDCD, #FFEDCD);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: calc(100% - 52px) calc(100% - 52px); /* cream area with 26px border on all sides */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 60px 60px 60px; /* more padding for larger content */
+  box-sizing: border-box;
+  z-index: 2; /* above the overlay */
+}
+
+/* Use exact same border system as interactive-bottom-container */
+.celebration-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 26px;
+  right: 26px;
+  height: 26px;
+  background-image: url('/assets/border/border_top.png');
+  background-repeat: repeat-x;
+  background-size: auto 26px;
+  z-index: 1;
+}
+
+.celebration-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 26px;
+  right: 26px;
+  height: 26px;
+  background-image: url('/assets/border/border_top.png');
+  background-repeat: repeat-x;
+  background-size: auto 26px;
+  transform: rotate(180deg);
+  z-index: 1;
+}
+
+.celebration-container .border-left {
+  position: absolute;
+  left: 0;
+  top: 26px;
+  bottom: 26px;
+  width: 26px;
+  background-image: url('/assets/border/border_left.png');
+  background-repeat: repeat-y;
+  background-size: 26px auto;
+  z-index: 1;
+}
+
+.celebration-container .border-right {
+  position: absolute;
+  right: 0;
+  top: 26px;
+  bottom: 26px;
+  width: 26px;
+  background-image: url('/assets/border/border_right.png');
+  background-repeat: repeat-y;
+  background-size: 26px auto;
+  z-index: 1;
+}
+
+.celebration-container .border-corner-tl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  background-image: url('/assets/border/border_top_left.png');
+  background-size: 26px 26px;
+  z-index: 2;
+}
+
+.celebration-container .border-corner-tr {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 26px;
+  height: 26px;
+  background-image: url('/assets/border/border_top_left.png');
+  background-size: 26px 26px;
+  transform: rotate(90deg);
+  z-index: 2;
+}
+
+.celebration-container .border-corner-bl {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  background-image: url('/assets/border/border_top_left.png');
+  background-size: 26px 26px;
+  transform: rotate(270deg);
+  z-index: 2;
+}
+
+.celebration-container .border-corner-br {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 26px;
+  height: 26px;
+  background-image: url('/assets/border/border_top_left.png');
+  background-size: 26px 26px;
+  transform: rotate(180deg);
+  z-index: 2;
+}
+
+.celebration-badge {
+  position: absolute;
+  top: -80px; /* position higher for larger badge */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  /* Remove flex to allow independent positioning */
+}
+
+.celebration-badge .badge-text {
+  position: absolute;
+  top: 85px; /* Move text down by 100px from badge position */
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+  width: 140px; /* Badge width (200px) minus 4px for padding */
+  display: flex;
+  align-items: center;   /* vertical centering */
+  justify-content: center; /* horizontal centering */
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #2c1810;
+  text-align: center;
+  z-index: 11;
+  line-height: 1.2; /* Better line spacing for wrapped text */
+}
+.celebration-badge img {
+  width: 200px; /* much larger badge */
+  height: 200px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
+}
+
+.celebration-content {
+  /* text-align: center; */
+  max-width: 1000px; /* wider content area */
+  z-index: 6;
+  margin-bottom: 40px; /* space for buttons */
+}
+
+.celebration-title {
+  font-size: 2.4rem; /* much larger title */
+  font-weight: 900;
+  color: #2c1810;
+  margin: 40px 0 32px 0;
+  line-height: 1.2;
+}
+
+.celebration-points {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  list-style-type: disc;
+}
+
+.celebration-points li {
+  position: relative;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #4a3420;
+  margin: 16px 0 16px 40px;
+  /* padding-left: 32px; */
+  line-height: 1;
+}
+
+/* .celebration-points li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #8b4513;
+  font-weight: bold;
+  font-size: 1.5rem;
+} */
+
+/* Position nav buttons at bottom right of celebration container */
+.celebration-container .dialogue-nav-buttons {
+  position: absolute;
+  bottom: 40px;
+  right: 35px;
+  z-index: 6;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  z-index: 1000;
+}
+
+.modal-content {
+  top: 80px;
+  left: 220px;
+  background: #FFF9EA;
+  border-radius: 12px;
+  border: 1px solid #FFB700;
+  padding: 2rem;
+  max-width: 500px;
+  max-height: 700px;
+  position: relative;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.modal-help {
+  left: 220px;
+}
+
+.modal-info {
+  left: 275px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #312624;
+  margin: 0;
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #707070;
+  cursor: pointer;
+  padding: 0;
+  padding-bottom: 8px;
+  width: 1.2rem;
+  height: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.modal-close:focus {
+  outline: none;
+  color: #000000;
+}
+
+.modal-close:focus-visible {
+  outline: 3px solid #FFC517;
+  outline-offset: 3px;
+}
+
+.modal-close:hover {
+  color: #000000;
+}
+
+.modal-body {
+  color: #444;
+  line-height: 1.6;
+  font-size: 1rem;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.modal-body strong {
+  color: #312624;
+  font-weight: 600;
+}
+
+/* Library Scene - improved layout and positioning */
+.library-side-doors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  max-width: 1100 px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.library-middle-door-container {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.library-door-container {
+  height: 300px;
+  width: 170px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Independent library title positioning */
+.library-title-container {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.library-title {
+  width: 150px;
+  height: auto;
+}
+
+/* Square doors for left and right - smaller icons */
+.library-square {
+  width: 80px;
+  height: 80px;
+  background: url('/assets/library/square_default.png') center/contain no-repeat;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.library-square:hover {
+  background-image: url('/assets/library/square_hover.png');
+  transform: translateY(-3px);
+}
+
+.library-square:active {
+  background-image: url('/assets/library/square_pressed.png');
+  transform: translateY(0);
+}
+
+.library-square.disabled {
+  background-image: url('/assets/library/square_disabled.png');
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.library-square .checkmark {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  height: 24px;
+  width: 24px;
+}
+
+.door-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.library-door-frame {
+  position: relative;
+  top: -0px;
+  width: 182px;
+  height: 288px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.library-door-frame.locked {
+  cursor: not-allowed;
+}
+
+.library-door-frame.locked:hover {
+  transform: none;
+}
+
+.door-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.door-lock-image {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+/* MapScene-style movement animations - ensure Myia appears on top */
+.myia-container {
+  position: absolute;
+  transition: left 3s ease-in-out, top 3s ease-in-out;
+  z-index: 100; /* Ensure Myia appears on top of doors */
+}
+
+.myia-container.no-transition {
+  transition: none;
+}
+
+/* Shorter transition for middle door movement */
+.myia-container.moving-to-middle {
+  transition: left 0.8s ease-in-out, top 0.8s ease-in-out;
+}
+
+.library-dialogue {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid #c9b07d;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 80%;
+  text-align: center;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 18px;
+  color: #2b1408;
+}
+
+/* Loading Scene Styles */
+.loading-scene {
+  position: relative;
+  width: 100%; /* fills LetterboxViewport stage (1500x900 virtual) */
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.loading-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  width: 100%;
+  padding: 40px 60px 120px; /* bottom space for bar */
+  box-sizing: border-box;
+}
+.loading-logo {
+  width: 420px;
+  max-width: 60%;
+  height: auto;
+  filter: drop-shadow(0 6px 18px rgba(0,0,0,0.5));
+}
+/* Loading bar (distinct from quest progress bar) */
+.loading-bar-wrapper {
+  position: absolute;
+  left: 50%;
+  bottom: 80px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Disabled interactions class for dialogue scenes */
+.disabled-interactions {
+  pointer-events: none !important;
+  cursor: default !important;
+}
+
+.disabled-interactions:hover {
+  /* Override any hover effects */
+  transform: none !important;
+  filter: none !important;
+  opacity: 1 !important;
+}
+.loading-bar-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+.loading-bar-track {
+  width: 60vw;
+  max-width: 900px;
+  height: 20px;
+  background: #000;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.loading-bar-fill {
+  height: 100%;
+  width: 0%;
+  background: #57CC02;
+  transition: width 0.35s ease;
+}
+
+/* ========================================
+   SCENE TRANSITION SYSTEM
+   ======================================== */
+
+/* Scene transition container */
+.scene-transition-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Ensure background layer is behind content */
+.scene-transition-container::before {
+  z-index: -1;
+  transition: filter var(--blur-duration, 300ms) ease-out;
+}
+
+/* Content layer */
+.scene-transition-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity var(--content-fade-duration, 600ms) ease-out;
+}
+
+/* Transition phases */
+.scene-transition-container.transition-phase-background .scene-transition-content {
+  opacity: 0;
+}
+
+.scene-transition-container.transition-phase-blur .scene-transition-content {
+  opacity: 0;
+}
+
+.scene-transition-container.transition-phase-blur::before {
+  filter: blur(var(--blur-amount, 3px));
+}
+
+.scene-transition-container.transition-phase-content .scene-transition-content {
+  opacity: 1;
+}
+
+.scene-transition-container.transition-phase-content::before {
+  filter: blur(var(--blur-amount, 3px));
+}
+
+.scene-transition-container.transition-phase-complete .scene-transition-content {
+  opacity: 1;
+}
+
+.scene-transition-container.transition-phase-complete::before {
+  filter: blur(var(--blur-amount, 3px));
+}
+
+/* When transitions are disabled, show content immediately */
+.scene-transition-container.transitions-disabled .scene-transition-content {
+  opacity: 1;
+  transition: none;
+}
+
+.scene-transition-container.transitions-disabled::before {
+  filter: blur(var(--blur-amount, 3px));
+  transition: none;
+}
+
+/* Apply transition container styling to existing scene classes */
+.scene-transition-container.narrator-scene,
+.scene-transition-container.interactive-scene,
+.scene-transition-container.ending-scene {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Ensure existing scene backgrounds work with transition system */
+.scene-transition-container.narrator-scene::before {
+  background-image: url('/assets/narrator_bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.scene-transition-container.interactive-scene::before {
+  background-image: url('/assets/choice_bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.scene-transition-container.ending-scene::before {
+  background-image: url('/assets/ending_bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Interactive scene background variants */
+.scene-transition-container.interactive-scene.proofs-bg::before {
+  background-image: url('/assets/allProofs_bg.png');
+}
+
+.scene-transition-container.interactive-scene.monochord-bg::before {
+  background-image: url('/assets/monochord_bg.png');
+}
+
+.scene-transition-container.interactive-scene.figurate-bg::before {
+  background-image: url('/assets/figurate_bg.png');
+}
+
+.scene-transition-container.interactive-scene.ladder-bg::before {
+  background-image: url('/assets/ladder_bg.png');
+}
+
+.scene-transition-container.interactive-scene.final-bg::before {
+  background-image: url('/assets/finalChallenge_bg.png');
+}

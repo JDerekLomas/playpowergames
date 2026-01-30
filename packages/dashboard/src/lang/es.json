@@ -1,0 +1,177 @@
+{
+    "dashboardTitle": "Juegos de K-8",
+    "dashboardDescription": "Explora un mundo de emocionantes juegos de matemáticas diseñados para niños desde jardín de infancia hasta octavo grado. Mejora tus habilidades, resuelve acertijos y haz que aprender matemáticas sea divertido y estimulante.",
+    "grade": "Grado",
+    "gradeK": "Kindergarten",
+    "existingGames": "Juegos existentes",
+    "playNow": "JUGAR AHORA",
+    "comingSoon": "PRÓXIMAMENTE",
+    "gameMechanics": "Mecánicas del juego",
+    "allGames": "Todos los juegos",
+    "existingGamesData": {
+        "battleship-numberline": {
+            "title": "Battalla en la recta numérica",
+            "description": "Domina varios conceptos matemáticos usando una recta numérica interactiva en este emocionante juego de batalla.",
+            "mechanics": {
+                "addition": {
+                    "title": "Suma",
+                    "description": "Practica sumas en una recta numérica"
+                },
+                "subtraction": {
+                    "title": "Resta",
+                    "description": "Mejora tus habilidades de resta"
+                },
+                "equation": {
+                    "title": "Ecuación",
+                    "description": "Resuelve ecuaciones y ubica las respuestas en una recta numérica"
+                },
+                "fraction": {
+                    "title": "Fracción",
+                    "description": "Aprende a trabajar con fracciones en una recta numérica"
+                },
+                "decimal": {
+                    "title": "Decimal",
+                    "description": "Perfecciona tus habilidades con decimales en una recta numérica"
+                },
+                "percentage": {
+                    "title": "Porcentaje",
+                    "description": "Mejora tu comprensión de porcentajes en una recta numérica"
+                }
+            }
+        },
+        "think-bigger": {
+            "title": "Piensa en grande",
+            "description": "Mejora tu comprensión de los números a través de desafíos interactivos.",
+            "mechanics": {
+                "place-value": {
+                    "title": "Valor posicional",
+                    "description": "Mejora tu comprensión del valor posicional"
+                },
+                "magnitude-comparison": {
+                    "title": "Comparación de magnitud",
+                    "description": "Compara números según su magnitud"
+                }
+            }
+        },
+        "bubble-pop": {
+            "title": "Explota burbujas",
+            "description": "Resuelve varios desafíos matemáticos mientras explotas burbujas con números.",
+            "mechanics": {
+                "mcq": {
+                    "title": "Opción múltiple",
+                    "description": "Resuelve preguntas de opción múltiple explotando burbujas con números"
+                },
+                "in-order": {
+                    "title": "En orden",
+                    "description": "Organiza los números en el orden correcto explotando las burbujas"
+                },
+                "skip-n": {
+                    "title": "Saltar N",
+                    "description": "Salta cada N-ésimo número y explota las burbujas correctas"
+                },
+                "drag": {
+                    "title": "Arrastrar",
+                    "description": "Arrastra y suelta los números en los lugares correctos mientras explotas las burbujas"
+                },
+                "fill-in-the-blank": {
+                    "title": "Completar el espacio",
+                    "description": "Completa los números faltantes explotando las burbujas correctas"
+                }
+            }
+        },
+        "clock-game": {
+            "title": "Juego del reloj",
+            "description": "Practica leer y ajustar relojes a través de varios desafíos.",
+            "mechanics": {
+                "analog": {
+                    "title": "Análogo",
+                    "description": "Practica la lectura y el ajuste de relojes análogos"
+                },
+                "stop-the-clock": {
+                    "title": "Detén el reloj",
+                    "description": "Pon a prueba tus habilidades deteniendo el reloj"
+                },
+                "analog-to-digital": {
+                    "title": "De análogo a digital",
+                    "description": "Convierte horas análogas en digitales"
+                },
+                "digital-to-analog": {
+                    "title": "De digital a análogo",
+                    "description": "Convierte horas digitales en análogas"
+                }
+            }
+        },
+        "place-value": {
+            "title": "Valor posicional",
+            "description": "Domina los conceptos de valor posicional mediante desafíos interactivos.",
+            "mechanics": {
+                "click": {
+                    "title": "Clic",
+                    "description": "Haz clic en el valor correcto según el valor posicional"
+                },
+                "drag": {
+                    "title": "Arrastrar",
+                    "description": "Arrastra y suelta los números en sus lugares correctos"
+                },
+                "drag-to-make": {
+                    "title": "Arrastrar para formar",
+                    "description": "Arrastra números para formar valores correctos"
+                },
+                "highest": {
+                    "title": "Mayor",
+                    "description": "Identifica el valor más alto basado en el valor posicional"
+                },
+                "make": {
+                    "title": "Formar",
+                    "description": "Crea números colocando cifras en sus valores posicionales correctos"
+                },
+                "match": {
+                    "title": "Emparejar",
+                    "description": "Empareja los números con sus valores posicionales correctos"
+                },
+                "mcq": {
+                    "title": "Opción múltiple",
+                    "description": "Pon a prueba tu conocimiento sobre el valor posicional con preguntas de opción múltiple"
+                },
+                "change": {
+                    "title": "Cambiar",
+                    "description": "Cambia valores posicionales para formar nuevos números"
+                }
+            }
+        },
+        "math-fact": {
+            "title": "Hecho matemático",
+            "description": "Practica tus hechos matemáticos y mejora tu fluidez en operaciones aritméticas básicas."
+        },
+        "train-game": {
+            "title": "Juego del tren",
+            "description": "Ayuda al tren a moverse resolviendo desafíos de conteo."
+        },
+        "jelly-bean": {
+            "title": "Frijolitos",
+            "description": "Participa en desafíos interactivos para comprender mejor los números.",
+            "mechanics": {
+                "comparison": {
+                    "title": "Comparación",
+                    "description": "Compara diferentes cantidades de frijolitos"
+                },
+                "odd-or-even": {
+                    "title": "Par o impar",
+                    "description": "Clasifica los frijolitos como pares o impares"
+                },
+                "drag-and-drop": {
+                    "title": "Arrastrar y soltar",
+                    "description": "Arrastra y suelta frijolitos en el lugar correcto"
+                },
+                "counting": {
+                    "title": "Conteo",
+                    "description": "Cuenta frijolitos para mejorar tus habilidades numéricas básicas"
+                },
+                "equation": {
+                    "title": "Ecuación",
+                    "description": "Resuelve ecuaciones usando frijolitos"
+                }
+            }
+        }
+    }
+}

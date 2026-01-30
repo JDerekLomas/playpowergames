@@ -1,0 +1,355 @@
+﻿{
+	"frames": {
+		"Asteroid instance 10000": {
+			"frame": {
+				"x": 0,
+				"y": 0,
+				"w": 180,
+				"h": 184
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 154,
+				"y": 145,
+				"w": 494,
+				"h": 410
+			},
+			"sourceSize": {
+				"w": 494,
+				"h": 410
+			}
+		},
+		"Asteroid instance 10016": {
+			"frame": {
+				"x": 180,
+				"y": 0,
+				"w": 347,
+				"h": 378
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 71,
+				"y": 32,
+				"w": 494,
+				"h": 410
+			},
+			"sourceSize": {
+				"w": 494,
+				"h": 410
+			}
+		},
+		"Asteroid instance 10017": {
+			"frame": {
+				"x": 527,
+				"y": 0,
+				"w": 316,
+				"h": 305
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 87,
+				"y": 68,
+				"w": 494,
+				"h": 410
+			},
+			"sourceSize": {
+				"w": 494,
+				"h": 410
+			}
+		},
+		"Asteroid instance 10018": {
+			"frame": {
+				"x": 843,
+				"y": 0,
+				"w": 494,
+				"h": 244
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 105,
+				"w": 494,
+				"h": 410
+			},
+			"sourceSize": {
+				"w": 494,
+				"h": 410
+			}
+		},
+		"Asteroid instance 10019": {
+			"frame": {
+				"x": 1337,
+				"y": 0,
+				"w": 435,
+				"h": 321
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 11,
+				"y": 43,
+				"w": 494,
+				"h": 410
+			},
+			"sourceSize": {
+				"w": 494,
+				"h": 410
+			}
+		},
+		"Asteroid instance 10020": {
+			"frame": {
+				"x": 0,
+				"y": 378,
+				"w": 450,
+				"h": 350
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 8,
+				"y": 0,
+				"w": 494,
+				"h": 410
+			},
+			"sourceSize": {
+				"w": 494,
+				"h": 410
+			}
+		},
+		"Asteroid instance 10021": {
+			"frame": {
+				"x": 450,
+				"y": 378,
+				"w": 406,
+				"h": 328
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 34,
+				"y": 24,
+				"w": 494,
+				"h": 410
+			},
+			"sourceSize": {
+				"w": 494,
+				"h": 410
+			}
+		},
+		"Asteroid instance 10022": {
+			"frame": {
+				"x": 856,
+				"y": 378,
+				"w": 402,
+				"h": 344
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 38,
+				"y": 28,
+				"w": 494,
+				"h": 410
+			},
+			"sourceSize": {
+				"w": 494,
+				"h": 410
+			}
+		},
+		"Asteroid instance 10023": {
+			"frame": {
+				"x": 1258,
+				"y": 378,
+				"w": 281,
+				"h": 327
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 106,
+				"y": 30,
+				"w": 494,
+				"h": 410
+			},
+			"sourceSize": {
+				"w": 494,
+				"h": 410
+			}
+		},
+		"Asteroid instance 10024": {
+			"frame": {
+				"x": 1539,
+				"y": 378,
+				"w": 268,
+				"h": 241
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 120,
+				"y": 116,
+				"w": 494,
+				"h": 410
+			},
+			"sourceSize": {
+				"w": 494,
+				"h": 410
+			}
+		},
+		"Asteroid instance 10025": {
+			"frame": {
+				"x": 0,
+				"y": 728,
+				"w": 267,
+				"h": 253
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 121,
+				"y": 104,
+				"w": 494,
+				"h": 410
+			},
+			"sourceSize": {
+				"w": 494,
+				"h": 410
+			}
+		},
+		"Asteroid instance 10026": {
+			"frame": {
+				"x": 267,
+				"y": 728,
+				"w": 263,
+				"h": 246
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 124,
+				"y": 104,
+				"w": 494,
+				"h": 410
+			},
+			"sourceSize": {
+				"w": 494,
+				"h": 410
+			}
+		},
+		"Asteroid instance 10027": {
+			"frame": {
+				"x": 530,
+				"y": 728,
+				"w": 262,
+				"h": 256
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 125,
+				"y": 102,
+				"w": 494,
+				"h": 410
+			},
+			"sourceSize": {
+				"w": 494,
+				"h": 410
+			}
+		},
+		"Asteroid instance 10028": {
+			"frame": {
+				"x": 792,
+				"y": 728,
+				"w": 241,
+				"h": 240
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 144,
+				"y": 101,
+				"w": 494,
+				"h": 410
+			},
+			"sourceSize": {
+				"w": 494,
+				"h": 410
+			}
+		},
+		"Asteroid instance 10029": {
+			"frame": {
+				"x": 1033,
+				"y": 728,
+				"w": 242,
+				"h": 241
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 144,
+				"y": 100,
+				"w": 494,
+				"h": 410
+			},
+			"sourceSize": {
+				"w": 494,
+				"h": 410
+			}
+		},
+		"Asteroid instance 10030": {
+			"frame": {
+				"x": 1275,
+				"y": 728,
+				"w": 213,
+				"h": 204
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 144,
+				"y": 124,
+				"w": 494,
+				"h": 410
+			},
+			"sourceSize": {
+				"w": 494,
+				"h": 410
+			}
+		},
+		"Asteroid instance 10031": {
+			"frame": {
+				"x": 1488,
+				"y": 728,
+				"w": 182,
+				"h": 176
+			},
+			"rotated": false,
+			"trimmed": true,
+			"spriteSourceSize": {
+				"x": 157,
+				"y": 143,
+				"w": 494,
+				"h": 410
+			},
+			"sourceSize": {
+				"w": 494,
+				"h": 410
+			}
+		}
+	},
+	"meta": {
+		"app": "Adobe Animate",
+		"version": "24.0.9.73",
+		"image": "AstroBlaster-3.png",
+		"format": "RGBA8888",
+		"size": {
+			"w": 2048,
+			"h": 1024
+		},
+		"scale": "1"
+	}
+}

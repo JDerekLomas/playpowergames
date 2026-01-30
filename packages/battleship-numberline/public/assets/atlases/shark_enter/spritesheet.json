@@ -1,0 +1,115 @@
+{
+    "frames": {
+        "Shark new_00034.png": {
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 120,
+                "h": 80
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 315,
+                "w": 120,
+                "h": 80
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00035.png": {
+            "frame": {
+                "x": 0,
+                "y": 80,
+                "w": 120,
+                "h": 82
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 311,
+                "w": 120,
+                "h": 82
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00036.png": {
+            "frame": {
+                "x": 120,
+                "y": 0,
+                "w": 120,
+                "h": 92
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 299,
+                "w": 120,
+                "h": 92
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00037.png": {
+            "frame": {
+                "x": 120,
+                "y": 92,
+                "w": 120,
+                "h": 96
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 293,
+                "w": 120,
+                "h": 96
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Shark new_00038.png": {
+            "frame": {
+                "x": 0,
+                "y": 162,
+                "w": 120,
+                "h": 95
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 569,
+                "y": 292,
+                "w": 120,
+                "h": 95
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        }
+    },
+    "meta": {
+        "app": "http://free-tex-packer.com",
+        "version": "0.6.7",
+        "image": "spritesheet.png",
+        "format": "RGBA8888",
+        "size": {
+            "w": 240,
+            "h": 257
+        },
+        "scale": 1
+    }
+}

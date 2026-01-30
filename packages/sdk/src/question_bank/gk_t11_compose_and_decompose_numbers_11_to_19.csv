@@ -1,0 +1,31 @@
+Operand 1,Operand 2,Answer,selected option,type,Question_en,Question_es
+mooncake,"1, 2, 3",11,10,decompose,I want 11 mooncakes!,¡Quiero 11 pasteles lunares!
+moonsandwich,"2, 3, 4",12,10,decompose,I want 12 moonsandwiches!,¡Quiero 12 sándwiches lunares!
+moonburger,"4, 8, 6",18,10,decompose,I want 18 moonburgers!,¡Quiero 18 hamburguesas lunares!
+moonmelon,"7, 6, 5",17,10,decompose,I want 17 melons!,¡Quiero 17 melones!
+moonpie,"9, 8, 7",19,10,decompose,I want 19 moonpies!,¡Quiero 19 pasteles lunares!
+mooncake,"10, 3, 8, 5",13,,compose,Feed me 13 mooncakes.,Dame 13 pasteles de luna.
+moonsandwich,"10, 7, 5, 8",15,,compose,Feed me 15 moonsandwiches.,Dame 15 sándwiches lunares.
+moonburger,"10, 8, 6, 8",16,,compose,Feed me 16 moonburgers.,Dame 16 hamburguesas lunares.
+moonmelon,"10, 7, 9, 8",17,,compose,Feed me 17 melons.,Dame 17 melones.
+mooncake,"10, 9, 8, 9",18,,compose,Feed me 18 mooncakes.,Dame 18 pasteles de luna.
+moonpie,"5, 4, 6",15,10,decompose,I want 15 moonpies!,¡Quiero 15 pasteles lunares!
+mooncake,"4, 3, 5",14,10,decompose,I want 14 mooncakes!,¡Quiero 14 pasteles lunares!
+moonsandwich,"7, 6, 8",17,10,decompose,I want 17 moonsandwiches!,¡Quiero 17 sándwiches lunares!
+moonburger,"6, 7, 5",16,10,decompose,I want 16 moonburgers!,¡Quiero 16 hamburguesas lunares!
+moonmelon,"8, 9, 7",18,10,decompose,I want 18 melons!,¡Quiero 18 melones!
+mooncake,"10, 2, 7, 5",12,,compose,Feed me 12 mooncakes.,Dame 12 pasteles de luna.
+moonpie,"10, 7, 5, 8",15,,compose,Feed me 15 moonpies.,Dame 15 pasteles lunares.
+moonsandwich,"10, 4, 8, 6",14,,compose,Feed me 14 moonsandwiches.,Dame 14 sándwiches lunares.
+moonpie,"10, 9, 8, 9",18,,compose,Feed me 18 moonpies.,Dame 18 pasteles lunares.
+moonmelon,"10, 3, 8, 5",13,,compose,Feed me 13 melons.,Dame 13 melones.
+moonpie,"3, 2, 4",13,10,decompose,I want 13 moonpies!,¡Quiero 13 pasteles lunares!
+moonpie,"9, 8, 7",19,10,decompose,I want 19 moonpies!,¡Quiero 19 pasteles lunares!
+mooncake,"2, 3, 2",12,10,decompose,I want 12 mooncakes!,¡Quiero 12 pasteles lunares!
+moonsandwich,"7, 8, 6",17,10,decompose,I want 17 moonsandwiches!,¡Quiero 17 sándwiches lunares!
+moonburger,"6, 5, 7",16,10,decompose,I want 16 moonburgers!,¡Quiero 16 hamburguesas lunares!
+moonpie,"10, 7, 9, 8",17,,compose,Feed me 17 moonpies.,Dame 17 pasteles lunares.
+moonburger,"10, 6, 8, 8",16,,compose,Feed me 16 moonburgers.,Dame 16 hamburguesas lunares.
+moonsandwich,"10, 6, 8, 4",14,,compose,Feed me 14 moonsandwiches.,Dame 14 sándwiches lunares.
+moonmelon,"10, 9, 9, 8",18,,compose,Feed me 18 melons.,Dame 18 melones.
+moonpie,"10, 7, 9, 8",17,,compose,Feed me 17 moonpies.,Dame 17 pasteles lunares.

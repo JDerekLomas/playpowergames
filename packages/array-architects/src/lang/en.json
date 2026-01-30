@@ -1,0 +1,73 @@
+{
+    "common": {
+        "playAgain": "Play Again!",
+        "greatJob": "Great Job!",
+        "awesomeWork": "Awesome Work!",
+        "youreAmazing": "You're Amazing!",
+        "keepItUp": "Keep It Up!",
+        "fantasticEffort": "Fantastic Effort!",
+        "wellDone": "Well Done!",
+        "perfectScore": "Perfect Score!",
+        "volume": "Volume",
+        "pause": "Pause",
+        "mute": "Mute",
+        "unmute": "Unmute",
+        "resume": "Resume",
+        "help": "Help",
+        "correct": "Correct",
+        "incorrect": "Incorrect",
+        "icon": "Icon",
+        "play": "Play",
+        "title": "Array Architects",
+        "titleLabel": "Array Architects Game",
+        "scoreboardNegativeFeedback": "Give it another try!",
+        "continue": "Continue"
+    },
+    "game": {
+        "checkAnswer": "Check",
+        "resetSelection": "Reset",
+        "drawRectangle": "Click and drag to draw a rectangle.",
+        "youHaveBuilt": "You have built: {{rows}} × {{cols}}",
+        "score": "Score:",
+        "scoreValue": "Score: {{value}}",
+        "gameProgress": "Game Progress",
+        "progress": "Progress: {{progress}}%",
+        "progressBar": "Progress bar: {{percentage}}%",
+        "inARow": "{{count}} in a row",
+        "correctFeedback": "Correct!",
+        "incorrectFeedback": "Incorrect!"
+    },
+    "info": {
+        "helpPage": "Help page opened",
+        "howToPlay": "How to Play",
+        "play": "Play",
+        "back": "Back",
+        "skip": "Skip"
+    },
+    "scoreboard": {
+        "finalScore": "Final Score",
+        "greatJob": "Great Job!",
+        "accuracy": "Accuracy",
+        "time": "Time",
+        "score": "Score",
+        "cup": "Cup",
+        "points": "Points",
+        "noOfCorrect": "Number correct",
+        "beatYourScore": "Beat Your Score!",
+        "playAgain": "Play Again",
+        "correctOutOf": "{{correct}} out of {{total}}",
+        "correctOutOfAnnounce": "{{correct}} out of {{total}} correct!",
+        "backToMultiverse": "Back to Multiverse",
+        "progress": "Progress: {{correct}} of {{total}} correct answers"
+    },
+    "accessibility": {
+        "gameGrid": "Array Architects game grid. Use arrow keys to navigate, Enter to select corners, R to reset, C to check answer.",
+        "keyboardInstructions": "Use arrow keys to navigate the grid. Press Enter to select the first corner, navigate to opposite corner, then press Enter again to complete rectangle selection.",
+        "gridTile": "Grid tile row {{row}}, column {{col}}",
+        "tilePosition": "Row {{row}}, Column {{col}}",
+        "firstCornerSelected": "First corner selected at Row {{row}}, Column {{col}}. Navigate to opposite corner and press Enter to complete rectangle.",
+        "rectangleCompleted": "Rectangle completed: {{width}} by {{height}} rectangle with {{total}} tiles selected.",
+        "selectionCleared": "Selection cleared",
+        "selectionCancelled": "First corner selection cancelled"
+    }
+}

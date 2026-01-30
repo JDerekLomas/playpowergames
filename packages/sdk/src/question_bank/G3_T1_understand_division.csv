@@ -1,0 +1,31 @@
+Operand 1,Operand 2,Answer,Item,Item Per Plate,Equation,Question_en,Question_es,type
+2,6,6,mooncake,3,2 × 3,How many mooncakes in total?,¿Cuántos pasteles lunares hay en total?,numpad
+2,8,8,moonsandwich,4,2 × 4,How many moonsandwiches in total?,¿Cuántos sándwiches lunares hay en total?,numpad
+3,15,15,moonpie,5,3 × 5,How many moonpies in total?,¿Cuántos pasteles de luna hay en total?,numpad
+4,12,12,moonmelon,3,4 × 3,How many melons in total?,¿Cuántos melones hay en total?,numpad
+5,10,10,moontea,2,5 × 2,How many moonteas in total?,¿Cuántos tés lunares hay en total?,numpad
+5,10,2,moonburger,2,10 ÷ 5,Share 10 moonburgers equally among 5 aliens.,Compartir 10 hamburguesas lunares equitativamente entre 5 alienígenas.,distribute
+4,12,3,moonpie,3,12 ÷ 4,Share 12 moonpies equally among 4 aliens.,Compartir 12 pasteles de luna equitativamente entre 4 alienígenas.,distribute
+3,15,5,moonsandwich,5,15 ÷ 3,Share 15 moonsandwiches equally among 3 aliens.,Compartir 15 sándwiches lunares equitativamente entre 3 alienígenas.,distribute
+3,9,3,moonmelon,3,9 ÷ 3,Share 9 melons equally among 3 aliens.,Compartir 9 melones equitativamente entre 3 alienígenas.,distribute
+4,16,4,mooncake,4,16 ÷ 4,Share 16 mooncakes equally among 4 aliens.,Compartir 16 pasteles lunares equitativamente entre 4 alienígenas.,distribute
+5,15,15,moonpie,3,5 × 3,How many moonpies in total?,¿Cuántos pasteles de luna hay en total?,numpad
+4,8,8,moontea,2,4 × 2,How many moonteas in total?,¿Cuántos tés lunares hay en total?,numpad
+2,10,10,moonmelon,5,2 × 5,How many melons in total?,¿Cuántos melones hay en total?,numpad
+3,12,12,mooncake,4,3 × 4,How many mooncakes in total?,¿Cuántos pasteles lunares hay en total?,numpad
+4,20,20,moonburger,5,4 × 5,How many moonburgers in total?,¿Cuántas hamburguesas lunares hay en total?,numpad
+4,20,5,moonsandwich,5,20 ÷ 4,Share 20 moonsandwiches equally among 4 aliens.,Compartir 20 sándwiches lunares equitativamente entre 4 alienígenas.,distribute
+3,6,2,moonpie,2,6 ÷ 3,Share 6 moonpies equally among 3 aliens.,Compartir 6 pasteles de luna equitativamente entre 3 alienígenas.,distribute
+5,15,3,moonburger,3,15 ÷ 5,Share 15 moonburgers equally among 5 aliens.,Compartir 15 hamburguesas lunares equitativamente entre 5 alienígenas.,distribute
+2,8,4,mooncake,4,8 ÷ 2,Share 8 mooncakes equally among 2 aliens.,Compartir 8 pasteles lunares equitativamente entre 2 alienígenas.,distribute
+5,20,4,moonmelon,4,20 ÷ 5,Share 20 melons equally among 5 aliens.,Compartir 20 melones equitativamente entre 5 alienígenas.,distribute
+4,12,12,moonsandwich,3,4 × 3,How many moonsandwiches in total?,¿Cuántos sándwiches lunares hay en total?,numpad
+5,20,20,moonburger,4,5 × 4,How many moonburgers in total?,¿Cuántas hamburguesas lunares hay en total?,numpad
+3,6,6,moonmelon,2,3 × 2,How many melons in total?,¿Cuántos melones hay en total?,numpad
+2,8,8,moonsandwich,4,2 × 4,How many moonsandwiches in total?,¿Cuántos sándwiches lunares hay en total?,numpad
+3,9,9,moonpie,3,3 × 3,How many moonpies in total?,¿Cuántos pasteles de luna hay en total?,numpad
+2,10,5,moonburger,5,10 ÷ 2,Share 10 moonburgers equally among 2 aliens.,Compartir 10 hamburguesas lunares equitativamente entre 2 alienígenas.,distribute
+3,21,7,moonburger,7,21 ÷ 3,Share 21 moonburgers equally among 3 aliens.,Compartir 21 hamburguesas lunares equitativamente entre 3 alienígenas.,distribute
+3,9,3,moonpie,3,9 ÷ 3,Share 9 moonpies equally among 3 aliens.,Compartir 9 pasteles de luna equitativamente entre 3 alienígenas.,distribute
+4,12,3,moonmelon,3,12 ÷ 4,Share 12 melons equally among 4 aliens.,Compartir 12 melones equitativamente entre 4 alienígenas.,distribute
+5,10,2,moontea,2,10 ÷ 5,Share 10 moonteas equally among 5 aliens.,Compartir 10 tés lunares equitativamente entre 5 alienígenas.,distribute

@@ -1,0 +1,99 @@
+﻿{"frames": {
+
+"Firing instance 10000":
+{
+	"frame": {"x":0,"y":0,"w":97,"h":109},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":87,"y":130,"w":260,"h":331},
+	"sourceSize": {"w":260,"h":331}
+},
+"Firing instance 10001":
+{
+	"frame": {"x":97,"y":0,"w":97,"h":94},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":87,"y":145,"w":260,"h":331},
+	"sourceSize": {"w":260,"h":331}
+},
+"Firing instance 10002":
+{
+	"frame": {"x":194,"y":0,"w":136,"h":282},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":71,"y":49,"w":260,"h":331},
+	"sourceSize": {"w":260,"h":331}
+},
+"Firing instance 10003":
+{
+	"frame": {"x":330,"y":0,"w":233,"h":239},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":27,"y":79,"w":260,"h":331},
+	"sourceSize": {"w":260,"h":331}
+},
+"Firing instance 10004":
+{
+	"frame": {"x":563,"y":0,"w":259,"h":260},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":67,"w":260,"h":331},
+	"sourceSize": {"w":260,"h":331}
+},
+"Firing instance 10005":
+{
+	"frame": {"x":822,"y":0,"w":169,"h":242},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":21,"y":62,"w":260,"h":331},
+	"sourceSize": {"w":260,"h":331}
+},
+"Firing instance 10006":
+{
+	"frame": {"x":0,"y":282,"w":168,"h":302},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":23,"y":0,"w":260,"h":331},
+	"sourceSize": {"w":260,"h":331}
+},
+"Firing instance 10007":
+{
+	"frame": {"x":168,"y":282,"w":137,"h":268},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":24,"y":0,"w":260,"h":331},
+	"sourceSize": {"w":260,"h":331}
+},
+"Firing instance 10008":
+{
+	"frame": {"x":305,"y":282,"w":41,"h":102},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":115,"y":0,"w":260,"h":331},
+	"sourceSize": {"w":260,"h":331}
+},
+"Firing instance 10009":
+{
+	"frame": {"x":346,"y":282,"w":41,"h":48},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":115,"y":0,"w":260,"h":331},
+	"sourceSize": {"w":260,"h":331}
+},
+"Firing instance 10010":
+{
+	"frame": {"x":387,"y":282,"w":0,"h":0},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":-501,"y":-261,"w":260,"h":331},
+	"sourceSize": {"w":260,"h":331}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "24.0.9.73",
+	"image": "AstroBlaster-3.png",
+	"format": "RGBA8888",
+	"size": {"w":1024,"h":1024},
+	"scale": "1"
+}
+}

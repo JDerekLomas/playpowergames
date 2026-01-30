@@ -1,0 +1,775 @@
+{
+  "gK-addition-upto-10": {
+    "gameName": "make-ten",
+    "grade": "K",
+    "image": "./assets/images/grade-k/make-ten-topic-4.png",
+    "title": "Topic 4: Understand Addition",
+    "titleEs": "Tema 4: Entender la Suma",
+    "description": "Learn about addition up to 10.",
+    "descriptionEs": "Aprende sobre la suma hasta 10.",
+    "lastUpdated": "2025-12-16T11:58:41.251Z"
+  },
+  "g1-use-models-and-strategies-to-add-and-subtract-within-100": {
+    "gameName": "battleship-numberline",
+    "grade": "1",
+    "image": "./assets/images/grade-1/robo-pirates-topic-9.png",
+    "title": "Topic 9: Use Models and Strategies to Add and Subtract within 100",
+    "titleEs": "Tema 9: Usar Modelos y Estrategias para Sumar y Restar hasta 100",
+    "txTitle": "TX Topic 8: Represent and Add Greater Numbers",
+    "txTitleEs": "TX Tema 8: Representar y Sumar Números Mayores",
+    "description": "Add within 100.",
+    "descriptionEs": "Suma dentro de 100.",
+    "lastUpdated": "2026-01-06T11:05:51.411Z",
+    "configs": {
+      "topic": "add_and_subtract_within_100",
+      "theme": "purple"
+    }
+  },
+  "g1_equal_shares_and_time": {
+    "gameName": "space-party",
+    "grade": "1",
+    "image": "./assets/images/grade-1/space-party-topic-11.png",
+    "title": "Topic 11: Equal Shares and Time",
+    "titleEs": "Tema 11: Partes Iguales y Tiempo",
+    "txTitle": "TX Topic 11: Money, Equal Parts, and Time",
+    "txTitleEs": "TX Tema 11: Dinero, Partes Iguales y Tiempo",
+    "description": "Learn about equal shares.",
+    "descriptionEs": "Aprende sobre partes iguales.",
+    "lastUpdated": "2026-01-06T11:05:51.411Z",
+    "configs": {
+      "topic": "g1_t11_equal_shares_and_time"
+    }
+  },
+  "g7-rational-number-operations": {
+    "gameName": "battleship-numberline",
+    "grade": "7",
+    "image": "./assets/images/grade-7/robo-pirates-topic-1.png",
+    "title": "Topic 1: Rational Number Operations",
+    "titleEs": "Tema 1: Operaciones con Números Racionales",
+    "description": "Learn about rational number operations.",
+    "descriptionEs": "Aprende sobre operaciones con números racionales.",
+    "lastUpdated": "2026-01-06T11:05:51.411Z",
+    "configs": {
+      "topic": "rational_numbers",
+      "theme": "purple"
+    }
+  },
+  "g1-understand-place-value": {
+    "gameName": "fraction-frenzy",
+    "grade": "1",
+    "image": "./assets/images/grade-1/number-comparison-topic-8.png",
+    "title": "Topic 8: Understand Place Value",
+    "titleEs": "Tema 8: Entender el Valor Posicional",
+    "txTitle": "TX Topic 9: Comparing and Ordering Numbers",
+    "txTitleEs": "TX Tema 9: Comparar y Ordenar Números",
+    "description": "Compare numbers.",
+    "descriptionEs": "Compara números.",
+    "lastUpdated": "2025-12-19T13:57:35.044Z",
+    "configs": {
+      "topic": "compare_numbers"
+    }
+  },
+  "g1-fluently-add-and-subtract-within-10": {
+    "gameName": "alien-shooter",
+    "grade": "1",
+    "image": "./assets/images/grade-1/astro-math-topic-2.png",
+    "title": "Topic 2: Fluently Add and Subtract within 10",
+    "titleEs": "Tema 2: Sumar y Restar con Fluidez hasta 10",
+    "txTitle": "TX Topic 2: Add and Subtract within 10",
+    "txTitleEs": "TX Tema 2: Sumar y Restar hasta 10",
+    "description": "Add and subtract within 10.",
+    "descriptionEs": "Sumar y restar con fluidez hasta 10.",
+    "lastUpdated": "2026-01-28T05:38:46.159Z",
+    "configs": {
+      "topic": "add_and_subtract_within_10"
+    }
+  },
+  "g2-working-with-money-counting": {
+    "gameName": "breaking-the-bank",
+    "grade": "2",
+    "image": "./assets/images/grade-2/mini-banker-topic-6.png",
+    "title": "Topic 6: Work with Time and Money",
+    "titleEs": "Tema 6: Trabajar con Tiempo y Dinero",
+    "description": "Count the value of a collection of coins.",
+    "descriptionEs": "Cuenta el valor de una colección de monedas.",
+    "lastUpdated": "2026-01-05T10:15:27.762Z",
+    "configs": {
+      "mode": "counting"
+    }
+  },
+  "g2-explore-numbers-to-1000": {
+    "gameName": "battleship-numberline",
+    "grade": "2",
+    "image": "./assets/images/grade-2/robo-pirates-topic-9.png",
+    "title": "Topic 9: Explore Numbers to 1,000",
+    "titleEs": "Tema 9: Explorar Números hasta 1,000",
+    "txTitle": "TX Topic 11: Explore Numbers to 1,200",
+    "txTitleEs": "TX Tema 11: Explorar Números hasta 1,200",
+    "description": "Explore numbers to 1,000.",
+    "descriptionEs": "Explora números hasta 1,000.",
+    "lastUpdated": "2026-01-06T11:05:51.411Z",
+    "configs": {
+      "topic": "explore_numbers_to_1000",
+      "theme": "purple"
+    }
+  },
+  "g2-subtract-within-1000-using-models-and-strategies": {
+    "gameName": "battleship-numberline",
+    "grade": "2",
+    "image": "./assets/images/grade-2/robo-pirates-topic-11.png",
+    "title": "Topic 11: Subtract within 1,000 Using Models and Strategies",
+    "titleEs": "Tema 11: Restar hasta 1,000 Usando Modelos y Estrategias",
+    "txTitle": "TX Topic 12: Add and Subtract Within 1,000 Using Models and Number Strategies",
+    "txTitleEs": "TX Tema 12: Sumar y Restar hasta 1,000 Usando Modelos y Estrategias Numéricas",
+    "description": "Subtract within 1,000.",
+    "descriptionEs": "Resta hasta 1,000.",
+    "lastUpdated": "2026-01-06T11:05:51.411Z",
+    "configs": {
+      "topic": "subtract_within_1000",
+      "theme": "purple"
+    }
+  },
+  "g2-fluently-add-within-100-using-number-strategies": {
+    "gameName": "emoji-battle",
+    "grade": "2",
+    "image": "./assets/images/grade-2/emoji-battle-topic-3.png",
+    "title": "Topic 3: Fluently Add Within 100 Using Number Strategies",
+    "titleEs": "Tema 3: Sumar con Fluidez hasta 100 Usando Estrategias Numéricas",
+    "txTitle": "TX Topic 2: Add Within 100 Using Strategies",
+    "txTitleEs": "TX Tema 2: Sumar hasta 100 Usando Estrategias",
+    "description": "Add within 100.",
+    "descriptionEs": "Sumar dentro de 100.",
+    "lastUpdated": "2025-12-16T11:58:41.251Z",
+    "configs": {
+      "topic": "grade2_topic3"
+    }
+  },
+  "g3-understand-fractions-as-numbers": {
+    "gameName": "battleship-numberline",
+    "grade": "3",
+    "image": "./assets/images/grade-3/robo-pirates-topic-9.png",
+    "title": "Topic 9: Understand Fractions as Numbers",
+    "titleEs": "Tema 9: Entender las Fracciones como Números",
+    "txTitle": "TX Topic 10: Understand Fractions as Numbers",
+    "txTitleEs": "TX Tema 10: Entender las Fracciones como Números",
+    "description": "Explore fractions as numbers.",
+    "descriptionEs": "Explora las fracciones como números.",
+    "lastUpdated": "2026-01-06T11:05:51.411Z",
+    "configs": {
+      "topic": "fractions_as_numbers",
+      "theme": "purple"
+    }
+  },
+  "g3-fraction-equivalence-and-comparison": {
+    "gameName": "fraction-frenzy",
+    "grade": "3",
+    "image": "./assets/images/grade-3/fraction-frenzy-topic-10.png",
+    "title": "Topic 10: Fraction Equivalence and Comparison",
+    "titleEs": "Tema 10: Equivalencia y Comparación de Fracciones",
+    "txTitle": "TX Topic 11: Fraction Equivalence and Comparison",
+    "txTitleEs": "TX Tema 11: Equivalencia y Comparación de Fracciones",
+    "description": "Learn about fraction equivalence and comparison.",
+    "descriptionEs": "Aprende sobre equivalencia y comparación de fracciones.",
+    "lastUpdated": "2025-12-19T13:57:35.044Z",
+    "configs": {
+      "topic": "compare_fractions"
+    }
+  },
+  "g4-generalize-place-value-understandings": {
+    "gameName": "battleship-numberline",
+    "grade": "4",
+    "image": "./assets/images/grade-4/robo-pirates-topic-1.png",
+    "title": "Topic 1: Generalize Place-Value Understandings",
+    "titleEs": "Tema 1: Generalizar la Comprensión del Valor Posicional",
+    "txTitle": "TX Topic 1: Place-Value Understandings",
+    "txTitleEs": "TX Tema 1: Comprensión del Valor Posicional",
+    "description": "Explore place value.",
+    "descriptionEs": "Explora el valor posicional.",
+    "lastUpdated": "2026-01-06T11:05:51.411Z",
+    "configs": {
+      "topic": "place_value_magnitude",
+      "theme": "purple"
+    }
+  },
+  "g4-extend-understanding-of-factors-and-multiples-to-fraction-equivalence-and-ordering": {
+    "gameName": "digit-dash",
+    "grade": "4",
+    "image": "./assets/images/grade-4/dino-muncher-topic-6.png",
+    "title": "Topic 6: Extend Understanding of Factors and Multiples to Fraction Equivalence and Ordering",
+    "titleEs": "Tema 6: Fracciones Equivalentes",
+    "txTitle": "TX Topic 6: Fraction Equivalence and Comparison",
+    "txTitleEs": "TX Tema 6: Equivalencia y Comparación de Fracciones",
+    "description": "Identify equivalent fractions.",
+    "descriptionEs": "Identifica fracciones equivalentes.",
+    "lastUpdated": "2025-12-16T11:58:41.251Z",
+    "configs": {
+      "topic": "grade4_topic6"
+    }
+  },
+  "g4-understand-and-compare-decimals": {
+    "gameName": "battleship-numberline",
+    "grade": "4",
+    "image": "./assets/images/grade-4/robo-pirates-topic-9.png",
+    "title": "Topic 9: Understand and Compare Decimals",
+    "titleEs": "Tema 9: Entender y Comparar Decimales",
+    "txTitle": "TX Topic 8: Represent, Compare, Add, and Subtract Decimals",
+    "txTitleEs": "TX Tema 8: Representar, Comparar, Sumar y Restar Decimales",
+    "description": "Explore decimals.",
+    "descriptionEs": "Explora decimales.",
+    "lastUpdated": "2026-01-06T11:05:51.411Z",
+    "configs": {
+      "topic": "understand_and_compare_decimals",
+      "theme": "purple"
+    }
+  },
+  "g4-use-strategies-and-properties-to-multiply-by-1-digit-numbers": {
+    "gameName": "alien-shooter",
+    "grade": "4",
+    "image": "./assets/images/grade-4/astro-math-topic-3.png",
+    "title": "Topic 3: Use Strategies and Properties to Multiply by 1-Digit Numbers",
+    "titleEs": "Tema 3: Usar Estrategias y Propiedades para Multiplicar por Números de 1 Dígito",
+    "txTitle": "TX Topic 3: Multiply by 1-Digit Numbers",
+    "txTitleEs": "TX Tema 3: Multiplicar por Números de 1 Dígito",
+    "description": "Multiply by 1-digit numbers.",
+    "descriptionEs": "Multiplica por números de 1 dígito.",
+    "lastUpdated": "2026-01-28T05:38:46.159Z",
+    "configs": {
+      "topic": "multiplication_1_digit_numbers"
+    }
+  },
+  "g5-use-models-and-strategies-to-add-and-subtract-decimals": {
+    "gameName": "battleship-numberline",
+    "grade": "5",
+    "image": "./assets/images/grade-5/robo-pirates-topic-2.png",
+    "title": "Topic 2: Use Models and Strategies to Add and Subtract Decimals",
+    "titleEs": "Tema 2: Usar Modelos y Estrategias para Sumar y Restar Decimales",
+    "txTitle": "TX Topic 2: Fluently Add and Subtract Whole Numbers and Decimals",
+    "txTitleEs": "TX Tema 2: Sumar y Restar con Fluidez Números Enteros y Decimales",
+    "description": "Round, add, and subtract decimals.",
+    "descriptionEs": "Redondear, sumar y restar decimales.",
+    "lastUpdated": "2026-01-06T11:05:51.411Z",
+    "configs": {
+      "topic": "add_and_subtract_decimals",
+      "theme": "purple"
+    }
+  },
+  "g5-use-equivalent-fractions-to-add-and-subtract-fractions-and-mixed-numbers": {
+    "gameName": "battleship-numberline",
+    "grade": "5",
+    "image": "./assets/images/grade-5/robo-pirates-topic-7.png",
+    "title": "Topic 7: Use Equivalent Fractions to Add and Subtract Fractions and Mixed Numbers",
+    "titleEs": "Tema 7: Usar Fracciones Equivalentes para Sumar y Restar Fracciones y Números Mixtos",
+    "txTitle": "TX Topic 8: Fluently Add and Subtract Fractions and Mixed Numbers",
+    "txTitleEs": "TX Tema 8: Sumar y restar fracciones y números mixtos con fluidez",
+    "description": "Add and subtract fractions with unlike denominators.",
+    "descriptionEs": "Sumar y restar fracciones con denominadores diferentes.",
+    "lastUpdated": "2026-01-06T11:05:51.411Z",
+    "configs": {
+      "topic": "add_and_subtract_fractions",
+      "theme": "purple"
+    }
+  },
+  "g6-understand-and-use-percent": {
+    "gameName": "battleship-numberline",
+    "grade": "6",
+    "image": "./assets/images/grade-6/robo-pirates-topic-6.png",
+    "title": "Topic 6: Percent",
+    "titleEs": "Tema 6: Comprender y Usar Porcentajes",
+    "description": "Learn about understand and use percent.",
+    "descriptionEs": "Aprende a entender y usar porcentajes.",
+    "lastUpdated": "2026-01-06T11:05:51.411Z",
+    "configs": {
+      "topic": "percents",
+      "theme": "purple"
+    }
+  },
+  "g8-real-numbers": {
+    "gameName": "number-knockout",
+    "grade": "8",
+    "image": "./assets/images/grade-8/number-knockout-topic-1.png",
+    "title": "Topic 1: Real Numbers",
+    "titleEs": "Tema 1: Números Reales",
+    "description": "Learn about real numbers.",
+    "descriptionEs": "Aprende sobre números reales.",
+    "lastUpdated": "2025-12-16T11:58:41.251Z"
+  },
+  "g8-grid-locker": {
+    "gameName": "grid-locker",
+    "grade": "8",
+    "image": "./assets/images/grade-8/grid-lock-topic-2.png",
+    "title": "Topic 2: Linear Equations",
+    "titleEs": "Tema 2: Ecuaciones Lineales",
+    "description": "Learn to analyze and solve linear equations.",
+    "descriptionEs": "Aprende a analizar y resolver ecuaciones lineales.",
+    "lastUpdated": "2026-01-22T11:18:01.445Z",
+    "configs": {
+      "topic": "g8_t2_linear_equation"
+    }
+  },
+  "g3-multiplication-and-division-meanings": {
+    "gameName": "space-party",
+    "grade": "3",
+    "image": "./assets/images/grade-3/space-party-topic-1.png",
+    "title": "Topic 1: Multiplication and Division Meanings",
+    "titleEs": "Tema 1: Significados de Multiplicación y División",
+    "description": "Learn about multiplication and division meanings.",
+    "descriptionEs": "Aprende sobre los significados de la multiplicación y división.",
+    "lastUpdated": "2026-01-06T11:05:51.411Z"
+  },
+  "gK-count-and-compare-numbers-0-to-5": {
+    "gameName": "space-party",
+    "grade": "K",
+    "image": "./assets/images/grade-k/space-party-topic-1.png",
+    "title": "Topic 1: Count and Compare Numbers 0 to 5",
+    "titleEs": "Tema 1: Contar y Comparar Números del 0 al 5",
+    "description": "Count numbers 0 to 5.",
+    "descriptionEs": "Cuenta números del 0 al 5.",
+    "lastUpdated": "2026-01-06T11:05:51.411Z",
+    "configs": {
+      "topic": "GK_T1_count_numbers_upto_5"
+    }
+  },
+  "gK-count-and-compare-numbers-6-to-10": {
+    "gameName": "space-party",
+    "grade": "K",
+    "image": "./assets/images/grade-k/space-party-topic-2.png",
+    "title": "Topic 2: Count and Compare Numbers 0 to 10",
+    "titleEs": "Tema 2: Contar y Comparar Números del 0 al 10",
+    "description": "Count numbers 0 to 10.",
+    "descriptionEs": "Cuenta números del 0 al 10.",
+    "lastUpdated": "2026-01-06T11:05:51.411Z",
+    "configs": {
+      "topic": "GK_T2_count_numbers_upto_10"
+    }
+  },
+  "gk_t11_compose_and_decompose_numbers_11_to_19": {
+    "gameName": "space-party",
+    "grade": "K",
+    "image": "./assets/images/grade-k/space-party-topic-11.png",
+    "title": "Topic 11: Compose and Decompose Numbers 11 to 19",
+    "titleEs": "Tema 11: Componer y Descomponer Números del 11 al 19",
+    "txTitle": "TX Topic 10: Count and Compare Numbers to 20",
+    "txTitleEs": "TX Tema 10: Contar y comparar números hasta 20",
+    "description": "Compose and decompose numbers.",
+    "descriptionEs": "Componer y descomponer números.",
+    "lastUpdated": "2026-01-06T11:05:51.411Z",
+    "configs": {
+      "topic": "gk_t11_compose_and_decompose_numbers_11_to_19"
+    }
+  },
+  "g6-integers-and-the-coordinate-plane": {
+    "gameName": "grid-locker",
+    "grade": "6",
+    "image": "./assets/images/grade-6/grid-lock-topic-2.png",
+    "title": "Topic 2: Integers & the Coordinate Plane",
+    "titleEs": "Tema 2: Enteros y el Plano de Coordenadas",
+    "description": "Learn about integers and the coordinate plane.",
+    "descriptionEs": "Aprende sobre enteros y el plano de coordenadas.",
+    "lastUpdated": "2026-01-22T11:18:01.445Z"
+  },
+  "g5-algebra-and-data": {
+    "gameName": "grid-locker",
+    "grade": "5",
+    "image": "./assets/images/grade-5/grid-lock-topic-10.png",
+    "title": "Topic 10: Algebra and Data",
+    "titleEs": "Tema 10: Álgebra y Datos",
+    "txTitle": "TX Topic 10: Algebra, Patterns, and the Coordinate Plane",
+    "txTitleEs": "TX Tema 10: Álgebra, Patrones y el Plano de Coordenadas",
+    "description": "Plot coordinates.",
+    "descriptionEs": "Graficar coordenadas.",
+    "lastUpdated": "2026-01-22T11:18:01.445Z",
+    "configs": {
+      "topic": "g5_t10_numbers_and_coordinate"
+    }
+  },
+  "g4-understand-addition-and-subtraction-of-fractions-and-mixed-numbers": {
+    "gameName": "battleship-numberline",
+    "grade": "4",
+    "image": "./assets/images/grade-4/robo-pirates-topic-7.png",
+    "title": "Topic 7: Understand Addition and Subtraction of Fractions and Mixed Numbers",
+    "titleEs": "Tema 7: Entender la Suma y Resta de Fracciones y Números Mixtos",
+    "txTitle": "TX Topic 7: Add and Subtract Fractions and Mixed Numbers",
+    "txTitleEs": "TX Tema 7: Sumar y Restar Fracciones y Números Mixtos",
+    "description": "Add and subtract fractions.",
+    "descriptionEs": "Sumar y restar fracciones.",
+    "lastUpdated": "2026-01-06T11:05:51.411Z",
+    "configs": {
+      "topic": "addition_and_subtraction_of_fractions_mixed_numbers",
+      "theme": "purple"
+    }
+  },
+  "g6-represent-and-solve-equations-and-inequalities": {
+    "gameName": "queen-quanta",
+    "grade": "6",
+    "image": "./assets/images/grade-6/algebra-trials-topic-4.png",
+    "title": "Topic 4: Equations & Inequalities",
+    "titleEs": "Tema 4: Ecuaciones e Inecuaciones",
+    "description": "Learn about equations and inequalities.",
+    "descriptionEs": "Aprende sobre ecuaciones e inecuaciones.",
+    "lastUpdated": "2025-12-16T11:58:41.251Z",
+    "configs": {
+      "topic": "grade6_topic4"
+    }
+  },
+  "g7-generate-equivalent-expressions": {
+    "gameName": "queen-quanta",
+    "grade": "7",
+    "image": "./assets/images/grade-7/algebra-trials-topic-4.png",
+    "title": "Topic 4: Equivalent Expressions",
+    "titleEs": "Tema 4: Expresiones Equivalentes",
+    "description": "Learn about equivalent expressions.",
+    "descriptionEs": "Aprende sobre expresiones equivalentes.",
+    "lastUpdated": "2025-12-16T11:58:41.251Z",
+    "configs": {
+      "topic": "grade7_topic4"
+    }
+  },
+  "g7-solve-problems-using-equations-and-inequalities": {
+    "gameName": "queen-quanta",
+    "grade": "7",
+    "image": "./assets/images/grade-7/algebra-trials-topic-5.png",
+    "title": "Topic 5: Multi-Step Equations and Inequalities",
+    "titleEs": "Tema 5: Ecuaciones e Inecuaciones de Múltiples Pasos",
+    "description": "Learn to solve linear equations.",
+    "descriptionEs": "Aprende a resolver ecuaciones lineales.",
+    "lastUpdated": "2025-12-16T11:58:41.251Z",
+    "configs": {
+      "topic": "grade7_topic5"
+    }
+  },
+  "g5-apply-understanding-of-multiplication-to-multiply-fractions": {
+    "gameName": "battleship-numberline",
+    "grade": "5",
+    "image": "./assets/images/grade-5/robo-pirates-topic-8.png",
+    "title": "Topic 8: Apply Understanding of Multiplication to Multiply Fractions",
+    "titleEs": "Tema 8: Aplicar la Comprensión de la Multiplicación para Multiplicar Fracciones",
+    "txTitle": "TX Topic 9: Understand Multiplication and Division with Fractions",
+    "txTitleEs": "TX Tema 9: Entender la Multiplicación y División con Fracciones",
+    "description": "Multiply fractions by whole numbers.",
+    "descriptionEs": "Multiplica fracciones por números enteros.",
+    "lastUpdated": "2026-01-06T11:05:51.411Z",
+    "configs": {
+      "topic": "multiply_fractions"
+    }
+  },
+  "g7-analyze-and-solve-percent-problems": {
+    "gameName": "number-knockout",
+    "grade": "7",
+    "image": "./assets/images/grade-7/number-knockout-topic-3.png",
+    "title": "Topic 3: Percent Problems",
+    "titleEs": "Tema 3: Analizar y Resolver Problemas de Porcentajes",
+    "description": "Learn to analyze and solve percent problems.",
+    "descriptionEs": "Aprende a analizar y resolver problemas de porcentajes.",
+    "lastUpdated": "2025-12-16T11:58:41.251Z",
+    "configs": {
+      "topic": "grade7_topic3"
+    }
+  },
+  "gK-understand-subtraction": {
+    "gameName": "bunny-jumping",
+    "grade": "K",
+    "image": "./assets/images/grade-k/bunny-jumping-topic-5.png",
+    "title": "Topic 5: Understand Subtraction",
+    "titleEs": "Tema 5: Entender la Resta",
+    "description": "Add and subtract within 5.",
+    "descriptionEs": "Sumar y restar dentro de 5.",
+    "lastUpdated": "2025-12-16T11:58:41.251Z",
+    "configs": {
+      "topic": "gradeK_topic5"
+    }
+  },
+  "gK-more-addition-and-subtraction": {
+    "gameName": "bunny-jumping",
+    "grade": "K",
+    "image": "./assets/images/grade-k/bunny-jumping-topic-6.png",
+    "title": "Topic 6: More Addition and Subtraction",
+    "titleEs": "Tema 6: Más Sumas y Restas",
+    "description": "Add and subtract within 10.",
+    "descriptionEs": "Sumar y restar dentro de 10.",
+    "lastUpdated": "2025-12-16T11:58:41.251Z",
+    "configs": {
+      "topic": "gradeK_topic6"
+    }
+  },
+  "g1-addition-facts-within-20": {
+    "gameName": "bunny-jumping",
+    "grade": "1",
+    "image": "./assets/images/grade-1/bunny-jumping-topic-3.png",
+    "title": "Topic 3: Addition Facts to 20: Use Strategies",
+    "titleEs": "Tema 3: Sumas hasta 20: Usar Estrategias",
+    "description": "Practice addition facts up to 20.",
+    "descriptionEs": "Practica sumas hasta 20.",
+    "lastUpdated": "2025-12-16T11:58:41.251Z",
+    "configs": {
+      "topic": "grade1_topic3"
+    }
+  },
+  "g1-subtraction-facts-within-20": {
+    "gameName": "bunny-jumping",
+    "grade": "1",
+    "image": "./assets/images/grade-1/bunny-jumping-topic-4.png",
+    "title": "Topic 4: Subtraction Facts to 20: Use Strategies",
+    "titleEs": "Tema 4: Restas hasta 20: Usar Estrategias",
+    "description": "Practice subtraction facts up to 20.",
+    "descriptionEs": "Practica restas hasta 20.",
+    "lastUpdated": "2025-12-16T11:58:41.251Z",
+    "configs": {
+      "topic": "grade1_topic4"
+    }
+  },
+  "multiverse-algo-checker": {
+    "gameName": "multiverse-algo-checker",
+    "grade": "1",
+    "disabled": true,
+    "image": "./assets/images/disabled-game-placeholder.svg",
+    "title": "Multiverse Algorithm Checker",
+    "titleEs": "Multiverse Algorithm Checker",
+    "description": "Practice subtraction facts up to 20.",
+    "descriptionEs": "Practica restas hasta 20.",
+    "lastUpdated": "2025-10-27T15:18:50.347Z",
+    "configs": {
+      "topic": "grade1_topic4"
+    }
+  },
+  "g5-understand-place-value": {
+    "gameName": "akira-racing",
+    "grade": "5",
+    "image": "./assets/images/grade-5/digit-drive-topic-1.png",
+    "title": "Topic 1: Understand Place Value",
+    "titleEs": "Tema 1: Entender el Valor Posicional",
+    "txTitle": "TX Topic 1: Place Value",
+    "txTitleEs": "TX Tema 1: Valor posicional",
+    "description": "Compare and order numbers.",
+    "descriptionEs": "Comparar y ordenar números.",
+    "lastUpdated": "2025-12-16T11:58:41.251Z",
+    "configs": {
+      "topic": "grade5_topic1"
+    }
+  },
+  "g3-multiplication-facts": {
+    "gameName": "alien-shooter",
+    "grade": "3",
+    "image": "./assets/images/grade-3/astro-math-topic-2.png",
+    "title": "Topic 2: Foundational Multiplication Facts",
+    "titleEs": "Tema 2: Hechos de multiplicación",
+    "txTitle": "TX Topic 2: Multiplication: Foundational Facts",
+    "txTitleEs": "TX Tema 2: Multiplicación: Hechos Fundamentales",
+    "description": "Practice multiplication facts.",
+    "descriptionEs": "Practica los hechos de multiplicación.",
+    "configs": {
+      "topic": "grade3_topic2"
+    },
+    "lastUpdated": "2026-01-28T05:38:46.159Z"
+  },
+  "g3-multiplication-facts-up-to-100": {
+    "gameName": "multiverse-launcher",
+    "grade": "3",
+    "image": "./assets/images/grade-3/multiverse-topic-3.png",
+    "title": "Topic 3: Derived Multiplication Facts",
+    "titleEs": "Tema 3: Hechos de multiplicación derivados",
+    "txTitle": "TX Topic 3: Multiplication: Derived Facts",
+    "txTitleEs": "TX Tema 3: Multiplicación: Hechos Derivados",
+    "description": "Practice multiplication facts up to 100.",
+    "descriptionEs": "Practica los hechos de multiplicación hasta 100.",
+    "configs": {
+      "topic": "grade3_topic3"
+    },
+    "lastUpdated": "2025-12-09T08:29:45.401Z"
+  },
+  "g2-number-strategies-within-20-fluently-add-and-subtract": {
+    "gameName": "multiverse-launcher",
+    "grade": "2",
+    "image": "./assets/images/grade-2/multiverse-topic-1.png",
+    "title": "Topic 1: Fluently Add and Subtract Within 20",
+    "titleEs": "Tema 1: Sumar y restar con fluidez hasta 20",
+    "txTitle": "TX Topic 1: Add and Subtract Within 20",
+    "txTitleEs": "TX Tema 1: Sumar y Restar hasta 20",
+    "description": "Add and subtract within 20.",
+    "descriptionEs": "Sumar y restar dentro de 20.",
+    "configs": {
+      "topic": "grade2_topic1"
+    },
+    "lastUpdated": "2025-12-09T08:29:45.401Z"
+  },
+  "g2-fluently-subtract-within-100-using-number-strategies": {
+    "gameName": "fact-racer",
+    "grade": "2",
+    "image": "./assets/images/grade-2/fact-racer-topic-4.png",
+    "title": "Topic 4: Fluently Subtract Within 100 Using Number Strategies",
+    "titleEs": "Tema 4: Restar con Fluidez hasta 100 Usando Estrategias Numéricas",
+    "txTitle": "TX Topic 3: Subtract Within 100 Using Strategies",
+    "txTitleEs": "TX Tema 3: Restar hasta 100 Usando Estrategias",
+    "description": "Subtract within 100.",
+    "descriptionEs": "Restar dentro de 100.",
+    "configs": {
+      "topic": "grade2_topic4"
+    },
+    "lastUpdated": "2025-12-16T11:58:41.251Z"
+  },
+  "g4-fluently-add-and-subtract-multi-digit-whole-numbers": {
+    "gameName": "multiverse-launcher",
+    "grade": "4",
+    "image": "./assets/images/grade-4/multiverse-topic-2.png",
+    "title": "Topic 2: Fluently Add and Subtract Multi-Digit Whole Numbers",
+    "titleEs": "Tema 2: Sumar y Restar con Fluidez Números Enteros de Múltiples Dígitos",
+    "txTitle": "TX Topic 2: Add and Subtract Multi-Digit Whole Numbers",
+    "txTitleEs": "TX Tema 2: Sumar y Restar Números Enteros de Múltiples Dígitos",
+    "description": "Add and subtract multi-digit whole numbers.",
+    "descriptionEs": "Sumar y restar números enteros de varios dígitos.",
+    "configs": {
+      "topic": "grade4_topic2"
+    },
+    "lastUpdated": "2025-12-09T08:29:45.401Z"
+  },
+  "gK-count-numbers-to-20": {
+    "gameName": "counting-game",
+    "grade": "K",
+    "image": "./assets/images/grade-k/count-the-crew-topic-10.png",
+    "title": "Topic 10: Count Numbers to 20",
+    "titleEs": "Tema 10: Contar Números hasta el 20",
+    "txTitle": "TX Topic 10: Count and Compare Numbers to 20",
+    "txTitleEs": "TX Tema 10: Contar y Comparar Números hasta el 20",
+    "description": "Count numbers to 20.",
+    "descriptionEs": "Contar números hasta 20.",
+    "configs": {
+      "topic": "gradeK_topic10"
+    },
+    "lastUpdated": "2026-01-05T10:15:27.762Z"
+  },
+  "gK-count-numbers-to-100": {
+    "gameName": "counting-game",
+    "grade": "K",
+    "image": "./assets/images/grade-k/count-the-crew-topic-12.png",
+    "title": "Topic 12: Count Numbers to 100",
+    "titleEs": "Tema 12: Contar Números hasta el 100",
+    "txTitle": "TX Topic 11: Count to 100",
+    "txTitleEs": "TX Tema 11: Contar hasta 100",
+    "description": "Count numbers to 100.",
+    "descriptionEs": "Contar números hasta 100.",
+    "configs": {
+      "topic": "gradeK_topic12"
+    },
+    "lastUpdated": "2026-01-05T10:15:27.762Z"
+  },
+  "g1-extend-the-counting-sequence": {
+    "gameName": "counting-game",
+    "grade": "1",
+    "image": "./assets/images/grade-1/count-the-crew-topic-7.png",
+    "title": "Topic 7: Extend the Counting Sequence",
+    "titleEs": "Tema 7: Ampliar la Secuencia de Conteo",
+    "txTitle": "TX Topic 7: Numbers to 120",
+    "txTitleEs": "TX Tema 7: Números hasta 120",
+    "description": "Count to 120.",
+    "descriptionEs": "Cuenta hasta 120.",
+    "configs": {
+      "topic": "grade1_topic7"
+    },
+    "lastUpdated": "2026-01-05T10:15:27.762Z"
+  },
+  "g3-division-facts-up-to-100": {
+    "gameName": "multiverse-launcher",
+    "grade": "3",
+    "image": "./assets/images/grade-3/multiverse-topic-4.png",
+    "title": "Topic 4: Division Facts: Think Multiplication",
+    "titleEs": "Tema 4: Hechos de División: Pensar en Multiplicación",
+    "txTitle": "TX Topic 4: Division Facts: Think Multiplication",
+    "txTitleEs": "TX Tema 4: Hechos de División: Pensar en Multiplicación",
+    "description": "Practice division facts up to 100.",
+    "descriptionEs": "Practica los hechos de división hasta 100.",
+    "configs": {
+      "topic": "grade3_topic4"
+    },
+    "lastUpdated": "2025-12-09T08:29:45.401Z"
+  },
+  "g5-fluently-multiply-multi-digit-whole-numbers": {
+    "gameName": "multiverse-launcher",
+    "grade": "5",
+    "image": "./assets/images/grade-5/multiverse-topic-3.png",
+    "title": "Topic 3: Fluently Multiply Multi-Digit Whole Numbers",
+    "titleEs": "Tema 3: Multiplicar con fluidez números enteros de varios dígitos",
+    "description": "Multiply multi-digit whole numbers.",
+    "descriptionEs": "Multiplicar números enteros de varios dígitos con fluidez.",
+    "configs": {
+      "topic": "grade5_topic3"
+    },
+    "lastUpdated": "2025-12-09T08:29:45.401Z"
+  },
+  "g6-use-positive-rational-numbers": {
+    "gameName": "multiverse-launcher",
+    "grade": "6",
+    "image": "./assets/images/grade-6/multiverse-topic-1.png",
+    "title": "Topic 1: Positive Rational Numbers",
+    "titleEs": "Tema 1: Usar Números Racionales Positivos",
+    "configs": {
+      "topic": "grade6_topic1"
+    },
+    "lastUpdated": "2025-12-09T08:29:45.401Z"
+  },
+  "g8-analyze-and-solve-systems-of-linear-equations": {
+    "gameName": "grid-locker",
+    "grade": "8",
+    "image": "./assets/images/grade-8/grid-lock-topic-5.png",
+    "title": "Topic 5: Systems of Linear Equations",
+    "titleEs": "Tema 5: Analizar y Resolver Sistemas de Ecuaciones Lineales",
+    "description": "Learn to analyze and solve systems of linear equations.",
+    "descriptionEs": "Aprende a analizar y resolver sistemas de ecuaciones lineales.",
+    "configs": {
+      "topic": "g8_t5"
+    },
+    "lastUpdated": "2026-01-22T11:18:01.445Z"
+  },
+  "g8-understand-and-apply-the-pythagorean-theorem": {
+    "gameName": "pythagoras-quest",
+    "grade": "8",
+    "image": "./assets/images/grade-8/pythagoras-path-topic-7.png",
+    "title": "Topic 7: The Pythagorean Theorem",
+    "titleEs": "Tema 7: Comprender y Aplicar el Teorema de Pitágoras",
+    "description": "Learn to understand and apply the pythagorean theorem.",
+    "descriptionEs": "Aprende a comprender y aplicar el teorema de Pitágoras.",
+    "lastUpdated": "2026-01-27T06:19:20.783Z"
+  },
+  "g5-bonus-multiverse": {
+    "gameName": "multiverse-launcher",
+    "grade": "5",
+    "image": "./assets/images/grade-5/bonus-multiverse.png",
+    "title": "Bonus Multiverse Grade 5",
+    "titleEs": "Multiverso de bonificación Grado 5",
+    "configs": {
+      "topic": "g5_g6"
+    },
+    "lastUpdated": "2025-12-09T08:29:45.401Z"
+  },
+  "g6-bonus-multiverse": {
+    "gameName": "multiverse-launcher",
+    "grade": "6",
+    "image": "./assets/images/grade-6/bonus-multiverse.png",
+    "title": "Bonus Multiverse Grade 6",
+    "titleEs": "Multiverso de bonificación Grado 6",
+    "configs": {
+      "topic": "g5_g6"
+    },
+    "lastUpdated": "2025-12-09T08:29:45.401Z"
+  },
+  "g7-bonus-multiverse": {
+    "gameName": "multiverse-launcher",
+    "grade": "7",
+    "image": "./assets/images/grade-7/bonus-multiverse.png",
+    "title": "Bonus Multiverse Grade 7",
+    "titleEs": "Multiverso de bonificación Grado 7",
+    "configs": {
+      "topic": "g7_g8"
+    },
+    "lastUpdated": "2025-12-09T08:29:45.401Z"
+  },
+  "g8-bonus-multiverse": {
+    "gameName": "multiverse-launcher",
+    "grade": "8",
+    "image": "./assets/images/grade-8/bonus-multiverse.png",
+    "title": "Bonus Multiverse Grade 8",
+    "titleEs": "Multiverso de bonificación Grado 8",
+    "configs": {
+      "topic": "g7_g8"
+    },
+    "lastUpdated": "2025-12-09T08:29:45.401Z"
+  }
+}

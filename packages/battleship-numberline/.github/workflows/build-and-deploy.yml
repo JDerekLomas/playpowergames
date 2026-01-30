@@ -1,0 +1,80 @@
+name: Deploy App to S3 and Invalidate CloudFront
+
+on:
+    push:
+        branches:
+          - main
+
+env:
+    AWS_REGION: us-east-1
+    S3_BUCKET: k8-games
+    CLOUDFRONT_DISTRIBUTION_ID: E3PJWK6OPGEH78
+    APP_NAME: battleship-numberline
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v3
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v3
+              with:
+                  node-version: '18'
+
+            - name: Get timestamp
+              id: timestamp
+              run: echo "timestamp=$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_OUTPUT
+
+            - name: Install dependencies 📦
+              run: |
+                  npm install
+
+            - name: Build app 🏗
+              run: |
+                  npm run build
+
+            - name: Configure AWS credentials
+              uses: aws-actions/configure-aws-credentials@v2
+              with:
+                  aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+                  aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+                  aws-region: ${{ env.AWS_REGION }}
+
+            # First upload to artifacts folder with timestamp
+            - name: Upload to artifacts folder
+              run: |
+                  aws s3 sync dist/ \
+                    s3://${{ env.S3_BUCKET }}/artifacts/${{ env.APP_NAME }}/${{ steps.timestamp.outputs.timestamp }}/ \
+                    --delete
+
+            # Then copy from artifacts to the live deployment folder
+            - name: Deploy to live folder
+              run: |
+                  aws s3 sync s3://${{ env.S3_BUCKET }}/artifacts/${{ env.APP_NAME }}/${{ steps.timestamp.outputs.timestamp }}/ \
+                    s3://${{ env.S3_BUCKET }}/${{ env.APP_NAME }}/ \
+                    --delete
+
+            - name: Invalidate CloudFront
+              run: |
+                  aws cloudfront create-invalidation \
+                    --distribution-id ${{ env.CLOUDFRONT_DISTRIBUTION_ID }} \
+                    --paths "/${{ env.APP_NAME }}/*"
+
+            # Optional: Clean up old artifacts (keeps last 5 builds)
+            - name: Clean up old artifacts
+              run: |
+                  # List all builds for this app, sort by date, and keep only the latest 10
+                  BUILDS_TO_DELETE=$(aws s3 ls s3://${{ env.S3_BUCKET }}/artifacts/${{ env.APP_NAME }}/ \
+                    | sort -r \
+                    | tail -n +11 \
+                    | awk '{print $4}')
+
+                  # Delete old builds if they exist
+                  if [ ! -z "$BUILDS_TO_DELETE" ]; then
+                    for build in $BUILDS_TO_DELETE; do
+                      aws s3 rm s3://${{ env.S3_BUCKET }}/artifacts/${{ env.APP_NAME }}/$build --recursive
+                    done
+                  fi

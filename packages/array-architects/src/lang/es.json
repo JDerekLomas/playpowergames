@@ -1,0 +1,70 @@
+{
+    "common": {
+        "playAgain": "Jugar de nuevo",
+        "wellDone": "¡Bien hecho!",
+        "awesomeWork": "¡Trabajo increíble!",
+        "youreAmazing": "¡Eres increíble!",
+        "keepItUp": "¡Sigue así!",
+        "fantasticEffort": "¡Esfuerzo fantástico!",
+        "greatJob": "¡Gran trabajo!",
+        "perfectScore": "¡Puntuación perfecta!",
+        "volume": "Volumen",
+        "pause": "Pausa",
+        "resume": "Reanudar",
+        "help": "Ayuda",
+        "mute": "Silenciar",
+        "unmute": "Activar sonido",
+        "correct": "Correcto",
+        "incorrect": "Incorrecto",
+        "icon": "Icono",
+        "play": "Jugar",
+        "title": "Arquitectos de Matrices",
+        "titleLabel": "Juego de Arquitectos de Matrices",
+        "scoreboardNegativeFeedback": "¡Inténtalo otra vez!",
+        "continue": "Continuar"
+    },
+    "game": {
+        "checkAnswer": "Verificar",
+        "resetSelection": "Reiniciar",
+        "drawRectangle": "Haz click y arrastra para dibujar un rectángulo.",
+        "youHaveBuilt": "Has construido: {{rows}} × {{cols}}",
+        "gameProgress": "Progreso del juego",
+        "progress": "Progreso: {{progress}}%",
+        "scoreValue": "Puntuación: {{value}}",
+        "correctFeedback": "Correcto!",
+        "incorrectFeedback": "Incorrecto!"
+    },
+    "info": {
+        "helpPage": "Página de ayuda abierta",
+        "howToPlay": "Cómo jugar",
+        "play": "Jugar",
+        "back": "Atrás",
+        "skip": "Omitir"
+    },
+    "scoreboard": {
+        "finalScore": "Puntuación final",
+        "greatJob": "¡Gran trabajo!",
+        "accuracy": "Precisión",
+        "time": "Tiempo",
+        "score": "Puntuación",
+        "cup": "Taza",
+        "points": "Puntos",
+        "noOfCorrect": "Número correcto",
+        "beatYourScore": "¡Mejora tu puntuación!",
+        "playAgain": "Jugar de nuevo",
+        "correctOutOf": "{{correct}} de {{total}}",
+        "correctOutOfAnnounce": "¡{{correct}} de {{total}} correcto!",
+        "backToMultiverse": "Volver al Multiverso",
+        "progress": "Progreso: {{correct}} de {{total}} respuestas correctas"
+    },
+    "accessibility": {
+        "gameGrid": "Cuadrícula del juego Arquitectos de Matrices. Use las teclas de flecha para navegar, Enter para seleccionar esquinas, R para reiniciar, C para verificar respuesta.",
+        "keyboardInstructions": "Use las teclas de flecha para navegar por la cuadrícula. Presione Enter para seleccionar la primera esquina, navegue a la esquina opuesta, luego presione Enter nuevamente para completar la selección del rectángulo.",
+        "gridTile": "Casilla de cuadrícula fila {{row}}, columna {{col}}",
+        "tilePosition": "Fila {{row}}, Columna {{col}}",
+        "firstCornerSelected": "Primera esquina seleccionada en Fila {{row}}, Columna {{col}}. Navegue a la esquina opuesta y presione Enter para completar el rectángulo.",
+        "rectangleCompleted": "Rectángulo completado: rectángulo de {{width}} por {{height}} con {{total}} casillas seleccionadas.",
+        "selectionCleared": "Selección borrada",
+        "selectionCancelled": "Selección de primera esquina cancelada"
+    }
+}

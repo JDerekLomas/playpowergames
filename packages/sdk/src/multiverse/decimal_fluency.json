@@ -1,0 +1,994 @@
+[
+  {
+    "question text": "0.4 + 0.3 = 0.7",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Addition"
+    ],
+    "id": "mf_328687e2"
+  },
+  {
+    "question text": "1.5 + 2.3 = 3.8",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Addition"
+    ],
+    "id": "mf_e0419b81"
+  },
+  {
+    "question text": "2.75 + 0.25 = 3",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Decimal Addition"
+    ],
+    "id": "mf_7631690e"
+  },
+  {
+    "question text": "3.6 + 0.9 = 4.5",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Addition"
+    ],
+    "id": "mf_f47ab376"
+  },
+  {
+    "question text": "5.2 + 4.8 = 10",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Addition"
+    ],
+    "id": "mf_d2398fc1"
+  },
+  {
+    "question text": "0.07 + 0.2 = 0.27",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Decimal Addition"
+    ],
+    "id": "mf_0b79426e"
+  },
+  {
+    "question text": "4.55 + 1.45 = 6",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Decimal Addition"
+    ],
+    "id": "mf_51af48fa"
+  },
+  {
+    "question text": "6.5 + 3.05 = 9.55",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Decimal Addition"
+    ],
+    "id": "mf_00b20dcd"
+  },
+  {
+    "question text": "9.9 + 0.1 = 10",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Addition"
+    ],
+    "id": "mf_b9a14e54"
+  },
+  {
+    "question text": "7.3 + 0.47 = 7.77",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Decimal Addition"
+    ],
+    "id": "mf_c8400925"
+  },
+  {
+    "question text": "0.6 + 0.3 = 0.9",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Addition"
+    ],
+    "id": "mf_99f5241b"
+  },
+  {
+    "question text": "2.1 + 3.4 = 5.5",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Addition"
+    ],
+    "id": "mf_602812ca"
+  },
+  {
+    "question text": "0.8 + 1.7 = 2.5",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Addition"
+    ],
+    "id": "mf_b316f320"
+  },
+  {
+    "question text": "4.20 + 3.80 = 8",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Decimal Addition"
+    ],
+    "id": "mf_c35c10f7"
+  },
+  {
+    "question text": "7.5 + 2.2 = 9.7",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Addition"
+    ],
+    "id": "mf_95335d61"
+  },
+  {
+    "question text": "6.3 + 0.7 = 7",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Addition"
+    ],
+    "id": "mf_2df4db5f"
+  },
+  {
+    "question text": "8.9 + 0.11 = 9.01",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Decimal Addition"
+    ],
+    "id": "mf_85dab896"
+  },
+  {
+    "question text": "0.15 + 0.85 = 1",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Decimal Addition"
+    ],
+    "id": "mf_fa12a139"
+  },
+  {
+    "question text": "3.33 + 4.44 = 7.77",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Decimal Addition"
+    ],
+    "id": "mf_48d04218"
+  },
+  {
+    "question text": "1.1 + 1.9 = 3",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Addition"
+    ],
+    "id": "mf_7d202889"
+  },
+  {
+    "question text": "2.5 + 2.5 = 5",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Addition"
+    ],
+    "id": "mf_f895c02b"
+  },
+  {
+    "question text": "0.99 + 0.01 = 1",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Decimal Addition"
+    ],
+    "id": "mf_09662f6f"
+  },
+  {
+    "question text": "8.7 + 1.3 = 10",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Addition"
+    ],
+    "id": "mf_f0f99555"
+  },
+  {
+    "question text": "4.4 + 5.6 = 10",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Addition"
+    ],
+    "id": "mf_e089a484"
+  },
+  {
+    "question text": "5.6 + 2.4 = 8",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Addition"
+    ],
+    "id": "mf_69c18650"
+  },
+  {
+    "question text": "6.6 + 3.3 = 9.9",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Addition"
+    ],
+    "id": "mf_397c92ab"
+  },
+  {
+    "question text": "0.5 + 0.5 = 1",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Addition"
+    ],
+    "id": "mf_83858109"
+  },
+  {
+    "question text": "7.2 + 2.8 = 10",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Addition"
+    ],
+    "id": "mf_2b075489"
+  },
+  {
+    "question text": "5.05 + 4.95 = 10",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Decimal Addition"
+    ],
+    "id": "mf_a23fac9d"
+  },
+  {
+    "question text": "1.25 + 3.75 = 5",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Decimal Addition"
+    ],
+    "id": "mf_d41eb74c"
+  },
+  {
+    "question text": "9.1 + 0.9 = 10",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Addition"
+    ],
+    "id": "mf_9b20c200"
+  },
+  {
+    "question text": "1.0 − 0.4 = 0.6",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Subtraction"
+    ],
+    "id": "mf_620b73be"
+  },
+  {
+    "question text": "3.8 − 0.8 = 3",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Subtraction"
+    ],
+    "id": "mf_dbc64b96"
+  },
+  {
+    "question text": "5.25 − 0.25 = 5",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Decimal Subtraction"
+    ],
+    "id": "mf_61dc10d1"
+  },
+  {
+    "question text": "5.5 − 2.2 = 3.3",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Subtraction"
+    ],
+    "id": "mf_b08432f9"
+  },
+  {
+    "question text": "7.7 - 3.3 = 4.4",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Subtraction"
+    ],
+    "id": "mf_0e57286a"
+  },
+  {
+    "question text": "0.95 − 0.1 = 0.85",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Decimal Subtraction"
+    ],
+    "id": "mf_56081212"
+  },
+  {
+    "question text": "6.03 − 2.02 = 4.01",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Decimal Subtraction"
+    ],
+    "id": "mf_9e42a4b6"
+  },
+  {
+    "question text": "8.25 − 4.25 = 4",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Decimal Subtraction"
+    ],
+    "id": "mf_10210ecd"
+  },
+  {
+    "question text": "6.6 − 1.1 = 5.5",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Subtraction"
+    ],
+    "id": "mf_b6a3b68a"
+  },
+  {
+    "question text": "7.5 − 7.1 = 0.4",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Subtraction"
+    ],
+    "id": "mf_1c1c1090"
+  },
+  {
+    "question text": "10.0 − 6.4 = 3.6",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Subtraction"
+    ],
+    "id": "mf_d476fb0d"
+  },
+  {
+    "question text": "5.5 − 2.5 = 3",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Subtraction"
+    ],
+    "id": "mf_690bbe5e"
+  },
+  {
+    "question text": "8.8 − 3.3 = 5.5",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Subtraction"
+    ],
+    "id": "mf_f2730d58"
+  },
+  {
+    "question text": "4.75 − 1.25 = 3.5",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Decimal Subtraction"
+    ],
+    "id": "mf_99504940"
+  },
+  {
+    "question text": "7.9 − 4.4 = 3.5",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Subtraction"
+    ],
+    "id": "mf_a4ba431c"
+  },
+  {
+    "question text": "6.0 − 1.0 = 5",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Subtraction"
+    ],
+    "id": "mf_d8a5256b"
+  },
+  {
+    "question text": "3.4 − 1.1 = 2.3",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Subtraction"
+    ],
+    "id": "mf_017a9b85"
+  },
+  {
+    "question text": "9.5 − 4.5 = 5",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Subtraction"
+    ],
+    "id": "mf_894736b4"
+  },
+  {
+    "question text": "2.5 − 0.25 = 2.25",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Decimal Subtraction"
+    ],
+    "id": "mf_b022df94"
+  },
+  {
+    "question text": "7.9 − 2.9 = 5",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Subtraction"
+    ],
+    "id": "mf_d909e763"
+  },
+  {
+    "question text": "5.0 − 3.2 = 1.8",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Subtraction"
+    ],
+    "id": "mf_980f0ba3"
+  },
+  {
+    "question text": "4.1 − 3.1 = 1",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Subtraction"
+    ],
+    "id": "mf_a03bc689"
+  },
+  {
+    "question text": "8.5 − 5.5 = 3",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Subtraction"
+    ],
+    "id": "mf_e2123748"
+  },
+  {
+    "question text": "6.75 − 2.75 = 4",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Decimal Subtraction"
+    ],
+    "id": "mf_d73d5c98"
+  },
+  {
+    "question text": "3.3 − 0.3 = 3",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Subtraction"
+    ],
+    "id": "mf_548c15d2"
+  },
+  {
+    "question text": "9.0 − 3.5 = 5.5",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Subtraction"
+    ],
+    "id": "mf_3fe22b83"
+  },
+  {
+    "question text": "2.2 − 1.1 = 1.1",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Subtraction"
+    ],
+    "id": "mf_52645dc8"
+  },
+  {
+    "question text": "7.5 − 6.5 = 1",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Subtraction"
+    ],
+    "id": "mf_13666846"
+  },
+  {
+    "question text": "5.25 − 1.25 = 4",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Decimal Subtraction"
+    ],
+    "id": "mf_3374d72f"
+  },
+  {
+    "question text": "3.6 − 2.1 = 1.5",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Subtraction"
+    ],
+    "id": "mf_10414a68"
+  },
+  {
+    "question text": "4.4 − 2.4 = 2",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Subtraction"
+    ],
+    "id": "mf_13d16632"
+  },
+  {
+    "question text": "0.5 × 0.2 = 0.1",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Multiplication"
+    ],
+    "id": "mf_372ef60f"
+  },
+  {
+    "question text": "0.3 × 10 = 3",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Multiplication"
+    ],
+    "id": "mf_4c5d2f7b"
+  },
+  {
+    "question text": "0.6 × 0.4 = 0.24",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Multiplication"
+    ],
+    "id": "mf_bdf27265"
+  },
+  {
+    "question text": "0.5 × 0.4 = 0.2",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Multiplication"
+    ],
+    "id": "mf_2cd00384"
+  },
+  {
+    "question text": "0.4 × 100 = 40",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Multiplication"
+    ],
+    "id": "mf_a765a067"
+  },
+  {
+    "question text": "1.2 × 0.3 = 0.36",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Multiplication"
+    ],
+    "id": "mf_c30cd563"
+  },
+  {
+    "question text": "2.5 × 4 = 10",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Multiplication"
+    ],
+    "id": "mf_aab474df"
+  },
+  {
+    "question text": "3.5 × 0.1 = 0.35",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Multiplication"
+    ],
+    "id": "mf_80996a52"
+  },
+  {
+    "question text": "0.7 × 0.4 = 0.28",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Multiplication"
+    ],
+    "id": "mf_3ca02950"
+  },
+  {
+    "question text": "5.5 × 0.1 = 0.55",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Multiplication"
+    ],
+    "id": "mf_62dcc807"
+  },
+  {
+    "question text": "7 × 0.5 = 3.5",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Multiplication"
+    ],
+    "id": "mf_1f1e0ee6"
+  },
+  {
+    "question text": "1.5 × 0.2 = 0.3",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Multiplication"
+    ],
+    "id": "mf_cd4fb658"
+  },
+  {
+    "question text": "3 × 1.1 = 3.3",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Multiplication"
+    ],
+    "id": "mf_4e9fb35f"
+  },
+  {
+    "question text": "4 × 0.5 = 2",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Multiplication"
+    ],
+    "id": "mf_cf2a7ffc"
+  },
+  {
+    "question text": "2 × 2.5 = 5",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Multiplication"
+    ],
+    "id": "mf_7253e0ba"
+  },
+  {
+    "question text": "6.0 × 0.1 = 0.6",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Multiplication"
+    ],
+    "id": "mf_ecf4a9fa"
+  },
+  {
+    "question text": "5 × 0.2 = 1",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Multiplication"
+    ],
+    "id": "mf_3a3dc52d"
+  },
+  {
+    "question text": "0.4 × 0.2 = 0.08",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Multiplication"
+    ],
+    "id": "mf_1b821087"
+  },
+  {
+    "question text": "7.1 × 0.3 = 2.13",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Multiplication"
+    ],
+    "id": "mf_61078b69"
+  },
+  {
+    "question text": "8.0 × 0.4 = 3.2",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Multiplication"
+    ],
+    "id": "mf_483e5690"
+  },
+  {
+    "question text": "1.25 × 4 = 5",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Decimal Multiplication"
+    ],
+    "id": "mf_a705d7d5"
+  },
+  {
+    "question text": "10 × 0.5 = 5",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Multiplication"
+    ],
+    "id": "mf_6428b872"
+  },
+  {
+    "question text": "2 × 1.5 = 3",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Multiplication"
+    ],
+    "id": "mf_0909192e"
+  },
+  {
+    "question text": "3 × 0.6 = 1.8",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Multiplication"
+    ],
+    "id": "mf_30a4c736"
+  },
+  {
+    "question text": "4 × 2.5 = 10",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Multiplication"
+    ],
+    "id": "mf_086bb338"
+  },
+  {
+    "question text": "7.0 × 0.3 = 2.1",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Multiplication"
+    ],
+    "id": "mf_fc77efe2"
+  },
+  {
+    "question text": "5 × 1.2 = 6",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Multiplication"
+    ],
+    "id": "mf_7cc36ba6"
+  },
+  {
+    "question text": "6.6 × 0.5 = 3.3",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Multiplication"
+    ],
+    "id": "mf_14b3ae59"
+  },
+  {
+    "question text": "3.0 × 2.2 = 6.6",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Multiplication"
+    ],
+    "id": "mf_d4cfe34f"
+  },
+  {
+    "question text": "4 × 0.25 = 1",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Decimal Multiplication"
+    ],
+    "id": "mf_726aedfa"
+  },
+  {
+    "question text": "4 × 0.4 = 1.6",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Multiplication"
+    ],
+    "id": "mf_40e8fb45"
+  },
+  {
+    "question text": "3.6 ÷ 10 = 0.36",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Division"
+    ],
+    "id": "mf_ba693dca"
+  },
+  {
+    "question text": "0.8 ÷ 0.2 = 4",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Division"
+    ],
+    "id": "mf_06280951"
+  },
+  {
+    "question text": "2.5 ÷ 0.5 = 5",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Division"
+    ],
+    "id": "mf_02bd7ba9"
+  },
+  {
+    "question text": "1.2 ÷ 3 = 0.4",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Division"
+    ],
+    "id": "mf_04b7d358"
+  },
+  {
+    "question text": "7.2 ÷ 0.1 = 72",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Division"
+    ],
+    "id": "mf_37b4d8aa"
+  },
+  {
+    "question text": "5.0 ÷ 2 = 2.5",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Division"
+    ],
+    "id": "mf_a9262363"
+  },
+  {
+    "question text": "6.4 ÷ 0.8 = 8",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Division"
+    ],
+    "id": "mf_03855de1"
+  },
+  {
+    "question text": "8.1 ÷ 3 = 2.7",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Division"
+    ],
+    "id": "mf_bdcc0257"
+  },
+  {
+    "question text": "0.9 ÷ 0.3 = 3",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Division"
+    ],
+    "id": "mf_f0ed564d"
+  },
+  {
+    "question text": "4.5 ÷ 1.5 = 3",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Division"
+    ],
+    "id": "mf_cf9799af"
+  },
+  {
+    "question text": "2.8 ÷ 4 = 0.7",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Division"
+    ],
+    "id": "mf_4f9a5238"
+  },
+  {
+    "question text": "6.0 ÷ 3 = 2",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Division"
+    ],
+    "id": "mf_1f8b8fe5"
+  },
+  {
+    "question text": "9.6 ÷ 1.2 = 8",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Division"
+    ],
+    "id": "mf_78e65bf9"
+  },
+  {
+    "question text": "8.4 ÷ 0.7 = 12",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Division"
+    ],
+    "id": "mf_e047c124"
+  },
+  {
+    "question text": "7.5 ÷ 2.5 = 3",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Division"
+    ],
+    "id": "mf_713a1a8f"
+  },
+  {
+    "question text": "5.5 ÷ 0.5 = 11",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Division"
+    ],
+    "id": "mf_e1e7e722"
+  },
+  {
+    "question text": "4.8 ÷ 1.6 = 3",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Division"
+    ],
+    "id": "mf_f2bb4220"
+  },
+  {
+    "question text": "3.3 ÷ 0.3 = 11",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Division"
+    ],
+    "id": "mf_f4ba4267"
+  },
+  {
+    "question text": "6.3 ÷ 0.9 = 7",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Division"
+    ],
+    "id": "mf_08048f35"
+  },
+  {
+    "question text": "2.4 ÷ 0.4 = 6",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Division"
+    ],
+    "id": "mf_4a5db846"
+  },
+  {
+    "question text": "7.2 ÷ 8 = 0.9",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Division"
+    ],
+    "id": "mf_37dc2085"
+  },
+  {
+    "question text": "9.0 ÷ 1.5 = 6",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Division"
+    ],
+    "id": "mf_35d077d4"
+  },
+  {
+    "question text": "5.0 ÷ 2.0 = 2.5",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Division"
+    ],
+    "id": "mf_bf3f7063"
+  },
+  {
+    "question text": "3.6 ÷ 0.6 = 6",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Division"
+    ],
+    "id": "mf_1440032d"
+  },
+  {
+    "question text": "8.0 ÷ 4.0 = 2",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Division"
+    ],
+    "id": "mf_b95384bc"
+  },
+  {
+    "question text": "6.4 ÷ 0.8 = 8",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Division"
+    ],
+    "id": "mf_62cc8e9b"
+  },
+  {
+    "question text": "4.5 ÷ 1.5 = 3",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Division"
+    ],
+    "id": "mf_bd644894"
+  },
+  {
+    "question text": "2.5 ÷ 0.5 = 5",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Division"
+    ],
+    "id": "mf_ee9b293a"
+  },
+  {
+    "question text": "7.2 ÷ 1.2 = 6",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Division"
+    ],
+    "id": "mf_d6a4bd98"
+  },
+  {
+    "question text": "3.9 ÷ 0.3 = 13",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Division"
+    ],
+    "id": "mf_66ad66a4"
+  },
+  {
+    "question text": "5.4 ÷ 1.8 = 3",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Decimal Division"
+    ],
+    "id": "mf_a0005e34"
+  }
+]

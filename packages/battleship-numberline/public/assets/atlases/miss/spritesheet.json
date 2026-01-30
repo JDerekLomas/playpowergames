@@ -1,0 +1,251 @@
+﻿{"frames": {
+
+"Splash animation instance 10006":
+{
+	"frame": {"x":0,"y":0,"w":54,"h":33},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":79,"y":120,"w":200,"h":165},
+	"sourceSize": {"w":200,"h":165}
+},
+"Splash animation instance 10007":
+{
+	"frame": {"x":54,"y":0,"w":69,"h":70},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":72,"y":83,"w":200,"h":165},
+	"sourceSize": {"w":200,"h":165}
+},
+"Splash animation instance 10008":
+{
+	"frame": {"x":123,"y":0,"w":90,"h":91},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":57,"y":62,"w":200,"h":165},
+	"sourceSize": {"w":200,"h":165}
+},
+"Splash animation instance 10009":
+{
+	"frame": {"x":213,"y":0,"w":116,"h":117},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":49,"y":36,"w":200,"h":165},
+	"sourceSize": {"w":200,"h":165}
+},
+"Splash animation instance 10010":
+{
+	"frame": {"x":329,"y":0,"w":126,"h":134},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":45,"y":19,"w":200,"h":165},
+	"sourceSize": {"w":200,"h":165}
+},
+"Splash animation instance 10011":
+{
+	"frame": {"x":455,"y":0,"w":144,"h":154},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":37,"y":0,"w":200,"h":165},
+	"sourceSize": {"w":200,"h":165}
+},
+"Splash animation instance 10012":
+{
+	"frame": {"x":599,"y":0,"w":145,"h":128},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":31,"y":27,"w":200,"h":165},
+	"sourceSize": {"w":200,"h":165}
+},
+"Splash animation instance 10013":
+{
+	"frame": {"x":744,"y":0,"w":161,"h":119},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":24,"y":36,"w":200,"h":165},
+	"sourceSize": {"w":200,"h":165}
+},
+"Splash animation instance 10014":
+{
+	"frame": {"x":0,"y":154,"w":170,"h":115},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":16,"y":40,"w":200,"h":165},
+	"sourceSize": {"w":200,"h":165}
+},
+"Splash animation instance 10015":
+{
+	"frame": {"x":170,"y":154,"w":182,"h":106},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":13,"y":50,"w":200,"h":165},
+	"sourceSize": {"w":200,"h":165}
+},
+"Splash animation instance 10016":
+{
+	"frame": {"x":352,"y":154,"w":190,"h":99},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":57,"w":200,"h":165},
+	"sourceSize": {"w":200,"h":165}
+},
+"Splash animation instance 10017":
+{
+	"frame": {"x":542,"y":154,"w":182,"h":49},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":108,"w":200,"h":165},
+	"sourceSize": {"w":200,"h":165}
+},
+"Splash animation instance 10018":
+{
+	"frame": {"x":724,"y":154,"w":150,"h":17},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":31,"y":143,"w":200,"h":165},
+	"sourceSize": {"w":200,"h":165}
+},
+"Splash animation instance 10019":
+{
+	"frame": {"x":874,"y":154,"w":91,"h":17},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":60,"y":143,"w":200,"h":165},
+	"sourceSize": {"w":200,"h":165}
+},
+"Splash animation instance 10020":
+{
+	"frame": {"x":0,"y":269,"w":62,"h":48},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":76,"y":112,"w":200,"h":165},
+	"sourceSize": {"w":200,"h":165}
+},
+"Splash animation instance 10021":
+{
+	"frame": {"x":62,"y":269,"w":77,"h":79},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":67,"y":81,"w":200,"h":165},
+	"sourceSize": {"w":200,"h":165}
+},
+"Splash animation instance 10022":
+{
+	"frame": {"x":139,"y":269,"w":94,"h":82},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":56,"y":80,"w":200,"h":165},
+	"sourceSize": {"w":200,"h":165}
+},
+"Splash animation instance 10023":
+{
+	"frame": {"x":233,"y":269,"w":113,"h":84},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":46,"y":79,"w":200,"h":165},
+	"sourceSize": {"w":200,"h":165}
+},
+"Splash animation instance 10024":
+{
+	"frame": {"x":346,"y":269,"w":128,"h":85},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":36,"y":78,"w":200,"h":165},
+	"sourceSize": {"w":200,"h":165}
+},
+"Splash animation instance 10025":
+{
+	"frame": {"x":474,"y":269,"w":147,"h":86},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":24,"y":78,"w":200,"h":165},
+	"sourceSize": {"w":200,"h":165}
+},
+"Splash animation instance 10026":
+{
+	"frame": {"x":621,"y":269,"w":159,"h":85},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":15,"y":79,"w":200,"h":165},
+	"sourceSize": {"w":200,"h":165}
+},
+"Splash animation instance 10027":
+{
+	"frame": {"x":780,"y":269,"w":174,"h":61},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":103,"w":200,"h":165},
+	"sourceSize": {"w":200,"h":165}
+},
+"Splash animation instance 10028":
+{
+	"frame": {"x":0,"y":355,"w":177,"h":38},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":127,"w":200,"h":165},
+	"sourceSize": {"w":200,"h":165}
+},
+"Splash animation instance 10029":
+{
+	"frame": {"x":177,"y":355,"w":153,"h":26},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":138,"w":200,"h":165},
+	"sourceSize": {"w":200,"h":165}
+},
+"Splash animation instance 10030":
+{
+	"frame": {"x":330,"y":355,"w":145,"h":19},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":16,"y":146,"w":200,"h":165},
+	"sourceSize": {"w":200,"h":165}
+},
+"Splash animation instance 10031":
+{
+	"frame": {"x":475,"y":355,"w":150,"h":18},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":146,"w":200,"h":165},
+	"sourceSize": {"w":200,"h":165}
+},
+"Splash animation instance 10032":
+{
+	"frame": {"x":625,"y":355,"w":117,"h":18},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":42,"y":146,"w":200,"h":165},
+	"sourceSize": {"w":200,"h":165}
+},
+"Splash animation instance 10033":
+{
+	"frame": {"x":742,"y":355,"w":117,"h":18},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":42,"y":146,"w":200,"h":165},
+	"sourceSize": {"w":200,"h":165}
+},
+"Splash animation instance 10034":
+{
+	"frame": {"x":859,"y":355,"w":0,"h":0},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":-398,"y":-140,"w":200,"h":165},
+	"sourceSize": {"w":200,"h":165}
+},
+"Splash animation instance 10035":
+{
+	"frame": {"x":859,"y":355,"w":0,"h":0},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":-398,"y":-140,"w":200,"h":165},
+	"sourceSize": {"w":200,"h":165}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "24.0.9.73",
+	"image": "splash.png",
+	"format": "RGBA8888",
+	"size": {"w":1024,"h":512},
+	"scale": "1"
+}
+}

@@ -1,0 +1,38 @@
+{
+    "name": "@k8-games/sdk",
+    "version": "1.0.0",
+    "private": true,
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+        },
+        "./multiverse": {
+            "types": "./dist/multiverse/index.d.ts",
+            "default": "./dist/multiverse/index.js"
+        }
+    },
+    "scripts": {
+        "prebuild": "pnpm run generate-question-banks && pnpm run copy-assets",
+        "build": "tsc",
+        "dev": "tsc -w",
+        "lint": "eslint src --ext .ts",
+        "generate-question-banks": "node scripts/generateCSVData.js",
+        "copy-assets": "node scripts/copyComponentAssets.js"
+    },
+    "dependencies": {
+        "i18next": "^25.0.1",
+        "mathjax-full": "^3.2.2",
+        "phaser": "^3.70.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.19",
+        "@typescript-eslint/eslint-plugin": "^8.43.0",
+        "@typescript-eslint/parser": "^8.43.0",
+        "csv-parse": "^5.5.3",
+        "eslint": "^9.35.0",
+        "typescript": "^5.3.3"
+    }
+}

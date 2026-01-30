@@ -1,0 +1,95 @@
+﻿{
+	"frames": {
+		"crack1": {
+			"frame": {
+				"x": 0,
+				"y": 0,
+				"w": 1288,
+				"h": 777
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1288,
+				"h": 777
+			},
+			"sourceSize": {
+				"w": 1288,
+				"h": 777
+			}
+		},
+		"crack2": {
+			"frame": {
+				"x": 1288,
+				"y": 0,
+				"w": 1288,
+				"h": 777
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1288,
+				"h": 777
+			},
+			"sourceSize": {
+				"w": 1288,
+				"h": 777
+			}
+		},
+		"crack3": {
+			"frame": {
+				"x": 2576,
+				"y": 0,
+				"w": 1288,
+				"h": 777
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1288,
+				"h": 777
+			},
+			"sourceSize": {
+				"w": 1288,
+				"h": 777
+			}
+		},
+		"crack4": {
+			"frame": {
+				"x": 0,
+				"y": 777,
+				"w": 1288,
+				"h": 777
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1288,
+				"h": 777
+			},
+			"sourceSize": {
+				"w": 1288,
+				"h": 777
+			}
+		}
+	},
+	"meta": {
+		"app": "Adobe Animate",
+		"version": "24.0.9.73",
+		"image": "crack.png",
+		"format": "RGBA8888",
+		"size": {
+			"w": 4096,
+			"h": 2048
+		},
+		"scale": "1"
+	}
+}

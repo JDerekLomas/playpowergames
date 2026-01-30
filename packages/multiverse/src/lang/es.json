@@ -1,0 +1,62 @@
+{
+    "common": {
+        "start": "Comenzar",
+        "pause": "Pausa",
+        "mute": "Silencio",
+        "unmute": "Activar sonido",
+        "volume": "Volumen",
+        "title": "Multiverso",
+        "titleLabel": "Juego de Multiverso",
+        "skip": "Omitir",
+        "resume": "Reanudar"
+    },
+    "menu": {
+        "play": "Jugar",
+        "menu": "Menú",
+        "retakeChallenge": "Calibrar de nuevo"
+    },
+    "cutscene": {
+        "scene_1_instruction": "Bienvenido, operador… ¿listo para el salto multiversal?",
+        "scene_2_instruction": "—¡Oh, no! ¡Alerta crítica! ¡Se ha detectado inestabilidad en el portal!",
+        "scene_3_instruction": "Espere… ¡La calibración manual puede evitar el colapso total!"
+    },
+    "additionAdventure": {
+        "instructions": {
+            "title": "Modo de calibración activado\nResponda a todas las preguntas que pueda.",
+            "subtitle": "¡Cada respuesta activa el portal!",
+            "speedCounts": "¡Resuelve tantos como puedas!",
+            "numberCorrect": "Número correcto: ",
+            "calibratingPortal": "Calibrando el portal...",
+            "awaitingCalculation": "Esperando el cálculo...",
+            "pressEnterToSubmit": "Presiona Enter para enviar...",
+            "correctInputReceived": "¡Entrada correcta recibida!",
+            "calculationMismatch": "¡El cálculo no coincide!",
+            "endSceneInstruction": "Calibración exitosa. Se ha restaurado un portal.",
+            "calibrateAgain": "Calibre de nuevo para abrir el siguiente portal."
+        },
+        "scoreboard": {
+            "congratulations": "¡Felicidades!",
+            "scoreLabel": "Puntuación:",
+            "dcpmLabel": "{{dcpm}} Número correcto",
+            "dcpmDescription": "(Dígitos correctos por minuto)",
+            "retakeChallenge": "Calibrar de nuevo",
+            "enterMultiverse": "Entrar al multiverso",
+            "factsToReview": "Hechos para repasar",
+            "current": "Actual",
+            "attempt": "Intento",
+            "noWorries": "¡No te preocupes! Inténtalo de nuevo",
+            "greatEffort": "Gran esfuerzo!",
+            "calibrationReport": "Informe de calibración",
+            "correctAnswer": "Número correcto",
+            "currentAttemptScore": "Intento actual: {{score}} correcto",
+            "attemptScore": "Intento {{attempt}}: {{score}} correcto"
+        }
+    },
+    "topic": {
+        "selectTopic": "Seleccione el portal temático",
+        "add": "Suma",
+        "sub": "Resta",
+        "mul": "Multiplicación",
+        "div": "División"
+    }
+}

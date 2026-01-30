@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="/assets/fonts/exo.ttf" as="font" type="font/ttf" crossorigin>
+    <title>Dino Muncher</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;   /* fallback */
+            min-height: 100dvh;  /* modern browsers override */
+            position: relative;
+            background-color: #000;
+            font-family: 'Exo', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        }
+
+        @font-face {
+            font-family: 'Exo';
+            src: url('/assets/fonts/exo.ttf') format('truetype-variations');
+            font-weight: 100 900;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        #game-container canvas {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Controls bar outside the game area */
+        /* Controls overlay for game scene only (inside the game screen) */
+        #controls {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            display: none; /* Hidden by default, shown only during game */
+        }
+
+    #dpad {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            width: 220px;
+        }
+
+        .control-btn {
+            background-color: rgba(74, 74, 74, 0.8);
+            border: 2px solid rgba(106, 106, 106, 0.8);
+            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+            font-size: 26px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            transition: background-color 0.1s ease;
+            backdrop-filter: blur(4px);
+        }
+
+        .control-btn:active {
+            background-color: rgba(128, 128, 128, 0.8);
+        }
+
+        #btn-up {
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        #btn-left {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        #btn-down {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        #btn-right {
+            grid-column: 3;
+            grid-row: 2;
+        }
+
+    @media (max-width: 480px) {
+            .control-btn {
+                width: 56px;
+                height: 56px;
+                font-size: 22px;
+            }
+
+            #dpad {
+                width: 200px;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="game-container"></div>
+    <div id="controls">
+        <div id="dpad">
+            <button class="control-btn" id="btn-up" aria-label="Move up">▲</button>
+            <button class="control-btn" id="btn-left" aria-label="Move left">◀</button>
+            <button class="control-btn" id="btn-down" aria-label="Move down">▼</button>
+            <button class="control-btn" id="btn-right" aria-label="Move right">▶</button>
+        </div>
+    </div>
+    <div id="aria-announcer" aria-live="assertive"
+        style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden;">
+    </div>
+    <script type="module" src="./main.ts"></script>
+</body>
+
+</html>

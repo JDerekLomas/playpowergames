@@ -1,0 +1,435 @@
+{
+    "frames": {
+        "Star 01_00364.png": {
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 62,
+                "h": 61
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 1148,
+                "y": 2,
+                "w": 62,
+                "h": 61
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Star 01_00365.png": {
+            "frame": {
+                "x": 0,
+                "y": 61,
+                "w": 62,
+                "h": 61
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 1148,
+                "y": 2,
+                "w": 62,
+                "h": 61
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Star 01_00366.png": {
+            "frame": {
+                "x": 62,
+                "y": 0,
+                "w": 62,
+                "h": 61
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 1148,
+                "y": 2,
+                "w": 62,
+                "h": 61
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Star 01_00363.png": {
+            "frame": {
+                "x": 62,
+                "y": 61,
+                "w": 60,
+                "h": 59
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 1149,
+                "y": 3,
+                "w": 60,
+                "h": 59
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Star 01_00362.png": {
+            "frame": {
+                "x": 0,
+                "y": 122,
+                "w": 59,
+                "h": 58
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 1149,
+                "y": 3,
+                "w": 59,
+                "h": 58
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Star 01_00370.png": {
+            "frame": {
+                "x": 59,
+                "y": 122,
+                "w": 59,
+                "h": 58
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 1149,
+                "y": 3,
+                "w": 59,
+                "h": 58
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Star 01_00351.png": {
+            "frame": {
+                "x": 124,
+                "y": 0,
+                "w": 55,
+                "h": 52
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 1151,
+                "y": 6,
+                "w": 55,
+                "h": 52
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Star 01_00352.png": {
+            "frame": {
+                "x": 124,
+                "y": 52,
+                "w": 48,
+                "h": 46
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 1155,
+                "y": 9,
+                "w": 48,
+                "h": 46
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Star 01_00350.png": {
+            "frame": {
+                "x": 122,
+                "y": 98,
+                "w": 37,
+                "h": 35
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 1160,
+                "y": 14,
+                "w": 37,
+                "h": 35
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Star 01_00356.png": {
+            "frame": {
+                "x": 118,
+                "y": 133,
+                "w": 37,
+                "h": 35
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 1160,
+                "y": 14,
+                "w": 37,
+                "h": 35
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Star 01_00357.png": {
+            "frame": {
+                "x": 179,
+                "y": 0,
+                "w": 37,
+                "h": 35
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 1160,
+                "y": 14,
+                "w": 37,
+                "h": 35
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Star 01_00358.png": {
+            "frame": {
+                "x": 179,
+                "y": 35,
+                "w": 37,
+                "h": 35
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 1160,
+                "y": 14,
+                "w": 37,
+                "h": 35
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Star 01_00359.png": {
+            "frame": {
+                "x": 172,
+                "y": 70,
+                "w": 37,
+                "h": 35
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 1160,
+                "y": 14,
+                "w": 37,
+                "h": 35
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Star 01_00360.png": {
+            "frame": {
+                "x": 155,
+                "y": 133,
+                "w": 37,
+                "h": 35
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 1160,
+                "y": 14,
+                "w": 37,
+                "h": 35
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Star 01_00361.png": {
+            "frame": {
+                "x": 0,
+                "y": 180,
+                "w": 37,
+                "h": 35
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 1160,
+                "y": 14,
+                "w": 37,
+                "h": 35
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Star 01_00353.png": {
+            "frame": {
+                "x": 122,
+                "y": 98,
+                "w": 37,
+                "h": 35
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 1160,
+                "y": 14,
+                "w": 37,
+                "h": 35
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Star 01_00354.png": {
+            "frame": {
+                "x": 122,
+                "y": 98,
+                "w": 37,
+                "h": 35
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 1160,
+                "y": 14,
+                "w": 37,
+                "h": 35
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Star 01_00355.png": {
+            "frame": {
+                "x": 122,
+                "y": 98,
+                "w": 37,
+                "h": 35
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 1160,
+                "y": 14,
+                "w": 37,
+                "h": 35
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Star 01_00369.png": {
+            "frame": {
+                "x": 62,
+                "y": 61,
+                "w": 60,
+                "h": 59
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 1149,
+                "y": 3,
+                "w": 60,
+                "h": 59
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Star 01_00368.png": {
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 62,
+                "h": 61
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 1148,
+                "y": 2,
+                "w": 62,
+                "h": 61
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        },
+        "Star 01_00367.png": {
+            "frame": {
+                "x": 0,
+                "y": 61,
+                "w": 62,
+                "h": 61
+            },
+            "rotated": false,
+            "trimmed": true,
+            "spriteSourceSize": {
+                "x": 1148,
+                "y": 2,
+                "w": 62,
+                "h": 61
+            },
+            "sourceSize": {
+                "w": 1280,
+                "h": 720
+            }
+        }
+    },
+    "meta": {
+        "app": "http://free-tex-packer.com",
+        "version": "0.6.7",
+        "image": "spritesheet.png",
+        "format": "RGBA8888",
+        "size": {
+            "w": 216,
+            "h": 215
+        },
+        "scale": 1
+    }
+}

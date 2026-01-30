@@ -1,0 +1,184 @@
+.gameCard {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.gameCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 0 15px rgba(255, 0, 128, 0.2);
+}
+
+.gameImageWrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  aspect-ratio: 16/9;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 1.5rem;
+  margin-top: 1.2rem;
+}
+
+.existingGameImageWrapper {
+  overflow: hidden;
+}
+
+.gameImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.existingGameImage {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+  border-radius: 0.5rem;
+}
+
+.gameContent {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.gameTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, #ff0080, #7928ca);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 0 0.5rem 0;
+}
+
+.txTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #a0aec0;
+  margin: 0 0 0.7rem 0;
+  font-style: normal;
+  opacity: 0.9;
+}
+
+.gameDescription {
+  color: #a0aec0;
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.lastUpdated {
+  color: #94a3b8;
+  font-size: 0.8rem;
+  margin: 0 0 0.75rem;
+}
+
+.gameFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.25rem;
+}
+
+.buttonGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.playButton {
+  background: rgba(255, 255, 255, 0.1);
+  color: #a0aec0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.playButton:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.downloadButton {
+  background: rgba(255, 255, 255, 0.05);
+  color: #a0aec0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  min-width: 44px;
+  height: 40px;
+}
+
+.downloadButton:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dropdownContent {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dropdownItem {
+  color: #a0aec0;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dropdownItem:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+.playText {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #3e78ff;
+  transition: color 0.3s ease;
+}
+
+.arrow {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #3e78ff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.gameCard:hover .playText {
+  color: #ff0080;
+}
+
+.gameCard:hover .arrow {
+  transform: translateX(5px);
+  color: #ff0080;
+}
+
+.disabledCard {
+  pointer-events: none;
+  opacity: 0.5;
+  filter: grayscale(70%);
+  cursor: not-allowed;
+}

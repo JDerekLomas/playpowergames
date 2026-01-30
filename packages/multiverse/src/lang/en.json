@@ -1,0 +1,62 @@
+{
+    "common": {
+        "start": "Start",
+        "pause": "Pause",
+        "mute": "Mute",
+        "unmute": "Unmute",
+        "volume": "Volume",
+        "title": "Multiverse",
+        "titleLabel": "Multiverse Game",
+        "skip": "Skip",
+        "resume": "Resume"
+    },
+    "cutscene": {
+        "scene_1_instruction": "Welcome, Operator… ready for the multiverse jump?",
+        "scene_2_instruction": "—Oh no! Critical alert! Portal instability detected!",
+        "scene_3_instruction": "Wait—manual calibration can prevent total collapse!"
+    },
+    "menu": {
+        "play": "Let's Play",
+        "menu": "Menu",
+        "retakeChallenge": "Calibrate Again"
+    },
+    "additionAdventure": {
+        "instructions": {
+            "title": "Calibration mode active\nAnswer as many as you can.",
+            "subtitle": "Each answer powers the portal!",
+            "speedCounts": "Solve as many as you can!",
+            "numberCorrect": "Number correct: ",
+            "calibratingPortal": "Calibrating Portal...",
+            "awaitingCalculation": "Awaiting calculation...",
+            "pressEnterToSubmit": "Press Enter to submit...",
+            "correctInputReceived": "Correct input received!",
+            "calculationMismatch": "Calculation mismatch!",
+            "endSceneInstruction": "Calibration successful. One portal restored.",
+            "calibrateAgain": "Calibrate again to open the next portal."
+        },
+        "scoreboard": {
+            "congratulations": "Congratulations!",
+            "scoreLabel": "Score:",
+            "dcpmLabel": "{{dcpm}} Number Correct",
+            "dcpmDescription": "(Digits Correct Per Minute)",
+            "retakeChallenge": "Calibrate Again",
+            "enterMultiverse": "Enter Multiverse",
+            "factsToReview": "Facts to review",
+            "current": "Current",
+            "attempt": "Attempt",
+            "noWorries": "No worries! Try again",
+            "greatEffort": "Great Effort!",
+            "calibrationReport": "Calibration Report",
+            "correctAnswer": "Number Correct",
+            "currentAttemptScore": "Current Attempt: {{score}} correct",
+            "attemptScore": "Attempt {{attempt}}: {{score}} correct"
+        }
+    },
+    "topic": {
+        "selectTopic": "Select Topic Portal",
+        "add": "Addition",
+        "sub": "Subtraction",
+        "mul": "Multiplication",
+        "div": "Division"
+    }
+}

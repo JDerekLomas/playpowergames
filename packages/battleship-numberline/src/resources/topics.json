@@ -1,0 +1,312 @@
+{
+    "topics": [
+        {
+            "name": "addition_facts_within_20",
+            "displayName": "Addition Facts within 20",
+            "mode": "clicking"
+        },
+        {
+            "name": "subtraction_facts_within_20",
+            "displayName": "Subtraction Facts within 20",
+            "mode": "clicking"
+        },
+        {
+            "name": "multiplication_facts",
+            "displayName": "Multiplication Facts",
+            "mode": "clicking"
+        },
+        {
+            "name": "equations_and_inequalities",
+            "displayName": "Solve Problems using Equations and Inequalities",
+            "mode": "clicking"
+        },
+        {
+            "name": "equivalent_fractions",
+            "displayName": "Equivalent Fractions",
+            "mode": "clicking"
+        },
+        {
+            "name": "add_and_subtract_fractions",
+            "displayName": "Add and Subtract Fractions",
+            "mode": "clicking",
+            "_comment": "Grade 5 - Topic 7",
+            "levels": [
+                {
+                    "name": "Build equivalent fractions",
+                    "nameEs": "Construir fracciones equivalentes"
+                },
+                {
+                    "name": "Add fractions",
+                    "nameEs": "Sumar fracciones"
+                },
+                {
+                    "name": "Subtract fractions",
+                    "nameEs": "Restar fracciones"
+                },
+                {
+                    "name": "Add and subtract mixed numbers",
+                    "nameEs": "Sumar y restar números mixtos"
+                }
+            ]
+        },
+        {
+            "name": "multiplication_2_digit_numbers",
+            "displayName": "Multiplication of 2-digit numbers",
+            "mode": "clicking"
+        },
+        {
+            "name": "place_value",
+            "displayName": "Place Value",
+            "mode": "clicking"
+        },
+        {
+            "name": "mul_facts_upto_100",
+            "displayName": "Multiplication Facts up to 100",
+            "mode": "clicking"
+        },
+        {
+            "name": "div_facts_upto_100",
+            "displayName": "Division Facts up to 100",
+            "mode": "clicking"
+        },
+        {
+            "name": "add_sub_facts_upto_1000",
+            "displayName": "Add and Subtract Facts up to 1000",
+            "mode": "clicking"
+        },
+        {
+            "name": "fractions_as_numbers",
+            "displayName": "Fractions as Numbers",
+            "mode": "clicking",
+            "showIntermediateNumbers": false,
+            "showTutorial": true,
+            "_comment": "Grade 3 - Topic 9",
+            "levels": [
+                {
+                    "name": "Mark the Fraction",
+                    "nameEs": "Marca la fracción"
+                },
+                {
+                    "name": "Find the Fraction",
+                    "nameEs": "Encuentra la fracción"
+                }
+            ]
+        },
+        {
+            "name": "place_value_magnitude",
+            "displayName": "Place Value Magnitude",
+            "mode": "typing",
+            "showIntermediateNumbers": false,
+            "levels": [
+                {
+                    "name": "Numbers to 100",
+                    "nameEs": "Números hasta 100"
+                },
+                {
+                    "name": "Numbers to 1,000",
+                    "nameEs": "Números hasta 1,000"
+                },
+                {
+                    "name": "Numbers to 10,000",
+                    "nameEs": "Números hasta 10,000"
+                },
+                {
+                    "name": "Numbers to 1,000,000",
+                    "nameEs": "Números hasta 1,000,000"
+                }
+            ],
+            "_comment": "Grade 4 - Topic 1"
+        },
+        {
+            "name": "add_and_subtract_decimals",
+            "displayName": "Add and Subtract Decimals",
+            "mode": "clicking",
+            "_comment": "Grade 5 - Topic 2",
+            "levels": [
+                {
+                    "name": "Rounding decimals",
+                    "nameEs": "Redondear decimales"
+                },
+                {
+                    "name": "Adding decimals",
+                    "nameEs": "Sumar decimales"
+                },
+                {
+                    "name": "Subtracting decimals",
+                    "nameEs": "Restar decimales"
+                }
+            ]
+        },
+        {
+            "name": "rational_numbers",
+            "displayName": "Rational Numbers",
+            "mode": "clicking",
+            "_comment": "Grade 7 - Topic 1",
+            "levels": [
+                {
+                    "name": "Addition of Rational Numbers",
+                    "nameEs": "Suma de números racionales"
+                },
+                {
+                    "name": "Subtraction of Rational Numbers",
+                    "nameEs": "Resta de números racionales"
+                },
+                {
+                    "name": "Multiplication of Rational Numbers",
+                    "nameEs": "Multiplicación de números racionales"
+                },
+                {
+                    "name": "Division of Rational Numbers",
+                    "nameEs": "División de números racionales"
+                }
+            ]
+        },
+        {
+            "name": "explore_numbers_to_1000",
+            "displayName": "Explore Numbers to 1000",
+            "mode": "clicking",
+            "showIntermediateNumbers": true,
+            "levels": [
+                {
+                    "name": "Skip count by 2s and 5s",
+                    "nameEs": "Contar de 2 en 2 y de 5 en 5"
+                },
+                {
+                    "name": "Numbers less than 100",
+                    "nameEs": "Números menores de 100"
+                },
+                {
+                    "name": "Numbers less than 1,000",
+                    "nameEs": "Números menores a 1,000"
+                }
+            ],
+            "_comment": "Grade 2 - Topic 9"
+        },
+        {
+            "name": "add_and_subtract_within_100",
+            "displayName": "Add and Subtract within 100",
+            "mode": "clicking",
+            "levels": [
+                {
+                    "name": "Single-Digit Addition",
+                    "nameEs": "Suma de un solo dígito"
+                },
+                {
+                    "name": "2-Digit and 1-Digit Addition",
+                    "nameEs": "Suma de dos dígitos y un dígito"
+                },
+                {
+                    "name": "2-Digit and Tens Addition",
+                    "nameEs": "Suma de dos dígitos y decenas"
+                },
+                {
+                    "name": "2-Digit and 2-Digit Addition",
+                    "nameEs": "Suma de dos dígitos y dos dígitos"
+                }
+            ],
+            "_comment": "Grade 1 - Topic 9"
+        },
+        {
+            "name": "subtract_within_1000",
+            "displayName": "Subtract within 1000",
+            "mode": "clicking",
+            "levels": [
+                {
+                    "name": "Subtracting Single‑Digit Numbers (Within 100)",
+                    "nameEs": "Restar números de un dígito (dentro de 100)"
+                },
+                {
+                    "name": "Subtracting 10s or 100s (Within 1,000)",
+                    "nameEs": "Restar solo 10s y 100s (dentro de 1,000)"
+                },
+                {
+                    "name": "Subtracting Two‑Digit Numbers (Within 1,000)",
+                    "nameEs": "Restar números de dos dígitos (dentro de 1,000)"
+                },
+                {
+                    "name": "Subtracting Larger Numbers (Within 1,000)",
+                    "nameEs": "Restar números más grandes (dentro de 1,000)"
+                }
+            ],
+            "_comment": "Grade 2 - Topic 11"
+        },
+        {
+            "name": "understand_and_compare_decimals",
+            "displayName": "Understand and Compare Decimals",
+            "mode": "clicking",
+            "_comment": "Grade 4 - Topic 9",
+            "levels": [
+                {
+                    "name": "Decimals on decimal number line",
+                    "nameEs": "Decimales en la línea numérica decimal"
+                },
+                {
+                    "name": "Decimals on fraction number line",
+                    "nameEs": "Decimales en la línea numérica de fracciones"
+                },
+                {
+                    "name": "Fractions on decimal number line",
+                    "nameEs": "Fracciones en la línea numérica decimal"
+                }
+            ]    
+        },
+        {
+            "name": "addition_and_subtraction_of_fractions_mixed_numbers",
+            "displayName": "Add and Subtract Fractions and Mixed Numbers",
+            "mode": "clicking",
+            "levels": [
+                {
+                    "name": "Add fractions",
+                    "nameEs": "Sumar fracciones"
+                },
+                {
+                    "name": "Subtract fractions", 
+                    "nameEs": "Restar fracciones"
+                },
+                {
+                    "name": "Add & Subtract - Improper & Mixed fractions",
+                    "nameEs": "Sumar y restar - Fracciones impropias y números mixtos"
+                }
+            ]
+        },
+        {
+            "name": "percents",
+            "displayName": "Percents",
+            "mode": "clicking",
+            "levels": [
+                {
+                    "name": "Marking Percents on a Number Line",
+                    "nameEs": "Marcar porcentajes en una línea numérica"
+                },
+                {
+                    "name": "Percents to Decimals",
+                    "nameEs": "Porcentajes a decimales"
+                },
+                {
+                    "name": "Percents to Fractions",
+                    "nameEs": "Porcentajes a fracciones"
+                },
+                {
+                    "name": "Percents to Mixed Numbers",
+                    "nameEs": "Porcentajes a números mixtos"
+                },
+                {
+                    "name": "Percents of Numbers",
+                    "nameEs": "Porcentajes de números"
+                }
+            ]
+        },        
+        {
+            "name": "multiply_fractions",
+            "displayName": "Multiply Fractions",
+            "mode": "clicking",
+            "showTutorial": true,
+            "levels": [
+                {
+                    "name": "Multiply Simple Fractions",
+                    "nameEs": "Multiplicar fracciones simples"
+                }
+            ]
+        }
+    ]
+}

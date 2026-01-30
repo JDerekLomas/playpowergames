@@ -1,0 +1,815 @@
+{
+    "common": {
+        "closeAria": "Cerrar",
+        "closeInfoPopoverAria": "Cerrar ventana de información",
+        "enterYourAnswer": "Ingresa tu respuesta",
+        "correctAlt": "Correcto",
+        "myiaAlt": "Myia",
+        "checkmarkAlt": "Marca de verificación",
+        "completed": "completado",
+        "locked": "bloqueado",
+        "correct": "Correcto",
+        "incorrect": "Incorrecto",
+        "pending": "Pendiente",
+        "question": "Pregunta",
+        "step": "Paso",
+        "progressIndicator": "Indicador de Progreso",
+        "dialogueNavAria": "Controles de Diálogo"
+    },
+    "sceneNames": {
+        "title": "Pantalla de Título",
+        "loading": "Pantalla de Carga",
+        "intro": "Escena de Introducción",
+        "narrator": "Escena del Narrador",
+        "mainCharacter": "Diálogo del Personaje Principal",
+        "library": "Escena de la Biblioteca",
+        "map": "Escena del Mapa",
+        "interactive": "Escena Interactiva",
+        "celebration": "Escena de Celebración",
+        "ending": "Escena Final",
+        "monochord1": "El Monocordio Virtual",
+        "monochord2": "Números Pares, Impares y Figurados",
+        "pebbleProof": "Prueba de Guijarros",
+        "waterProof": "Prueba del Vertido de Agua",
+        "dissectionProof": "Prueba de Disección",
+        "ladderProblem": "El Desafío de la Escalera",
+        "finalChallenge": "El Desafío de la Pirámide"
+    },
+    "loadingScreen": {
+        "loading": "Cargando...",
+        "backgroundAlt": "Fondo de carga",
+        "logoAlt": "PlayPower Labs"
+    },
+    "pythagoreanTheorem": {
+        "pebbleProof": {
+            "title": "Prueba de Guijarros",
+            "description": "Cuenta los guijarros que forman cuadrados en cada lado.",
+            "myia": {
+                "name": "Myia",
+                "dialogues": [
+                    "A mi padre le encantan los triángulos. Descubrió que los rectángulos pueden describirse como la combinación de dos triángulos. Estos son triángulos especiales, porque tienen un ángulo de 90 grados. Los llamamos triángulos rectángulos.",
+                    "Cuando hacemos cuadrados a partir de los lados de un triángulo rectángulo, los guijarros de los cuadrados pequeños se suman perfectamente para formar el cuadrado del lado más largo—la hipotenusa—por eso lo escribimos como a² + b² = c². Haz clic en 'Animar Prueba' para verlos moverse.",
+                    "¿Lo ves? ¡Los guijarros de los dos cuadrados pequeños igualan perfectamente el número de guijarros del cuadrado más grande! Prueba esto con otro triángulo."
+                ],
+                "events": {
+                    "1": "click_animate_button",
+                    "2": "change_triplet"
+                }
+            },
+            "selectPerfectTriple": "Selecciona una terna perfecta:",
+            "tripleThreeFourFive": "Triángulo 3-4-5",
+            "tripleThreeFourFiveAriaLabel": "Seleccionar triángulo 3-4-5",
+            "tripleSixEightTen": "Triángulo 6-8-10",
+            "tripleSixEightTenAriaLabel": "Seleccionar triángulo 6-8-10",
+            "tripleFiveTwelveThirteen": "Triángulo 5-12-13",
+            "tripleFiveTwelveThirteenAriaLabel": "Seleccionar triángulo 5-12-13",
+            "selected": "seleccionado",
+            "animateProof": "Animar Prueba",
+            "reset": "Reiniciar",
+            "screenReaderValues": "Valores actuales: a igual a {a}, b igual a {b}, c igual a {c}, a al cuadrado igual a {aSquared}, b al cuadrado igual a {bSquared}, c al cuadrado igual a {cSquared}",
+            "screenReaderSquaredValues": "Áreas: a al cuadrado igual a {aSquared}, b al cuadrado igual a {bSquared}, c al cuadrado igual a {cSquared}",
+            "proof1CanvasInitialAriaLabel": "Lienzo mostrando a al cuadrado igual a {aSquared} guijarros y b al cuadrado igual a {bSquared} guijarros, listo para animación",
+            "proof1CanvasAnimatingAriaLabel": "Lienzo animando guijarros desde a al cuadrado y b al cuadrado hacia la posición c al cuadrado",
+            "proof1InfoHeading": "Prueba de Guijarros",
+            "proof1InfoBody": "Esta prueba demuestra el teorema de Pitágoras mostrando que los guijarros de los dos cuadrados más pequeños se pueden reorganizar para llenar exactamente el cuadrado más grande."
+        },
+        "pyramidFinal": {
+            "unit": {
+                "cubits": "codos"
+            },
+            "labels": {
+                "unknownB": "b = ?",
+                "a": "a",
+                "aEquals": "a = {value}",
+                "bEquals": "b = {value}",
+                "cEquals": "c = {value}"
+            },
+            "ui": {
+                "legend": "Leyenda",
+                "hiddenTriangle": "Triángulo oculto",
+                "explore": "Explorar la pirámide",
+                "rotateZoom": "Arrastra para rotar y desplázate para hacer zoom.",
+                "baseMsg":"La base es 411 codos.",
+                "clickMeasure": "Cuando estés listo, haz clic en Medir para encontrar el lado b.",
+                "measure": "Medir",
+                "freeView": "Vista libre",
+                "sideView": "Vista lateral",
+                "topView": "Vista superior",
+                "frontView": "Vista frontal",
+                "showMeasurements": "Mostrar medidas",
+                "keyboardInstructions": "Vista de pirámide 3D. Use las teclas de flecha para rotar, más o menos para acercar o alejar, R para restablecer la vista."
+            },
+            "steps": {
+                "1": {
+                    "title": "Paso 1: La dimensión conocida",
+                    "narrative": "Primero, mide lo evidente: la longitud de uno de los lados de la base de la pirámide."
+                },
+                "2": {
+                    "title": "Paso 2: Encontrar el centro",
+                    "narrative": "Para hallar la altura, necesitamos un triángulo rectángulo con dos lados conocidos. El triángulo oculto comienza en el punto medio de un lado de la base.",
+                    "question": "¿Cuál es la longitud desde una esquina hasta el punto medio—es decir, la mitad de la base? (Un codo es una antigua unidad de medida que equivale aproximadamente a la longitud de un antebrazo.)",
+                    "options": {
+                        "option1": "205.5 codos",
+                        "option2": "411 codos",
+                        "option3": "274 codos"
+                    },
+                    "feedback": "Correcto. Esta es la primera longitud de nuestro triángulo oculto: 205.5 codos."
+                },
+                "3": {
+                    "title": "Paso 3: La dimensión interna",
+                    "narrative": "Como la base es un cuadrado, esa media base es igual a la distancia desde el centro al punto medio. Esto es un cateto del triángulo.",
+                    "question": "Esta línea interna, ¿qué parte del triángulo rectángulo oculto forma?",
+                    "options": {
+                        "option1": "Un cateto (a)",
+                        "option2": "La hipotenusa (c)",
+                        "option3": "Altura de la Pirámide (b)"
+                    },
+                    "feedback": "Sí, hemos encontrado el cateto 'a'."
+                },
+                "4": {
+                    "title": "Paso 4: La altura inclinada",
+                    "narrative": "Ahora mide la altura inclinada desde el punto medio de la cara hasta el ápice.",
+                    "question": "Esta altura inclinada medible representa qué parte del triángulo oculto? (Un ápice es el punto más alto o vértice de una pirámide.)",
+                    "options": {
+                        "option1": "La diagonal",
+                        "option2": "La hipotenusa (c)",
+                        "option3": "¼ del perímetro"
+                    },
+                    "feedback": "En efecto. Es la hipotenusa, el lado más largo."
+                },
+                "5": {
+                    "title": "Paso 5: La altura oculta",
+                    "narrative": "El triángulo ya está revelado. Tienes el cateto 'a' (205.5) y la hipotenusa 'c' (342.5). El lado final, inmedible, es el que buscamos: la verdadera altura vertical, el cateto 'b'.",
+                    "question": "Para resolver esta altura desconocida (cateto 'b'), ¿cómo debemos reorganizar el teorema a² + b² = c²?",
+                    "options": {
+                        "option1": "b = c - a",
+                        "option2": "b² = a² + c²",
+                        "option3": "b² = c² - a²"
+                    },
+                    "feedback": "El camino está claro. Ahora debes realizar el cálculo."
+                },
+                "6": {
+                    "title": "Paso 6: El método",
+                    "narrative": "Ahora tienes la fórmula: b² = c² - a². Para hallar la altura 'b' misma, ¿qué debes hacer a continuación?",
+                    "question": "¿Cómo despejas b?",
+                    "options": {
+                        "option1": "b = c² - a²",
+                        "option2": "b = √(c² - a²)",
+                        "option3": "b = (c - a)²"
+                    },
+                    "feedback": "¡Sí! Debes tomar la raíz cuadrada en ambos lados para revelar la verdadera altura."
+                },
+                "7": {
+                    "title": "Paso 7: Elevando al cuadrado",
+                    "narrative": "Tu fórmula es b² = c² - a². Sabes que la altura inclinada 'c' es 342.5 y la media base 'a' es 205.5. 342.5² - 205.5² es igual a 75,076.",
+                    "question": "¿Qué representa 75,076?",
+                    "options": {
+                        "option1": "El cuadrado de la altura",
+                        "option2": "La altura del triángulo",
+                        "option3": "La raíz cuadrada de la altura"
+                    },
+                    "feedback": "Sí, este es el cuadrado de la altura desconocida del triángulo."
+                },
+                "8": {
+                    "title": "Paso 8: La dimensión final",
+                    "narrative": "Has encontrado b² = 75,076. Ahora libera la verdadera altura de su forma al cuadrado.",
+                    "question": "¿Cuál es la raíz cuadrada de 75,076?",
+                    "options": {
+                        "option1": "274 codos",
+                        "option2": "25.55 codos",
+                        "option3": "345.21 codos"
+                    },
+                    "feedback": "La pirámide revela su dimensión oculta. La verdadera altura es exactamente 274 codos."
+                },
+                "9": {
+                    "title": "Paso 9: La razón secreta",
+                    "narrative": "He aquí las dimensiones: Media base 205.5, Altura 274, Altura inclinada 342.5. Divide todo por 68.5 y observa la armonía.",
+                    "question": "Estas tres longitudes forman una razón casi perfecta de números enteros. ¿Cuál es esa razón sagrada (Media base : Altura : Inclinada)?",
+                    "options": {
+                        "option1": "3 : 4 : 5",
+                        "option2": "2 : 3 : 4",
+                        "option3": "5 : 6 : 7"
+                    },
+                    "feedback": "¡Sí! El triángulo 3-4-5. ¿Lo ves ahora? La pirámide no es solo piedra, sino un monumento a la armonía matemática universal."
+                }
+            }
+        },
+        "waterProof": {
+            "title": "Prueba del Agua",
+            "description": "Vierte agua de cuadrados para mostrar áreas iguales.",
+            "myia": {
+                "name": "Myia",
+                "dialogues": [
+                    "Mi padre quería demostrar que su teorema funciona para todos los triángulos rectángulos, no solo para los que tienen números enteros. Observa cómo el agua revela esta verdad universal.",
+                    "El área de cada cuadrado es igual al cuadrado de la longitud de su lado. El volumen del agua representa perfectamente esa área—puede llenar cualquier forma, a diferencia de los guijarros que solo funcionan con números enteros.",
+                    "Ahora vierte el agua de los dos cuadrados más pequeños en el cuadrado más grande. ¡Observa con atención cómo las áreas se combinan y lo llenan exactamente!",
+                    "Esto demuestra el verdadero poder del teorema—funciona para cada triángulo rectángulo, sin importar qué números elijas."
+                ],
+                "events": {
+                    "2": "water_proof_pour_both_squares"
+                }
+            },
+            "pourA": "Verter A",
+            "pourB": "Verter B",
+            "proof2CanvasInitialAriaLabel": "Lienzo mostrando cuadrado c vacío y cuadrados a y b llenos con áreas a al cuadrado igual a {aSquared} y b al cuadrado igual a {bSquared}",
+            "proof2CanvasPouringAAriaLabel": "Vertiendo agua del cuadrado a con área {aSquared} hacia el cuadrado c",
+            "proof2CanvasPouringBAriaLabel": "Vertiendo agua del cuadrado b con área {bSquared} hacia el cuadrado c",
+            "proof2CanvasCompletedAriaLabel": "Cuadrado c lleno de agua mostrando área c al cuadrado igual a {cSquared}",
+            "proof2InfoHeading": "Prueba del Agua",
+            "proof2InfoBody": "Esta prueba usa el concepto de áreas iguales. Cuando se vierte agua de los cuadrados A y B hacia el cuadrado C, el nivel del agua muestra que c² = a² + b²."
+        },
+        "dissectionProof": {
+            "title": "Prueba de Disección",
+            "description": "Reorganiza piezas de triángulos para mostrar áreas iguales.",
+            "myia": {
+                "name": "Myia",
+                "dialogues": [
+                    "Esta es la prueba más elegante de todas—no usa números, ni conteo, solo razonamiento geométrico puro que convenció incluso a los mayores sabios.",
+                    "Mira estos cuatro triángulos rectángulos idénticos dispuestos alrededor del cuadrado verde inclinado. Esta área verde representa c², el cuadrado de la hipotenusa.",
+                    "Ahora reacomoda los mismos cuatro triángulos hacia las esquinas. Rodean dos cuadrados separados—un cuadrado azul para a² y uno naranja para b².",
+                    "La magia es que usamos exactamente las mismas piezas en ambas disposiciones. Como los triángulos ocupan el mismo espacio, las áreas restantes deben ser iguales. ¡Acabas de demostrar a²+b²=c² usando pura lógica y figuras!"
+                ],
+                "events": {
+                    "2": "dissection_proof_rearrange"
+                }
+            },
+            "rearrange": "Reorganizar",
+            "firstPosition": "Triángulos arreglados en patrón de diamante",
+            "secondPosition": "Triángulos reorganizados en cuadrados",
+            "area": "Área",
+            "proof3InfoHeading": "Prueba de Disección",
+            "proof3InfoBody": "Esta prueba disecciona el triángulo rectángulo y reorganiza las piezas para formar dos cuadrados más pequeños que se combinan para igualar el área del cuadrado más grande."
+        }
+    },
+    "ladderProblem": {
+        "title": "Problema de la Escalera",
+        "description": "Calcula la distancia que alcanza una escalera por una pared.",
+        "exploreTitle": "Explora el teorema de Pitágoras (h² + d² = l²)",
+        "ladderLength": "Longitud de la Escalera (c) = ",
+        "distanceFromWall": "Ancho del Foso (b) = ",
+        "distanceFromWallAxis": "Distancia de la Pared (pies)",
+        "heightOnWallAxis": "Altura en la Pared (pies)",
+        "result": "Resultado:",
+        "heightOnWall": "Altura de la Pared (a) = ",
+        "feet": "pies",
+        "ladderLengthAria": "Longitud de la escalera",
+        "distanceFromWallAria": "Distancia de la pared",
+        "ladderFeedback": "La escalera alcanza {height} pies por la pared.",
+        "distanceFeedback": "La base está a {distance} pies de la pared.",
+        "harbor": "Puerto",
+        "market": "Mercado",
+        "deltaXCorrect": "¡Correcto! Δx = {value}",
+        "deltaXIncorrect": "Inténtalo de nuevo. Δx debe ser la diferencia en coordenadas x.",
+        "deltaYCorrect": "¡Correcto! Δy = {value}",
+        "deltaYIncorrect": "Inténtalo de nuevo. Δy debe ser la diferencia en coordenadas y.",
+        "hypotenuseCorrect": "¡Correcto! La distancia es {value}",
+        "hypotenuseIncorrect": "Inténtalo de nuevo. Usa el teorema de Pitágoras: c = √(a² + b²)",
+        "calculateDistance": "Calcular Distancia",
+        "showAnswer": "Mostrar Respuesta",
+        "nextStep": "Siguiente Paso",
+        "finalChallenge": "Desafío de Pirámide",
+        "finalChallengeDescription": "Usa el teorema de Pitágoras para encontrar la distancia entre dos puntos en el plano de coordenadas.",
+        "finalChallengeTitle": "Encuentra la distancia en línea recta entre el Puerto y el Mercado usando coordenadas.",
+        "coordinateGrid": "Cuadrícula de Coordenadas:",
+        "step1": "Paso 1: Encuentra la distancia horizontal",
+        "step1Question": "¿Cuál es la diferencia en coordenadas x entre el Mercado y el Puerto?",
+        "step2": "Paso 2: Encuentra la distancia vertical",
+        "step2Question": "¿Cuál es la diferencia en coordenadas y entre el Mercado y el Puerto?",
+        "step3": "Paso 3: Encuentra la Distancia",
+        "step3Question": "Usa el teorema de Pitágoras: distancia = √(horizontal² + vertical²)",
+        "check": "Comprobar",
+        "enterValue": "Ingresa el valor",
+        "congratulations": "¡Felicitaciones!",
+        "successMessage": "¡Has calculado exitosamente la distancia usando el teorema de Pitágoras!",
+        "successDetails": "Distancia = √({horizontal}² + {vertical}²) = √({horizontalSquared} + {verticalSquared}) = √{sum} = {distance}",
+        "horizontalCorrectFeedback": "¡Correcto! Distancia horizontal = {value}",
+        "horizontalHint": "Inténtalo de nuevo. Pista: Cuenta los cuadrados horizontalmente.",
+        "verticalCorrectFeedback": "¡Correcto! Distancia vertical = {value}",
+        "verticalHint": "Inténtalo de nuevo. Pista: Cuenta los cuadrados verticalmente.",
+        "hypotenuseCorrectFeedback": "¡Correcto! Distancia = √({horizontal}² + {vertical}²) = {distance}",
+        "hypotenuseHint": "Inténtalo de nuevo. Usa el teorema de Pitágoras: c = √(a² + b²)",
+        "setup": "Configuración",
+        "calculate": "Calcular",
+        "stepSetup": "Paso 1: Configura tu Escalera",
+        "stepCalculate": "Paso 2: Calcula la Altura",
+        "setupInstructions": "Una escalera necesita llegar a una ventana de {height} pies de altura. El ancho del foso es de {distance} pies desde la pared. ¿Qué tan larga debe ser la escalera?",
+        "whatIsHeight": "¿Cuál es la altura (b)?",
+        "correct": "¡Correcto!",
+        "tryAgain": "¡Inténtalo de nuevo!",
+        "newChallenge": "🎯 Nuevo Desafío",
+        "proceedToCalculate": "Proceder a Calcular",
+        "questions": {
+            "question1": "¿Cuál lado es la hipotenusa?",
+            "question2": "¿Cuál ecuación representa correctamente el problema?",
+            "question3": "Primero, ¿cuál es el cuadrado de la altura de la pared?",
+            "question4": "Siguiente, ¿cuál es el cuadrado del ancho del foso?",
+            "question5": "Ahora, suma esos dos resultados. ¿Cuánto es {heightSquared} + {distanceSquared}?",
+            "question6": "¿Qué número, cuando se multiplica por sí mismo, es igual a {sum}?"
+        },
+        "options": {
+            "theLadder": "La escalera",
+            "theHeight": "La altura ({height} pies)",
+            "theGroundDistance": "La distancia del suelo ({distance} pies)",
+            "allSidesEqual": "Todos los lados son iguales",
+            "pythagoreanEquation": "a² + b² = c²",
+            "additionEquation": "a + b = c",
+            "wrongEquation1": "a² + c² = b²",
+            "wrongEquation2": "b² + c² = a²"
+        },
+        "ladderVisualisationAria": "Diagrama que muestra una pared y un foso formando un triángulo rectángulo con una escalera inclinada.",
+        "horizontalDistance": "Horizontal",
+        "verticalDistance": "Vertical",
+        "distance": "Distancia",
+        "horizontalDistanceLabel": "Distancia horizontal =",
+        "verticalDistanceLabel": "Distancia vertical =",
+        "distanceLabel": "Distancia ="
+    },
+    "monochord": {
+        "fundamentalStringAria": "Cuerda Fundamental",
+        "fundamentalToneString": "Cuerda de Tono Fundamental",
+        "dividedStringAria": "Cuerda de Frecuencia Dividida - Haz clic para reproducir sonido",
+        "dividedStringTitle": "Cuerda de Frecuencia Dividida - Haz clic para reproducir",
+        "bridgePosition": "Posición del puente",
+        "dividedFrequency": "Frecuencia Dividida",
+        "playAria": "Reproducir frecuencias",
+        "pauseAria": "Pausar frecuencias",
+        "base": "Base",
+        "proportions": "Proporciones",
+        "proportion": "Proporción",
+        "selected": "seleccionado",
+        "helpHandLeft": "Mano de ayuda apuntando a la cuerda izquierda",
+        "helpHandRight": "Mano de ayuda apuntando a la cuerda derecha",
+        "playMysteryHarmonyAgain": "Reproducir armonía misteriosa otra vez",
+        "incorrectFeedback": "Escucha otra vez... presta atención a qué tan consonante suena.",
+        "baseFrequency": "Frecuencia Base",
+        "adjustableFrequency": "Frecuencia Ajustable",
+        "adjustableFrequencySlider": "Control deslizante de frecuencia ajustable",
+        "baseFrequencyRange": "Rango de frecuencia base de 20 Hz a 1100 Hz",
+        "adjustableFrequencyRange": "Rango de frecuencia ajustable de 20 Hz a 1100 Hz",
+        "chooseAProportion": "Elige una Proporción",
+        "proportionSelectionAria": "Selección de proporción",
+        "playBoth": "Jugar Ambos",
+        "playBothAria": "Reproducir ambas frecuencias juntas",
+        "pause": "Pausar",
+        "mysteryHarmony": "Armonía Misteriosa",
+        "listenAgain": "Escuchar Otra Vez",
+        "listenAgainAria": "Escuchar la armonía misteriosa otra vez",
+        "increaseFrequency": "Aumentar frecuencia",
+        "decreaseFrequency": "Disminuir frecuencia",
+        "baseFrequencySpinbutton": "Frecuencia base en hercios. Usa las flechas para ajustar, Re Pág/Av Pág para pasos más grandes, Inicio para mínimo, Fin para máximo"
+    },
+    "figurate": {
+        "selectPebbles": "Seleccionar número de guijarros: {count}",
+        "even": "Par",
+        "odd": "Impar",
+        "perfectSquare": "Cuadrado perfecto (lado {side})",
+        "notPerfectSquare": "No es un cuadrado perfecto",
+        "perfectTriangular": "Número triangular perfecto",
+        "notTriangular": "No triangular",
+        "triangle": "Triángulo",
+        "square": "Cuadrado",
+        "controlsHeading": "Controles",
+        "evenOddVisualization": "Visualización Par/Impar",
+        "shapeVisualization": "Visualización de formas figuradas",
+        "pebbleGridAria": "Cuadrícula de guijarros de {count}",
+        "squareGridAria": "Cuadrícula cuadrada de lado {side}",
+        "triangleSection": "Sección de triángulo",
+        "squareSection": "Sección de cuadrado",
+        "highlightedPebble": "Guijarro resaltado",
+        "pebble": "Guijarro",
+        "placePebblesFirst": "Coloca algunos guijarros primero",
+        "checkButton": "Verificar",
+        "resetButton": "Reiniciar",
+        "correctEven": "✓ ¡Correcto! {total} es PAR - ambas filas tienen {count} guijarros",
+        "correctOdd": "✓ ¡Correcto! {total} es IMPAR - una fila tiene un guijarro extra",
+        "evenOddHint": "Para números pares, ambas filas deben ser iguales. Para impares, deben diferir por 1.",
+        "perfectSquareFound": "✓ ¡Correcto! {height} × {width} = {total} - ¡Cuadrado perfecto!",
+        "fillSquareCompletely": "Llena todos los círculos en el cuadrado completamente",
+        "squareNeedsEqualSides": "Un cuadrado perfecto necesita filas y columnas iguales",
+        "perfectTetractys": "✓ ¡Tetractys perfecto con 7 filas (1+2+3+4+5+6+7 = 28)!",
+        "tetractysProgress": "¡Buen comienzo! Tienes {validRows} filas correctas. ¡Sigue construyendo!",
+        "tetractysHint": "Cada fila debe tener: fila 1 = 1 guijarro, fila 2 = 2 guijarros, etc.",
+        "trianglePatternCorrect": "✓ ¡Patrón de triángulo perfecto con {total} guijarros!",
+        "evenOddTitle": "Números Pares e Impares",
+        "evenOddSubtitle": "Observa cómo los números pares e impares se alinean en dos filas",
+        "generateNewNumbers": "Crear Nuevos Números",
+        "generateNewNumbersAnnouncement": "Nuevos números generados. Números pares: {evenCount} guijarros. Números impares: {oddCount} guijarros.",
+        "evenNumbers": "Números Pares",
+        "oddNumbers": "Números Impares",
+        "evenDescription": "Se pueden dividir en dos filas iguales",
+        "oddDescription": "Siempre tienen un guijarro sobrante",
+        "pebbles": "Guijarros",
+        "triangularTitle": "Números Triangulares",
+        "triangularSubtitle": "Crea números triangulares agregando filas consecutivas de guijarros.",
+        "addRow": "Agregar Fila",
+        "addRowToTriangularTool": "Agregar fila a la herramienta triangular",
+        "addRowToSquareTool": "Agregar fila a la herramienta cuadrada",
+        "reset": "Reiniciar",
+        "resetTriangularTool": "Reiniciar herramienta triangular",
+        "resetSquareTool": "Reiniciar herramienta cuadrada",
+        "squareTitle": "Números Cuadrados",
+        "squareSubtitle": "Crea números cuadrados agregando filas de guijarros alrededor del núcleo.",
+        "addLayer": "Agregar Capa",
+        "buildAndGuessQuestion": "¿Puedes determinar la forma del número?",
+        "buildAndGuessTitle": "Construir y Adivinar",
+        "buildAndGuessInstructions": "Completa el cuestionario respondiendo cinco preguntas",
+        "answerTriangular": "Triangular",
+        "answerSquare": "Cuadrado",
+        "answerBoth": "Ambos",
+        "answerNeither": "Ninguno",
+        "triangularTool": "Herramienta Triangular",
+        "squareTool": "Herramienta Cuadrada",
+        "correctAnswerIs": "La respuesta correcta es",
+        "progressIndicator": "Indicador de progreso",
+        "pending": "pendiente",
+        "question": "Pregunta"
+    },
+    "pebbleProof": {
+        "selectTriple": "Selecciona una Terna Perfecta",
+        "animateProof": "Animar Prueba",
+        "reset": "Reiniciar",
+        "selected": "seleccionado",
+        "currentValues": "Valores actuales: a = {a}, b = {b}, c = {c}, a² = {aSquared}, b² = {bSquared}, c² = {cSquared}",
+        "canvasAriaStatic": "Lienzo interactivo mostrando cuadrados: a² = {aSquared}, b² = {bSquared}",
+        "canvasAriaAnimating": "Animación en progreso mostrando reorganización de guijarros: a² = {aSquared}, b² = {bSquared}, c² = {cSquared}",
+        "triple345Label": "Terna 3-4-5",
+        "triple345Aria": "Seleccionar terna 3-4-5",
+        "triple6810Label": "Terna 6-8-10",
+        "triple6810Aria": "Seleccionar terna 6-8-10",
+        "triple51213Label": "Terna 5-12-13",
+        "triple51213Aria": "Seleccionar terna 5-12-13",
+        "animateAnnouncement": "Iniciando animación de guijarros. Los guijarros se están reorganizando de los cuadrados a² y b² al cuadrado c².",
+        "resetAnnouncement": "Prueba de guijarros reiniciada. Los guijarros han vuelto a sus posiciones originales en los cuadrados a² y b²."
+    },
+    "waterProof": {
+        "pourA": "Verter A",
+        "pourB": "Verter B",
+        "reset": "Reiniciar",
+        "aSliderLabel": "Deslizador para el lado a",
+        "bSliderLabel": "Deslizador para el lado b",
+        "visualizationInitial": "Visualización interactiva de vertido de agua: a² = {aSquared}, b² = {bSquared}, c² = {cSquared}",
+        "visualizationPouringB": "Vertiendo agua del cuadrado B (b² = {bSquared}) en el cuadrado C",
+        "visualizationPouringA": "Vertiendo agua del cuadrado A (a² = {aSquared}) en el cuadrado C",
+        "visualizationCompleted": "Vertido de agua completado: c² = {cSquared}",
+        "pourAAnnouncement": "Vertiendo agua del cuadrado A al cuadrado C. a² = {aSquared}",
+        "pourBAnnouncement": "Vertiendo agua del cuadrado B al cuadrado C. b² = {bSquared}",
+        "resetAnnouncement": "Prueba de agua reiniciada. Todos los cuadrados han vuelto al estado inicial."
+    },
+    "dissectionProof": {
+        "rearrange": "Reorganizar",
+        "aSliderLabel": "Deslizador para el lado a",
+        "bSliderLabel": "Deslizador para el lado b",
+        "firstPositionAria": "Primera posición: Disección geométrica que muestra cuatro triángulos rectángulos idénticos colocados alrededor de un cuadrado central inclinado que representa c al cuadrado, todo dentro de un cuadrado más grande con lados a y b, ilustrando el teorema de Pitágoras.",
+        "secondPositionAria": "Segunda posición: Disección geométrica en un cuadrado con dos pares de triángulos rectángulos ubicados en esquinas opuestas, dejando un cuadrado rojo etiquetado como a al cuadrado y un cuadrado azul etiquetado como b al cuadrado, ilustrando que a al cuadrado + b al cuadrado = c al cuadrado.",
+        "separatedPositionAria": "Posición separada: Diagrama que ilustra el teorema de Pitágoras: un cuadrado rojo etiquetado 'Área = a al cuadrado' más un cuadrado azul etiquetado 'Área = b al cuadrado' es igual a un cuadrado verde etiquetado 'Área = c al cuadrado'.",
+        "areaCSquared": "Área = c²",
+        "areaASquared": "Área = a²",
+        "areaBSquared": "Área = b²",
+        "rearrangeAnnouncement": "Reorganizando piezas. Los cuatro triángulos ahora forman dos cuadrados separados: a² y b²."
+    },
+    "titleScreen": {
+        "playButton": "Jugar",
+        "enterSchool": "Entrar a la Escuela",
+        "title": "Búsqueda de Pitágoras: El Aprendiz de Crotona",
+        "subtitle": "Como nuevo aprendiz, descubrirás los secretos matemáticos que revolucionaron nuestra comprensión de los números, la música y la geometría. Domina el famoso teorema de Pitágoras a través de experimentos prácticos y conviértete en uno de los Mathematikoi—los guardianes de la sabiduría matemática.",
+        "scrollAnimationAlt": "animación de pergamino"
+    },
+    "narratorScene": {
+        "dialogues": [
+            "El año es 520 a.C. En la bulliciosa colonia griega de Crotona, Italia, ha echado raíces una escuela diferente a cualquier otra, fundada por el legendario pensador y amante de la sabiduría, Pitágoras. Eres un nuevo aprendiz que busca conocimiento, y para unirte al círculo interno de los Mathematikoi, primero debes pasar las iniciaciones—tu guía te está esperando."
+        ]
+    },
+    "mainCharacterDialogue": {
+        "intro": {
+            "myia": {
+                "name": "Myia",
+                "dialogues": [
+                    "Bienvenido, Aprendiz. Soy Myia, hija de Pitágoras. Mi padre enseñó que los números son el lenguaje oculto del mundo—todo, desde las estaciones hasta las estrellas, sigue patrones que los números revelan. Al comprender estos patrones, entendemos el universo mismo.",
+                    "Ante nosotros se encuentra el Centro de la Sabiduría. Solo se abre cuando decides qué conocimiento buscar primero. ¿Abrirás la puerta con la armonía de la música o con los patrones ocultos de los números?"
+                ]
+            }
+        }
+    },
+    "interactiveScene": {
+        "ladderProblem": {
+            "title": "Desafío de la Escalera",
+            "myia": {
+                "name": "Myia",
+                "dialogues": [
+                    "¡Bienvenido, aprendiz! Para encontrar la longitud perfecta de la escalera, primero debemos entender la forma con la que trabajamos. ¡La pared, el suelo y la escalera forman un triángulo rectángulo!",
+                    "Excelente. Ahora que sabemos cuál es la hipotenusa (a la que llamamos 'c'), podemos usar el Teorema de Pitágoras. ¿Cuál de estas es la fórmula correcta?",
+                    "Pongamos la fórmula en práctica. Comenzaremos con el lado 'a', la altura de la pared. ¿Cuál es su valor al cuadrado?",
+                    "Bien. Ahora el lado 'b', el ancho del foso. Vamos a encontrar su cuadrado.",
+                    "Ya tenemos a² y b². Ahora debemos sumarlos para encontrar el valor de c².",
+                    "¡Un paso final! Sabemos c², pero necesitamos 'c', la longitud real de la escalera. Encuentra la raíz cuadrada.",
+                    "¡Brillante! Has dominado el teorema. Al descomponer el problema, resolviste el desafío. ¡Bien hecho!"
+                ]
+            }
+        },
+        "finalChallenge": {
+            "title": "El Desafío Piramidal",
+            "myia": {
+                "name": "Myia",
+                "dialogues": [
+                    "¿Cómo puedes usar el teorema de Pitágoras para encontrar la altura de esta Gran Pirámide? Usando solo una cuerda de medición y tu razonamiento, puedes descubrir esta verdad oculta...Primero, deberíamos medir lo que es evidente: La longitud de uno de los bordes de la base de la pirámide.",
+                    "Para encontrar la altura, necesitamos encontrar un triángulo rectángulo con dos lados conocidos. La base de la pirámide no es la base del triángulo— Sin embargo, el triángulo oculto que buscamos comienza desde el punto medio de este borde.",
+                    "Ahora, ve el primer secreto. Debido a que la base de una pirámide es un cuadrado, la mitad de la base es igual a la distancia desde el verdadero centro de la pirámide hasta el punto medio de la base. ¡Esta línea será la base de nuestro triángulo oculto!",
+                    "Regresa al punto medio en la cara. Ahora mide la segunda línea que es conocible: la distancia desde el punto medio de la base hasta el ápice.",
+                    "El triángulo ahora está revelado. Tienes el cateto 'a' (205.5) y la hipotenusa 'c' (342.5). El lado final, inmedible, es el que buscamos: la verdadera altura vertical, el cateto 'b'.",
+                    "Ahora tienes la fórmula: b² = c² - a². Para encontrar la altura 'b' misma, ¿qué debes hacer a continuación?",
+                    "Tu fórmula es b² = c² - a². Sabes que la inclinada 'c' es 342.5 y la media base 'a' es 205.5. 342.5² - 205.5² es igual a 75,076.",
+                    "Has encontrado b² = 75,076. Ahora, libera la verdadera altura de su forma al cuadrado.",
+                    "He aquí las dimensiones: Media base 205.5, Altura 274, Inclinada 342.5. Divide todo por 68.5 y observa la armonía.",
+                    "¡Has usado la medición, la racionalidad y el Teorema de Pitágoras para descubrir la proporción oculta de la Gran Pirámide de Kefrén, construida 2000 años antes de nuestro tiempo! ¡Felicitaciones, ahora eres un pitagórico!"
+                ],
+                "events": {
+                    "0": "final_challenge_started",
+                    "1": "final_challenge_step_1_completed",
+                    "2": "final_challenge_step_2_completed",
+                    "3": "final_challenge_step_3_completed",
+                    "4": "final_challenge_step_4_completed",
+                    "5": "final_challenge_step_5_completed",
+                    "6": "final_challenge_step_6_completed",
+                    "7": "final_challenge_step_7_completed",
+                    "8": "final_challenge_step_8_completed"
+                }
+            }
+        },
+        "monochord1": {
+            "title": "Monocordio Virtual - Parte 1",
+            "myia": {
+                "name": "Myia",
+                "dialogues": [
+                    "Esto es un monocordio. ¿Ves estas dos cuerdas? Haz clic en la cuerda azul de la izquierda para escuchar su tono.",
+                    "Ahora haz clic en la cuerda amarilla de la derecha. Es exactamente la mitad de larga—una proporción de 1:2.",
+                    "Esta proporción se llama una octava. Es la misma nota, pero más aguda. Presiona reproducir para escuchar ambas notas al mismo tiempo.",
+                    "Interesante, que la proporción de las dos cuerdas cambia la sensación del sonido. No todos los sonidos son tan agradables, ¿verdad? Prueba la proporción de 2:3. Esa es otra buena combinación.",
+                    "¡Has aprendido bien, Aprendiz! Ahora para tu prueba final: reproduciré una armonía misteriosa. Escucha atentamente y selecciona qué proporción crea este sonido.",
+                    "¡Excelente oído! ¡Has demostrado que entiendes las matemáticas de la armonía!"
+                ],
+                "events": {
+                    "0": "monochord1_fundamental_pluck",
+                    "1": "monochord1_divided_pluck",
+                    "2": "monochord1_play_together",
+                    "3": "monochord1_try_3to2_ratio",
+                    "4": "monochord1_challenge_completed",
+                    "5": "monochord1_challenge_completed"
+                }
+            }
+        },
+        "monochord2": {
+            "title": "Pares e Impares y Números Figurados",
+            "myia": {
+                "name": "Myia",
+                "dialogues": [
+                    "Comencemos con los números pares e impares. Todos los números pares pueden formar un rectángulo perfecto en dos filas. Los números impares siempre tienen uno sobrante.",
+                    "Pero algunos números son especiales: pueden formar cuadrados perfectos. Nueve, por ejemplo, forma un cuadrado con 3 guijarros en cada lado. Pero 10 no puede. ¡Inténtalo tú mismo! Puedes agregar las filas para formar el cuadrado.",
+                    "¡Genial! Por eso a tres por tres lo llamamos 'tres al cuadrado'.",
+                    "Ahora te enseñaré la forma más sagrada de mi padre. ¿Cuánto es 1+2+3+4?",
+                    "¡Correcto! Ahora podemos colocar diez guijarros para construir la forma de la Tetractys. Comienza con un guijarro en la parte superior, luego dos debajo, tres después y cuatro en la siguiente fila. Puedes agregar las filas para formar el triángulo.",
+                    "Las filas—uno, dos, tres, cuatro—suman diez. Representa los bloques de construcción de nuestro universo: el punto, la línea, el plano y el sólido.",
+                    "Esto demuestra que las matemáticas son armoniosas—y que el universo está construido a partir de números. Ahora pongamos en práctica lo que hemos aprendido. Realiza el cuestionario para avanzar."
+                ],
+                "events": {
+                    "1":"monochord2_nine_square_completed",
+                    "4":"monochord2_triangle_pattern_completed",
+                    "6":"monochord2_challenge_completed"
+
+                },
+                "questions": {
+                    "3": {
+                        "type": "numeric",
+                        "correctAnswer": 10,
+                        "placeholder": "Ingresa la suma"
+                    }
+                }
+            }
+        },
+        "helpAria": "Ayuda",
+        "infoAria": "Información"
+    },
+    "endingScene": {
+        "dialogues": [
+            "¡Felicitaciones, Aprendiz! Has completado exitosamente tu iniciación en los misterios pitagóricos. A través de la música de las proporciones y la geometría de las formas, has comenzado a entender cómo los números gobiernan el universo. Recuerda: 'Todo es número' - Pitágoras"
+        ],
+        "title": "¡Felicitaciones!",
+        "subtitle": "¡Has dominado los secretos de Pitágoras!",
+        "achievements": [
+            "Completaste con éxito la Búsqueda de Pitágoras: El Aprendiz de Crotona.",
+            "Descubriste la armonía en las proporciones musicales",
+            "Exploraste las formas numéricas con antiguos guijarros",
+            "Probaste el teorema de Pitágoras",
+            "Resolviste problemas del mundo real usando matemáticas",
+            "Te uniste a las filas de los Mathematikoi"
+        ],
+        "footer": "Ahora llevas adelante la sabiduría antigua de que las matemáticas son el lenguaje oculto del universo.",
+        "playAgain": "Jugar Otra Vez"
+    },
+    "navigation": {
+        "back": "Atrás",
+        "next": "Siguiente",
+        "submit": "Enviar",
+        "endQuest": "Finalizar Misión"
+    },
+    "mapScene": {
+        "labels": {
+            "ladderChallenge": "Desafío de la Escalera",
+            "finalChallenge": "Desafío de la Pirámide"
+        },
+        "doorAlt": "Puerta"
+    },
+    "map": {
+        "dialogue": {
+            "initial": {
+                "message1": "Ahora, veamos el secreto que descubrió mi padre—cómo los triángulos, como el 3‑4‑5 usado por los constructores de Crotona, siempre forman ángulos rectos perfectos debido a una ley universal oculta en los cuadrados de sus lados.",
+                "message2": "Para avanzar, primero debes completar una demostración. Mi padre mostró que la verdad puede alcanzarse de muchas maneras—elige el camino de demostración que deseas seguir."
+            },
+            "proofCompleted": "Bien hecho, Aprendiz. Has completado una demostración. Ahora pon a prueba tu comprensión—elige un desafío para resolver."
+        }
+    },
+    "interactiveCelebration": {
+        "title": "Pantalla de Celebración Interactiva",
+        "badgeAchievement": "Logro de insignia para",
+        "badgeEarned": "Insignia obtenida",
+        "proof": "",
+        "challenge": "desafío",
+        "interactive": "interactivo",
+        "monochord1": {
+            "title": "Lo que aprendiste - El Maestro de la Armonía",
+            "name": "Monocordio Virtual",
+            "points": [
+                "Descubriste cómo las proporciones simples crean intervalos musicales hermosos",
+                "Experimentaste la octava (2:1), la quinta justa (3:2) y la cuarta justa (4:3)",
+                "Aprendiste que las matemáticas moldean la música que escuchamos",
+                "Comprobaste la idea de Pitágoras: los números revelan la armonía universal"
+            ]
+        },
+        "monochord2": {
+            "title": "Lo que aprendiste - Las Formas de los Números",
+            "name": "Números Figurados Pares/Impares",
+            "points": [
+                "Descubriste cómo los números pares forman rectángulos perfectos",
+                "Notaste que los números impares siempre dejan una piedra sobrante",
+                "Exploraste los números triangulares como la sagrada Tetraktys (1+2+3+4=10)",
+                "Aprendiste cómo los números cuadrados crean formas geométricas perfectas"
+            ]
+        },
+        "pebble": {
+            "title": "Lo que aprendiste - El Maestro de las Piedras",
+            "name": "Demostración con Piedras",
+            "points": [
+                "Visualizaste cómo a² + b² = c² usando piedras reales",
+                "Viste la perfecta armonía matemática del triángulo 3-4-5",
+                "Descubriste por qué los ternas pitagóricas funcionan tan bien",
+                "Dominaste la demostración visual que convenció a los antiguos sabios"
+            ]
+        },
+        "pouring": {
+            "title": "Lo que aprendiste - El Sabio del Agua",
+            "name": "Demostración con Agua",
+            "points": [
+                "Demostraste que el teorema funciona para TODOS los números, no solo los enteros",
+                "Usaste agua para mostrar relaciones de área perfectas",
+                "Viste cómo a² + b² = c² se aplica a cualquier triángulo rectángulo",
+                "Conectaste pruebas concretas antiguas con el pensamiento abstracto moderno"
+            ]
+        },
+        "dissection": {
+            "title": "Lo que aprendiste - El Genio Geométrico",
+            "name": "Demostración por Disección",
+            "points": [
+                "Demostraste a² + b² = c² usando razonamiento puramente geométrico",
+                "Reordenaste triángulos idénticos para revelar la verdad matemática",
+                "No usaste números ni cálculos—solo lógica visual",
+                "Dominaste la prueba que convenció a los antiguos eruditos griegos"
+            ]
+        },
+        "ladder": {
+            "title": "Lo que aprendiste - El Solucionador de Problemas",
+            "name": "Desafío de la Escalera",
+            "points": [
+                "Aplicaste el teorema de Pitágoras para resolver problemas prácticos",
+                "Encontraste el lado faltante del triángulo",
+                "Descubriste diferentes ternas pitagóricas",
+                "Aprendiste cómo bomberos y constructores usan esta misma matemática"
+            ]
+        },
+        "final": {
+            "title": "Lo que Aprendiste - El Erudito de la Pirámide",
+            "name": "Desafío de la Pirámide",
+            "points": [
+            "Encontraste la verdadera altura oculta de la Gran Pirámide.",
+            "Calculaste que la altura (b) es 274 codos, usando la inclinada (c = 342.5) y la media base (a = 205.5).",
+            "Aplicaste el teorema de Pitágoras: a² + b² = c²",
+            "Dominaste la resolución de un cateto desconocido de un triángulo rectángulo."
+            ]
+        },
+        "badgeAlt": "Insignia de Logro"
+    },
+    "libraryScene": {
+        "monochord1Complete": "¡Ahora que has explorado el Monocordio Virtual, se han abierto nuevas puertas para profundizar tu comprensión de la armonía matemática!",
+        "monochord2Complete": "¡Ahora que has explorado los Números Figurados, se han abierto nuevos caminos para revelar la belleza geométrica de las matemáticas!",
+        "libraryAlt": "Biblioteca",
+        "monochordAlt": "Monocordio",
+        "figurateNumbersAlt": "Números Figurados",
+        "libraryDoorAlt": "Puerta de la Biblioteca",
+        "lockAlt": "Candado"
+    },
+    "library": {
+        "dialogue": {
+            "welcome": "¡Bienvenido a la Biblioteca de la Sabiduría! Elige tu camino para explorar los misterios de las matemáticas.",
+            "monochord1Completed": "¡Maravilloso! Ahora que has explorado el Monocordio Virtual, ¡las puertas a una comprensión matemática más profunda se abren para ti!",
+            "monochord2Completed": "¡Excelente! Ahora que has descubierto la belleza de los Números Figurados, ¡nuevos caminos de exploración matemática te esperan!",
+            "bothCompleted": "¡Magnífico! Habiendo explorado tanto los reinos armónicos como geométricos, ¡estás listo para los mayores desafíos que te esperan!"
+        }
+    },
+    "interactive": {
+        "help": "Ayuda",
+        "monochord1": {
+            "help": {
+                "title": "¿Cómo usar esta herramienta?",
+                "content": "<ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Haga clic en cualquier botón de proporción para escuchar ese intervalo musical</li><li>Haga clic en reproducir/pausar para escuchar ambos tonos juntos continuamente</li><li>Haga clic en la cuerda izquierda para escuchar solo la frecuencia base</li><li>Arrastre el triángulo dorado para ajustar manualmente la longitud de la cuerda</li><li>Cambie la frecuencia base en el campo numérico</li></ul><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Consejos:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li><span style=\"font-family:'Besley', serif; font-weight:bold;\">2:1</span> para octava, <span style=\"font-family:'Besley', serif; font-weight:bold;\">3:2</span> para quinta, <span style=\"font-family:'Besley', serif; font-weight:bold;\">4:3</span> para cuarta</li><li>Las proporciones simples suenan más armoniosas que las complejas</li><li>Observe cómo los valores de frecuencia se actualizan al ajustar la configuración</li></ul>"
+            },
+            "info": {
+                "title": "Acerca del Monocordio",
+                "content": "<p>Pitágoras utilizó este instrumento simple para descubrir que la música sigue leyes matemáticas.</p><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Cómo funciona:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Una cuerda estirada sobre una caja resonante</li><li>Mover el puente divide la cuerda en diferentes longitudes</li><li>Longitudes más cortas = tonos más agudos</li><li>La proporción determina el intervalo musical</li></ul><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Descubrimientos clave:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Proporción <span style=\"font-family:'Besley', serif; font-weight:bold;\">2:1</span> = octava (misma nota, más alta)</li><li>Proporción <span style=\"font-family:'Besley', serif; font-weight:bold;\">3:2</span> = quinta perfecta (muy armoniosa)</li><li>Proporción <span style=\"font-family:'Besley', serif; font-weight:bold;\">4:3</span> = cuarta perfecta (también armoniosa)</li><li>Las proporciones simples con números pequeños suenan mejor</li></ul><p style=\"margin-top:7px;\">Esto se convirtió en la base de la teoría musical y mostró que las matemáticas crean belleza.</p>"
+            }
+        },
+        "monochord2": {
+            "help": {
+                "title": "¿Cómo usar esta herramienta?",
+                "content": "<ul style=\"list-style-type: disc; margin-left: 20px;\"><li>Observa cómo los guijarros se organizan en patrones.</li><li>En el primer modo, los guijarros se alinean en dos filas.<ul style=\"list-style-type: circle; margin-left: 20px;\"><li>Los números pares forman rectángulos perfectos sin espacios.</li><li>Los números impares siempre dejan un guijarro sin pareja.</li></ul></li><li>En los siguientes modos, intenta construir diferentes formas:<ul style=\"list-style-type: circle; margin-left: 20px;\"><li>Cuadrados y triángulos: Haz clic en el botón \"Agregar fila\" para añadir una nueva fila.</li></ul></li></ul><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Consejos:</h3><ul style=\"list-style-type: disc; margin-left: 20px;\"><li>Prueba números como 9, 16, 25 para ver cuadrados perfectos</li><li>Prueba números como 3, 6, 10, 15 para ver triángulos perfectos</li><li>Observa cómo algunos números funcionan para ambas formas</li></ul>"
+            },
+            "info": {
+                "title": "Acerca de la matemática con piedras",
+                "content": "<p style=\"margin-top:5px;\">Los antiguos griegos usaban piedras para entender patrones numéricos antes de que existiera la matemática escrita.</p><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Números pares e impares:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Los números pares se dividen en dos grupos iguales</li><li>Los números impares siempre dejan uno sobrante</li><li>Esto crea arreglos simétricos y asimétricos</li></ul><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Números figurados:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Números triangulares: <span style=\"font-family:'Besley', serif; font-weight:bold;\">1</span>, <span style=\"font-family:'Besley', serif; font-weight:bold;\">3</span>, <span style=\"font-family:'Besley', serif; font-weight:bold;\">6</span>, <span style=\"font-family:'Besley', serif; font-weight:bold;\">10</span>, <span style=\"font-family:'Besley', serif; font-weight:bold;\">15</span>, <span style=\"font-family:'Besley', serif; font-weight:bold;\">21</span>...</li><li>Números cuadrados: <span style=\"font-family:'Besley', serif; font-weight:bold;\">1</span>, <span style=\"font-family:'Besley', serif; font-weight:bold;\">4</span>, <span style=\"font-family:'Besley', serif; font-weight:bold;\">9</span>, <span style=\"font-family:'Besley', serif; font-weight:bold;\">16</span>, <span style=\"font-family:'Besley', serif; font-weight:bold;\">25</span>, <span style=\"font-family:'Besley', serif; font-weight:bold;\">36</span>...</li><li>Estos números forman formas geométricas perfectas con piedras</li></ul><p style=\"margin-top:5px;\">Este método práctico ayudó a los antiguos matemáticos a entender propiedades numéricas que todavía usamos hoy.</p>"
+            }
+        },
+        "pebble": {
+            "help": {
+                "title": "¿Cómo usar esta herramienta?",
+                "content": "<ul style=\"list-style-type: disc; margin-left: 20px;\"><li>Seleccione un triple pitagórico (<span style=\"font-family:'Besley', serif; font-weight:bold;\">3-4-5</span>, <span style=\"font-family:'Besley', serif; font-weight:bold;\">6-8-10</span> o <span style=\"font-family:'Besley', serif; font-weight:bold;\">5-12-13</span>) desde los botones</li><li>Haga clic en \"Calcular y Animar\" para ver cómo las piedras se colocan en posición</li><li>Observe cómo las piedras de los dos cuadrados más pequeños se reorganizan en el cuadrado más grande</li><li>Pruebe diferentes triples para ver cómo funciona el teorema con varios números</li></ul><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Lo que está viendo:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>El cuadrado rojo muestra las piedras de <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#E0002B;\">a</i><sup>2</sup></span></li><li>El cuadrado azul muestra las piedras de <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#0061FC;\">b</i><sup>2</sup></span></li><li>El cuadrado verde muestra las piedras de <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#008217;\">c</i><sup>2</sup></span></li><li>La animación demuestra que <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#E0002B;\">a</i><sup>2</sup></span> <span style=\"color:black;\">+</span> <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#0061FC;\">b</i><sup>2</sup></span> <span style=\"color:black;\">=</span> <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#008217;\">c</i><sup>2</sup></span></li></ul>"
+            },
+            "info": {
+                "title": "Acerca de la prueba con piedras",
+                "content": "<p style=\"margin-top:5px;\">Los antiguos griegos usaban piedras para entender las matemáticas antes de que existiera el álgebra moderna.</p><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">El Teorema de Pitágoras:</h3><ul style=\"list-style-type: disc; margin-left: 20px;\"><li>En cualquier triángulo rectángulo: <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#E0002B;\">a</i><sup>2</sup></span> <span style=\"color:black;\">+</span> <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#0061FC;\">b</i><sup>2</sup></span> <span style=\"color:black;\">=</span> <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#008217;\">c</i><sup>2</sup></span></li><li><span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#E0002B;\">a</i></span> y <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#0061FC;\">b</i></span> son los catetos, <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#008217;\">c</i></span> es la hipotenusa</li></ul><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Por qué funciona:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Cada piedra representa una unidad</li><li>Los cuadrados muestran visualmente los números al cuadrado</li><li>Mover las piedras demuestra que los dos cuadrados más pequeños equivalen al mayor</li><li>Funciona para cualquier triple pitagórico como <span style=\"font-family:'Besley', serif; font-weight:bold;\">3-4-5</span> o <span style=\"font-family:'Besley', serif; font-weight:bold;\">6-8-10</span></li></ul>"
+            }
+        },
+        "pouring": {
+            "help": {
+                "title": "¿Cómo usar esta herramienta?",
+                "content": "<ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Use los controles deslizantes para ajustar los valores de <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#E0002B;\">a</i></span> y <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#0061FC;\">b</i></span></li><li>Haga clic en \"Verter A\" para vaciar el cuadrado azul en el gris</li><li>Haga clic en \"Verter B\" para vaciar el cuadrado rojo en el gris</li><li>Use la rueda del ratón para hacer zoom, haga clic y arrastre para mover la vista</li><li>\"Restablecer\" para probar con diferentes valores</li></ul><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Consejos:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Pruebe diferentes valores para ver que el teorema siempre funciona</li><li>Observe cómo la ecuación se actualiza automáticamente</li><li>El agua muestra que <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#E0002B;\">a</i><sup>2</sup></span> <span style=\"color:black;\">+</span> <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#0061FC;\">b</i><sup>2</sup></span> <span style=\"color:black;\">=</span> <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#008217;\">c</i><sup>2</sup></span></li></ul>"
+            },
+            "info": {
+                "title": "Acerca de la prueba con vertido",
+                "content": "<p style=\"margin-top:5px;\">Esta prueba visual usa agua para mostrar el teorema de Pitágoras mediante áreas.</p><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Cómo funciona:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>El área de cada cuadrado es igual al cuadrado de su lado</li><li>El volumen de agua representa el área numérica</li><li>El agua de los dos cuadrados más pequeños llena perfectamente el cuadrado más grande</li><li>Esto demuestra que <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#E0002B;\">a</i><sup>2</sup></span> <span style=\"color:black;\">+</span> <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#0061FC;\">b</i><sup>2</sup></span> <span style=\"color:black;\">=</span> <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#008217;\">c</i><sup>2</sup></span> para cualquier triángulo rectángulo</li></ul><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Por qué funciona el agua:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>A diferencia de las piedras, el agua llena cualquier forma y funciona para todos los números, no solo enteros. Esto conecta las pruebas concretas con las matemáticas abstractas</li></ul>"
+            }
+        },
+        "dissection": {
+            "help": {
+                "title": "¿Cómo usar esta herramienta?",
+                "content": "<ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Use los controles deslizantes para ajustar los catetos <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#E0002B;\">a</i></span> y <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#0061FC;\">b</i></span> del triángulo rectángulo</li><li>Haga clic en \"Reorganizar\" para mover los cuatro triángulos entre posiciones</li><li>Observe cómo los mismos cuatro triángulos encajan alrededor de diferentes cuadrados</li><li>La primera disposición muestra <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#008217;\">c</i><sup>2</sup></span> (cuadrado verde inclinado)</li><li>La segunda disposición muestra <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#E0002B;\">a</i><sup>2</sup></span> <span style=\"color:black;\">+</span> <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#0061FC;\">b</i><sup>2</sup></span> (cuadrados azul y naranja)</li></ul><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Consejos:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Pruebe diferentes valores para ver que esto funciona para cualquier triángulo rectángulo</li><li>Observe que los cuatro triángulos son idénticos en ambas disposiciones</li><li>El área total permanece igual, solo cambia la forma</li></ul>"
+            },
+            "info": {
+                "title": "Acerca de la prueba por disección",
+                "content": "<p style=\"margin-top:5px;\">Esta elegante prueba demuestra el teorema de Pitágoras reorganizando piezas idénticas.</p><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Cómo funciona:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Cuatro triángulos rectángulos idénticos se disponen alrededor de un cuadrado</li><li>En la primera posición, rodean el cuadrado <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#008217;\">c</i><sup>2</sup></span> (hipotenusa)</li><li>En la segunda posición, rodean los cuadrados <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#E0002B;\">a</i><sup>2</sup></span> y <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#0061FC;\">b</i><sup>2</sup></span> (catetos)</li><li>El área total permanece igual, demostrando que <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#E0002B;\">a</i><sup>2</sup></span> <span style=\"color:black;\">+</span> <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#0061FC;\">b</i><sup>2</sup></span> <span style=\"color:black;\">=</span> <span style=\"font-family:'Besley', serif; font-weight:bold;\"><i style=\"color:#008217;\">c</i><sup>2</sup></span></li></ul><p style=\"margin-top:5px;\">Esta prueba visual no requiere números ni cálculos, solo razonamiento geométrico puro que convenció a los matemáticos antiguos.</p>"
+            }
+        },
+        "ladder": {
+            "help": {
+                "title": "¿Cómo usar esta herramienta?",
+                "content": "<ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Use el control deslizante \"Longitud de la escalera\" para cambiar la longitud de la escalera</li><li>Use el control deslizante \"Distancia de la pared\" para mover la base de la escalera</li><li>Observe cómo la altura en la pared cambia automáticamente</li><li>El panel de resultados muestra la altura calculada en tiempo real</li></ul><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Consejos:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Intente mantener la distancia fija mientras cambia la longitud de la escalera</li><li>Mover la base más lejos de la pared reduce la altura alcanzada</li></ul>"
+            },
+            "info": {
+                "title": "Acerca del problema de la escalera",
+                "content": "<p style=\"margin-top:5px;\">Esta búsqueda con tema medieval enseña el teorema de Pitágoras a través de un escenario práctico: encontrar la longitud de la escalera necesaria para escalar una muralla de castillo a través de un foso.</p><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Las matemáticas:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Altura de la pared = un cateto (<span style='font-family:Besley, serif; font-weight:bold;'><i style='color:#FF5900;'>a</i></span>)</li><li>Ancho del foso = otro cateto (<span style='font-family:Besley, serif; font-weight:bold;'><i style='color:#2eacff;'>b</i></span>)</li><li>Longitud de la escalera = hipotenusa (<span style='font-family:Besley, serif; font-weight:bold;'><i style='color:#8A7900;'>c</i></span>)</li><li>Aplica el teorema de Pitágoras para resolver el problema</li><li>La interactiva te guía a través de cada paso: elevando al cuadrado los lados, sumándolos y encontrando la raíz cuadrada</li></ul><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Uso en el mundo real:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Los bomberos usan esto para posicionar escaleras de manera segura</li><li>Los trabajadores de la construcción lo aplican para la instalación de andamios</li><li>Los equipos de rescate dependen de él para la planificación de acceso</li><li>Cada vez que necesites alcanzar una altura manteniendo una distancia segura de la base, el teorema de Pitágoras proporciona la respuesta</li></ul>"
+            }
+        },
+        "final": {
+            "help": {
+                "title": "¿Cómo usar esta herramienta?",
+                "content": "<ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Responde a cada pregunta haciendo clic en uno de los botones.</li><li>Si respondes incorrectamente, puedes intentarlo de nuevo.</li><li>Una vez correcto, pasarás automáticamente al siguiente paso.</li><li>Completa todos los pasos para finalizar la iniciación.</li></ul><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Consejos:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Presta mucha atención al modelo 3D de la pirámide.</li><li>Recuerda: elevar al cuadrado un número significa multiplicarlo por sí mismo.</li></ul><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Definiciones que conocer:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Un <strong>codo</strong> es una antigua unidad de medida aproximadamente igual a la longitud de un antebrazo.</li><li>Un <strong>ápice</strong> es el punto más alto o vértice de una pirámide.</li></ul>"
+            },
+            "info": {
+                "title": "Acerca del Problema de la Pirámide",
+                "content": "<p style=\"margin-top:5px;\">Esta búsqueda con tema antiguo enseña el teorema de Pitágoras a través de un escenario práctico: encontrar la altura oculta y verdadera de la Gran Pirámide usando solo mediciones tomadas desde el exterior.</p><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Las Matemáticas:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>La mitad del ancho de la base = un cateto (<span style='font-family:Besley, serif; font-weight:bold;'><i style='color:#FF50DF;'>a</i></span>)</li><li>La altura vertical verdadera = otro cateto (<span style='font-family:Besley, serif; font-weight:bold;'><i style='color:#8A7900;'>b</i></span>)</li><li>La altura inclinada medible = hipotenusa (<span style='font-family:Besley, serif; font-weight:bold;'><i style='color:#229799;'>c</i></span>)</li><li>Usando el teorema: <span style='font-family:Besley, serif; font-weight:bold;'><i style='color:#FF50DF;'>a</i><sup>2</sup></span> <span style='color:black;'>+</span> <span style='font-family:Besley, serif; font-weight:bold;'><i style='color:#8A7900;'>b</i><sup>2</sup></span> <span style='color:black;'>=</span> <span style='font-family:Besley, serif; font-weight:bold;'><i style='color:#229799;'>c</i><sup>2</sup></span></li><li>Esta interactiva te guía a través de cada paso: aislando el triángulo oculto, reorganizando la fórmula, elevando al cuadrado los lados, y encontrando la raíz cuadrada final para revelar la altura.</li></ul><h3 style=\"font-weight:bold; font-size:20px; margin-top:10px;\">Uso en el Mundo Real:</h3><ul style=\"list-style-type: disc; margin-left: 20px; margin-top:3px;\"><li>Este principio es usado por topógrafos, arquitectos y astrónomos para medir todo, desde montañas hasta el cosmos.</li></ul>"
+            }
+        }
+    },
+    "audio": {
+        "controls": {
+            "settings": "Configuración de audio",
+            "close": "Cerrar configuración",
+            "mute": "Silenciar",
+            "unmute": "Activar sonido",
+            "bgmLabel": "Música de fondo:",
+            "bgmAria": "Volumen de la música de fondo",
+            "dialogLabel": "Voz del personaje:",
+            "dialogAria": "Volumen de la voz del personaje"
+        }
+    },
+    "progressBar": {
+        "label": "Progreso de la misión",
+        "noQuestsCompleted": "No hay misiones completadas todavía."
+    }
+}

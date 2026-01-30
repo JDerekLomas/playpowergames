@@ -1,0 +1,61 @@
+{
+    "common": {
+        "play": "Play",
+        "back": "Back",
+        "playAgain": "Play Again",
+        "beam": "Beam",
+        "wellDone": "Well Done!",
+        "awesomeWork": "Awesome Work!",
+        "youreAmazing": "You're Amazing!",
+        "keepItUp": "Keep It Up!",
+        "fantasticEffort": "Fantastic Effort!",
+        "greatJob": "Great Job!",
+        "volume": "Volume",
+        "perfectScore": "Perfect Score!",
+        "title": "Count the Crew",
+        "titleLabel": "Count the Crew Game",
+        "mute": "Mute",
+        "unmute": "Unmute",
+        "pause": "Pause",
+        "help": "Help",
+        "resume": "Resume",
+        "icon": "Icon",
+        "correct": "Correct",
+        "incorrect": "Incorrect",
+        "skip": "Skip",
+        "correctFeedback": "Correct! The number is {{ value }}",
+        "incorrectFeedback": "Incorrect! The number should be {{ value }}",
+        "playQuestionAudio": "Play Question Audio",
+        "scoreboardNegativeFeedback": "Give it another try!"
+    },
+    "accessibility": {
+        "dropZoneSeat": "Drop zone for seat {{seatNumber}}. Press Enter to drop selected character here.",
+        "draggableBear": "Draggable number {{number}} bear. Press Enter to select for keyboard dropping.",
+        "selectedBear": "Number {{number}} bear selected. Navigate to drop zone and press Enter to drop."
+    },
+    "info": {
+        "helpPage": "Help page opened",
+        "howToPlay": "How to Play"
+    },
+    "game": {
+        "score": "Score",
+        "scoreValue": "Score: {{value}}",
+        "inARow": "{{count}} in a row",
+        "whichNumberComesAfter": "Which number comes next after"
+    },
+    "scoreboard": {
+        "finalScore": "Final Score",
+        "greatJob": "Great Job!",
+        "accuracy": "Accuracy",
+        "time": "Time",
+        "score": "Score",
+        "cup": "Cup",
+        "points": "Points",
+        "noOfCorrect": "Number correct",
+        "beatYourScore": "Beat Your Score!",
+        "playAgain": "Play Again",
+        "correctOutOf": "{{correct}} out of {{total}}",
+        "correctOutOfAnnounce": "{{correct}} out of {{total}} correct!",
+        "progress": "Progress: {{correct}} of {{total}} correct answers"
+    }
+}

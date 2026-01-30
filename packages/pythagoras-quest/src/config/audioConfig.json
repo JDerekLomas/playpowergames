@@ -1,0 +1,53 @@
+{
+    "pythagoreanTheorem": {
+      "pebbleProof": {
+        "myia_dialogues": "pythagoreanTheorem_pebbleProof_M_D"
+      },
+      "waterProof": {
+        "myia_dialogues": "pythagoreanTheorem_waterProof_M_D"
+      },
+      "dissectionProof": {
+        "myia_dialogues": "pythagoreanTheorem_dissectionProof_M_D"
+      }
+    },
+    "narratorScene": {
+      "dialogues": "narratorScene_N_D"
+    },
+    "mainCharacterDialogue": {
+      "intro": {
+        "myia_dialogues": "mainCharacterDialogue_intro_M_D"
+      },
+      "geometry": {
+        "myia_dialogues": "mainCharacterDialogue_geometry_M_D"
+      },
+      "conclusion": {
+        "myia_dialogues": "mainCharacterDialogue_conclusion_M_D"
+      }
+    },
+    "interactiveScene": {
+      "ladderProblem": {
+        "myia_dialogues": "interactiveScene_ladderProblem_M_D"
+      },
+      "finalChallenge": {
+        "myia_dialogues": "interactiveScene_finalChallenge_M_D"
+      },
+      "monochord1": {
+        "myia_dialogues": "interactiveScene_monochord1_M_D"
+      },
+      "monochord2": {
+        "myia_dialogues": "interactiveScene_monochord2_M_D"
+      },
+      "monochord3": {
+        "myia_dialogues": "interactiveScene_monochord3_M_D"
+      }
+    },
+    "library": {
+      "monochord1Completed": "library_monochord1_M_D",
+      "monochord2Completed": "library_monochord2_M_D"
+    },
+    "map": {
+      "initial": "map_initial_M_D",
+      "proofCompleted": "map_proofCompleted_M_D"
+    }
+  }
+  

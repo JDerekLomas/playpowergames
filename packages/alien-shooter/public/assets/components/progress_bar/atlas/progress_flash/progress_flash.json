@@ -1,0 +1,107 @@
+﻿{"frames": {
+
+"progressNEW instance 10000":
+{
+	"frame": {"x":0,"y":0,"w":870,"h":26},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":43,"y":38,"w":956,"h":102},
+	"sourceSize": {"w":956,"h":102}
+},
+"progressNEW instance 10001":
+{
+	"frame": {"x":0,"y":26,"w":884,"h":38},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":36,"y":32,"w":956,"h":102},
+	"sourceSize": {"w":956,"h":102}
+},
+"progressNEW instance 10002":
+{
+	"frame": {"x":0,"y":64,"w":898,"h":48},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":27,"w":956,"h":102},
+	"sourceSize": {"w":956,"h":102}
+},
+"progressNEW instance 10003":
+{
+	"frame": {"x":0,"y":112,"w":912,"h":60},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":22,"y":21,"w":956,"h":102},
+	"sourceSize": {"w":956,"h":102}
+},
+"progressNEW instance 10004":
+{
+	"frame": {"x":0,"y":172,"w":924,"h":70},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":16,"y":16,"w":956,"h":102},
+	"sourceSize": {"w":956,"h":102}
+},
+"progressNEW instance 10005":
+{
+	"frame": {"x":0,"y":242,"w":940,"h":86},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":8,"w":956,"h":102},
+	"sourceSize": {"w":956,"h":102}
+},
+"progressNEW instance 10006":
+{
+	"frame": {"x":0,"y":328,"w":956,"h":102},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":956,"h":102},
+	"sourceSize": {"w":956,"h":102}
+},
+"progressNEW instance 10007":
+{
+	"frame": {"x":0,"y":430,"w":943,"h":90},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":6,"w":956,"h":102},
+	"sourceSize": {"w":956,"h":102}
+},
+"progressNEW instance 10008":
+{
+	"frame": {"x":0,"y":520,"w":929,"h":77},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":13,"w":956,"h":102},
+	"sourceSize": {"w":956,"h":102}
+},
+"progressNEW instance 10009":
+{
+	"frame": {"x":0,"y":597,"w":915,"h":64},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":21,"y":19,"w":956,"h":102},
+	"sourceSize": {"w":956,"h":102}
+},
+"progressNEW instance 10010":
+{
+	"frame": {"x":0,"y":661,"w":902,"h":51},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":28,"y":26,"w":956,"h":102},
+	"sourceSize": {"w":956,"h":102}
+},
+"progressNEW instance 10011":
+{
+	"frame": {"x":0,"y":712,"w":888,"h":38},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":35,"y":32,"w":956,"h":102},
+	"sourceSize": {"w":956,"h":102}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "24.0.9.73",
+	"image": "progress_bar_flash.png",
+	"format": "RGBA8888",
+	"size": {"w":1024,"h":1024},
+	"scale": "1"
+}
+}

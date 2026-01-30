@@ -1,0 +1,6459 @@
+[
+  {
+    "question text": "0+0=0",
+    "intrinsic difficulty": 0,
+    "tags": [
+      "Number + 0 Facts",
+      "Doubles Facts",
+      "Sums to 5"
+    ],
+    "id": "mf_32d6a201"
+  },
+  {
+    "question text": "0-0=0",
+    "intrinsic difficulty": 0,
+    "tags": [
+      "Subtract 0 Facts"
+    ],
+    "id": "mf_0934d647"
+  },
+  {
+    "question text": "0+1=1",
+    "intrinsic difficulty": 4,
+    "tags": [
+      "Number + 0 Facts",
+      "Number + 1 Facts",
+      "Sums to 5"
+    ],
+    "id": "mf_a7a6ae2d"
+  },
+  {
+    "question text": "1+0=1",
+    "intrinsic difficulty": 4,
+    "tags": [
+      "Number + 0 Facts",
+      "Number + 1 Facts",
+      "Sums to 5"
+    ],
+    "id": "mf_504595b5"
+  },
+  {
+    "question text": "1-0=1",
+    "intrinsic difficulty": 4,
+    "tags": [
+      "Subtract 0 Facts",
+      "Differences of 1"
+    ],
+    "id": "mf_62c89ff7"
+  },
+  {
+    "question text": "1-1=0",
+    "intrinsic difficulty": 4,
+    "tags": [
+      "Subtract 1 Facts"
+    ],
+    "id": "mf_5f4a0053"
+  },
+  {
+    "question text": "0+2=2",
+    "intrinsic difficulty": 8,
+    "tags": [
+      "Number + 0 Facts",
+      "Number + 2 Facts",
+      "Sums to 5"
+    ],
+    "id": "mf_032ed2b5"
+  },
+  {
+    "question text": "2+0=2",
+    "intrinsic difficulty": 8,
+    "tags": [
+      "Number + 0 Facts",
+      "Number + 2 Facts",
+      "Sums to 5"
+    ],
+    "id": "mf_744aa2f1"
+  },
+  {
+    "question text": "2-0=2",
+    "intrinsic difficulty": 8,
+    "tags": [
+      "Subtract 0 Facts",
+      "Differences of 2"
+    ],
+    "id": "mf_82cda6e7"
+  },
+  {
+    "question text": "2-2=0",
+    "intrinsic difficulty": 8,
+    "tags": [
+      "Subtract 2 Facts"
+    ],
+    "id": "mf_51e8a31b"
+  },
+  {
+    "question text": "1+1=2",
+    "intrinsic difficulty": 8,
+    "tags": [
+      "Number + 1 Facts",
+      "Doubles Facts",
+      "Sums to 5"
+    ],
+    "id": "mf_5ab38463"
+  },
+  {
+    "question text": "2-1=1",
+    "intrinsic difficulty": 8,
+    "tags": [
+      "Subtract 1 Facts",
+      "Differences of 1"
+    ],
+    "id": "mf_d8604f59"
+  },
+  {
+    "question text": "0+3=3",
+    "intrinsic difficulty": 12,
+    "tags": [
+      "Number + 0 Facts",
+      "Sums to 5"
+    ],
+    "id": "mf_e6ad3ff9"
+  },
+  {
+    "question text": "3+0=3",
+    "intrinsic difficulty": 12,
+    "tags": [
+      "Number + 0 Facts",
+      "Sums to 5"
+    ],
+    "id": "mf_ef087fe5"
+  },
+  {
+    "question text": "3-0=3",
+    "intrinsic difficulty": 12,
+    "tags": [
+      "Subtract 0 Facts"
+    ],
+    "id": "mf_052b32b7"
+  },
+  {
+    "question text": "3-3=0",
+    "intrinsic difficulty": 12,
+    "tags": [],
+    "id": "mf_e1f1553f"
+  },
+  {
+    "question text": "1+2=3",
+    "intrinsic difficulty": 12,
+    "tags": [
+      "Number + 1 Facts",
+      "Number + 2 Facts",
+      "Sums to 5"
+    ],
+    "id": "mf_308a57e1"
+  },
+  {
+    "question text": "2+1=3",
+    "intrinsic difficulty": 12,
+    "tags": [
+      "Number + 1 Facts",
+      "Number + 2 Facts",
+      "Sums to 5"
+    ],
+    "id": "mf_57c91035"
+  },
+  {
+    "question text": "3-1=2",
+    "intrinsic difficulty": 12,
+    "tags": [
+      "Subtract 1 Facts",
+      "Differences of 1"
+    ],
+    "id": "mf_1199248b"
+  },
+  {
+    "question text": "3-2=1",
+    "intrinsic difficulty": 12,
+    "tags": [
+      "Subtract 2 Facts",
+      "Differences of 1"
+    ],
+    "id": "mf_c56fc283"
+  },
+  {
+    "question text": "0+4=4",
+    "intrinsic difficulty": 16,
+    "tags": [
+      "Number + 0 Facts",
+      "Sums to 5"
+    ],
+    "id": "mf_0377ad21"
+  },
+  {
+    "question text": "4+0=4",
+    "intrinsic difficulty": 16,
+    "tags": [
+      "Number + 0 Facts",
+      "Sums to 5"
+    ],
+    "id": "mf_2a136371"
+  },
+  {
+    "question text": "4-0=4",
+    "intrinsic difficulty": 16,
+    "tags": [
+      "Subtract 0 Facts"
+    ],
+    "id": "mf_20cd9a47"
+  },
+  {
+    "question text": "4-4=0",
+    "intrinsic difficulty": 16,
+    "tags": [],
+    "id": "mf_482c828f"
+  },
+  {
+    "question text": "1+3=4",
+    "intrinsic difficulty": 16,
+    "tags": [
+      "Number + 1 Facts",
+      "Sums to 5"
+    ],
+    "id": "mf_c70b17ab"
+  },
+  {
+    "question text": "3+1=4",
+    "intrinsic difficulty": 16,
+    "tags": [
+      "Number + 1 Facts",
+      "Sums to 5"
+    ],
+    "id": "mf_0d8a15c7"
+  },
+  {
+    "question text": "4-1=3",
+    "intrinsic difficulty": 16,
+    "tags": [
+      "Subtract 1 Facts",
+      "Differences of 1"
+    ],
+    "id": "mf_024c0465"
+  },
+  {
+    "question text": "4-3=1",
+    "intrinsic difficulty": 16,
+    "tags": [
+      "Differences of 1"
+    ],
+    "id": "mf_22074239"
+  },
+  {
+    "question text": "2+2=4",
+    "intrinsic difficulty": 16,
+    "tags": [
+      "Number + 2 Facts",
+      "Doubles Facts",
+      "Sums to 5"
+    ],
+    "id": "mf_9ff26bf1"
+  },
+  {
+    "question text": "4-2=2",
+    "intrinsic difficulty": 16,
+    "tags": [
+      "Subtract 2 Facts",
+      "Subtracting from Doubles",
+      "Differences of 2"
+    ],
+    "id": "mf_4c756347"
+  },
+  {
+    "question text": "0+5=5",
+    "intrinsic difficulty": 20,
+    "tags": [
+      "Number + 0 Facts",
+      "Sums to 5"
+    ],
+    "id": "mf_df099585"
+  },
+  {
+    "question text": "5+0=5",
+    "intrinsic difficulty": 20,
+    "tags": [
+      "Number + 0 Facts",
+      "Sums to 5"
+    ],
+    "id": "mf_50bf983d"
+  },
+  {
+    "question text": "5-0=5",
+    "intrinsic difficulty": 20,
+    "tags": [
+      "Subtract 0 Facts"
+    ],
+    "id": "mf_7a6163f7"
+  },
+  {
+    "question text": "5-5=0",
+    "intrinsic difficulty": 20,
+    "tags": [],
+    "id": "mf_46469af3"
+  },
+  {
+    "question text": "1+4=5",
+    "intrinsic difficulty": 20,
+    "tags": [
+      "Number + 1 Facts",
+      "Sums to 5"
+    ],
+    "id": "mf_28e6ad6d"
+  },
+  {
+    "question text": "4+1=5",
+    "intrinsic difficulty": 20,
+    "tags": [
+      "Number + 1 Facts",
+      "Sums to 5"
+    ],
+    "id": "mf_86e349d5"
+  },
+  {
+    "question text": "5-1=4",
+    "intrinsic difficulty": 20,
+    "tags": [
+      "Subtract 1 Facts",
+      "Differences of 1"
+    ],
+    "id": "mf_8ee2ea1b"
+  },
+  {
+    "question text": "5-4=1",
+    "intrinsic difficulty": 20,
+    "tags": [
+      "Differences of 1"
+    ],
+    "id": "mf_4b026f17"
+  },
+  {
+    "question text": "2+3=5",
+    "intrinsic difficulty": 20,
+    "tags": [
+      "Number + 2 Facts",
+      "Sums to 5",
+      "Near Doubles Facts"
+    ],
+    "id": "mf_fcc25255"
+  },
+  {
+    "question text": "3+2=5",
+    "intrinsic difficulty": 20,
+    "tags": [
+      "Number + 2 Facts",
+      "Sums to 5",
+      "Near Doubles Facts"
+    ],
+    "id": "mf_12c3c405"
+  },
+  {
+    "question text": "5-2=3",
+    "intrinsic difficulty": 20,
+    "tags": [
+      "Subtract 2 Facts",
+      "Differences of 2"
+    ],
+    "id": "mf_161d64ff"
+  },
+  {
+    "question text": "5-3=2",
+    "intrinsic difficulty": 20,
+    "tags": [
+      "Differences of 2"
+    ],
+    "id": "mf_a28a8d53"
+  },
+  {
+    "question text": "0+6=6",
+    "intrinsic difficulty": 25,
+    "tags": [
+      "Number + 0 Facts"
+    ],
+    "id": "mf_dbcfea6d"
+  },
+  {
+    "question text": "6+0=6",
+    "intrinsic difficulty": 25,
+    "tags": [
+      "Number + 0 Facts"
+    ],
+    "id": "mf_604a8a81"
+  },
+  {
+    "question text": "6-0=6",
+    "intrinsic difficulty": 25,
+    "tags": [
+      "Subtract 0 Facts"
+    ],
+    "id": "mf_9a938087"
+  },
+  {
+    "question text": "6-6=0",
+    "intrinsic difficulty": 25,
+    "tags": [],
+    "id": "mf_ba4ebe5b"
+  },
+  {
+    "question text": "1+5=6",
+    "intrinsic difficulty": 25,
+    "tags": [
+      "Number + 1 Facts"
+    ],
+    "id": "mf_ab53c603"
+  },
+  {
+    "question text": "5+1=6",
+    "intrinsic difficulty": 25,
+    "tags": [
+      "Number + 1 Facts"
+    ],
+    "id": "mf_d1ef7c53"
+  },
+  {
+    "question text": "6-1=5",
+    "intrinsic difficulty": 25,
+    "tags": [
+      "Subtract 1 Facts",
+      "Differences of 1"
+    ],
+    "id": "mf_88258541"
+  },
+  {
+    "question text": "6-5=1",
+    "intrinsic difficulty": 25,
+    "tags": [
+      "Differences of 1"
+    ],
+    "id": "mf_40c66a99"
+  },
+  {
+    "question text": "2+4=6",
+    "intrinsic difficulty": 25,
+    "tags": [
+      "Number + 2 Facts"
+    ],
+    "id": "mf_9ba98b39"
+  },
+  {
+    "question text": "4+2=6",
+    "intrinsic difficulty": 25,
+    "tags": [
+      "Number + 2 Facts"
+    ],
+    "id": "mf_026ba0bd"
+  },
+  {
+    "question text": "6-2=4",
+    "intrinsic difficulty": 25,
+    "tags": [
+      "Subtract 2 Facts",
+      "Differences of 2"
+    ],
+    "id": "mf_61ae7023"
+  },
+  {
+    "question text": "6-4=2",
+    "intrinsic difficulty": 25,
+    "tags": [
+      "Differences of 2"
+    ],
+    "id": "mf_eb33c227"
+  },
+  {
+    "question text": "3+3=6",
+    "intrinsic difficulty": 25,
+    "tags": [
+      "Doubles Facts"
+    ],
+    "id": "mf_3531d87b"
+  },
+  {
+    "question text": "6-3=3",
+    "intrinsic difficulty": 25,
+    "tags": [
+      "Subtracting from Doubles"
+    ],
+    "id": "mf_4c6a1b59"
+  },
+  {
+    "question text": "0+7=7",
+    "intrinsic difficulty": 29,
+    "tags": [
+      "Number + 0 Facts"
+    ],
+    "id": "mf_b74e4b19"
+  },
+  {
+    "question text": "7+0=7",
+    "intrinsic difficulty": 29,
+    "tags": [
+      "Number + 0 Facts"
+    ],
+    "id": "mf_234bafbd"
+  },
+  {
+    "question text": "7-0=7",
+    "intrinsic difficulty": 29,
+    "tags": [
+      "Subtract 0 Facts"
+    ],
+    "id": "mf_e902b9b7"
+  },
+  {
+    "question text": "7-7=0",
+    "intrinsic difficulty": 29,
+    "tags": [],
+    "id": "mf_0d27f6e7"
+  },
+  {
+    "question text": "1+6=7",
+    "intrinsic difficulty": 29,
+    "tags": [
+      "Number + 1 Facts"
+    ],
+    "id": "mf_812a9981"
+  },
+  {
+    "question text": "6+1=7",
+    "intrinsic difficulty": 29,
+    "tags": [
+      "Number + 1 Facts"
+    ],
+    "id": "mf_4bc9045d"
+  },
+  {
+    "question text": "7-1=6",
+    "intrinsic difficulty": 29,
+    "tags": [
+      "Subtract 1 Facts",
+      "Differences of 1"
+    ],
+    "id": "mf_ed709ef3"
+  },
+  {
+    "question text": "7-6=1",
+    "intrinsic difficulty": 29,
+    "tags": [
+      "Differences of 1"
+    ],
+    "id": "mf_f0a6642b"
+  },
+  {
+    "question text": "2+5=7",
+    "intrinsic difficulty": 29,
+    "tags": [
+      "Number + 2 Facts"
+    ],
+    "id": "mf_0728ce95"
+  },
+  {
+    "question text": "5+2=7",
+    "intrinsic difficulty": 29,
+    "tags": [
+      "Number + 2 Facts"
+    ],
+    "id": "mf_a7c64fd1"
+  },
+  {
+    "question text": "7-2=5",
+    "intrinsic difficulty": 29,
+    "tags": [
+      "Subtract 2 Facts",
+      "Differences of 2"
+    ],
+    "id": "mf_c1476f4b"
+  },
+  {
+    "question text": "7-5=2",
+    "intrinsic difficulty": 29,
+    "tags": [
+      "Differences of 2"
+    ],
+    "id": "mf_1ccf93d3"
+  },
+  {
+    "question text": "3+4=7",
+    "intrinsic difficulty": 29,
+    "tags": [
+      "Near Doubles Facts"
+    ],
+    "id": "mf_1e6774c5"
+  },
+  {
+    "question text": "4+3=7",
+    "intrinsic difficulty": 29,
+    "tags": [
+      "Near Doubles Facts"
+    ],
+    "id": "mf_ddea0169"
+  },
+  {
+    "question text": "7-3=4",
+    "intrinsic difficulty": 29,
+    "tags": [
+      "Differences of 1"
+    ],
+    "id": "mf_c48ba7bf"
+  },
+  {
+    "question text": "7-4=3",
+    "intrinsic difficulty": 29,
+    "tags": [
+      "Differences of 1"
+    ],
+    "id": "mf_90626b7f"
+  },
+  {
+    "question text": "0+8=8",
+    "intrinsic difficulty": 33,
+    "tags": [
+      "Number + 0 Facts"
+    ],
+    "id": "mf_4417d591"
+  },
+  {
+    "question text": "8+0=8",
+    "intrinsic difficulty": 33,
+    "tags": [
+      "Number + 0 Facts"
+    ],
+    "id": "mf_7e5b6351"
+  },
+  {
+    "question text": "8-0=8",
+    "intrinsic difficulty": 33,
+    "tags": [
+      "Subtract 0 Facts"
+    ],
+    "id": "mf_70f101f7"
+  },
+  {
+    "question text": "8-8=0",
+    "intrinsic difficulty": 33,
+    "tags": [],
+    "id": "mf_92324eb7"
+  },
+  {
+    "question text": "1+7=8",
+    "intrinsic difficulty": 33,
+    "tags": [
+      "Number + 1 Facts"
+    ],
+    "id": "mf_87ac099b"
+  },
+  {
+    "question text": "7+1=8",
+    "intrinsic difficulty": 33,
+    "tags": [
+      "Number + 1 Facts"
+    ],
+    "id": "mf_31cd2c6f"
+  },
+  {
+    "question text": "8-1=7",
+    "intrinsic difficulty": 33,
+    "tags": [
+      "Subtract 1 Facts",
+      "Differences of 1"
+    ],
+    "id": "mf_d2703595"
+  },
+  {
+    "question text": "8-7=1",
+    "intrinsic difficulty": 33,
+    "tags": [
+      "Differences of 1"
+    ],
+    "id": "mf_c409b309"
+  },
+  {
+    "question text": "2+6=8",
+    "intrinsic difficulty": 33,
+    "tags": [
+      "Number + 2 Facts"
+    ],
+    "id": "mf_c88e88b9"
+  },
+  {
+    "question text": "6+2=8",
+    "intrinsic difficulty": 33,
+    "tags": [
+      "Number + 2 Facts"
+    ],
+    "id": "mf_7bf23a51"
+  },
+  {
+    "question text": "8-2=6",
+    "intrinsic difficulty": 33,
+    "tags": [
+      "Subtract 2 Facts",
+      "Differences of 2"
+    ],
+    "id": "mf_9dd5ff77"
+  },
+  {
+    "question text": "8-6=2",
+    "intrinsic difficulty": 33,
+    "tags": [
+      "Differences of 2"
+    ],
+    "id": "mf_6d39d617"
+  },
+  {
+    "question text": "3+5=8",
+    "intrinsic difficulty": 33,
+    "tags": [
+      "Near Doubles Facts"
+    ],
+    "id": "mf_3ce90aa7"
+  },
+  {
+    "question text": "5+3=8",
+    "intrinsic difficulty": 33,
+    "tags": [
+      "Near Doubles Facts"
+    ],
+    "id": "mf_ae47bfeb"
+  },
+  {
+    "question text": "8-3=5",
+    "intrinsic difficulty": 33,
+    "tags": [
+      "Differences of 2"
+    ],
+    "id": "mf_0b68cdb1"
+  },
+  {
+    "question text": "8-5=3",
+    "intrinsic difficulty": 33,
+    "tags": [
+      "Differences of 2"
+    ],
+    "id": "mf_23107735"
+  },
+  {
+    "question text": "4+4=8",
+    "intrinsic difficulty": 33,
+    "tags": [
+      "Doubles Facts"
+    ],
+    "id": "mf_52af8039"
+  },
+  {
+    "question text": "8-4=4",
+    "intrinsic difficulty": 33,
+    "tags": [
+      "Subtracting from Doubles"
+    ],
+    "id": "mf_41920d17"
+  },
+  {
+    "question text": "0+9=9",
+    "intrinsic difficulty": 37,
+    "tags": [
+      "Number + 0 Facts"
+    ],
+    "id": "mf_b7aaad3d"
+  },
+  {
+    "question text": "9+0=9",
+    "intrinsic difficulty": 37,
+    "tags": [
+      "Number + 0 Facts"
+    ],
+    "id": "mf_33205015"
+  },
+  {
+    "question text": "9-0=9",
+    "intrinsic difficulty": 37,
+    "tags": [
+      "Subtract 0 Facts"
+    ],
+    "id": "mf_34660ca7"
+  },
+  {
+    "question text": "9-9=0",
+    "intrinsic difficulty": 37,
+    "tags": [],
+    "id": "mf_5228b9c3"
+  },
+  {
+    "question text": "1+8=9",
+    "intrinsic difficulty": 37,
+    "tags": [
+      "Number + 1 Facts"
+    ],
+    "id": "mf_404196a5"
+  },
+  {
+    "question text": "8+1=9",
+    "intrinsic difficulty": 37,
+    "tags": [
+      "Number + 1 Facts"
+    ],
+    "id": "mf_f1ee3afd"
+  },
+  {
+    "question text": "9-1=8",
+    "intrinsic difficulty": 37,
+    "tags": [
+      "Subtract 1 Facts",
+      "Differences of 1"
+    ],
+    "id": "mf_40e78633"
+  },
+  {
+    "question text": "9-8=1",
+    "intrinsic difficulty": 37,
+    "tags": [
+      "Differences of 1"
+    ],
+    "id": "mf_55a75967"
+  },
+  {
+    "question text": "2+7=9",
+    "intrinsic difficulty": 37,
+    "tags": [
+      "Number + 2 Facts"
+    ],
+    "id": "mf_3c216065"
+  },
+  {
+    "question text": "7+2=9",
+    "intrinsic difficulty": 37,
+    "tags": [
+      "Number + 2 Facts"
+    ],
+    "id": "mf_4844285d"
+  },
+  {
+    "question text": "9-2=7",
+    "intrinsic difficulty": 37,
+    "tags": [
+      "Subtract 2 Facts",
+      "Differences of 2"
+    ],
+    "id": "mf_d15f422f"
+  },
+  {
+    "question text": "9-7=2",
+    "intrinsic difficulty": 37,
+    "tags": [
+      "Differences of 2"
+    ],
+    "id": "mf_a52b852b"
+  },
+  {
+    "question text": "3+6=9",
+    "intrinsic difficulty": 37,
+    "tags": [
+      "Near Doubles Facts"
+    ],
+    "id": "mf_d360d015"
+  },
+  {
+    "question text": "6+3=9",
+    "intrinsic difficulty": 37,
+    "tags": [
+      "Near Doubles Facts"
+    ],
+    "id": "mf_ef8511fd"
+  },
+  {
+    "question text": "9-3=6",
+    "intrinsic difficulty": 37,
+    "tags": [
+      "Differences of 2"
+    ],
+    "id": "mf_748f5bcb"
+  },
+  {
+    "question text": "9-6=3",
+    "intrinsic difficulty": 37,
+    "tags": [
+      "Differences of 2"
+    ],
+    "id": "mf_18be5cd7"
+  },
+  {
+    "question text": "4+5=9",
+    "intrinsic difficulty": 37,
+    "tags": [
+      "Near Doubles Facts"
+    ],
+    "id": "mf_c64257e5"
+  },
+  {
+    "question text": "5+4=9",
+    "intrinsic difficulty": 37,
+    "tags": [
+      "Near Doubles Facts"
+    ],
+    "id": "mf_801e8d1d"
+  },
+  {
+    "question text": "9-4=5",
+    "intrinsic difficulty": 37,
+    "tags": [
+      "Differences of 1"
+    ],
+    "id": "mf_dbc5be6f"
+  },
+  {
+    "question text": "9-5=4",
+    "intrinsic difficulty": 37,
+    "tags": [
+      "Differences of 1"
+    ],
+    "id": "mf_70467b13"
+  },
+  {
+    "question text": "0+10=10",
+    "intrinsic difficulty": 41,
+    "tags": [
+      "Number + 0 Facts",
+      "Make 10 Facts",
+      "Sums to 10",
+      "Number + 10 Facts"
+    ],
+    "id": "mf_e2b69001"
+  },
+  {
+    "question text": "10+0=10",
+    "intrinsic difficulty": 41,
+    "tags": [
+      "Number + 0 Facts",
+      "Make 10 Facts",
+      "Sums to 10",
+      "Number + 10 Facts"
+    ],
+    "id": "mf_84016417"
+  },
+  {
+    "question text": "10-0=10",
+    "intrinsic difficulty": 41,
+    "tags": [
+      "Subtract 0 Facts",
+      "Subtracting from 10"
+    ],
+    "id": "mf_0157951d"
+  },
+  {
+    "question text": "10-10=0",
+    "intrinsic difficulty": 41,
+    "tags": [
+      "Subtracting from 10"
+    ],
+    "id": "mf_3ee4bd4f"
+  },
+  {
+    "question text": "1+9=10",
+    "intrinsic difficulty": 41,
+    "tags": [
+      "Number + 1 Facts",
+      "Make 10 Facts",
+      "Sums to 10"
+    ],
+    "id": "mf_0a27af4a"
+  },
+  {
+    "question text": "9+1=10",
+    "intrinsic difficulty": 41,
+    "tags": [
+      "Number + 1 Facts",
+      "Make 10 Facts",
+      "Sums to 10"
+    ],
+    "id": "mf_7b6c277a"
+  },
+  {
+    "question text": "10-1=9",
+    "intrinsic difficulty": 41,
+    "tags": [
+      "Subtract 1 Facts",
+      "Subtracting from 10",
+      "Differences of 1"
+    ],
+    "id": "mf_05d08150"
+  },
+  {
+    "question text": "10-9=1",
+    "intrinsic difficulty": 41,
+    "tags": [
+      "Subtracting from 10",
+      "Differences of 1"
+    ],
+    "id": "mf_15d48060"
+  },
+  {
+    "question text": "2+8=10",
+    "intrinsic difficulty": 41,
+    "tags": [
+      "Number + 2 Facts",
+      "Make 10 Facts",
+      "Sums to 10"
+    ],
+    "id": "mf_ea071f00"
+  },
+  {
+    "question text": "8+2=10",
+    "intrinsic difficulty": 41,
+    "tags": [
+      "Number + 2 Facts",
+      "Make 10 Facts",
+      "Sums to 10"
+    ],
+    "id": "mf_17e627ac"
+  },
+  {
+    "question text": "10-2=8",
+    "intrinsic difficulty": 41,
+    "tags": [
+      "Subtract 2 Facts",
+      "Subtracting from 10",
+      "Differences of 2"
+    ],
+    "id": "mf_1b0a48be"
+  },
+  {
+    "question text": "10-8=2",
+    "intrinsic difficulty": 41,
+    "tags": [
+      "Subtracting from 10",
+      "Differences of 2"
+    ],
+    "id": "mf_1c9057aa"
+  },
+  {
+    "question text": "3+7=10",
+    "intrinsic difficulty": 41,
+    "tags": [
+      "Make 10 Facts",
+      "Sums to 10"
+    ],
+    "id": "mf_c0f5a77a"
+  },
+  {
+    "question text": "7+3=10",
+    "intrinsic difficulty": 41,
+    "tags": [
+      "Make 10 Facts",
+      "Sums to 10"
+    ],
+    "id": "mf_ebef9382"
+  },
+  {
+    "question text": "10-3=7",
+    "intrinsic difficulty": 41,
+    "tags": [
+      "Subtracting from 10",
+      "Differences of 2"
+    ],
+    "id": "mf_397856e8"
+  },
+  {
+    "question text": "10-7=3",
+    "intrinsic difficulty": 41,
+    "tags": [
+      "Subtracting from 10",
+      "Differences of 2"
+    ],
+    "id": "mf_68d74bc8"
+  },
+  {
+    "question text": "4+6=10",
+    "intrinsic difficulty": 41,
+    "tags": [
+      "Make 10 Facts",
+      "Sums to 10"
+    ],
+    "id": "mf_8cce8f34"
+  },
+  {
+    "question text": "6+4=10",
+    "intrinsic difficulty": 41,
+    "tags": [
+      "Make 10 Facts",
+      "Sums to 10"
+    ],
+    "id": "mf_1e3fe4b0"
+  },
+  {
+    "question text": "10-4=6",
+    "intrinsic difficulty": 41,
+    "tags": [
+      "Subtracting from 10",
+      "Differences of 2"
+    ],
+    "id": "mf_22adf332"
+  },
+  {
+    "question text": "10-6=4",
+    "intrinsic difficulty": 41,
+    "tags": [
+      "Subtracting from 10",
+      "Differences of 2"
+    ],
+    "id": "mf_dba754ce"
+  },
+  {
+    "question text": "5+5=10",
+    "intrinsic difficulty": 41,
+    "tags": [
+      "Doubles Facts",
+      "Make 10 Facts",
+      "Sums to 10"
+    ],
+    "id": "mf_98bc2dc2"
+  },
+  {
+    "question text": "10-5=5",
+    "intrinsic difficulty": 41,
+    "tags": [
+      "Subtracting from Doubles",
+      "Subtracting from 10"
+    ],
+    "id": "mf_352f7630"
+  },
+  {
+    "question text": "1+10=11",
+    "intrinsic difficulty": 45,
+    "tags": [
+      "Number + 1 Facts",
+      "Number + 10 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_f452746d"
+  },
+  {
+    "question text": "10+1=11",
+    "intrinsic difficulty": 45,
+    "tags": [
+      "Number + 1 Facts",
+      "Number + 10 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_c4129bfd"
+  },
+  {
+    "question text": "11-1=10",
+    "intrinsic difficulty": 45,
+    "tags": [
+      "Subtract 1 Facts",
+      "Subtracting from Teens",
+      "Differences of 1"
+    ],
+    "id": "mf_9a4c3819"
+  },
+  {
+    "question text": "11-10=1",
+    "intrinsic difficulty": 45,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 1"
+    ],
+    "id": "mf_b957640d"
+  },
+  {
+    "question text": "2+9=11",
+    "intrinsic difficulty": 45,
+    "tags": [
+      "Number + 2 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_535f1962"
+  },
+  {
+    "question text": "9+2=11",
+    "intrinsic difficulty": 45,
+    "tags": [
+      "Number + 2 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_87448b46"
+  },
+  {
+    "question text": "11-2=9",
+    "intrinsic difficulty": 45,
+    "tags": [
+      "Subtract 2 Facts",
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_4c71f216"
+  },
+  {
+    "question text": "11-9=2",
+    "intrinsic difficulty": 45,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_3189f5fe"
+  },
+  {
+    "question text": "3+8=11",
+    "intrinsic difficulty": 45,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_3c3c1dd2"
+  },
+  {
+    "question text": "8+3=11",
+    "intrinsic difficulty": 45,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_80ee702e"
+  },
+  {
+    "question text": "11-3=8",
+    "intrinsic difficulty": 45,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_c141fe42"
+  },
+  {
+    "question text": "11-8=3",
+    "intrinsic difficulty": 45,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_4e0b88ba"
+  },
+  {
+    "question text": "4+7=11",
+    "intrinsic difficulty": 45,
+    "tags": [
+      "Near Doubles Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_d713d9d6"
+  },
+  {
+    "question text": "7+4=11",
+    "intrinsic difficulty": 45,
+    "tags": [
+      "Near Doubles Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_5c67b372"
+  },
+  {
+    "question text": "11-4=7",
+    "intrinsic difficulty": 45,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_fd6b471a"
+  },
+  {
+    "question text": "11-7=4",
+    "intrinsic difficulty": 45,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_00a4f232"
+  },
+  {
+    "question text": "5+6=11",
+    "intrinsic difficulty": 45,
+    "tags": [
+      "Near Doubles Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_44e3ac4e"
+  },
+  {
+    "question text": "6+5=11",
+    "intrinsic difficulty": 45,
+    "tags": [
+      "Near Doubles Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_faf18492"
+  },
+  {
+    "question text": "11-5=6",
+    "intrinsic difficulty": 45,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 1"
+    ],
+    "id": "mf_d8e9a7c6"
+  },
+  {
+    "question text": "11-6=5",
+    "intrinsic difficulty": 45,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 1"
+    ],
+    "id": "mf_251309ce"
+  },
+  {
+    "question text": "2+10=12",
+    "intrinsic difficulty": 50,
+    "tags": [
+      "Number + 2 Facts",
+      "Number + 10 Facts",
+      "Bridge 10 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_2b9b5849"
+  },
+  {
+    "question text": "10+2=12",
+    "intrinsic difficulty": 50,
+    "tags": [
+      "Number + 2 Facts",
+      "Number + 10 Facts",
+      "Bridge 10 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_cdeafca3"
+  },
+  {
+    "question text": "12-2=10",
+    "intrinsic difficulty": 50,
+    "tags": [
+      "Subtract 2 Facts",
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_40523b81"
+  },
+  {
+    "question text": "12-10=2",
+    "intrinsic difficulty": 50,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_4a10ffeb"
+  },
+  {
+    "question text": "3+9=12",
+    "intrinsic difficulty": 50,
+    "tags": [
+      "Bridge 10 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_618a8116"
+  },
+  {
+    "question text": "9+3=12",
+    "intrinsic difficulty": 50,
+    "tags": [
+      "Bridge 10 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_c03baeca"
+  },
+  {
+    "question text": "12-3=9",
+    "intrinsic difficulty": 50,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_d4b5cfbc"
+  },
+  {
+    "question text": "12-9=3",
+    "intrinsic difficulty": 50,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_e31c5248"
+  },
+  {
+    "question text": "4+8=12",
+    "intrinsic difficulty": 50,
+    "tags": [
+      "Bridge 10 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_971d3630"
+  },
+  {
+    "question text": "8+4=12",
+    "intrinsic difficulty": 50,
+    "tags": [
+      "Bridge 10 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_18558de0"
+  },
+  {
+    "question text": "12-4=8",
+    "intrinsic difficulty": 50,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_ae908f66"
+  },
+  {
+    "question text": "12-8=4",
+    "intrinsic difficulty": 50,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_55ec5b4e"
+  },
+  {
+    "question text": "5+7=12",
+    "intrinsic difficulty": 50,
+    "tags": [
+      "Bridge 10 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_5dda9d72"
+  },
+  {
+    "question text": "7+5=12",
+    "intrinsic difficulty": 50,
+    "tags": [
+      "Bridge 10 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_751085b6"
+  },
+  {
+    "question text": "12-5=7",
+    "intrinsic difficulty": 50,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_bcfe8460"
+  },
+  {
+    "question text": "12-7=5",
+    "intrinsic difficulty": 50,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_94198d2c"
+  },
+  {
+    "question text": "6+6=12",
+    "intrinsic difficulty": 50,
+    "tags": [
+      "Doubles Facts",
+      "Bridge 10 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_4cca02e0"
+  },
+  {
+    "question text": "12-6=6",
+    "intrinsic difficulty": 50,
+    "tags": [
+      "Subtracting from Doubles",
+      "Subtracting from Teens"
+    ],
+    "id": "mf_92d557de"
+  },
+  {
+    "question text": "1+12=13",
+    "intrinsic difficulty": 55,
+    "tags": [
+      "Number + 1 Facts",
+      "Number + 10 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_13_1_12"
+  },
+  {
+    "question text": "12+1=13",
+    "intrinsic difficulty": 55,
+    "tags": [
+      "Number + 1 Facts",
+      "Number + 10 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_13_12_1"
+  },
+  {
+    "question text": "13-1=12",
+    "intrinsic difficulty": 55,
+    "tags": [
+      "Subtract 1 Facts",
+      "Subtracting from Teens",
+      "Differences of 1"
+    ],
+    "id": "mf_13_1_diff"
+  },
+  {
+    "question text": "13-12=1",
+    "intrinsic difficulty": 55,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 1"
+    ],
+    "id": "mf_13_12_diff"
+  },
+  {
+    "question text": "2+11=13",
+    "intrinsic difficulty": 55,
+    "tags": [
+      "Number + 2 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_13_2_11"
+  },
+  {
+    "question text": "11+2=13",
+    "intrinsic difficulty": 55,
+    "tags": [
+      "Number + 2 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_13_11_2"
+  },
+  {
+    "question text": "13-2=11",
+    "intrinsic difficulty": 55,
+    "tags": [
+      "Subtract 2 Facts",
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_13_2_diff"
+  },
+  {
+    "question text": "13-11=2",
+    "intrinsic difficulty": 55,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_13_11_diff"
+  },
+  {
+    "question text": "3+10=13",
+    "intrinsic difficulty": 55,
+    "tags": [
+      "Number + 10 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_13_3_10"
+  },
+  {
+    "question text": "10+3=13",
+    "intrinsic difficulty": 55,
+    "tags": [
+      "Number + 10 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_13_10_3"
+  },
+  {
+    "question text": "13-3=10",
+    "intrinsic difficulty": 55,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_13_3_diff"
+  },
+  {
+    "question text": "13-10=3",
+    "intrinsic difficulty": 55,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_13_10_diff"
+  },
+  {
+    "question text": "4+9=13",
+    "intrinsic difficulty": 55,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_13_4_9"
+  },
+  {
+    "question text": "9+4=13",
+    "intrinsic difficulty": 55,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_13_9_4"
+  },
+  {
+    "question text": "13-4=9",
+    "intrinsic difficulty": 55,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_13_4_diff"
+  },
+  {
+    "question text": "13-9=4",
+    "intrinsic difficulty": 55,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_13_9_diff"
+  },
+  {
+    "question text": "5+8=13",
+    "intrinsic difficulty": 55,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_13_5_8"
+  },
+  {
+    "question text": "8+5=13",
+    "intrinsic difficulty": 55,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_13_8_5"
+  },
+  {
+    "question text": "13-5=8",
+    "intrinsic difficulty": 55,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_13_5_diff"
+  },
+  {
+    "question text": "13-8=5",
+    "intrinsic difficulty": 55,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_13_8_diff"
+  },
+  {
+    "question text": "6+7=13",
+    "intrinsic difficulty": 55,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_13_6_7"
+  },
+  {
+    "question text": "7+6=13",
+    "intrinsic difficulty": 55,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_13_7_6"
+  },
+  {
+    "question text": "13-6=7",
+    "intrinsic difficulty": 55,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 1"
+    ],
+    "id": "mf_13_6_diff"
+  },
+  {
+    "question text": "13-7=6",
+    "intrinsic difficulty": 55,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 1"
+    ],
+    "id": "mf_13_7_diff"
+  },
+  {
+    "question text": "1+13=14",
+    "intrinsic difficulty": 60,
+    "tags": [
+      "Number + 1 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_14_1_13"
+  },
+  {
+    "question text": "13+1=14",
+    "intrinsic difficulty": 60,
+    "tags": [
+      "Number + 1 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_14_13_1"
+  },
+  {
+    "question text": "14-1=13",
+    "intrinsic difficulty": 60,
+    "tags": [
+      "Subtract 1 Facts",
+      "Subtracting from Teens",
+      "Differences of 1"
+    ],
+    "id": "mf_14_1_diff"
+  },
+  {
+    "question text": "14-13=1",
+    "intrinsic difficulty": 60,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 1"
+    ],
+    "id": "mf_14_13_diff"
+  },
+  {
+    "question text": "2+12=14",
+    "intrinsic difficulty": 60,
+    "tags": [
+      "Number + 2 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_14_2_12"
+  },
+  {
+    "question text": "12+2=14",
+    "intrinsic difficulty": 60,
+    "tags": [
+      "Number + 2 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_14_12_2"
+  },
+  {
+    "question text": "14-2=12",
+    "intrinsic difficulty": 60,
+    "tags": [
+      "Subtract 2 Facts",
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_14_2_diff"
+  },
+  {
+    "question text": "14-12=2",
+    "intrinsic difficulty": 60,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_14_12_diff"
+  },
+  {
+    "question text": "3+11=14",
+    "intrinsic difficulty": 60,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_14_3_11"
+  },
+  {
+    "question text": "11+3=14",
+    "intrinsic difficulty": 60,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_14_11_3"
+  },
+  {
+    "question text": "14-3=11",
+    "intrinsic difficulty": 60,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_14_3_diff"
+  },
+  {
+    "question text": "14-11=3",
+    "intrinsic difficulty": 60,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_14_11_diff"
+  },
+  {
+    "question text": "4+10=14",
+    "intrinsic difficulty": 60,
+    "tags": [
+      "Number + 10 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_14_4_10"
+  },
+  {
+    "question text": "10+4=14",
+    "intrinsic difficulty": 60,
+    "tags": [
+      "Number + 10 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_14_10_4"
+  },
+  {
+    "question text": "14-4=10",
+    "intrinsic difficulty": 60,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_14_4_diff"
+  },
+  {
+    "question text": "14-10=4",
+    "intrinsic difficulty": 60,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_14_10_diff"
+  },
+  {
+    "question text": "5+9=14",
+    "intrinsic difficulty": 60,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_14_5_9"
+  },
+  {
+    "question text": "9+5=14",
+    "intrinsic difficulty": 60,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_14_9_5"
+  },
+  {
+    "question text": "14-5=9",
+    "intrinsic difficulty": 60,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_14_5_diff"
+  },
+  {
+    "question text": "14-9=5",
+    "intrinsic difficulty": 60,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_14_9_diff"
+  },
+  {
+    "question text": "6+8=14",
+    "intrinsic difficulty": 60,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_14_6_8"
+  },
+  {
+    "question text": "8+6=14",
+    "intrinsic difficulty": 60,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_14_8_6"
+  },
+  {
+    "question text": "14-6=8",
+    "intrinsic difficulty": 60,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_14_6_diff"
+  },
+  {
+    "question text": "14-8=6",
+    "intrinsic difficulty": 60,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_14_8_diff"
+  },
+  {
+    "question text": "7+7=14",
+    "intrinsic difficulty": 60,
+    "tags": [
+      "Doubles Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_14_7_7"
+  },
+  {
+    "question text": "14-7=7",
+    "intrinsic difficulty": 60,
+    "tags": [
+      "Subtracting from Doubles",
+      "Subtracting from Teens"
+    ],
+    "id": "mf_14_7_diff"
+  },
+  {
+    "question text": "1+14=15",
+    "intrinsic difficulty": 65,
+    "tags": [
+      "Number + 1 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_15_1_14"
+  },
+  {
+    "question text": "14+1=15",
+    "intrinsic difficulty": 65,
+    "tags": [
+      "Number + 1 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_15_14_1"
+  },
+  {
+    "question text": "15-1=14",
+    "intrinsic difficulty": 65,
+    "tags": [
+      "Subtract 1 Facts",
+      "Subtracting from Teens",
+      "Differences of 1"
+    ],
+    "id": "mf_15_1_diff"
+  },
+  {
+    "question text": "15-14=1",
+    "intrinsic difficulty": 65,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 1"
+    ],
+    "id": "mf_15_14_diff"
+  },
+  {
+    "question text": "2+13=15",
+    "intrinsic difficulty": 65,
+    "tags": [
+      "Number + 2 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_15_2_13"
+  },
+  {
+    "question text": "13+2=15",
+    "intrinsic difficulty": 65,
+    "tags": [
+      "Number + 2 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_15_13_2"
+  },
+  {
+    "question text": "15-2=13",
+    "intrinsic difficulty": 65,
+    "tags": [
+      "Subtract 2 Facts",
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_15_2_diff"
+  },
+  {
+    "question text": "15-13=2",
+    "intrinsic difficulty": 65,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_15_13_diff"
+  },
+  {
+    "question text": "3+12=15",
+    "intrinsic difficulty": 65,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_15_3_12"
+  },
+  {
+    "question text": "12+3=15",
+    "intrinsic difficulty": 65,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_15_12_3"
+  },
+  {
+    "question text": "15-3=12",
+    "intrinsic difficulty": 65,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_15_3_diff"
+  },
+  {
+    "question text": "15-12=3",
+    "intrinsic difficulty": 65,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_15_12_diff"
+  },
+  {
+    "question text": "4+11=15",
+    "intrinsic difficulty": 65,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_15_4_11"
+  },
+  {
+    "question text": "11+4=15",
+    "intrinsic difficulty": 65,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_15_11_4"
+  },
+  {
+    "question text": "15-4=11",
+    "intrinsic difficulty": 65,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_15_4_diff"
+  },
+  {
+    "question text": "15-11=4",
+    "intrinsic difficulty": 65,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_15_11_diff"
+  },
+  {
+    "question text": "5+10=15",
+    "intrinsic difficulty": 65,
+    "tags": [
+      "Number + 10 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_15_5_10"
+  },
+  {
+    "question text": "10+5=15",
+    "intrinsic difficulty": 65,
+    "tags": [
+      "Number + 10 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_15_10_5"
+  },
+  {
+    "question text": "15-5=10",
+    "intrinsic difficulty": 65,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_15_5_diff"
+  },
+  {
+    "question text": "15-10=5",
+    "intrinsic difficulty": 65,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_15_10_diff"
+  },
+  {
+    "question text": "6+9=15",
+    "intrinsic difficulty": 65,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_15_6_9"
+  },
+  {
+    "question text": "9+6=15",
+    "intrinsic difficulty": 65,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_15_9_6"
+  },
+  {
+    "question text": "15-6=9",
+    "intrinsic difficulty": 65,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_15_6_diff"
+  },
+  {
+    "question text": "15-9=6",
+    "intrinsic difficulty": 65,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_15_9_diff"
+  },
+  {
+    "question text": "7+8=15",
+    "intrinsic difficulty": 65,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_15_7_8"
+  },
+  {
+    "question text": "8+7=15",
+    "intrinsic difficulty": 65,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_15_8_7"
+  },
+  {
+    "question text": "15-7=8",
+    "intrinsic difficulty": 65,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 1"
+    ],
+    "id": "mf_15_7_diff"
+  },
+  {
+    "question text": "15-8=7",
+    "intrinsic difficulty": 65,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 1"
+    ],
+    "id": "mf_15_8_diff"
+  },
+  {
+    "question text": "1+15=16",
+    "intrinsic difficulty": 70,
+    "tags": [
+      "Number + 1 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_16_1_15"
+  },
+  {
+    "question text": "15+1=16",
+    "intrinsic difficulty": 70,
+    "tags": [
+      "Number + 1 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_16_15_1"
+  },
+  {
+    "question text": "16-1=15",
+    "intrinsic difficulty": 70,
+    "tags": [
+      "Subtract 1 Facts",
+      "Subtracting from Teens",
+      "Differences of 1"
+    ],
+    "id": "mf_16_1_diff"
+  },
+  {
+    "question text": "16-15=1",
+    "intrinsic difficulty": 70,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 1"
+    ],
+    "id": "mf_16_15_diff"
+  },
+  {
+    "question text": "2+14=16",
+    "intrinsic difficulty": 70,
+    "tags": [
+      "Number + 2 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_16_2_14"
+  },
+  {
+    "question text": "14+2=16",
+    "intrinsic difficulty": 70,
+    "tags": [
+      "Number + 2 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_16_14_2"
+  },
+  {
+    "question text": "16-2=14",
+    "intrinsic difficulty": 70,
+    "tags": [
+      "Subtract 2 Facts",
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_16_2_diff"
+  },
+  {
+    "question text": "16-14=2",
+    "intrinsic difficulty": 70,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_16_14_diff"
+  },
+  {
+    "question text": "3+13=16",
+    "intrinsic difficulty": 70,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_16_3_13"
+  },
+  {
+    "question text": "13+3=16",
+    "intrinsic difficulty": 70,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_16_13_3"
+  },
+  {
+    "question text": "16-3=13",
+    "intrinsic difficulty": 70,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_16_3_diff"
+  },
+  {
+    "question text": "16-13=3",
+    "intrinsic difficulty": 70,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_16_13_diff"
+  },
+  {
+    "question text": "4+12=16",
+    "intrinsic difficulty": 70,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_16_4_12"
+  },
+  {
+    "question text": "12+4=16",
+    "intrinsic difficulty": 70,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_16_12_4"
+  },
+  {
+    "question text": "16-4=12",
+    "intrinsic difficulty": 70,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_16_4_diff"
+  },
+  {
+    "question text": "16-12=4",
+    "intrinsic difficulty": 70,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_16_12_diff"
+  },
+  {
+    "question text": "5+11=16",
+    "intrinsic difficulty": 70,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_16_5_11"
+  },
+  {
+    "question text": "11+5=16",
+    "intrinsic difficulty": 70,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_16_11_5"
+  },
+  {
+    "question text": "16-5=11",
+    "intrinsic difficulty": 70,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_16_5_diff"
+  },
+  {
+    "question text": "16-11=5",
+    "intrinsic difficulty": 70,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_16_11_diff"
+  },
+  {
+    "question text": "6+10=16",
+    "intrinsic difficulty": 70,
+    "tags": [
+      "Number + 10 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_16_6_10"
+  },
+  {
+    "question text": "10+6=16",
+    "intrinsic difficulty": 70,
+    "tags": [
+      "Number + 10 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_16_10_6"
+  },
+  {
+    "question text": "16-6=10",
+    "intrinsic difficulty": 70,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_16_6_diff"
+  },
+  {
+    "question text": "16-10=6",
+    "intrinsic difficulty": 70,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_16_10_diff"
+  },
+  {
+    "question text": "7+9=16",
+    "intrinsic difficulty": 70,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_16_7_9"
+  },
+  {
+    "question text": "9+7=16",
+    "intrinsic difficulty": 70,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_16_9_7"
+  },
+  {
+    "question text": "16-7=9",
+    "intrinsic difficulty": 70,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_16_7_diff"
+  },
+  {
+    "question text": "16-9=7",
+    "intrinsic difficulty": 70,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_16_9_diff"
+  },
+  {
+    "question text": "8+8=16",
+    "intrinsic difficulty": 70,
+    "tags": [
+      "Doubles Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_16_8_8"
+  },
+  {
+    "question text": "16-8=8",
+    "intrinsic difficulty": 70,
+    "tags": [
+      "Subtracting from Doubles",
+      "Subtracting from Teens"
+    ],
+    "id": "mf_16_8_diff"
+  },
+  {
+    "question text": "1+16=17",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Number + 1 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_17_1_16"
+  },
+  {
+    "question text": "16+1=17",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Number + 1 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_17_16_1"
+  },
+  {
+    "question text": "17-1=16",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Subtract 1 Facts",
+      "Subtracting from Teens",
+      "Differences of 1"
+    ],
+    "id": "mf_17_1_diff"
+  },
+  {
+    "question text": "17-16=1",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 1"
+    ],
+    "id": "mf_17_16_diff"
+  },
+  {
+    "question text": "2+15=17",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Number + 2 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_17_2_15"
+  },
+  {
+    "question text": "15+2=17",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Number + 2 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_17_15_2"
+  },
+  {
+    "question text": "17-2=15",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Subtract 2 Facts",
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_17_2_diff"
+  },
+  {
+    "question text": "17-15=2",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_17_15_diff"
+  },
+  {
+    "question text": "3+14=17",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_17_3_14"
+  },
+  {
+    "question text": "14+3=17",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_17_14_3"
+  },
+  {
+    "question text": "17-3=14",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_17_3_diff"
+  },
+  {
+    "question text": "17-14=3",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_17_14_diff"
+  },
+  {
+    "question text": "4+13=17",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_17_4_13"
+  },
+  {
+    "question text": "13+4=17",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_17_13_4"
+  },
+  {
+    "question text": "17-4=13",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_17_4_diff"
+  },
+  {
+    "question text": "17-13=4",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_17_13_diff"
+  },
+  {
+    "question text": "5+12=17",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_17_5_12"
+  },
+  {
+    "question text": "12+5=17",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_17_12_5"
+  },
+  {
+    "question text": "17-5=12",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_17_5_diff"
+  },
+  {
+    "question text": "17-12=5",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_17_12_diff"
+  },
+  {
+    "question text": "6+11=17",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_17_6_11"
+  },
+  {
+    "question text": "11+6=17",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_17_11_6"
+  },
+  {
+    "question text": "17-6=11",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_17_6_diff"
+  },
+  {
+    "question text": "17-11=6",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_17_11_diff"
+  },
+  {
+    "question text": "7+10=17",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Number + 10 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_17_7_10"
+  },
+  {
+    "question text": "10+7=17",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Number + 10 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_17_10_7"
+  },
+  {
+    "question text": "17-7=10",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_17_7_diff"
+  },
+  {
+    "question text": "17-10=7",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_17_10_diff"
+  },
+  {
+    "question text": "8+9=17",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_17_8_9"
+  },
+  {
+    "question text": "9+8=17",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_17_9_8"
+  },
+  {
+    "question text": "17-8=9",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_17_8_diff"
+  },
+  {
+    "question text": "17-9=8",
+    "intrinsic difficulty": 75,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_17_9_diff"
+  },
+  {
+    "question text": "1+17=18",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Number + 1 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_18_1_17"
+  },
+  {
+    "question text": "17+1=18",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Number + 1 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_18_17_1"
+  },
+  {
+    "question text": "18-1=17",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Subtract 1 Facts",
+      "Subtracting from Teens",
+      "Differences of 1"
+    ],
+    "id": "mf_18_1_diff"
+  },
+  {
+    "question text": "18-17=1",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 1"
+    ],
+    "id": "mf_18_17_diff"
+  },
+  {
+    "question text": "2+16=18",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Number + 2 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_18_2_16"
+  },
+  {
+    "question text": "16+2=18",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Number + 2 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_18_16_2"
+  },
+  {
+    "question text": "18-2=16",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Subtract 2 Facts",
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_18_2_diff"
+  },
+  {
+    "question text": "18-16=2",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_18_16_diff"
+  },
+  {
+    "question text": "3+15=18",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_18_3_15"
+  },
+  {
+    "question text": "15+3=18",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_18_15_3"
+  },
+  {
+    "question text": "18-3=15",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_18_3_diff"
+  },
+  {
+    "question text": "18-15=3",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_18_15_diff"
+  },
+  {
+    "question text": "4+14=18",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_18_4_14"
+  },
+  {
+    "question text": "14+4=18",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_18_14_4"
+  },
+  {
+    "question text": "18-4=14",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_18_4_diff"
+  },
+  {
+    "question text": "18-14=4",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_18_14_diff"
+  },
+  {
+    "question text": "5+13=18",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_18_5_13"
+  },
+  {
+    "question text": "13+5=18",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_18_13_5"
+  },
+  {
+    "question text": "18-5=13",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_18_5_diff"
+  },
+  {
+    "question text": "18-13=5",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_18_13_diff"
+  },
+  {
+    "question text": "6+12=18",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_18_6_12"
+  },
+  {
+    "question text": "12+6=18",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_18_12_6"
+  },
+  {
+    "question text": "18-6=12",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_18_6_diff"
+  },
+  {
+    "question text": "18-12=6",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_18_12_diff"
+  },
+  {
+    "question text": "7+11=18",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_18_7_11"
+  },
+  {
+    "question text": "11+7=18",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_18_11_7"
+  },
+  {
+    "question text": "18-7=11",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_18_7_diff"
+  },
+  {
+    "question text": "18-11=7",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_18_11_diff"
+  },
+  {
+    "question text": "8+10=18",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Number + 10 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_18_8_10"
+  },
+  {
+    "question text": "10+8=18",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Number + 10 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_18_10_8"
+  },
+  {
+    "question text": "18-8=10",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_18_8_diff"
+  },
+  {
+    "question text": "18-10=8",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_18_10_diff"
+  },
+  {
+    "question text": "9+9=18",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Doubles Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_18_9_9"
+  },
+  {
+    "question text": "18-9=9",
+    "intrinsic difficulty": 80,
+    "tags": [
+      "Subtracting from Doubles",
+      "Subtracting from Teens"
+    ],
+    "id": "mf_18_9_diff"
+  },
+  {
+    "question text": "1+18=19",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Number + 1 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_19_1_18"
+  },
+  {
+    "question text": "18+1=19",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Number + 1 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_19_18_1"
+  },
+  {
+    "question text": "19-1=18",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Subtract 1 Facts",
+      "Subtracting from Teens",
+      "Differences of 1"
+    ],
+    "id": "mf_19_1_diff"
+  },
+  {
+    "question text": "19-18=1",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 1"
+    ],
+    "id": "mf_19_18_diff"
+  },
+  {
+    "question text": "2+17=19",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Number + 2 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_19_2_17"
+  },
+  {
+    "question text": "17+2=19",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Number + 2 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_19_17_2"
+  },
+  {
+    "question text": "19-2=17",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Subtract 2 Facts",
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_19_2_diff"
+  },
+  {
+    "question text": "19-17=2",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_19_17_diff"
+  },
+  {
+    "question text": "3+16=19",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_19_3_16"
+  },
+  {
+    "question text": "16+3=19",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_19_16_3"
+  },
+  {
+    "question text": "19-3=16",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_19_3_diff"
+  },
+  {
+    "question text": "19-16=3",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_19_16_diff"
+  },
+  {
+    "question text": "4+15=19",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_19_4_15"
+  },
+  {
+    "question text": "15+4=19",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_19_15_4"
+  },
+  {
+    "question text": "19-4=15",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_19_4_diff"
+  },
+  {
+    "question text": "19-15=4",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_19_15_diff"
+  },
+  {
+    "question text": "5+14=19",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_19_5_14"
+  },
+  {
+    "question text": "14+5=19",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_19_14_5"
+  },
+  {
+    "question text": "19-5=14",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_19_5_diff"
+  },
+  {
+    "question text": "19-14=5",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_19_14_diff"
+  },
+  {
+    "question text": "6+13=19",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_19_6_13"
+  },
+  {
+    "question text": "13+6=19",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_19_13_6"
+  },
+  {
+    "question text": "19-6=13",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_19_6_diff"
+  },
+  {
+    "question text": "19-13=6",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_19_13_diff"
+  },
+  {
+    "question text": "7+12=19",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_19_7_12"
+  },
+  {
+    "question text": "12+7=19",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_19_12_7"
+  },
+  {
+    "question text": "19-7=12",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_19_7_diff"
+  },
+  {
+    "question text": "19-12=7",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_19_12_diff"
+  },
+  {
+    "question text": "8+11=19",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_19_8_11"
+  },
+  {
+    "question text": "11+8=19",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Teen Sums"
+    ],
+    "id": "mf_19_11_8"
+  },
+  {
+    "question text": "19-8=11",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_19_8_diff"
+  },
+  {
+    "question text": "19-11=8",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Subtracting from Teens"
+    ],
+    "id": "mf_19_11_diff"
+  },
+  {
+    "question text": "9+10=19",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Number + 10 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_19_9_10"
+  },
+  {
+    "question text": "10+9=19",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Number + 10 Facts",
+      "Teen Sums"
+    ],
+    "id": "mf_19_10_9"
+  },
+  {
+    "question text": "19-9=10",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_19_9_diff"
+  },
+  {
+    "question text": "19-10=9",
+    "intrinsic difficulty": 85,
+    "tags": [
+      "Subtracting from Teens",
+      "Differences of 2"
+    ],
+    "id": "mf_19_10_diff"
+  },
+  {
+    "question text": "1+19=20",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Number + 1 Facts",
+      "Make 20 Facts",
+      "Sums to 20"
+    ],
+    "id": "mf_20_1_19"
+  },
+  {
+    "question text": "19+1=20",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Number + 1 Facts",
+      "Make 20 Facts",
+      "Sums to 20"
+    ],
+    "id": "mf_20_19_1"
+  },
+  {
+    "question text": "20-1=19",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Subtract 1 Facts",
+      "Differences of 1"
+    ],
+    "id": "mf_20_1_diff"
+  },
+  {
+    "question text": "20-19=1",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Differences of 1"
+    ],
+    "id": "mf_20_19_diff"
+  },
+  {
+    "question text": "2+18=20",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Number + 2 Facts",
+      "Make 20 Facts",
+      "Sums to 20"
+    ],
+    "id": "mf_20_2_18"
+  },
+  {
+    "question text": "18+2=20",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Number + 2 Facts",
+      "Make 20 Facts",
+      "Sums to 20"
+    ],
+    "id": "mf_20_18_2"
+  },
+  {
+    "question text": "20-2=18",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Subtract 2 Facts",
+      "Differences of 2"
+    ],
+    "id": "mf_20_2_diff"
+  },
+  {
+    "question text": "20-18=2",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Differences of 2"
+    ],
+    "id": "mf_20_18_diff"
+  },
+  {
+    "question text": "3+17=20",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Make 20 Facts",
+      "Sums to 20"
+    ],
+    "id": "mf_20_3_17"
+  },
+  {
+    "question text": "17+3=20",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Make 20 Facts",
+      "Sums to 20"
+    ],
+    "id": "mf_20_17_3"
+  },
+  {
+    "question text": "20-3=17",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Differences of 2"
+    ],
+    "id": "mf_20_3_diff"
+  },
+  {
+    "question text": "20-17=3",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Differences of 2"
+    ],
+    "id": "mf_20_17_diff"
+  },
+  {
+    "question text": "4+16=20",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Make 20 Facts",
+      "Sums to 20"
+    ],
+    "id": "mf_20_4_16"
+  },
+  {
+    "question text": "16+4=20",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Make 20 Facts",
+      "Sums to 20"
+    ],
+    "id": "mf_20_16_4"
+  },
+  {
+    "question text": "20-4=16",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Differences of 2"
+    ],
+    "id": "mf_20_4_diff"
+  },
+  {
+    "question text": "20-16=4",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Differences of 2"
+    ],
+    "id": "mf_20_16_diff"
+  },
+  {
+    "question text": "5+15=20",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Make 20 Facts",
+      "Sums to 20"
+    ],
+    "id": "mf_20_5_15"
+  },
+  {
+    "question text": "15+5=20",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Make 20 Facts",
+      "Sums to 20"
+    ],
+    "id": "mf_20_15_5"
+  },
+  {
+    "question text": "20-5=15",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Differences of 2"
+    ],
+    "id": "mf_20_5_diff"
+  },
+  {
+    "question text": "20-15=5",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Differences of 2"
+    ],
+    "id": "mf_20_15_diff"
+  },
+  {
+    "question text": "6+14=20",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Make 20 Facts",
+      "Sums to 20"
+    ],
+    "id": "mf_20_6_14"
+  },
+  {
+    "question text": "14+6=20",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Make 20 Facts",
+      "Sums to 20"
+    ],
+    "id": "mf_20_14_6"
+  },
+  {
+    "question text": "20-6=14",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Differences of 2"
+    ],
+    "id": "mf_20_6_diff"
+  },
+  {
+    "question text": "20-14=6",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Differences of 2"
+    ],
+    "id": "mf_20_14_diff"
+  },
+  {
+    "question text": "7+13=20",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Make 20 Facts",
+      "Sums to 20"
+    ],
+    "id": "mf_20_7_13"
+  },
+  {
+    "question text": "13+7=20",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Make 20 Facts",
+      "Sums to 20"
+    ],
+    "id": "mf_20_13_7"
+  },
+  {
+    "question text": "20-7=13",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Differences of 2"
+    ],
+    "id": "mf_20_7_diff"
+  },
+  {
+    "question text": "20-13=7",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Differences of 2"
+    ],
+    "id": "mf_20_13_diff"
+  },
+  {
+    "question text": "8+12=20",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Make 20 Facts",
+      "Sums to 20"
+    ],
+    "id": "mf_20_8_12"
+  },
+  {
+    "question text": "12+8=20",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Make 20 Facts",
+      "Sums to 20"
+    ],
+    "id": "mf_20_12_8"
+  },
+  {
+    "question text": "20-8=12",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Differences of 2"
+    ],
+    "id": "mf_20_8_diff"
+  },
+  {
+    "question text": "20-12=8",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Differences of 2"
+    ],
+    "id": "mf_20_12_diff"
+  },
+  {
+    "question text": "9+11=20",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Make 20 Facts",
+      "Sums to 20"
+    ],
+    "id": "mf_20_9_11"
+  },
+  {
+    "question text": "11+9=20",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Make 20 Facts",
+      "Sums to 20"
+    ],
+    "id": "mf_20_11_9"
+  },
+  {
+    "question text": "20-9=11",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Differences of 2"
+    ],
+    "id": "mf_20_9_diff"
+  },
+  {
+    "question text": "20-11=9",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Differences of 2"
+    ],
+    "id": "mf_20_11_diff"
+  },
+  {
+    "question text": "10+10=20",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Doubles Facts",
+      "Make 20 Facts",
+      "Sums to 20"
+    ],
+    "id": "mf_20_10_10"
+  },
+  {
+    "question text": "20-10=10",
+    "intrinsic difficulty": 90,
+    "tags": [
+      "Subtracting from Doubles"
+    ],
+    "id": "mf_20_10_diff"
+  },
+  {
+    "question text": "0×0=0",
+    "intrinsic difficulty": 0,
+    "tags": [
+      "Multiply by 0",
+      "Square Numbers"
+    ],
+    "id": "mf_c7f0ee8d"
+  },
+  {
+    "question text": "0÷0=?",
+    "intrinsic difficulty": 0,
+    "tags": [],
+    "id": "mf_2c779210"
+  },
+  {
+    "question text": "0×1=0",
+    "intrinsic difficulty": 0,
+    "tags": [
+      "Multiply by 0"
+    ],
+    "id": "mf_1a839246"
+  },
+  {
+    "question text": "1×0=0",
+    "intrinsic difficulty": 0,
+    "tags": [
+      "Multiply by 1"
+    ],
+    "id": "mf_7915e88e"
+  },
+  {
+    "question text": "0÷1=0",
+    "intrinsic difficulty": 0,
+    "tags": [
+      "Divide by 1"
+    ],
+    "id": "mf_0e0983e6"
+  },
+  {
+    "question text": "1×1=1",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Multiply by 1",
+      "Square Numbers"
+    ],
+    "id": "mf_058310e2"
+  },
+  {
+    "question text": "1÷1=1",
+    "intrinsic difficulty": 1,
+    "tags": [
+      "Divide by 1"
+    ],
+    "id": "mf_11fd1f42"
+  },
+  {
+    "question text": "0×2=0",
+    "intrinsic difficulty": 0,
+    "tags": [
+      "Multiply by 0"
+    ],
+    "id": "mf_950be79b"
+  },
+  {
+    "question text": "2×0=0",
+    "intrinsic difficulty": 0,
+    "tags": [
+      "Multiply by 2"
+    ],
+    "id": "mf_99d280c7"
+  },
+  {
+    "question text": "0÷2=0",
+    "intrinsic difficulty": 0,
+    "tags": [
+      "Divide by 2"
+    ],
+    "id": "mf_09cfd73b"
+  },
+  {
+    "question text": "1×2=2",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Multiply by 1"
+    ],
+    "id": "mf_d959e13a"
+  },
+  {
+    "question text": "2×1=2",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Multiply by 2"
+    ],
+    "id": "mf_7e50ef9e"
+  },
+  {
+    "question text": "2÷1=2",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Divide by 1"
+    ],
+    "id": "mf_7e23d9fe"
+  },
+  {
+    "question text": "2÷2=1",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Divide by 2"
+    ],
+    "id": "mf_aa4d09a6"
+  },
+  {
+    "question text": "0×3=0",
+    "intrinsic difficulty": 0,
+    "tags": [
+      "Multiply by 0"
+    ],
+    "id": "mf_78c787cc"
+  },
+  {
+    "question text": "3×0=0",
+    "intrinsic difficulty": 0,
+    "tags": [
+      "Multiply by 3"
+    ],
+    "id": "mf_e3677380"
+  },
+  {
+    "question text": "0÷3=0",
+    "intrinsic difficulty": 0,
+    "tags": [
+      "Divide by 3"
+    ],
+    "id": "mf_ec4e42ec"
+  },
+  {
+    "question text": "1×3=3",
+    "intrinsic difficulty": 3,
+    "tags": [
+      "Multiply by 1"
+    ],
+    "id": "mf_d5db4196"
+  },
+  {
+    "question text": "3×1=3",
+    "intrinsic difficulty": 3,
+    "tags": [
+      "Multiply by 3"
+    ],
+    "id": "mf_01e90962"
+  },
+  {
+    "question text": "3÷1=3",
+    "intrinsic difficulty": 3,
+    "tags": [
+      "Divide by 1"
+    ],
+    "id": "mf_0d25e342"
+  },
+  {
+    "question text": "3÷3=1",
+    "intrinsic difficulty": 3,
+    "tags": [
+      "Divide by 3"
+    ],
+    "id": "mf_3e0ae70e"
+  },
+  {
+    "question text": "2×2=4",
+    "intrinsic difficulty": 4,
+    "tags": [
+      "Multiply by 2",
+      "Square Numbers"
+    ],
+    "id": "mf_af7a2725"
+  },
+  {
+    "question text": "4÷2=2",
+    "intrinsic difficulty": 4,
+    "tags": [
+      "Divide by 2"
+    ],
+    "id": "mf_0244a125"
+  },
+  {
+    "question text": "0×4=0",
+    "intrinsic difficulty": 0,
+    "tags": [
+      "Multiply by 0"
+    ],
+    "id": "mf_7350a6a1"
+  },
+  {
+    "question text": "4×0=0",
+    "intrinsic difficulty": 0,
+    "tags": [
+      "Multiply by 4"
+    ],
+    "id": "mf_31bf5ad1"
+  },
+  {
+    "question text": "0÷4=0",
+    "intrinsic difficulty": 0,
+    "tags": [
+      "Divide by 4"
+    ],
+    "id": "mf_66d69841"
+  },
+  {
+    "question text": "1×4=4",
+    "intrinsic difficulty": 4,
+    "tags": [
+      "Multiply by 1"
+    ],
+    "id": "mf_a074d0d6"
+  },
+  {
+    "question text": "4×1=4",
+    "intrinsic difficulty": 4,
+    "tags": [
+      "Multiply by 4"
+    ],
+    "id": "mf_a0522a9e"
+  },
+  {
+    "question text": "4÷1=4",
+    "intrinsic difficulty": 4,
+    "tags": [
+      "Divide by 1"
+    ],
+    "id": "mf_207e76be"
+  },
+  {
+    "question text": "4÷4=1",
+    "intrinsic difficulty": 4,
+    "tags": [
+      "Divide by 4"
+    ],
+    "id": "mf_858cb6ca"
+  },
+  {
+    "question text": "2×3=6",
+    "intrinsic difficulty": 6,
+    "tags": [
+      "Multiply by 2"
+    ],
+    "id": "mf_99495880"
+  },
+  {
+    "question text": "3×2=6",
+    "intrinsic difficulty": 6,
+    "tags": [
+      "Multiply by 3"
+    ],
+    "id": "mf_a060db68"
+  },
+  {
+    "question text": "6÷2=3",
+    "intrinsic difficulty": 6,
+    "tags": [
+      "Divide by 2"
+    ],
+    "id": "mf_3d587f04"
+  },
+  {
+    "question text": "6÷3=2",
+    "intrinsic difficulty": 6,
+    "tags": [
+      "Divide by 3"
+    ],
+    "id": "mf_922858d0"
+  },
+  {
+    "question text": "0×5=0",
+    "intrinsic difficulty": 0,
+    "tags": [
+      "Multiply by 0"
+    ],
+    "id": "mf_65e2b33a"
+  },
+  {
+    "question text": "5×0=0",
+    "intrinsic difficulty": 0,
+    "tags": [
+      "Multiply by 5"
+    ],
+    "id": "mf_8a6632d2"
+  },
+  {
+    "question text": "0÷5=0",
+    "intrinsic difficulty": 0,
+    "tags": [
+      "Divide by 5"
+    ],
+    "id": "mf_daa6a2da"
+  },
+  {
+    "question text": "1×5=5",
+    "intrinsic difficulty": 5,
+    "tags": [
+      "Multiply by 1"
+    ],
+    "id": "mf_b4e2cf42"
+  },
+  {
+    "question text": "5×1=5",
+    "intrinsic difficulty": 5,
+    "tags": [
+      "Multiply by 5"
+    ],
+    "id": "mf_1ad36172"
+  },
+  {
+    "question text": "5÷1=5",
+    "intrinsic difficulty": 5,
+    "tags": [
+      "Divide by 1"
+    ],
+    "id": "mf_26103b52"
+  },
+  {
+    "question text": "5÷5=1",
+    "intrinsic difficulty": 5,
+    "tags": [
+      "Divide by 5"
+    ],
+    "id": "mf_76b07cf2"
+  },
+  {
+    "question text": "2×4=8",
+    "intrinsic difficulty": 8,
+    "tags": [
+      "Multiply by 2"
+    ],
+    "id": "mf_d672a2eb"
+  },
+  {
+    "question text": "4×2=8",
+    "intrinsic difficulty": 8,
+    "tags": [
+      "Multiply by 4"
+    ],
+    "id": "mf_06da6077"
+  },
+  {
+    "question text": "8÷2=4",
+    "intrinsic difficulty": 8,
+    "tags": [
+      "Divide by 2"
+    ],
+    "id": "mf_a78a40cf"
+  },
+  {
+    "question text": "8÷4=2",
+    "intrinsic difficulty": 8,
+    "tags": [
+      "Divide by 4"
+    ],
+    "id": "mf_7e91c1e3"
+  },
+  {
+    "question text": "3×3=9",
+    "intrinsic difficulty": 9,
+    "tags": [
+      "Multiply by 3",
+      "Square Numbers"
+    ],
+    "id": "mf_2990cc16"
+  },
+  {
+    "question text": "9÷3=3",
+    "intrinsic difficulty": 9,
+    "tags": [
+      "Divide by 3"
+    ],
+    "id": "mf_5e8bf97e"
+  },
+  {
+    "question text": "0×6=0",
+    "intrinsic difficulty": 0,
+    "tags": [
+      "Multiply by 0"
+    ],
+    "id": "mf_406b9faf"
+  },
+  {
+    "question text": "6×0=0",
+    "intrinsic difficulty": 0,
+    "tags": [
+      "Multiply by 6"
+    ],
+    "id": "mf_8edcfd6b"
+  },
+  {
+    "question text": "0÷6=0",
+    "intrinsic difficulty": 0,
+    "tags": [
+      "Divide by 6"
+    ],
+    "id": "mf_352ec5cf"
+  },
+  {
+    "question text": "1×6=6",
+    "intrinsic difficulty": 6,
+    "tags": [
+      "Multiply by 1"
+    ],
+    "id": "mf_88b99f9a"
+  },
+  {
+    "question text": "6×1=6",
+    "intrinsic difficulty": 6,
+    "tags": [
+      "Multiply by 6"
+    ],
+    "id": "mf_f09963f6"
+  },
+  {
+    "question text": "6÷1=6",
+    "intrinsic difficulty": 6,
+    "tags": [
+      "Divide by 1"
+    ],
+    "id": "mf_ef2f19d6"
+  },
+  {
+    "question text": "6÷6=1",
+    "intrinsic difficulty": 6,
+    "tags": [
+      "Divide by 6"
+    ],
+    "id": "mf_6bf4a53e"
+  },
+  {
+    "question text": "2×5=10",
+    "intrinsic difficulty": 10,
+    "tags": [
+      "Multiply by 2"
+    ],
+    "id": "mf_45b7a845"
+  },
+  {
+    "question text": "5×2=10",
+    "intrinsic difficulty": 10,
+    "tags": [
+      "Multiply by 5"
+    ],
+    "id": "mf_b1dfe3c1"
+  },
+  {
+    "question text": "10÷2=5",
+    "intrinsic difficulty": 10,
+    "tags": [
+      "Divide by 2"
+    ],
+    "id": "mf_98e697f3"
+  },
+  {
+    "question text": "10÷5=2",
+    "intrinsic difficulty": 10,
+    "tags": [
+      "Divide by 5"
+    ],
+    "id": "mf_146eeedb"
+  },
+  {
+    "question text": "3×4=12",
+    "intrinsic difficulty": 12,
+    "tags": [
+      "Multiply by 3"
+    ],
+    "id": "mf_956b6b37"
+  },
+  {
+    "question text": "4×3=12",
+    "intrinsic difficulty": 12,
+    "tags": [
+      "Multiply by 4"
+    ],
+    "id": "mf_63f52243"
+  },
+  {
+    "question text": "12÷3=4",
+    "intrinsic difficulty": 12,
+    "tags": [
+      "Divide by 3"
+    ],
+    "id": "mf_6a224525"
+  },
+  {
+    "question text": "12÷4=3",
+    "intrinsic difficulty": 12,
+    "tags": [
+      "Divide by 4"
+    ],
+    "id": "mf_8e99571d"
+  },
+  {
+    "question text": "0×7=0",
+    "intrinsic difficulty": 0,
+    "tags": [
+      "Multiply by 0"
+    ],
+    "id": "mf_24273fe0"
+  },
+  {
+    "question text": "7×0=0",
+    "intrinsic difficulty": 0,
+    "tags": [
+      "Multiply by 7"
+    ],
+    "id": "mf_4ee349f4"
+  },
+  {
+    "question text": "0÷7=0",
+    "intrinsic difficulty": 0,
+    "tags": [
+      "Divide by 7"
+    ],
+    "id": "mf_17ad3180"
+  },
+  {
+    "question text": "1×7=7",
+    "intrinsic difficulty": 7,
+    "tags": [
+      "Multiply by 1"
+    ],
+    "id": "mf_1d3a5c3e"
+  },
+  {
+    "question text": "7×1=7",
+    "intrinsic difficulty": 7,
+    "tags": [
+      "Multiply by 7"
+    ],
+    "id": "mf_5164b3c2"
+  },
+  {
+    "question text": "7÷1=7",
+    "intrinsic difficulty": 7,
+    "tags": [
+      "Divide by 1"
+    ],
+    "id": "mf_4627d9e2"
+  },
+  {
+    "question text": "7÷7=1",
+    "intrinsic difficulty": 7,
+    "tags": [
+      "Divide by 7"
+    ],
+    "id": "mf_1d2f5af6"
+  },
+  {
+    "question text": "2×6=12",
+    "intrinsic difficulty": 12,
+    "tags": [
+      "Multiply by 2"
+    ],
+    "id": "mf_96902500"
+  },
+  {
+    "question text": "6×2=12",
+    "intrinsic difficulty": 12,
+    "tags": [
+      "Multiply by 6"
+    ],
+    "id": "mf_696aac68"
+  },
+  {
+    "question text": "12÷2=6",
+    "intrinsic difficulty": 12,
+    "tags": [
+      "Divide by 2"
+    ],
+    "id": "mf_53f17680"
+  },
+  {
+    "question text": "12÷6=2",
+    "intrinsic difficulty": 12,
+    "tags": [
+      "Divide by 6"
+    ],
+    "id": "mf_2c928e38"
+  },
+  {
+    "question text": "3×5=15",
+    "intrinsic difficulty": 15,
+    "tags": [
+      "Multiply by 3"
+    ],
+    "id": "mf_32632c27"
+  },
+  {
+    "question text": "5×3=15",
+    "intrinsic difficulty": 15,
+    "tags": [
+      "Multiply by 5"
+    ],
+    "id": "mf_44d794f3"
+  },
+  {
+    "question text": "15÷3=5",
+    "intrinsic difficulty": 15,
+    "tags": [
+      "Divide by 3"
+    ],
+    "id": "mf_3017cea7"
+  },
+  {
+    "question text": "15÷5=3",
+    "intrinsic difficulty": 15,
+    "tags": [
+      "Divide by 5"
+    ],
+    "id": "mf_2074179b"
+  },
+  {
+    "question text": "4×4=16",
+    "intrinsic difficulty": 16,
+    "tags": [
+      "Multiply by 4",
+      "Square Numbers"
+    ],
+    "id": "mf_9f6e2e14"
+  },
+  {
+    "question text": "16÷4=4",
+    "intrinsic difficulty": 16,
+    "tags": [
+      "Divide by 4"
+    ],
+    "id": "mf_9010458c"
+  },
+  {
+    "question text": "0×8=0",
+    "intrinsic difficulty": 0,
+    "tags": [
+      "Multiply by 0"
+    ],
+    "id": "mf_cff4e105"
+  },
+  {
+    "question text": "8×0=0",
+    "intrinsic difficulty": 0,
+    "tags": [
+      "Multiply by 8"
+    ],
+    "id": "mf_d69c5715"
+  },
+  {
+    "question text": "0÷8=0",
+    "intrinsic difficulty": 0,
+    "tags": [
+      "Divide by 8"
+    ],
+    "id": "mf_44b8d0a5"
+  },
+  {
+    "question text": "1×8=8",
+    "intrinsic difficulty": 8,
+    "tags": [
+      "Multiply by 1"
+    ],
+    "id": "mf_5911d04e"
+  },
+  {
+    "question text": "8×1=8",
+    "intrinsic difficulty": 8,
+    "tags": [
+      "Multiply by 8"
+    ],
+    "id": "mf_c12e5716"
+  },
+  {
+    "question text": "8÷1=8",
+    "intrinsic difficulty": 8,
+    "tags": [
+      "Divide by 1"
+    ],
+    "id": "mf_3fc4d676"
+  },
+  {
+    "question text": "8÷8=1",
+    "intrinsic difficulty": 8,
+    "tags": [
+      "Divide by 8"
+    ],
+    "id": "mf_caf0e46a"
+  },
+  {
+    "question text": "2×7=14",
+    "intrinsic difficulty": 14,
+    "tags": [
+      "Multiply by 2"
+    ],
+    "id": "mf_d215d21f"
+  },
+  {
+    "question text": "7×2=14",
+    "intrinsic difficulty": 14,
+    "tags": [
+      "Multiply by 7"
+    ],
+    "id": "mf_04f1266f"
+  },
+  {
+    "question text": "14÷2=7",
+    "intrinsic difficulty": 14,
+    "tags": [
+      "Divide by 2"
+    ],
+    "id": "mf_bf73cbd5"
+  },
+  {
+    "question text": "14÷7=2",
+    "intrinsic difficulty": 14,
+    "tags": [
+      "Divide by 7"
+    ],
+    "id": "mf_2c95a031"
+  },
+  {
+    "question text": "3×6=18",
+    "intrinsic difficulty": 18,
+    "tags": [
+      "Multiply by 3"
+    ],
+    "id": "mf_a332ab53"
+  },
+  {
+    "question text": "6×3=18",
+    "intrinsic difficulty": 18,
+    "tags": [
+      "Multiply by 6"
+    ],
+    "id": "mf_2546ef43"
+  },
+  {
+    "question text": "18÷3=6",
+    "intrinsic difficulty": 18,
+    "tags": [
+      "Divide by 3"
+    ],
+    "id": "mf_68383c65"
+  },
+  {
+    "question text": "18÷6=3",
+    "intrinsic difficulty": 18,
+    "tags": [
+      "Divide by 6"
+    ],
+    "id": "mf_9452f8d1"
+  },
+  {
+    "question text": "4×5=20",
+    "intrinsic difficulty": 20,
+    "tags": [
+      "Multiply by 4"
+    ],
+    "id": "mf_c09d44a0"
+  },
+  {
+    "question text": "5×4=20",
+    "intrinsic difficulty": 20,
+    "tags": [
+      "Multiply by 5"
+    ],
+    "id": "mf_992e5d78"
+  },
+  {
+    "question text": "20÷4=5",
+    "intrinsic difficulty": 20,
+    "tags": [
+      "Divide by 4"
+    ],
+    "id": "mf_9fcdbcca"
+  },
+  {
+    "question text": "20÷5=4",
+    "intrinsic difficulty": 20,
+    "tags": [
+      "Divide by 5"
+    ],
+    "id": "mf_0b6087de"
+  },
+  {
+    "question text": "0×9=0",
+    "intrinsic difficulty": 0,
+    "tags": [
+      "Multiply by 0"
+    ],
+    "id": "mf_43c4eb9e"
+  },
+  {
+    "question text": "9×0=0",
+    "intrinsic difficulty": 0,
+    "tags": [
+      "Multiply by 9"
+    ],
+    "id": "mf_62d75676"
+  },
+  {
+    "question text": "0÷9=0",
+    "intrinsic difficulty": 0,
+    "tags": [
+      "Divide by 9"
+    ],
+    "id": "mf_374add3e"
+  },
+  {
+    "question text": "1×9=9",
+    "intrinsic difficulty": 9,
+    "tags": [
+      "Multiply by 1"
+    ],
+    "id": "mf_f441dd52"
+  },
+  {
+    "question text": "9×1=9",
+    "intrinsic difficulty": 9,
+    "tags": [
+      "Multiply by 9"
+    ],
+    "id": "mf_06077012"
+  },
+  {
+    "question text": "9÷1=9",
+    "intrinsic difficulty": 9,
+    "tags": [
+      "Divide by 1"
+    ],
+    "id": "mf_8770f0b2"
+  },
+  {
+    "question text": "9÷9=1",
+    "intrinsic difficulty": 9,
+    "tags": [
+      "Divide by 9"
+    ],
+    "id": "mf_18b2edc2"
+  },
+  {
+    "question text": "2×9=18",
+    "intrinsic difficulty": 18,
+    "tags": [
+      "Multiply by 2"
+    ],
+    "id": "mf_52e07c51"
+  },
+  {
+    "question text": "9×2=18",
+    "intrinsic difficulty": 18,
+    "tags": [
+      "Multiply by 9"
+    ],
+    "id": "mf_d4a1b195"
+  },
+  {
+    "question text": "18÷2=9",
+    "intrinsic difficulty": 18,
+    "tags": [
+      "Divide by 2"
+    ],
+    "id": "mf_5ef3fa7f"
+  },
+  {
+    "question text": "18÷9=2",
+    "intrinsic difficulty": 18,
+    "tags": [
+      "Divide by 9"
+    ],
+    "id": "mf_89dc0fc7"
+  },
+  {
+    "question text": "3×8=24",
+    "intrinsic difficulty": 24,
+    "tags": [
+      "Multiply by 3"
+    ],
+    "id": "mf_ddbf1afe"
+  },
+  {
+    "question text": "8×3=24",
+    "intrinsic difficulty": 24,
+    "tags": [
+      "Multiply by 8"
+    ],
+    "id": "mf_3aeb102a"
+  },
+  {
+    "question text": "24÷3=8",
+    "intrinsic difficulty": 24,
+    "tags": [
+      "Divide by 3"
+    ],
+    "id": "mf_92d6a718"
+  },
+  {
+    "question text": "24÷8=3",
+    "intrinsic difficulty": 24,
+    "tags": [
+      "Divide by 8"
+    ],
+    "id": "mf_e0412380"
+  },
+  {
+    "question text": "4×7=28",
+    "intrinsic difficulty": 28,
+    "tags": [
+      "Multiply by 4"
+    ],
+    "id": "mf_b848e4ee"
+  },
+  {
+    "question text": "7×4=28",
+    "intrinsic difficulty": 28,
+    "tags": [
+      "Multiply by 7"
+    ],
+    "id": "mf_a59d72a2"
+  },
+  {
+    "question text": "28÷4=7",
+    "intrinsic difficulty": 28,
+    "tags": [
+      "Divide by 4"
+    ],
+    "id": "mf_b64bb1ec"
+  },
+  {
+    "question text": "28÷7=4",
+    "intrinsic difficulty": 28,
+    "tags": [
+      "Divide by 7"
+    ],
+    "id": "mf_8a228244"
+  },
+  {
+    "question text": "5×6=30",
+    "intrinsic difficulty": 30,
+    "tags": [
+      "Multiply by 5"
+    ],
+    "id": "mf_03731337"
+  },
+  {
+    "question text": "6×5=30",
+    "intrinsic difficulty": 30,
+    "tags": [
+      "Multiply by 6"
+    ],
+    "id": "mf_3ff63a1b"
+  },
+  {
+    "question text": "30÷5=6",
+    "intrinsic difficulty": 30,
+    "tags": [
+      "Divide by 5"
+    ],
+    "id": "mf_44970651"
+  },
+  {
+    "question text": "30÷6=5",
+    "intrinsic difficulty": 30,
+    "tags": [
+      "Divide by 6"
+    ],
+    "id": "mf_c7d17ae9"
+  },
+  {
+    "question text": "3×9=27",
+    "intrinsic difficulty": 27,
+    "tags": [
+      "Multiply by 3"
+    ],
+    "id": "mf_00bc2c0e"
+  },
+  {
+    "question text": "9×3=27",
+    "intrinsic difficulty": 27,
+    "tags": [
+      "Multiply by 9"
+    ],
+    "id": "mf_69a021b2"
+  },
+  {
+    "question text": "27÷3=9",
+    "intrinsic difficulty": 27,
+    "tags": [
+      "Divide by 3"
+    ],
+    "id": "mf_ae899aca"
+  },
+  {
+    "question text": "27÷9=3",
+    "intrinsic difficulty": 27,
+    "tags": [
+      "Divide by 9"
+    ],
+    "id": "mf_6da097ee"
+  },
+  {
+    "question text": "4×8=32",
+    "intrinsic difficulty": 32,
+    "tags": [
+      "Multiply by 4"
+    ],
+    "id": "mf_d8a88b86"
+  },
+  {
+    "question text": "8×4=32",
+    "intrinsic difficulty": 32,
+    "tags": [
+      "Multiply by 8"
+    ],
+    "id": "mf_2786f166"
+  },
+  {
+    "question text": "32÷4=8",
+    "intrinsic difficulty": 32,
+    "tags": [
+      "Divide by 4"
+    ],
+    "id": "mf_9d909306"
+  },
+  {
+    "question text": "32÷8=4",
+    "intrinsic difficulty": 32,
+    "tags": [
+      "Divide by 8"
+    ],
+    "id": "mf_c3ae60ee"
+  },
+  {
+    "question text": "5×7=35",
+    "intrinsic difficulty": 35,
+    "tags": [
+      "Multiply by 5"
+    ],
+    "id": "mf_a2c23689"
+  },
+  {
+    "question text": "7×5=35",
+    "intrinsic difficulty": 35,
+    "tags": [
+      "Multiply by 7"
+    ],
+    "id": "mf_db3ddf8d"
+  },
+  {
+    "question text": "35÷5=7",
+    "intrinsic difficulty": 35,
+    "tags": [
+      "Divide by 5"
+    ],
+    "id": "mf_09d4fd31"
+  },
+  {
+    "question text": "35÷7=5",
+    "intrinsic difficulty": 35,
+    "tags": [
+      "Divide by 7"
+    ],
+    "id": "mf_3190479d"
+  },
+  {
+    "question text": "6×6=36",
+    "intrinsic difficulty": 36,
+    "tags": [
+      "Multiply by 6",
+      "Square Numbers"
+    ],
+    "id": "mf_a113f48a"
+  },
+  {
+    "question text": "36÷6=6",
+    "intrinsic difficulty": 36,
+    "tags": [
+      "Divide by 6"
+    ],
+    "id": "mf_76c4d8fa"
+  },
+  {
+    "question text": "4×9=36",
+    "intrinsic difficulty": 36,
+    "tags": [
+      "Multiply by 4"
+    ],
+    "id": "mf_b1977afb"
+  },
+  {
+    "question text": "9×4=36",
+    "intrinsic difficulty": 36,
+    "tags": [
+      "Multiply by 9"
+    ],
+    "id": "mf_8dbb9133"
+  },
+  {
+    "question text": "36÷4=9",
+    "intrinsic difficulty": 36,
+    "tags": [
+      "Divide by 4"
+    ],
+    "id": "mf_1b80e82d"
+  },
+  {
+    "question text": "36÷9=4",
+    "intrinsic difficulty": 36,
+    "tags": [
+      "Divide by 9"
+    ],
+    "id": "mf_e74d1e91"
+  },
+  {
+    "question text": "5×8=40",
+    "intrinsic difficulty": 40,
+    "tags": [
+      "Multiply by 5"
+    ],
+    "id": "mf_32a1af9a"
+  },
+  {
+    "question text": "8×5=40",
+    "intrinsic difficulty": 40,
+    "tags": [
+      "Multiply by 8"
+    ],
+    "id": "mf_75ab7d32"
+  },
+  {
+    "question text": "40÷5=8",
+    "intrinsic difficulty": 40,
+    "tags": [
+      "Divide by 5"
+    ],
+    "id": "mf_d01a7548"
+  },
+  {
+    "question text": "40÷8=5",
+    "intrinsic difficulty": 40,
+    "tags": [
+      "Divide by 8"
+    ],
+    "id": "mf_c541059c"
+  },
+  {
+    "question text": "6×7=42",
+    "intrinsic difficulty": 42,
+    "tags": [
+      "Multiply by 6"
+    ],
+    "id": "mf_e7fb4264"
+  },
+  {
+    "question text": "7×6=42",
+    "intrinsic difficulty": 42,
+    "tags": [
+      "Multiply by 7"
+    ],
+    "id": "mf_bc92e94c"
+  },
+  {
+    "question text": "42÷6=7",
+    "intrinsic difficulty": 42,
+    "tags": [
+      "Divide by 6"
+    ],
+    "id": "mf_778dbbea"
+  },
+  {
+    "question text": "42÷7=6",
+    "intrinsic difficulty": 42,
+    "tags": [
+      "Divide by 7"
+    ],
+    "id": "mf_530c1c96"
+  },
+  {
+    "question text": "7×7=49",
+    "intrinsic difficulty": 49,
+    "tags": [
+      "Multiply by 7",
+      "Square Numbers"
+    ],
+    "id": "mf_7f7fc164"
+  },
+  {
+    "question text": "49÷7=7",
+    "intrinsic difficulty": 49,
+    "tags": [
+      "Divide by 7"
+    ],
+    "id": "mf_a080a5a4"
+  },
+  {
+    "question text": "5×9=45",
+    "intrinsic difficulty": 45,
+    "tags": [
+      "Multiply by 5"
+    ],
+    "id": "mf_7434cc28"
+  },
+  {
+    "question text": "9×5=45",
+    "intrinsic difficulty": 45,
+    "tags": [
+      "Multiply by 9"
+    ],
+    "id": "mf_d6a0ed78"
+  },
+  {
+    "question text": "45÷5=9",
+    "intrinsic difficulty": 45,
+    "tags": [
+      "Divide by 5"
+    ],
+    "id": "mf_76ac1e10"
+  },
+  {
+    "question text": "45÷9=5",
+    "intrinsic difficulty": 45,
+    "tags": [
+      "Divide by 9"
+    ],
+    "id": "mf_cf4c6c48"
+  },
+  {
+    "question text": "6×8=48",
+    "intrinsic difficulty": 48,
+    "tags": [
+      "Multiply by 6"
+    ],
+    "id": "mf_5bba4035"
+  },
+  {
+    "question text": "8×6=48",
+    "intrinsic difficulty": 48,
+    "tags": [
+      "Multiply by 8"
+    ],
+    "id": "mf_074a5c89"
+  },
+  {
+    "question text": "48÷6=8",
+    "intrinsic difficulty": 48,
+    "tags": [
+      "Divide by 6"
+    ],
+    "id": "mf_2c57e4d1"
+  },
+  {
+    "question text": "48÷8=6",
+    "intrinsic difficulty": 48,
+    "tags": [
+      "Divide by 8"
+    ],
+    "id": "mf_c40ff9ad"
+  },
+  {
+    "question text": "7×8=56",
+    "intrinsic difficulty": 56,
+    "tags": [
+      "Multiply by 7"
+    ],
+    "id": "mf_cd3fe5cf"
+  },
+  {
+    "question text": "8×7=56",
+    "intrinsic difficulty": 56,
+    "tags": [
+      "Multiply by 8"
+    ],
+    "id": "mf_d0bd75c3"
+  },
+  {
+    "question text": "56÷7=8",
+    "intrinsic difficulty": 56,
+    "tags": [
+      "Divide by 7"
+    ],
+    "id": "mf_3b4fae45"
+  },
+  {
+    "question text": "56÷8=7",
+    "intrinsic difficulty": 56,
+    "tags": [
+      "Divide by 8"
+    ],
+    "id": "mf_cfc7708d"
+  },
+  {
+    "question text": "8×8=64",
+    "intrinsic difficulty": 64,
+    "tags": [
+      "Multiply by 8",
+      "Square Numbers"
+    ],
+    "id": "mf_724097cd"
+  },
+  {
+    "question text": "64÷8=8",
+    "intrinsic difficulty": 64,
+    "tags": [
+      "Divide by 8"
+    ],
+    "id": "mf_580d7825"
+  },
+  {
+    "question text": "6×9=54",
+    "intrinsic difficulty": 54,
+    "tags": [
+      "Multiply by 6"
+    ],
+    "id": "mf_3bfb9c9d"
+  },
+  {
+    "question text": "9×6=54",
+    "intrinsic difficulty": 54,
+    "tags": [
+      "Multiply by 9"
+    ],
+    "id": "mf_0c5a0441"
+  },
+  {
+    "question text": "54÷6=9",
+    "intrinsic difficulty": 54,
+    "tags": [
+      "Divide by 6"
+    ],
+    "id": "mf_d2b2ddd3"
+  },
+  {
+    "question text": "54÷9=6",
+    "intrinsic difficulty": 54,
+    "tags": [
+      "Divide by 9"
+    ],
+    "id": "mf_ce3bfe3b"
+  },
+  {
+    "question text": "7×9=63",
+    "intrinsic difficulty": 63,
+    "tags": [
+      "Multiply by 7"
+    ],
+    "id": "mf_8fbc02aa"
+  },
+  {
+    "question text": "9×7=63",
+    "intrinsic difficulty": 63,
+    "tags": [
+      "Multiply by 9"
+    ],
+    "id": "mf_a807c4be"
+  },
+  {
+    "question text": "63÷7=9",
+    "intrinsic difficulty": 63,
+    "tags": [
+      "Divide by 7"
+    ],
+    "id": "mf_8bb7fb86"
+  },
+  {
+    "question text": "63÷9=7",
+    "intrinsic difficulty": 63,
+    "tags": [
+      "Divide by 9"
+    ],
+    "id": "mf_44b54302"
+  },
+  {
+    "question text": "8×9=72",
+    "intrinsic difficulty": 72,
+    "tags": [
+      "Multiply by 8"
+    ],
+    "id": "mf_b82efd07"
+  },
+  {
+    "question text": "9×8=72",
+    "intrinsic difficulty": 72,
+    "tags": [
+      "Multiply by 9"
+    ],
+    "id": "mf_858ad36f"
+  },
+  {
+    "question text": "72÷8=9",
+    "intrinsic difficulty": 72,
+    "tags": [
+      "Divide by 8"
+    ],
+    "id": "mf_7eddb9b1"
+  },
+  {
+    "question text": "72÷9=8",
+    "intrinsic difficulty": 72,
+    "tags": [
+      "Divide by 9"
+    ],
+    "id": "mf_1b4afb35"
+  },
+  {
+    "question text": "9×9=81",
+    "intrinsic difficulty": 81,
+    "tags": [
+      "Multiply by 9",
+      "Square Numbers"
+    ],
+    "id": "mf_ce702fb4"
+  },
+  {
+    "question text": "81÷9=9",
+    "intrinsic difficulty": 81,
+    "tags": [
+      "Divide by 9"
+    ],
+    "id": "mf_130e825c"
+  },
+  {
+    "question text": "45+20=65",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Addition upto 100"
+    ],
+    "id": "mf_add100_45_20"
+  },
+  {
+    "question text": "20+50=70",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Addition upto 100"
+    ],
+    "id": "mf_add100_20_50"
+  },
+  {
+    "question text": "25+25=50",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Addition upto 100"
+    ],
+    "id": "mf_add100_25_25"
+  },
+  {
+    "question text": "30+40=70",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Addition upto 100"
+    ],
+    "id": "mf_add100_30_40"
+  },
+  {
+    "question text": "35+15=50",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Addition upto 100"
+    ],
+    "id": "mf_add100_35_15"
+  },
+  {
+    "question text": "60+30=90",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Addition upto 100"
+    ],
+    "id": "mf_add100_60_30"
+  },
+  {
+    "question text": "75+20=95",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Addition upto 100"
+    ],
+    "id": "mf_add100_75_20"
+  },
+  {
+    "question text": "80+15=95",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Addition upto 100"
+    ],
+    "id": "mf_add100_80_15"
+  },
+  {
+    "question text": "50+50=100",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Addition upto 100"
+    ],
+    "id": "mf_add100_50_50"
+  },
+  {
+    "question text": "90+10=100",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Addition upto 100"
+    ],
+    "id": "mf_add100_90_10"
+  },
+  {
+    "question text": "55+35=90",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Addition upto 100"
+    ],
+    "id": "mf_add100_55_35"
+  },
+  {
+    "question text": "65+25=90",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Addition upto 100"
+    ],
+    "id": "mf_add100_65_25"
+  },
+  {
+    "question text": "70+20=90",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Addition upto 100"
+    ],
+    "id": "mf_add100_70_20"
+  },
+  {
+    "question text": "85+10=95",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Addition upto 100"
+    ],
+    "id": "mf_add100_85_10"
+  },
+  {
+    "question text": "25+60=85",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Addition upto 100"
+    ],
+    "id": "mf_add100_25_60"
+  },
+  {
+    "question text": "40+45=85",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Addition upto 100"
+    ],
+    "id": "mf_add100_40_45"
+  },
+  {
+    "question text": "35+45=80",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Addition upto 100"
+    ],
+    "id": "mf_add100_35_45"
+  },
+  {
+    "question text": "15+70=85",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Addition upto 100"
+    ],
+    "id": "mf_add100_15_70"
+  },
+  {
+    "question text": "10+85=95",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Addition upto 100"
+    ],
+    "id": "mf_add100_10_85"
+  },
+  {
+    "question text": "15+85=100",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Addition upto 100"
+    ],
+    "id": "mf_add100_15_85"
+  },
+  {
+    "question text": "55-10=45",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Subtraction upto 100"
+    ],
+    "id": "mf_sub100_55_10"
+  },
+  {
+    "question text": "25-15=10",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Subtraction upto 100"
+    ],
+    "id": "mf_sub100_25_15"
+  },
+  {
+    "question text": "95-25=70",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Subtraction upto 100"
+    ],
+    "id": "mf_sub100_95_25"
+  },
+  {
+    "question text": "90-10=80",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Subtraction upto 100"
+    ],
+    "id": "mf_sub100_90_10"
+  },
+  {
+    "question text": "85-15=70",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Subtraction upto 100"
+    ],
+    "id": "mf_sub100_85_15"
+  },
+  {
+    "question text": "80-20=60",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Subtraction upto 100"
+    ],
+    "id": "mf_sub100_80_20"
+  },
+  {
+    "question text": "75-25=50",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Subtraction upto 100"
+    ],
+    "id": "mf_sub100_75_25"
+  },
+  {
+    "question text": "70-30=40",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Subtraction upto 100"
+    ],
+    "id": "mf_sub100_70_30"
+  },
+  {
+    "question text": "65-35=30",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Subtraction upto 100"
+    ],
+    "id": "mf_sub100_65_35"
+  },
+  {
+    "question text": "60-40=20",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Subtraction upto 100"
+    ],
+    "id": "mf_sub100_60_40"
+  },
+  {
+    "question text": "55-45=10",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Subtraction upto 100"
+    ],
+    "id": "mf_sub100_55_45"
+  },
+  {
+    "question text": "50-50=0",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Subtraction upto 100"
+    ],
+    "id": "mf_sub100_50_50"
+  },
+  {
+    "question text": "95-15=80",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Subtraction upto 100"
+    ],
+    "id": "mf_sub100_95_15"
+  },
+  {
+    "question text": "95-35=60",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Subtraction upto 100"
+    ],
+    "id": "mf_sub100_95_35"
+  },
+  {
+    "question text": "95-55=40",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Subtraction upto 100"
+    ],
+    "id": "mf_sub100_95_55"
+  },
+  {
+    "question text": "95-75=20",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Subtraction upto 100"
+    ],
+    "id": "mf_sub100_95_75"
+  },
+  {
+    "question text": "95-85=10",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Subtraction upto 100"
+    ],
+    "id": "mf_sub100_95_85"
+  },
+  {
+    "question text": "45-10=35",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Subtraction upto 100"
+    ],
+    "id": "mf_sub100_45_10"
+  },
+  {
+    "question text": "45-35=10",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Subtraction upto 100"
+    ],
+    "id": "mf_sub100_45_35"
+  },
+  {
+    "question text": "40-25=15",
+    "intrinsic difficulty": 95,
+    "tags": [
+      "Subtraction upto 100"
+    ],
+    "id": "mf_sub100_40_25"
+  },
+  {
+    "question text": "300+200=500",
+    "intrinsic difficulty": 15,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_001"
+  },
+  {
+    "question text": "400+300=700",
+    "intrinsic difficulty": 15,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_002"
+  },
+  {
+    "question text": "500+100=600",
+    "intrinsic difficulty": 15,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_003"
+  },
+  {
+    "question text": "600+200=800",
+    "intrinsic difficulty": 15,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_004"
+  },
+  {
+    "question text": "700+100=800",
+    "intrinsic difficulty": 15,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_005"
+  },
+  {
+    "question text": "800+100=900",
+    "intrinsic difficulty": 15,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_006"
+  },
+  {
+    "question text": "800+200=1000",
+    "intrinsic difficulty": 15,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_007"
+  },
+  {
+    "question text": "1100+200=1300",
+    "intrinsic difficulty": 16,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_008"
+  },
+  {
+    "question text": "1200+300=1500",
+    "intrinsic difficulty": 16,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_009"
+  },
+  {
+    "question text": "1300+100=1400",
+    "intrinsic difficulty": 16,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_010"
+  },
+  {
+    "question text": "1400+200=1600",
+    "intrinsic difficulty": 16,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_011"
+  },
+  {
+    "question text": "1500+100=1600",
+    "intrinsic difficulty": 16,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_012"
+  },
+  {
+    "question text": "1600+200=1800",
+    "intrinsic difficulty": 16,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_013"
+  },
+  {
+    "question text": "1700+100=1800",
+    "intrinsic difficulty": 16,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_014"
+  },
+  {
+    "question text": "1800+100=1900",
+    "intrinsic difficulty": 16,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_015"
+  },
+  {
+    "question text": "1800+200=2000",
+    "intrinsic difficulty": 16,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_016"
+  },
+  {
+    "question text": "2100+300=2400",
+    "intrinsic difficulty": 17,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_017"
+  },
+  {
+    "question text": "2200+200=2400",
+    "intrinsic difficulty": 17,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_018"
+  },
+  {
+    "question text": "2300+100=2400",
+    "intrinsic difficulty": 17,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_019"
+  },
+  {
+    "question text": "2400+200=2600",
+    "intrinsic difficulty": 17,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_020"
+  },
+  {
+    "question text": "2500+100=2600",
+    "intrinsic difficulty": 17,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_021"
+  },
+  {
+    "question text": "2600+200=2800",
+    "intrinsic difficulty": 17,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_022"
+  },
+  {
+    "question text": "2700+100=2800",
+    "intrinsic difficulty": 17,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_023"
+  },
+  {
+    "question text": "2800+100=2900",
+    "intrinsic difficulty": 17,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_024"
+  },
+  {
+    "question text": "2800+200=3000",
+    "intrinsic difficulty": 17,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_025"
+  },
+  {
+    "question text": "3100+200=3300",
+    "intrinsic difficulty": 18,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_026"
+  },
+  {
+    "question text": "3200+300=3500",
+    "intrinsic difficulty": 18,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_027"
+  },
+  {
+    "question text": "3300+100=3400",
+    "intrinsic difficulty": 18,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_028"
+  },
+  {
+    "question text": "3400+200=3600",
+    "intrinsic difficulty": 18,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_029"
+  },
+  {
+    "question text": "3500+100=3600",
+    "intrinsic difficulty": 18,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_030"
+  },
+  {
+    "question text": "12300+200=12500",
+    "intrinsic difficulty": 20,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_031"
+  },
+  {
+    "question text": "12400+300=12700",
+    "intrinsic difficulty": 20,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_032"
+  },
+  {
+    "question text": "12500+100=12600",
+    "intrinsic difficulty": 20,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_033"
+  },
+  {
+    "question text": "12600+200=12800",
+    "intrinsic difficulty": 20,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_034"
+  },
+  {
+    "question text": "12700+100=12800",
+    "intrinsic difficulty": 20,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_035"
+  },
+  {
+    "question text": "12800+100=12900",
+    "intrinsic difficulty": 20,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_036"
+  },
+  {
+    "question text": "12800+200=13000",
+    "intrinsic difficulty": 20,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_037"
+  },
+  {
+    "question text": "123400+200=123600",
+    "intrinsic difficulty": 22,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_038"
+  },
+  {
+    "question text": "123500+100=123600",
+    "intrinsic difficulty": 22,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_039"
+  },
+  {
+    "question text": "123600+200=123800",
+    "intrinsic difficulty": 22,
+    "tags": [
+      "Multidigit addition"
+    ],
+    "id": "mf_multidigit_add_040"
+  },
+  {
+    "question text": "500-200=300",
+    "intrinsic difficulty": 15,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_001"
+  },
+  {
+    "question text": "700-300=400",
+    "intrinsic difficulty": 15,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_002"
+  },
+  {
+    "question text": "600-100=500",
+    "intrinsic difficulty": 15,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_003"
+  },
+  {
+    "question text": "800-200=600",
+    "intrinsic difficulty": 15,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_004"
+  },
+  {
+    "question text": "800-100=700",
+    "intrinsic difficulty": 15,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_005"
+  },
+  {
+    "question text": "900-100=800",
+    "intrinsic difficulty": 15,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_006"
+  },
+  {
+    "question text": "1000-200=800",
+    "intrinsic difficulty": 15,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_007"
+  },
+  {
+    "question text": "1300-200=1100",
+    "intrinsic difficulty": 16,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_008"
+  },
+  {
+    "question text": "1500-300=1200",
+    "intrinsic difficulty": 16,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_009"
+  },
+  {
+    "question text": "1400-100=1300",
+    "intrinsic difficulty": 16,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_010"
+  },
+  {
+    "question text": "1600-200=1400",
+    "intrinsic difficulty": 16,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_011"
+  },
+  {
+    "question text": "1600-100=1500",
+    "intrinsic difficulty": 16,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_012"
+  },
+  {
+    "question text": "1800-200=1600",
+    "intrinsic difficulty": 16,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_013"
+  },
+  {
+    "question text": "1800-100=1700",
+    "intrinsic difficulty": 16,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_014"
+  },
+  {
+    "question text": "1900-100=1800",
+    "intrinsic difficulty": 16,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_015"
+  },
+  {
+    "question text": "2000-200=1800",
+    "intrinsic difficulty": 16,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_016"
+  },
+  {
+    "question text": "2400-300=2100",
+    "intrinsic difficulty": 17,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_017"
+  },
+  {
+    "question text": "2400-200=2200",
+    "intrinsic difficulty": 17,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_018"
+  },
+  {
+    "question text": "2400-100=2300",
+    "intrinsic difficulty": 17,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_019"
+  },
+  {
+    "question text": "2600-200=2400",
+    "intrinsic difficulty": 17,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_020"
+  },
+  {
+    "question text": "2600-100=2500",
+    "intrinsic difficulty": 17,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_021"
+  },
+  {
+    "question text": "2800-200=2600",
+    "intrinsic difficulty": 17,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_022"
+  },
+  {
+    "question text": "2800-100=2700",
+    "intrinsic difficulty": 17,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_023"
+  },
+  {
+    "question text": "2900-100=2800",
+    "intrinsic difficulty": 17,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_024"
+  },
+  {
+    "question text": "3000-200=2800",
+    "intrinsic difficulty": 17,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_025"
+  },
+  {
+    "question text": "3300-200=3100",
+    "intrinsic difficulty": 18,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_026"
+  },
+  {
+    "question text": "3500-300=3200",
+    "intrinsic difficulty": 18,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_027"
+  },
+  {
+    "question text": "3400-100=3300",
+    "intrinsic difficulty": 18,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_028"
+  },
+  {
+    "question text": "3600-200=3400",
+    "intrinsic difficulty": 18,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_029"
+  },
+  {
+    "question text": "3600-100=3500",
+    "intrinsic difficulty": 18,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_030"
+  },
+  {
+    "question text": "12500-200=12300",
+    "intrinsic difficulty": 20,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_031"
+  },
+  {
+    "question text": "12700-300=12400",
+    "intrinsic difficulty": 20,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_032"
+  },
+  {
+    "question text": "12600-100=12500",
+    "intrinsic difficulty": 20,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_033"
+  },
+  {
+    "question text": "12800-200=12600",
+    "intrinsic difficulty": 20,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_034"
+  },
+  {
+    "question text": "12800-100=12700",
+    "intrinsic difficulty": 20,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_035"
+  },
+  {
+    "question text": "12900-100=12800",
+    "intrinsic difficulty": 20,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_036"
+  },
+  {
+    "question text": "13000-200=12800",
+    "intrinsic difficulty": 20,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_037"
+  },
+  {
+    "question text": "123600-200=123400",
+    "intrinsic difficulty": 22,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_038"
+  },
+  {
+    "question text": "123600-100=123500",
+    "intrinsic difficulty": 22,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_039"
+  },
+  {
+    "question text": "123800-200=123600",
+    "intrinsic difficulty": 22,
+    "tags": [
+      "Multidigit subtraction"
+    ],
+    "id": "mf_multidigit_sub_040"
+  },
+  {
+    "question text": "123×10=1230",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Multidigit multiplication with powers of 10"
+    ],
+    "id": "mf_multidigit_001"
+  },
+  {
+    "question text": "456×10=4560",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Multidigit multiplication with powers of 10"
+    ],
+    "id": "mf_multidigit_002"
+  },
+  {
+    "question text": "789×10=7890",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Multidigit multiplication with powers of 10"
+    ],
+    "id": "mf_multidigit_003"
+  },
+  {
+    "question text": "1234×10=12340",
+    "intrinsic difficulty": 3,
+    "tags": [
+      "Multidigit multiplication with powers of 10"
+    ],
+    "id": "mf_multidigit_004"
+  },
+  {
+    "question text": "5678×10=56780",
+    "intrinsic difficulty": 3,
+    "tags": [
+      "Multidigit multiplication with powers of 10"
+    ],
+    "id": "mf_multidigit_005"
+  },
+  {
+    "question text": "9876×10=98760",
+    "intrinsic difficulty": 3,
+    "tags": [
+      "Multidigit multiplication with powers of 10"
+    ],
+    "id": "mf_multidigit_006"
+  },
+  {
+    "question text": "12345×10=123450",
+    "intrinsic difficulty": 4,
+    "tags": [
+      "Multidigit multiplication with powers of 10"
+    ],
+    "id": "mf_multidigit_007"
+  },
+  {
+    "question text": "67890×10=678900",
+    "intrinsic difficulty": 4,
+    "tags": [
+      "Multidigit multiplication with powers of 10"
+    ],
+    "id": "mf_multidigit_008"
+  },
+  {
+    "question text": "123456×10=1234560",
+    "intrinsic difficulty": 5,
+    "tags": [
+      "Multidigit multiplication with powers of 10"
+    ],
+    "id": "mf_multidigit_009"
+  },
+  {
+    "question text": "234×20=4680",
+    "intrinsic difficulty": 3,
+    "tags": [
+      "Multidigit multiplication with powers of 10"
+    ],
+    "id": "mf_multidigit_010"
+  },
+  {
+    "question text": "567×20=11340",
+    "intrinsic difficulty": 3,
+    "tags": [
+      "Multidigit multiplication with powers of 10"
+    ],
+    "id": "mf_multidigit_011"
+  },
+  {
+    "question text": "1234×20=24680",
+    "intrinsic difficulty": 4,
+    "tags": [
+      "Multidigit multiplication with powers of 10"
+    ],
+    "id": "mf_multidigit_012"
+  },
+  {
+    "question text": "3456×20=69120",
+    "intrinsic difficulty": 4,
+    "tags": [
+      "Multidigit multiplication with powers of 10"
+    ],
+    "id": "mf_multidigit_013"
+  },
+  {
+    "question text": "12345×20=246900",
+    "intrinsic difficulty": 5,
+    "tags": [
+      "Multidigit multiplication with powers of 10"
+    ],
+    "id": "mf_multidigit_014"
+  },
+  {
+    "question text": "345×30=10350",
+    "intrinsic difficulty": 3,
+    "tags": [
+      "Multidigit multiplication with powers of 10"
+    ],
+    "id": "mf_multidigit_015"
+  },
+  {
+    "question text": "678×30=20340",
+    "intrinsic difficulty": 3,
+    "tags": [
+      "Multidigit multiplication with powers of 10"
+    ],
+    "id": "mf_multidigit_016"
+  },
+  {
+    "question text": "1234×30=37020",
+    "intrinsic difficulty": 4,
+    "tags": [
+      "Multidigit multiplication with powers of 10"
+    ],
+    "id": "mf_multidigit_017"
+  },
+  {
+    "question text": "4567×30=137010",
+    "intrinsic difficulty": 4,
+    "tags": [
+      "Multidigit multiplication with powers of 10"
+    ],
+    "id": "mf_multidigit_018"
+  },
+  {
+    "question text": "12345×30=370350",
+    "intrinsic difficulty": 5,
+    "tags": [
+      "Multidigit multiplication with powers of 10"
+    ],
+    "id": "mf_multidigit_019"
+  },
+  {
+    "question text": "456×40=18240",
+    "intrinsic difficulty": 3,
+    "tags": [
+      "Multidigit multiplication with powers of 10"
+    ],
+    "id": "mf_multidigit_020"
+  },
+  {
+    "question text": "1212×2=2424",
+    "intrinsic difficulty": 3,
+    "tags": [
+      "Multidigit with single digit multiplication"
+    ],
+    "id": "mf_nocarry_001"
+  },
+  {
+    "question text": "132×3=396",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Multidigit with single digit multiplication"
+    ],
+    "id": "mf_nocarry_002"
+  },
+  {
+    "question text": "4142×1=4142",
+    "intrinsic difficulty": 3,
+    "tags": [
+      "Multidigit with single digit multiplication"
+    ],
+    "id": "mf_nocarry_003"
+  },
+  {
+    "question text": "1112×3=3336",
+    "intrinsic difficulty": 3,
+    "tags": [
+      "Multidigit with single digit multiplication"
+    ],
+    "id": "mf_nocarry_004"
+  },
+  {
+    "question text": "123×2=246",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Multidigit with single digit multiplication"
+    ],
+    "id": "mf_nocarry_005"
+  },
+  {
+    "question text": "211×3=633",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Multidigit with single digit multiplication"
+    ],
+    "id": "mf_nocarry_006"
+  },
+  {
+    "question text": "112×4=448",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Multidigit with single digit multiplication"
+    ],
+    "id": "mf_nocarry_007"
+  },
+  {
+    "question text": "121×2=242",
+    "intrinsic difficulty": 2,
+    "tags": [
+      "Multidigit with single digit multiplication"
+    ],
+    "id": "mf_nocarry_008"
+  },
+  {
+    "question text": "1111×2=2222",
+    "intrinsic difficulty": 3,
+    "tags": [
+      "Multidigit with single digit multiplication"
+    ],
+    "id": "mf_nocarry_009"
+  },
+  {
+    "question text": "1234×2=2468",
+    "intrinsic difficulty": 3,
+    "tags": [
+      "Multidigit with single digit multiplication"
+    ],
+    "id": "mf_nocarry_010"
+  },
+  {
+    "question text": "2111×3=6333",
+    "intrinsic difficulty": 3,
+    "tags": [
+      "Multidigit with single digit multiplication"
+    ],
+    "id": "mf_nocarry_011"
+  },
+  {
+    "question text": "1122×4=4488",
+    "intrinsic difficulty": 3,
+    "tags": [
+      "Multidigit with single digit multiplication"
+    ],
+    "id": "mf_nocarry_012"
+  },
+  {
+    "question text": "1212×3=3636",
+    "intrinsic difficulty": 3,
+    "tags": [
+      "Multidigit with single digit multiplication"
+    ],
+    "id": "mf_nocarry_013"
+  },
+  {
+    "question text": "1111×3=3333",
+    "intrinsic difficulty": 3,
+    "tags": [
+      "Multidigit with single digit multiplication"
+    ],
+    "id": "mf_nocarry_014"
+  },
+  {
+    "question text": "12345×2=24690",
+    "intrinsic difficulty": 4,
+    "tags": [
+      "Multidigit with single digit multiplication"
+    ],
+    "id": "mf_nocarry_015"
+  },
+  {
+    "question text": "21111×3=63333",
+    "intrinsic difficulty": 4,
+    "tags": [
+      "Multidigit with single digit multiplication"
+    ],
+    "id": "mf_nocarry_016"
+  },
+  {
+    "question text": "11222×4=44888",
+    "intrinsic difficulty": 4,
+    "tags": [
+      "Multidigit with single digit multiplication"
+    ],
+    "id": "mf_nocarry_017"
+  },
+  {
+    "question text": "12121×2=24242",
+    "intrinsic difficulty": 4,
+    "tags": [
+      "Multidigit with single digit multiplication"
+    ],
+    "id": "mf_nocarry_018"
+  },
+  {
+    "question text": "11111×3=33333",
+    "intrinsic difficulty": 4,
+    "tags": [
+      "Multidigit with single digit multiplication"
+    ],
+    "id": "mf_nocarry_019"
+  },
+  {
+    "question text": "123456×2=246912",
+    "intrinsic difficulty": 5,
+    "tags": [
+      "Multidigit with single digit multiplication"
+    ],
+    "id": "mf_nocarry_020"
+  },
+  {
+    "question text": "12000×30=360000",
+    "intrinsic difficulty": 4,
+    "tags": [
+      "Multidigit with 2digit multiplication"
+    ],
+    "id": "mf_2digit_001"
+  },
+  {
+    "question text": "4000×60=240000",
+    "intrinsic difficulty": 3,
+    "tags": [
+      "Multidigit with 2digit multiplication"
+    ],
+    "id": "mf_2digit_002"
+  },
+  {
+    "question text": "8000×40=320000",
+    "intrinsic difficulty": 3,
+    "tags": [
+      "Multidigit with 2digit multiplication"
+    ],
+    "id": "mf_2digit_003"
+  },
+  {
+    "question text": "7000×50=350000",
+    "intrinsic difficulty": 3,
+    "tags": [
+      "Multidigit with 2digit multiplication"
+    ],
+    "id": "mf_2digit_004"
+  },
+  {
+    "question text": "3000×20=60000",
+    "intrinsic difficulty": 3,
+    "tags": [
+      "Multidigit with 2digit multiplication"
+    ],
+    "id": "mf_2digit_005"
+  },
+  {
+    "question text": "2000×30=60000",
+    "intrinsic difficulty": 3,
+    "tags": [
+      "Multidigit with 2digit multiplication"
+    ],
+    "id": "mf_2digit_006"
+  },
+  {
+    "question text": "5000×40=200000",
+    "intrinsic difficulty": 3,
+    "tags": [
+      "Multidigit with 2digit multiplication"
+    ],
+    "id": "mf_2digit_007"
+  },
+  {
+    "question text": "6000×50=300000",
+    "intrinsic difficulty": 3,
+    "tags": [
+      "Multidigit with 2digit multiplication"
+    ],
+    "id": "mf_2digit_008"
+  },
+  {
+    "question text": "10000×20=200000",
+    "intrinsic difficulty": 4,
+    "tags": [
+      "Multidigit with 2digit multiplication"
+    ],
+    "id": "mf_2digit_009"
+  },
+  {
+    "question text": "20000×30=600000",
+    "intrinsic difficulty": 4,
+    "tags": [
+      "Multidigit with 2digit multiplication"
+    ],
+    "id": "mf_2digit_010"
+  },
+  {
+    "question text": "3000×40=120000",
+    "intrinsic difficulty": 3,
+    "tags": [
+      "Multidigit with 2digit multiplication"
+    ],
+    "id": "mf_2digit_011"
+  },
+  {
+    "question text": "4000×50=200000",
+    "intrinsic difficulty": 3,
+    "tags": [
+      "Multidigit with 2digit multiplication"
+    ],
+    "id": "mf_2digit_012"
+  },
+  {
+    "question text": "5000×60=300000",
+    "intrinsic difficulty": 3,
+    "tags": [
+      "Multidigit with 2digit multiplication"
+    ],
+    "id": "mf_2digit_013"
+  },
+  {
+    "question text": "10000×20=200000",
+    "intrinsic difficulty": 4,
+    "tags": [
+      "Multidigit with 2digit multiplication"
+    ],
+    "id": "mf_2digit_014"
+  },
+  {
+    "question text": "20000×30=600000",
+    "intrinsic difficulty": 4,
+    "tags": [
+      "Multidigit with 2digit multiplication"
+    ],
+    "id": "mf_2digit_015"
+  },
+  {
+    "question text": "30000×40=1200000",
+    "intrinsic difficulty": 4,
+    "tags": [
+      "Multidigit with 2digit multiplication"
+    ],
+    "id": "mf_2digit_016"
+  },
+  {
+    "question text": "40000×50=2000000",
+    "intrinsic difficulty": 4,
+    "tags": [
+      "Multidigit with 2digit multiplication"
+    ],
+    "id": "mf_2digit_017"
+  },
+  {
+    "question text": "50000×60=3000000",
+    "intrinsic difficulty": 4,
+    "tags": [
+      "Multidigit with 2digit multiplication"
+    ],
+    "id": "mf_2digit_018"
+  },
+  {
+    "question text": "100000×20=2000000",
+    "intrinsic difficulty": 5,
+    "tags": [
+      "Multidigit with 2digit multiplication"
+    ],
+    "id": "mf_2digit_019"
+  },
+  {
+    "question text": "200000×30=6000000",
+    "intrinsic difficulty": 5,
+    "tags": [
+      "Multidigit with 2digit multiplication"
+    ],
+    "id": "mf_2digit_020"
+  }
+]

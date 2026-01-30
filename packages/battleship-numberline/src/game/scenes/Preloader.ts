@@ -28,8 +28,14 @@ export class Preloader extends BaseScene {
 
     private handlePlayButtonPointerDown() {
         const params = new URLSearchParams(window.location.search);
-        const targetScene = params.get('mode') === 'campaign' ? 'CampaignScene' : 'TopicSelectorScene';
-        this.time.delayedCall(100, () => this.scene.start(targetScene));
+        if (params.get('mode') === 'campaign') {
+            this.time.delayedCall(100, () => this.scene.start('MapScene', {
+                topic: 'campaign',
+                parentScene: 'Preloader',
+            }));
+        } else {
+            this.time.delayedCall(100, () => this.scene.start('TopicSelectorScene'));
+        }
     }
 
     init() {

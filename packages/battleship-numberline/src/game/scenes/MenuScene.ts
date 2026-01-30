@@ -103,11 +103,7 @@ export class MenuScene extends BaseScene {
             };
             
             this.animateClouds(() => {
-                if (this.topic === 'campaign') {
-                    this.scene.start('CampaignScene');
-                } else {
-                    this.scene.start('MapScene', mapSceneData);
-                }
+                this.scene.start('MapScene', mapSceneData);
 
                 const analyticsHelper = AnalyticsHelper.getInstance();
                 if (analyticsHelper) {
@@ -116,7 +112,7 @@ export class MenuScene extends BaseScene {
             });
         }
 
-        const backLabel = this.topic === 'campaign' ? 'Back to Campaign' : i18n.t('scoreboard.backToMap');
+        const backLabel = i18n.t('scoreboard.backToMap');
         const backToMapButton = ButtonHelper.createButton({
             scene: this,
             imageKeys: {

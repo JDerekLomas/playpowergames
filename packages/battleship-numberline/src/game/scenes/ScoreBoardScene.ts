@@ -88,7 +88,9 @@ export class ScoreBoardScene extends BaseScene {
 
         // Track completed level if atleast 70% of questions were answered correctly
         if ((this.scoreData.rounds >= 0.7 * this.scoreData.totalRounds) && this.scoreData.level !== undefined) {
-            islandState.addCompletedLevel(this.scoreData.topic, this.scoreData.level);
+            // Question bank topics pass 1-indexed mapLevel; campaign passes 0-indexed level
+            const completedLevel = this.scoreData.useQuestionBank ? this.scoreData.level : this.scoreData.level + 1;
+            islandState.addCompletedLevel(this.scoreData.topic, completedLevel);
         }
 
         ScoreboardHelper.init(this);
@@ -165,21 +167,16 @@ export class ScoreBoardScene extends BaseScene {
     }
 
     private createBackToMapButton() {
-        const isCampaign = this.scoreData.topic === 'campaign';
         const handleClick = () => {
             this.audioManager.stopAllSoundEffects();
             this.audioManager.stopBackgroundMusic();
             this.scene.stop('ScoreBoardScene');
 
-            if (isCampaign) {
-                this.scene.start('CampaignScene');
-            } else {
-                const completedLevels = islandState.getCompletedLevels(this.scoreData.topic);
-                this.scene.start('MapScene', {
-                    topic: this.scoreData.topic,
-                    completedLevels: completedLevels,
-                });
-            }
+            const completedLevels = islandState.getCompletedLevels(this.scoreData.topic);
+            this.scene.start('MapScene', {
+                topic: this.scoreData.topic,
+                completedLevels: completedLevels,
+            });
 
             const analyticsHelper = AnalyticsHelper.getInstance();
             if (analyticsHelper) {
@@ -187,7 +184,7 @@ export class ScoreBoardScene extends BaseScene {
             }
         };
 
-        const buttonLabel = isCampaign ? 'Back to Campaign' : i18n.t('scoreboard.backToMap');
+        const buttonLabel = i18n.t('scoreboard.backToMap');
 
         const backToMapButton = ButtonHelper.createButton({
             scene: this,

@@ -307,6 +307,37 @@
                     "nameEs": "Multiplicar fracciones simples"
                 }
             ]
+        },
+        {
+            "name": "campaign",
+            "displayName": "Campaign",
+            "mode": "clicking",
+            "levels": [
+                {
+                    "name": "Whole Numbers 0-10",
+                    "nameEs": "Números enteros 0-10"
+                },
+                {
+                    "name": "Whole Numbers 0-100",
+                    "nameEs": "Números enteros 0-100"
+                },
+                {
+                    "name": "Decimals 0-1",
+                    "nameEs": "Decimales 0-1"
+                },
+                {
+                    "name": "Fractions 0-1",
+                    "nameEs": "Fracciones 0-1"
+                },
+                {
+                    "name": "Type Numbers 0-10",
+                    "nameEs": "Escribir números 0-10"
+                },
+                {
+                    "name": "Type Fractions 0-1",
+                    "nameEs": "Escribir fracciones 0-1"
+                }
+            ]
         }
     ]
 }

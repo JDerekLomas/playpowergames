@@ -688,20 +688,15 @@ export class MapScene extends BaseScene {
                         this.scene.stop('GameScreen');
                     }
 
-                    if (showTutorial) {
-                        this.scene.start("HowToPlayScene", {
-                            useQuestionBank: true,
-                            topic: this.topic,
-                            mapLevel: islandIndex + 1,
-                            parentScene: "MapScene",
-                        });
+                    const isCampaign = this.topic === 'campaign';
+                    const sceneData = isCampaign
+                        ? { useQuestionBank: false, topic: this.topic, level: islandIndex, parentScene: 'MapScene' }
+                        : { useQuestionBank: true, topic: this.topic, mapLevel: islandIndex + 1, parentScene: 'MapScene' };
+
+                    if (isCampaign || showTutorial) {
+                        this.scene.start("HowToPlayScene", sceneData);
                     } else {
-                        this.scene.start('GameScreen', {
-                            useQuestionBank: true,
-                            topic: this.topic,
-                            mapLevel: islandIndex + 1,
-                            parentScene: "MapScene",
-                        });
+                        this.scene.start('GameScreen', sceneData);
                         this.audioManager.playBackgroundMusic(CommonConfig.ASSETS.KEYS.MUSIC.GAME_THEME);
                     }
                 });

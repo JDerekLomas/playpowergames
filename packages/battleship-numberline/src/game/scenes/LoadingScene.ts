@@ -55,11 +55,11 @@ export class LoadingScene extends BaseScene {
         CampaignScene._preload(this);
 
          // load map assets only for topics with map levels
+        const gameConfigManager = GameConfigManager.getInstance();
+        const isCampaign = gameConfigManager.getAll().mode === 'campaign';
 
-        if (this.gameParams?.topic && this.hasMapLevels(this.gameParams.topic)) {
-
-            MapScene._preload(this)            
-
+        if (isCampaign || (this.gameParams?.topic && this.hasMapLevels(this.gameParams.topic))) {
+            MapScene._preload(this);
         }
     }
 

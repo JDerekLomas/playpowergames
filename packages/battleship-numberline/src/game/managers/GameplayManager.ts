@@ -49,6 +49,7 @@ export class GameplayManager {
     private mapLevel: number = 0;
     private consecutiveCorrect: number = 0;
     private scaffoldingStage: number = 1;
+    private _scaffoldingStageChanged: boolean = false;
     public analyticsHelper: AnalyticsHelper | null = null;
     private hitThresholdOverride?: number;
     private nearMissThresholdOverride?: number;
@@ -457,17 +458,24 @@ export class GameplayManager {
         return true;
     }
 
-    /** Whether scaffolding is active (campaign levels 0 and 1 only) */
+    /** Whether scaffolding is active (campaign clicking levels: 0, 2, 3, 4) */
     public isScaffoldingActive(): boolean {
-        return this.topicName === 'campaign' && !this.useQuestionBank && (this.currentLevelIdx === 0 || this.currentLevelIdx === 1);
+        if (this.topicName !== 'campaign' || this.useQuestionBank) return false;
+        return [0, 2, 3, 4].includes(this.currentLevelIdx);
     }
 
     public getScaffoldingStage(): number {
         return this.scaffoldingStage;
     }
 
+    /** Levels where misses can drop all the way back to stage 1 (decimals, fractions) */
+    private canDropToStageOne(): boolean {
+        return this.currentLevelIdx === 3 || this.currentLevelIdx === 4;
+    }
+
     private updateScaffolding(correct: boolean): void {
         if (!this.isScaffoldingActive()) return;
+        const prevStage = this.scaffoldingStage;
 
         if (correct) {
             this.consecutiveCorrect++;
@@ -477,11 +485,32 @@ export class GameplayManager {
             }
         } else {
             this.consecutiveCorrect = 0;
-            // Drop from stage 3 to 2 on miss, but never below 2
-            if (this.scaffoldingStage === 3) {
-                this.scaffoldingStage = 2;
+            if (this.canDropToStageOne()) {
+                // Decimals/fractions: drop one stage on miss, can go back to 1
+                if (this.scaffoldingStage > 1) {
+                    this.scaffoldingStage--;
+                }
+            } else {
+                // Whole numbers: drop from stage 3 to 2, but never below 2
+                if (this.scaffoldingStage === 3) {
+                    this.scaffoldingStage = 2;
+                }
             }
         }
+
+        this._scaffoldingStageChanged = this.scaffoldingStage !== prevStage;
+    }
+
+    /** Returns true once if the scaffolding stage just changed (resets after read) */
+    public consumeScaffoldingStageChanged(): boolean {
+        const changed = this._scaffoldingStageChanged;
+        this._scaffoldingStageChanged = false;
+        return changed;
+    }
+
+    /** Get current campaign level index (for scaffolding type detection) */
+    public getCampaignLevelIdx(): number {
+        return this.currentLevelIdx;
     }
 
     public pauseGame(): void {

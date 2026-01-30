@@ -86,8 +86,8 @@ export class ScoreBoardScene extends BaseScene {
             this.isMapAvailable = true;
         }
 
-        // Track completed level if atleast 70% of questions were answered correctly
-        if ((this.scoreData.rounds >= 0.7 * this.scoreData.totalRounds) && this.scoreData.level !== undefined) {
+        // Track completed level if at least 60% of questions were answered correctly
+        if ((this.scoreData.rounds >= 0.6 * this.scoreData.totalRounds) && this.scoreData.level !== undefined) {
             // Question bank topics pass 1-indexed mapLevel; campaign passes 0-indexed level
             const completedLevel = this.scoreData.useQuestionBank ? this.scoreData.level : this.scoreData.level + 1;
             islandState.addCompletedLevel(this.scoreData.topic, completedLevel);

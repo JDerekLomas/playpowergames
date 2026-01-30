@@ -537,11 +537,31 @@ export class GameScreen extends BaseScene {
             this.numberLineContainer.innerHTML = '';
         }
 
-        // Determine scaffolding overrides for campaign levels 1 & 2
+        // Determine scaffolding overrides for campaign
         let showIntermediateNumbers = this.gameplayManager.getShowIntermediateNumbers();
         let hideIntermediateTicks = false;
+        let effectiveMarkersList = markersList;
         if (this.gameplayManager.isScaffoldingActive()) {
             const stage = this.gameplayManager.getScaffoldingStage();
+            const levelIdx = this.gameplayManager.getCampaignLevelIdx();
+
+            // For fractions level (4): generate denominator-based tick marks at stages 1 & 2
+            if (levelIdx === 4 && stage < 3) {
+                const prompt = question.questionPrompt;
+                const fractionMatch = prompt.match(/(\d+)\/(\d+)/);
+                if (fractionMatch) {
+                    const denom = parseInt(fractionMatch[2], 10);
+                    const start = parseFractionString(finalStartPoint) ?? 0;
+                    const end = parseFractionString(finalEndPoint) ?? 1;
+                    const generatedMarkers: string[] = [];
+                    for (let n = 0; n <= denom; n++) {
+                        const val = start + (end - start) * n / denom;
+                        generatedMarkers.push(val.toString());
+                    }
+                    effectiveMarkersList = generatedMarkers;
+                }
+            }
+
             if (stage >= 2) {
                 showIntermediateNumbers = false; // hide labels (keep endpoints)
             }
@@ -554,7 +574,7 @@ export class GameScreen extends BaseScene {
         const { markers, leftMarker, rightMarker } = UIUtils.createVerticalLinesWithNumbers(this, {
             ...GameConfig.MARKER_LINES,
             fontFamily: fontKeys.EUROSTILE,
-            markersList,
+            markersList: effectiveMarkersList,
             visibleMarkers: question.visibleMarkers ?? [],
             startPoint: finalStartPoint,
             endPoint: finalEndPoint,
@@ -646,22 +666,19 @@ export class GameScreen extends BaseScene {
             this.queueAnnouncement(i18n.t('game.scoreValue', { score: currentScore }));
         }
 
+        // Scaffolding transition cue
+        if (this.gameplayManager.consumeScaffoldingStageChanged()) {
+            const stage = this.gameplayManager.getScaffoldingStage();
+            const msg = stage === 3 ? 'Training wheels off!' : stage === 2 ? 'Numbers hidden!' : 'Hints restored';
+            void this.animationPlayer.addToastMessage({
+                message: msg,
+                duration: 1200,
+                textStyle: { fontFamily: fontKeys.EUROSTILE, letterSpacing: 1 },
+            });
+        }
+
         // Update progress bar
         this.updateProgressBar();
-
-        const currentStreak = this.gameplayManager.scoreHelper.getCurrentStreak();
-        if (SCORE_COUNTS.includes(currentStreak)) {
-            // Announce streak achievement
-            this.queueAnnouncement(i18n.t('gameScreen.inARow', { count: currentStreak }));
-            this.time.delayedCall(1000, () => {
-                document.body.style.cursor = 'default';
-                this.showMascotCelebration(() => {
-                    setSceneBackground(`assets/images/background/${this.bgTexture}`);
-                    this.startNewRound();
-                });
-            });
-            return;
-        }
 
         // Start next round after a delay
         this.time.delayedCall(1000, () => this.startNewRound());
@@ -722,21 +739,18 @@ export class GameScreen extends BaseScene {
             }
         }
 
-        this.updateProgressBar();
-
-        const currentStreak = this.gameplayManager.scoreHelper.getCurrentStreak();
-        if (SCORE_COUNTS.includes(currentStreak)) {
-            // Announce streak achievement
-            this.queueAnnouncement(i18n.t('gameScreen.inARow', { count: currentStreak }));
-            this.time.delayedCall(1000, () => {
-                document.body.style.cursor = 'default';
-                this.showMascotCelebration(() => {
-                    setSceneBackground(`assets/images/background/${this.bgTexture}`);
-                    this.startNewRound();
-                });
+        // Scaffolding transition cue
+        if (this.gameplayManager.consumeScaffoldingStageChanged()) {
+            const stage = this.gameplayManager.getScaffoldingStage();
+            const msg = stage === 3 ? 'Training wheels off!' : stage === 2 ? 'Numbers hidden!' : 'Hints restored';
+            void this.animationPlayer.addToastMessage({
+                message: msg,
+                duration: 1200,
+                textStyle: { fontFamily: fontKeys.EUROSTILE, letterSpacing: 1 },
             });
-            return;
         }
+
+        this.updateProgressBar();
 
         // Start next round after a delay
         this.time.delayedCall(1000, () => this.startNewRound());

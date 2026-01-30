@@ -103,7 +103,11 @@ export class MenuScene extends BaseScene {
             };
             
             this.animateClouds(() => {
-                this.scene.start('MapScene', mapSceneData);
+                if (this.topic === 'campaign') {
+                    this.scene.start('CampaignScene');
+                } else {
+                    this.scene.start('MapScene', mapSceneData);
+                }
 
                 const analyticsHelper = AnalyticsHelper.getInstance();
                 if (analyticsHelper) {
@@ -112,6 +116,7 @@ export class MenuScene extends BaseScene {
             });
         }
 
+        const backLabel = this.topic === 'campaign' ? 'Back to Campaign' : i18n.t('scoreboard.backToMap');
         const backToMapButton = ButtonHelper.createButton({
             scene: this,
             imageKeys: {
@@ -119,8 +124,8 @@ export class MenuScene extends BaseScene {
                 hover: buttonKeys.HOVER,
                 pressed: buttonKeys.PRESSED,
             },
-            text: i18n.t('scoreboard.backToMap'),
-            label: i18n.t('scoreboard.backToMap'),
+            text: backLabel,
+            label: backLabel,
             textStyle: {
                 font: "700 24px Exo"
             },

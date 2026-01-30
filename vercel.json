@@ -1,0 +1,5 @@
+{
+  "buildCommand": "pnpm --filter @k8-games/sdk build && pnpm --filter @k8-games/battleship-numberline build",
+  "outputDirectory": "packages/battleship-numberline/dist",
+  "installCommand": "pnpm install"
+}

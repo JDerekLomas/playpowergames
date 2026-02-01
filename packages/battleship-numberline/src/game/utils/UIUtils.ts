@@ -343,7 +343,7 @@ export class UIUtils {
                 showNumber = true;
             }
 			leftMarker = this.createVerticalLineWithNumber(scene, leftX, {
-                lineHeight: config.lineHeight,
+                lineHeight: Math.round(config.lineHeight * 1.5),
                 lineColor: config.color,
                 showNumber,
                 number: label,
@@ -356,14 +356,6 @@ export class UIUtils {
                 parentContainer: config.parentContainer,
                 a11y: config.a11y,
             });
-
-            // Shift focus to the left marker if a11y is enabled
-			if (config.a11y?.enabled && leftMarker?.line) {
-				const overlay = (leftMarker.line as any).a11yOverlay;
-				if (overlay?.element) {
-					overlay.element.focus({ preventScroll: true });
-				}
-			}
         }
 
         // Create additional markers if markersList is provided
@@ -463,7 +455,7 @@ export class UIUtils {
                 showNumber = true;
             }
             rightMarker = this.createVerticalLineWithNumber(scene, rightX, {
-                lineHeight: config.lineHeight,
+                lineHeight: Math.round(config.lineHeight * 1.5),
                 lineColor: config.color,
                 showNumber,
                 number: label,

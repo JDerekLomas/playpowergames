@@ -14,6 +14,7 @@ import { SplashScene } from './scenes/SplashScene';
 import { CelebrationScene } from './scenes/CelebrationScene';
 import { MapScene } from './scenes/MapScene';
 import { CampaignScene } from './scenes/CampaignScene';
+import { DiagnosticScene } from './scenes/DiagnosticScene';
 
 const displayConfig = DisplayConfig.getInstance();
 const { canvasHeight, canvasWidth, width, height } = displayConfig;
@@ -44,7 +45,8 @@ config.scene = [
     SplashScene,
     CelebrationScene,
     MapScene,
-    CampaignScene
+    CampaignScene,
+    DiagnosticScene
 ];
 
 let isInitialized = false;

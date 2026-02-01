@@ -2,6 +2,8 @@ export class IslandStateManager {
     private static instance: IslandStateManager;
     private completedLevels: Map<string, Set<number>> = new Map();
     private lastCompletedLevel: { topic: string, level: number } | null = null;
+    private failedAttempts: Map<string, Map<number, number>> = new Map();
+    private diagnosticCompleted: boolean = false;
 
     private constructor() {}
 
@@ -36,6 +38,32 @@ export class IslandStateManager {
     clearCompletedLevels(topic: string): void {
         this.completedLevels.delete(topic);
         this.lastCompletedLevel = null;
+    }
+
+    addFailedAttempt(topic: string, level: number): number {
+        if (!this.failedAttempts.has(topic)) {
+            this.failedAttempts.set(topic, new Map());
+        }
+        const topicMap = this.failedAttempts.get(topic)!;
+        const current = topicMap.get(level) ?? 0;
+        topicMap.set(level, current + 1);
+        return current + 1;
+    }
+
+    getFailedAttempts(topic: string, level: number): number {
+        return this.failedAttempts.get(topic)?.get(level) ?? 0;
+    }
+
+    clearFailedAttempts(topic: string, level: number): void {
+        this.failedAttempts.get(topic)?.delete(level);
+    }
+
+    setDiagnosticCompleted(): void {
+        this.diagnosticCompleted = true;
+    }
+
+    isDiagnosticCompleted(): boolean {
+        return this.diagnosticCompleted;
     }
 }
 

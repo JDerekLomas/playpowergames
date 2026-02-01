@@ -88,6 +88,12 @@ export class MapScene extends BaseScene {
     }
 
     create() {
+        // Redirect to diagnostic on first campaign visit with no completed levels
+        if (this.topic === 'campaign' && !islandState.isDiagnosticCompleted() && this.completedLevels.size === 0) {
+            this.scene.start('DiagnosticScene');
+            return;
+        }
+
         this.audioManager.playBackgroundMusic('ocean_waves');
 
         this.cameras.main.setBackgroundColor('#002A49');
@@ -709,7 +715,11 @@ export class MapScene extends BaseScene {
                         ? { useQuestionBank: false, topic: this.topic, level: islandIndex, parentScene: 'MapScene' }
                         : { useQuestionBank: true, topic: this.topic, mapLevel: islandIndex + 1, parentScene: 'MapScene' };
 
-                    if (isCampaign || showTutorial) {
+                    if (isCampaign) {
+                        // Campaign skips tutorial, goes straight to game
+                        this.scene.start('GameScreen', sceneData);
+                        this.audioManager.playBackgroundMusic(CommonConfig.ASSETS.KEYS.MUSIC.GAME_THEME);
+                    } else if (showTutorial) {
                         this.scene.start("HowToPlayScene", sceneData);
                     } else {
                         this.scene.start('GameScreen', sceneData);

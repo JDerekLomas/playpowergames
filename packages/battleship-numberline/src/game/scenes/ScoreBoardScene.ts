@@ -6,6 +6,7 @@ import { AnalyticsHelper, ButtonHelper, ButtonOverlay, i18n, ScoreboardHelper, s
 import { DoorUtils } from '../utils/DoorUtils';
 import { topics } from '../../resources/topics.json';
 import { islandState } from '../managers/IslandStateManager';
+import { CAMPAIGN_FALLBACK_MAP } from '../config/CampaignFallbackMap';
 
 interface ScoreBoardData {
     score: number;
@@ -91,6 +92,13 @@ export class ScoreBoardScene extends BaseScene {
             // Question bank topics pass 1-indexed mapLevel; campaign passes 0-indexed level
             const completedLevel = this.scoreData.useQuestionBank ? this.scoreData.level : this.scoreData.level + 1;
             islandState.addCompletedLevel(this.scoreData.topic, completedLevel);
+            // Clear failed attempts on success
+            if (this.scoreData.topic === 'campaign') {
+                islandState.clearFailedAttempts(this.scoreData.topic, this.scoreData.level);
+            }
+        } else if (this.scoreData.topic === 'campaign' && this.scoreData.level !== undefined) {
+            // Track failed attempt
+            islandState.addFailedAttempt(this.scoreData.topic, this.scoreData.level);
         }
 
         ScoreboardHelper.init(this);
@@ -159,11 +167,67 @@ export class ScoreBoardScene extends BaseScene {
                 const backToMapButtonOverlay = (backToMapButton as any).buttonOverlay;
                 backToMapButtonOverlay?.recreate();
             }
+
+            // Show "Try something different" button when failed campaign level 2+ times
+            if (this.scoreData.topic === 'campaign' && this.scoreData.level !== undefined) {
+                const failCount = islandState.getFailedAttempts(this.scoreData.topic, this.scoreData.level);
+                const fallback = CAMPAIGN_FALLBACK_MAP[this.scoreData.level];
+                if (failCount >= 2 && fallback) {
+                    const fallbackButton = this.createFallbackButton(fallback);
+                    fallbackButton.setPosition(
+                        this.getScaledValue(this.display.width / 2),
+                        this.getScaledValue(this.display.height - 30),
+                    );
+                }
+            }
         });
 
         this.createMuteButton();
 
         this.createVolumeSlider();
+    }
+
+    private createFallbackButton(fallback: import('../config/CampaignFallbackMap').FallbackEntry) {
+        const handleClick = () => {
+            this.audioManager.stopAllSoundEffects();
+            if (fallback.type === 'replay' && fallback.level !== undefined) {
+                const doorUtils = new DoorUtils(this);
+                doorUtils.closeDoors(() => {
+                    this.scene.start('GameScreen', {
+                        topic: 'campaign',
+                        level: fallback.level,
+                        useQuestionBank: false,
+                        reset: true,
+                        parentScene: 'ScoreBoardScene',
+                    });
+                });
+            } else if (fallback.type === 'external' && fallback.url) {
+                window.location.href = fallback.url;
+            }
+        };
+
+        const buttonLabel = 'Try something different';
+
+        const button = ButtonHelper.createButton({
+            scene: this,
+            imageKeys: {
+                default: 'map_button_default',
+                hover: 'map_button_hover',
+                pressed: 'map_button_pressed',
+            },
+            imageScale: 0.9,
+            text: buttonLabel,
+            label: buttonLabel,
+            textStyle: {
+                font: '700 24px Exo',
+                color: '#ffffff',
+            },
+            x: 0,
+            y: 0,
+            onClick: handleClick,
+        });
+
+        return button;
     }
 
     private createBackToMapButton() {

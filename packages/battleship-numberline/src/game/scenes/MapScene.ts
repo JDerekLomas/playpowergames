@@ -88,9 +88,10 @@ export class MapScene extends BaseScene {
     }
 
     create() {
-        // Redirect to diagnostic on first campaign visit with no completed levels
-        if (this.topic === 'campaign' && !islandState.isDiagnosticCompleted() && this.completedLevels.size === 0) {
-            this.scene.start('DiagnosticScene');
+        // Redirect to diagnostic on first visit to supported topics
+        const diagnosticTopics = ['campaign', 'fractions_as_numbers'];
+        if (diagnosticTopics.includes(this.topic) && !islandState.isDiagnosticCompleted(this.topic) && this.completedLevels.size === 0) {
+            this.scene.start('DiagnosticScene', { topic: this.topic });
             return;
         }
 

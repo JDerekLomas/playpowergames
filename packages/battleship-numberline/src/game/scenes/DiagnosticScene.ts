@@ -16,20 +16,19 @@ interface DiagnosticQuestion {
     startPoint: number | string;
     endPoint: number | string;
     markersList: string[];
-    /** On correct: jump to this question index (or 'place' to finish) */
     onCorrect: number | { place: number };
-    /** On incorrect: go to this question index (or 'place' to finish) */
     onIncorrect: number | { place: number };
 }
 
 const HIT_THRESHOLD = 0.1; // generous for diagnostic
 
-const DIAGNOSTIC_QUESTIONS: DiagnosticQuestion[] = [
+// Campaign: full Number Knowledge Test (7 questions, places into levels 0-5)
+const CAMPAIGN_QUESTIONS: DiagnosticQuestion[] = [
     // Q0: Place 7 on 0-10
     {
         target: 7, startPoint: 0, endPoint: 10,
         markersList: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
-        onCorrect: 2, // skip to Q2 (Q3 in plan, 0-indexed here)
+        onCorrect: 2,
         onIncorrect: 1,
     },
     // Q1: Place 3 on 0-10
@@ -43,7 +42,7 @@ const DIAGNOSTIC_QUESTIONS: DiagnosticQuestion[] = [
     {
         target: 45, startPoint: 0, endPoint: 100,
         markersList: ['0', '10', '20', '30', '40', '50', '60', '70', '80', '90', '100'],
-        onCorrect: 4, // skip to Q4 (Q5 in plan)
+        onCorrect: 4,
         onIncorrect: 3,
     },
     // Q3: Place 73 on 0-100
@@ -57,7 +56,7 @@ const DIAGNOSTIC_QUESTIONS: DiagnosticQuestion[] = [
     {
         target: 0.5, startPoint: 0, endPoint: 1,
         markersList: ['0', '0.1', '0.2', '0.3', '0.4', '0.5', '0.6', '0.7', '0.8', '0.9', '1'],
-        onCorrect: 6, // skip to Q6 (Q7 in plan)
+        onCorrect: 6,
         onIncorrect: 5,
     },
     // Q5: Place 0.25 on 0-1
@@ -76,7 +75,40 @@ const DIAGNOSTIC_QUESTIONS: DiagnosticQuestion[] = [
     },
 ];
 
+// Fractions as Numbers: short diagnostic (3 questions, places into levels 0-2)
+// Level 1 = "Mark the Fraction" (clicking), Level 2 = "Find the Fraction" (clicking)
+const FRACTIONS_QUESTIONS: DiagnosticQuestion[] = [
+    // Q0: Place 1/2 on 0-1 with unit fraction markers
+    {
+        target: 0.5, startPoint: 0, endPoint: 1,
+        markersList: ['0', '1/4', '1/2', '3/4', '1'],
+        onCorrect: 2,
+        onIncorrect: 1,
+    },
+    // Q1: Place 1/4 on 0-1 (easier)
+    {
+        target: 0.25, startPoint: 0, endPoint: 1,
+        markersList: ['0', '1/4', '1/2', '3/4', '1'],
+        onCorrect: 2,
+        onIncorrect: { place: 0 },
+    },
+    // Q2: Place 3/8 on 0-1 (no markers — harder)
+    {
+        target: 0.375, startPoint: 0, endPoint: 1,
+        markersList: ['0', '1/8', '2/8', '3/8', '4/8', '5/8', '6/8', '7/8', '1'],
+        onCorrect: { place: 2 },
+        onIncorrect: { place: 1 },
+    },
+];
+
+const QUESTIONS_BY_TOPIC: Record<string, DiagnosticQuestion[]> = {
+    campaign: CAMPAIGN_QUESTIONS,
+    fractions_as_numbers: FRACTIONS_QUESTIONS,
+};
+
 export class DiagnosticScene extends BaseScene {
+    private topic: string = 'campaign';
+    private questions: DiagnosticQuestion[] = CAMPAIGN_QUESTIONS;
     private currentQuestionIdx: number = 0;
     private currentMarkers: Marker[] = [];
     private leftMarker: Marker | null = null;
@@ -86,7 +118,6 @@ export class DiagnosticScene extends BaseScene {
     private progressText!: Phaser.GameObjects.Text;
     private isWaiting: boolean = false;
     private totalQuestionsShown: number = 0;
-    private maxQuestions: number = 7;
 
     constructor() {
         super('DiagnosticScene');
@@ -100,7 +131,9 @@ export class DiagnosticScene extends BaseScene {
         DiagnosticScene._preload(this);
     }
 
-    init(): void {
+    init(data?: { topic?: string }): void {
+        this.topic = data?.topic ?? 'campaign';
+        this.questions = QUESTIONS_BY_TOPIC[this.topic] ?? CAMPAIGN_QUESTIONS;
         this.currentQuestionIdx = 0;
         this.totalQuestionsShown = 0;
         this.isWaiting = false;
@@ -168,11 +201,11 @@ export class DiagnosticScene extends BaseScene {
     }
 
     private showQuestion(): void {
-        const q = DIAGNOSTIC_QUESTIONS[this.currentQuestionIdx];
+        const q = this.questions[this.currentQuestionIdx];
         this.totalQuestionsShown++;
 
         // Update progress
-        this.progressText.setText(`Question ${this.totalQuestionsShown} of ~${this.maxQuestions}`);
+        this.progressText.setText(`Question ${this.totalQuestionsShown} of ~${this.questions.length}`);
 
         // Clean up old markers
         this.currentMarkers.forEach(m => {
@@ -235,7 +268,7 @@ export class DiagnosticScene extends BaseScene {
         if (!this.isWaiting) return;
         this.isWaiting = false;
 
-        const q = DIAGNOSTIC_QUESTIONS[this.currentQuestionIdx];
+        const q = this.questions[this.currentQuestionIdx];
         const clickedNumber = this.inputManager.calculateClickedNumber(x);
         const targetValue = parseFractionString(q.target.toString()) ?? 0;
         const startValue = parseFractionString(q.startPoint.toString()) ?? 0;
@@ -264,17 +297,18 @@ export class DiagnosticScene extends BaseScene {
     }
 
     private finishDiagnostic(placementLevel: number): void {
-        islandState.setDiagnosticCompleted();
+        islandState.setDiagnosticCompleted(this.topic);
 
         // Mark all levels below placement as completed
+        // fractions_as_numbers uses 1-indexed mapLevels; campaign uses 1-indexed too
         for (let i = 1; i <= placementLevel; i++) {
-            islandState.addCompletedLevel('campaign', i);
+            islandState.addCompletedLevel(this.topic, i);
         }
 
         // Transition to map
         this.scene.start('MapScene', {
-            topic: 'campaign',
-            completedLevels: islandState.getCompletedLevels('campaign'),
+            topic: this.topic,
+            completedLevels: islandState.getCompletedLevels(this.topic),
         });
     }
 }

@@ -3,7 +3,7 @@ export class IslandStateManager {
     private completedLevels: Map<string, Set<number>> = new Map();
     private lastCompletedLevel: { topic: string, level: number } | null = null;
     private failedAttempts: Map<string, Map<number, number>> = new Map();
-    private diagnosticCompleted: boolean = false;
+    private diagnosticCompletedTopics: Set<string> = new Set();
 
     private constructor() {}
 
@@ -58,12 +58,12 @@ export class IslandStateManager {
         this.failedAttempts.get(topic)?.delete(level);
     }
 
-    setDiagnosticCompleted(): void {
-        this.diagnosticCompleted = true;
+    setDiagnosticCompleted(topic: string = 'campaign'): void {
+        this.diagnosticCompletedTopics.add(topic);
     }
 
-    isDiagnosticCompleted(): boolean {
-        return this.diagnosticCompleted;
+    isDiagnosticCompleted(topic: string = 'campaign'): boolean {
+        return this.diagnosticCompletedTopics.has(topic);
     }
 }
 

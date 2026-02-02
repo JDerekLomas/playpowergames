@@ -19,7 +19,7 @@
     "txTitleEs": "TX Tema 8: Representar y Sumar Números Mayores",
     "description": "Add within 100.",
     "descriptionEs": "Suma dentro de 100.",
-    "lastUpdated": "2026-02-02T09:58:50.517Z",
+    "lastUpdated": "2026-02-02T10:31:41.679Z",
     "configs": {
       "topic": "add_and_subtract_within_100",
       "theme": "purple"
@@ -48,7 +48,7 @@
     "titleEs": "Tema 1: Operaciones con Números Racionales",
     "description": "Learn about rational number operations.",
     "descriptionEs": "Aprende sobre operaciones con números racionales.",
-    "lastUpdated": "2026-02-02T09:58:50.517Z",
+    "lastUpdated": "2026-02-02T10:31:41.679Z",
     "configs": {
       "topic": "rational_numbers",
       "theme": "purple"
@@ -107,7 +107,7 @@
     "txTitleEs": "TX Tema 11: Explorar Números hasta 1,200",
     "description": "Explore numbers to 1,000.",
     "descriptionEs": "Explora números hasta 1,000.",
-    "lastUpdated": "2026-02-02T09:58:50.517Z",
+    "lastUpdated": "2026-02-02T10:31:41.679Z",
     "configs": {
       "topic": "explore_numbers_to_1000",
       "theme": "purple"
@@ -123,7 +123,7 @@
     "txTitleEs": "TX Tema 12: Sumar y Restar hasta 1,000 Usando Modelos y Estrategias Numéricas",
     "description": "Subtract within 1,000.",
     "descriptionEs": "Resta hasta 1,000.",
-    "lastUpdated": "2026-02-02T09:58:50.517Z",
+    "lastUpdated": "2026-02-02T10:31:41.679Z",
     "configs": {
       "topic": "subtract_within_1000",
       "theme": "purple"
@@ -154,7 +154,7 @@
     "txTitleEs": "TX Tema 10: Entender las Fracciones como Números",
     "description": "Explore fractions as numbers.",
     "descriptionEs": "Explora las fracciones como números.",
-    "lastUpdated": "2026-02-02T09:58:50.517Z",
+    "lastUpdated": "2026-02-02T10:31:41.679Z",
     "configs": {
       "topic": "fractions_as_numbers",
       "theme": "purple"
@@ -185,7 +185,7 @@
     "txTitleEs": "TX Tema 1: Comprensión del Valor Posicional",
     "description": "Explore place value.",
     "descriptionEs": "Explora el valor posicional.",
-    "lastUpdated": "2026-02-02T09:58:50.517Z",
+    "lastUpdated": "2026-02-02T10:31:41.679Z",
     "configs": {
       "topic": "place_value_magnitude",
       "theme": "purple"
@@ -216,7 +216,7 @@
     "txTitleEs": "TX Tema 8: Representar, Comparar, Sumar y Restar Decimales",
     "description": "Explore decimals.",
     "descriptionEs": "Explora decimales.",
-    "lastUpdated": "2026-02-02T09:58:50.517Z",
+    "lastUpdated": "2026-02-02T10:31:41.679Z",
     "configs": {
       "topic": "understand_and_compare_decimals",
       "theme": "purple"
@@ -247,7 +247,7 @@
     "txTitleEs": "TX Tema 2: Sumar y Restar con Fluidez Números Enteros y Decimales",
     "description": "Round, add, and subtract decimals.",
     "descriptionEs": "Redondear, sumar y restar decimales.",
-    "lastUpdated": "2026-02-02T09:58:50.517Z",
+    "lastUpdated": "2026-02-02T10:31:41.679Z",
     "configs": {
       "topic": "add_and_subtract_decimals",
       "theme": "purple"
@@ -263,7 +263,7 @@
     "txTitleEs": "TX Tema 8: Sumar y restar fracciones y números mixtos con fluidez",
     "description": "Add and subtract fractions with unlike denominators.",
     "descriptionEs": "Sumar y restar fracciones con denominadores diferentes.",
-    "lastUpdated": "2026-02-02T09:58:50.517Z",
+    "lastUpdated": "2026-02-02T10:31:41.679Z",
     "configs": {
       "topic": "add_and_subtract_fractions",
       "theme": "purple"
@@ -277,7 +277,7 @@
     "titleEs": "Tema 6: Comprender y Usar Porcentajes",
     "description": "Learn about understand and use percent.",
     "descriptionEs": "Aprende a entender y usar porcentajes.",
-    "lastUpdated": "2026-02-02T09:58:50.517Z",
+    "lastUpdated": "2026-02-02T10:31:41.679Z",
     "configs": {
       "topic": "percents",
       "theme": "purple"
@@ -392,7 +392,7 @@
     "txTitleEs": "TX Tema 7: Sumar y Restar Fracciones y Números Mixtos",
     "description": "Add and subtract fractions.",
     "descriptionEs": "Sumar y restar fracciones.",
-    "lastUpdated": "2026-02-02T09:58:50.517Z",
+    "lastUpdated": "2026-02-02T10:31:41.679Z",
     "configs": {
       "topic": "addition_and_subtraction_of_fractions_mixed_numbers",
       "theme": "purple"
@@ -447,7 +447,7 @@
     "txTitleEs": "TX Tema 9: Entender la Multiplicación y División con Fracciones",
     "description": "Multiply fractions by whole numbers.",
     "descriptionEs": "Multiplica fracciones por números enteros.",
-    "lastUpdated": "2026-02-02T09:58:50.517Z",
+    "lastUpdated": "2026-02-02T10:31:41.679Z",
     "configs": {
       "topic": "multiply_fractions"
     }

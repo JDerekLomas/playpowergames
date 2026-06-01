@@ -8,7 +8,7 @@ import { URL } from 'url';
 
 // --- CONFIGURATION ---
 // IMPORTANT: Replace this with your actual Google Cloud API Key.
-const API_KEY = 'AIzaSyDVbvAcif1ibeEnQuJEAcW1k7H9kHeY3n8';
+const API_KEY = process.env.GOOGLE_API_KEY;
 
 // The folder where the generated MP3 files will be saved.
 const OUTPUT_DIR = 'output';

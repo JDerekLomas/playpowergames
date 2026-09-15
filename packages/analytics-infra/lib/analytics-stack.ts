@@ -51,6 +51,16 @@ export class AnalyticsStack extends Stack {
       projectionType: dynamodb.ProjectionType.ALL
     });
 
+    // GSI: query sessions by userId (device fingerprint or an embedding site's learner id)
+    // and sort by sessionStartTime. Lets a parent/learner page list one child's sessions.
+    const sessionsUserGsiName = 'ByUserIdStartTime';
+    sessionsTable.addGlobalSecondaryIndex({
+      indexName: sessionsUserGsiName,
+      partitionKey: { name: 'userId', type: dynamodb.AttributeType.STRING },
+      sortKey: { name: 'sessionStartTime', type: dynamodb.AttributeType.NUMBER },
+      projectionType: dynamodb.ProjectionType.ALL
+    });
+
     // DynamoDB: GameTrialsData
     const trialsTable = new dynamodb.Table(this, 'GameTrialsData', {
       tableName: 'GameTrialsData',
@@ -92,6 +102,7 @@ export class AnalyticsStack extends Stack {
     queryFn.addEnvironment('SESSIONS_TABLE', sessionsTable.tableName);
     queryFn.addEnvironment('TRIALS_TABLE', trialsTable.tableName);
     queryFn.addEnvironment('SESSIONS_GSI', sessionsGsiName);
+    queryFn.addEnvironment('SESSIONS_USER_GSI', sessionsUserGsiName);
 
     sessionsTable.grantWriteData(ingestFn);
     sessionsTable.grantReadData(ingestFn); // allow Query for updateSession lookup

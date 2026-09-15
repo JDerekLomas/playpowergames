@@ -296,7 +296,24 @@ export class AnalyticsHelper {
         }
     }
 
+    /**
+     * When the game runs inside another site's iframe (e.g. the parent-facing
+     * Playpower Math at Home), mirror every analytics payload to that page so it
+     * can keep a local progress log. Runs regardless of the remote `enabled`
+     * flag: nothing leaves the browser, the embedding page only sees what the
+     * game already knows. The embedding page must check `event.origin`.
+     */
+    private mirrorToEmbedder(body: unknown): void {
+        try {
+            if (typeof window === 'undefined' || window.parent === window) return;
+            window.parent.postMessage({ type: 'K8_ANALYTICS_EVENT', payload: body }, '*');
+        } catch {
+            // ignore
+        }
+    }
+
     private async postIngest(body: unknown): Promise<any | null> {
+        this.mirrorToEmbedder(body);
         try {
             if (!this.analyticsEnabled) return null;
             // TODO: Remove this after testing

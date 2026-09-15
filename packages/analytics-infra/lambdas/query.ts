@@ -5,6 +5,7 @@ import { DynamoDBDocumentClient, QueryCommand, ScanCommand } from '@aws-sdk/lib-
 const sessionsTable = process.env.SESSIONS_TABLE as string;
 const trialsTable = process.env.TRIALS_TABLE as string;
 const sessionsGsi = process.env.SESSIONS_GSI as string;
+const sessionsUserGsi = process.env.SESSIONS_USER_GSI as string;
 const ddb = DynamoDBDocumentClient.from(new DynamoDBClient({}), {
   marshallOptions: { removeUndefinedValues: true }
 });
@@ -19,6 +20,7 @@ export const handler = async (event: any): Promise<APIGatewayProxyResult> => {
   const gameId = qs.gameId || null; // gameName
   const sessionId = qs.sessionId || null;
   const parentSessionId = qs.parentSessionId || null;
+  const userId = qs.userId || null; // sessions for one learner, via the ByUserIdStartTime GSI
   const sessionStatus = qs.sessionStatus || null; // OPEN | CLOSED
   const startTime = qs.startTime ? Number(qs.startTime) : null; // single or range start
   const endTime = qs.endTime ? Number(qs.endTime) : null; // range end
@@ -77,7 +79,7 @@ export const handler = async (event: any): Promise<APIGatewayProxyResult> => {
   }
 
   // sessionData branch
-  if (!gameId && !parentSessionId) {
+  if (!gameId && !parentSessionId && !userId) {
     // Return all sessions (scan) with optional filters
     let filterExpr = '';
     const names: Record<string, string> = {};
@@ -124,6 +126,27 @@ export const handler = async (event: any): Promise<APIGatewayProxyResult> => {
       ExclusiveStartKey: nextToken,
       ScanIndexForward: sortAsc
     }));
+  } else if (userId) {
+    // Query via GSI by userId, with optional time range on SK
+    let keyExpr = '#u = :u';
+    const names: Record<string, string> = { '#u': 'userId' };
+    const vals: Record<string, any> = { ':u': userId };
+    if (startTime != null && endTime != null) { keyExpr += ' AND #t BETWEEN :t1 AND :t2'; names['#t'] = 'sessionStartTime'; vals[':t1'] = startTime; vals[':t2'] = endTime; }
+    else if (startTime != null) { keyExpr += ' AND #t = :t'; names['#t'] = 'sessionStartTime'; vals[':t'] = startTime; }
+    let filterExpr = '';
+    if (sessionStatus) { filterExpr = '#status = :status'; names['#status'] = 'sessionStatus'; vals[':status'] = sessionStatus; }
+
+    result = await ddb.send(new QueryCommand({
+      TableName: sessionsTable,
+      IndexName: sessionsUserGsi,
+      KeyConditionExpression: keyExpr,
+      FilterExpression: filterExpr || undefined,
+      ExpressionAttributeNames: names,
+      ExpressionAttributeValues: vals,
+      Limit: limit,
+      ExclusiveStartKey: nextToken,
+      ScanIndexForward: sortAsc
+    }));
   } else {
     // Query via GSI by gameName, with optional time range on SK
     let keyExpr = '#g = :g';
@@ -156,6 +179,6 @@ export const handler = async (event: any): Promise<APIGatewayProxyResult> => {
       'Content-Type': 'application/json',
       'Access-Control-Allow-Origin': '*'
     },
-    body: JSON.stringify({ ok: true, type, gameId, parentSessionId, limit, items, nextToken: newNextToken })
+    body: JSON.stringify({ ok: true, type, gameId, parentSessionId, userId, limit, items, nextToken: newNextToken })
   };
 };

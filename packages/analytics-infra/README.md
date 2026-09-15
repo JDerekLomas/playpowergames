@@ -134,6 +134,10 @@ GET `{{api_base}}query?type=sessionData&gameId=astro-math&limit=50&sort=asc`
 
 GET `{{api_base}}query?type=trialsData&sessionId=sess-astro-001&createdAt=1730000010000&createdAtEnd=1730000020000&limit=50&sort=asc`
 
+- Query sessions for one learner (userId = device fingerprint, or the id an embedding site passes as `?userId=`)
+
+GET `{{api_base}}query?type=sessionData&userId=home_ABCD2345&startTime=1730000000000&endTime=1730999999999&limit=50&sort=desc`
+
 - Query all session data (no filters)
 
 GET `{{api_base}}query?type=sessionData&limit=50&sort=asc`

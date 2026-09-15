@@ -55,7 +55,7 @@ class ScormService {
 
       // Note: 7 is an arbitrary number, but should be more than sufficient
       if (this.findAPITries > 7) {
-        alert('Error finding API -- too deeply nested.');
+        console.error('Error finding SCORM API -- too deeply nested.');
         return null;
       }
 
@@ -68,14 +68,22 @@ class ScormService {
   }
 
   getAPI(): Scorm12API | null | undefined {
-    // start by looking for the API in the current window
-    let theAPI = this.findAPI(window);
+    // Walking up to a cross-origin parent (the game embedded in another site,
+    // e.g. Playpower Math at Home) throws a SecurityError on the first property
+    // read. There is no LMS in that case, so treat it as "no API".
+    let theAPI: Scorm12API | null | undefined = null;
+    try {
+      // start by looking for the API in the current window
+      theAPI = this.findAPI(window);
 
-    // if the API is null (could not be found in the current window)
-    // and the current window has an opener window
-    if (theAPI == null && window.opener != null && typeof window.opener != 'undefined') {
-      // try to find the API in the current window's opener
-      theAPI = this.findAPI(window.opener);
+      // if the API is null (could not be found in the current window)
+      // and the current window has an opener window
+      if (theAPI == null && window.opener != null && typeof window.opener != 'undefined') {
+        // try to find the API in the current window's opener
+        theAPI = this.findAPI(window.opener);
+      }
+    } catch {
+      theAPI = null;
     }
     // if the API has not been found
     if (theAPI == null) {
